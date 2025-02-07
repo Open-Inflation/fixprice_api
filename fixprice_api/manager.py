@@ -34,10 +34,16 @@ class FixPrice:
 
     @city_id.setter
     def city_id(self, city_id: int):
-        if not isinstance(city_id, int): raise TypeError("`city_id` must be int")
-        if city_id < 1: raise ValueError("`city_id` must be greater than 0")
+        if (
+            not isinstance(city_id, int) and \
+            not isinstance(city_id, float) \
+            and(not isinstance(city_id, str) and city_id.isdigit())
+        ):
+            raise TypeError("`city_id` must be int")
+        elif int(city_id) < 1:
+            raise ValueError("`city_id` must be greater than 0")
 
-        self._city_id = str(city_id)
+        self._city_id = str(int(city_id))
         self._set_headers()
 
     @property
@@ -48,7 +54,7 @@ class FixPrice:
     @language.setter
     def language(self, language: str):
         if not isinstance(language, str): raise TypeError("`language` must be str")
-        if len(language) != 2: raise ValueError("`language` must be ISO-2. Length must be 2")
+        if not len(language) in [2, 5]: raise ValueError("`language` must be IETF BCP 47. Length must be 2 (ex. `en`) or 5 (ex. `en-AE`)")
 
         self._language = language
         self._set_headers()
@@ -86,6 +92,9 @@ class FixPrice:
                 sort: CatalogSort = CatalogSort.POPULARITY
             ) -> tuple[int, dict]:
             """Возвращает количество и список товаров в категории/подкатегории."""
+            if page < 1: raise ValueError("`page` must be greater than 0")
+            elif limit > 27 or limit < 1: raise ValueError("`limit` must be in range 1-27")
+            
             url = f"{self._parent.BASE_URL_V1}/product/in/{category_alias}"
             if subcategory_alias: url += f"/{subcategory_alias}"
             url += f"?page={page}&limit={limit}&sort={sort}"
@@ -102,9 +111,15 @@ class FixPrice:
         def __init__(self, parent):
             self._parent = parent
 
-        async def country_list(self) -> dict:
-            """Возвращает список всех стран, их id и название."""
-            return await self._parent._fetch(f"{self._parent.BASE_URL_V1}/location/country")
+        async def country_list(self, alias: str = None) -> dict:
+            """Возвращает список всех стран, их id и название. `alias` - работает как сортировка."""
+            url = f"{self._parent.BASE_URL_V1}/location/country"
+            if alias:
+                if len(alias) != 2: raise ValueError("`alias` must be ISO-2. Length must be 2")
+
+                url += f"?alias={alias.upper()}"
+            
+            return await self._parent._fetch(url=url)
 
         async def region_list(self, country_id: int = None) -> dict:
             """Возвращает список всех регионов, их id и название. Если фильтр не применен - выдача всех регионов независимо от страны."""
@@ -154,8 +169,17 @@ class FixPrice:
                 product_id: int,
                 in_stock: bool = True,
                 search: str = None
-            ) -> dict:
-            """Проверка наличия товара в точках города. Возвращает информацию о магазине и int количество товара."""
+            ) -> list[dict]:
+            """
+            Проверка наличия товара в точках города.
+            Возвращает информацию о магазине и int количество товара.
+            `city_id` в базовом классе должен быть обязательно указан, иначе ошибка!
+
+            `in_stock` - фильтрует только те магазины, в которых есть товар, иначе все.
+            `search` - фильтр по поисковому адресу.
+            """
+            if self._parent.city_id == None: raise ValueError("City ID is not set")
+
             url = f"{self._parent.BASE_URL_V1}/store/balance/{product_id}?canPickup=all"
             if search: url += f"&addressPart={search}"
             if in_stock: url += "&inStock=true"

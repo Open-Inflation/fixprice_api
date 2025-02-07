@@ -17,13 +17,17 @@ class FixPriceAPI:
         kwargs["headers"] = self.headers
         
         async with self._session.request(method, url, **kwargs) as response:
+            json_data = await response.json()
+
             if response.status != 200:
                 if response.status == 403:
                     raise ValueError(f"Failed to fetch data, anti-bot system detected. Change IP to RU. Code: {response.status}")
                 elif response.status == 429:
                     raise ValueError(f"Oh, it's superheated! Try slower. Code: {response.status}")
                 else:
-                    raise ValueError(f"Failed to fetch data, unclassified status code: {response.status}")
+                    raise ValueError(f"""Failed to fetch data, unclassified status code: {response.status}
+                        Error message: {json_data.get('message', None)}
+                        Error type: {json_data.get('type', None)}""")
             data = {"city": response.headers.get("x-city", None),
                     "count": response.headers.get("x-count", None),
                     "language": response.headers.get("x-language", None)}
@@ -33,7 +37,7 @@ class FixPriceAPI:
             elif data["language"] not in [None, self.headers.get("x-language", None)] and self.headers.get("x-language", None):
                 raise ValueError(f"Unpredictable language: {data['language']}, expected: {self.headers.get('x-language', None)}")
 
-            return data, await response.json()
+            return data, json_data
 
     async def download_image(self, url: str) -> BytesIO:
         if not self._session:
