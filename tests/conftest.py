@@ -17,6 +17,13 @@ def api():
 
 
 @pytest.fixture(scope="session")
+def cities_list_json(api):
+    """Кэш списка городов на сессию."""
+    resp = api.Geolocation.cities_list(country_id=2)
+    data = resp.json()
+    return data
+
+@pytest.fixture(scope="session")
 def tree_json(api):
     """Кэш дерева категорий на сессию."""
     resp = api.Catalog.tree()

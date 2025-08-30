@@ -49,10 +49,6 @@ class ClassGeolocation:
         """Возвращает информацию о городе."""
         return self._parent._request("GET", f"{self.CATALOG_URL}/v1/location/city/{city_id}")
 
-    def my_geoposition(self) -> hrequests.Response:
-        """Возвращает информацию о предполагаемой геопозиции на основе IP."""
-        return self._parent._request("GET", f"{self.CATALOG_URL}/v2/geo/ip")
-
 
 class ShopService:
     """Сервис для работы с информацией о магазинах."""

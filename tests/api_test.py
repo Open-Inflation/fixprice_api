@@ -4,7 +4,7 @@ from fixprice_api import FixPriceAPI
 def check_is_error(data):
     errors_keys = ["name", "message", "code", "type", "status", "comment"]
     assert len(data) != len(errors_keys) or not all(key in data for key in errors_keys)
-    time.sleep(1)
+    time.sleep(3)
 
 
 # Advertising
@@ -54,20 +54,15 @@ def test_regions_list(api, schemashot):
     check_is_error(rjson)
     schemashot.assert_json_match(rjson, api.Geolocation.regions_list)
 
-def test_cities_list(api, schemashot):
-    resp = api.Geolocation.cities_list(country_id=2) # Россия
-    rjson = resp.json()
-    check_is_error(rjson)
-    schemashot.assert_json_match(rjson, api.Geolocation.cities_list)
+def test_cities_list(api, schemashot, cities_list_json):
+    check_is_error(cities_list_json)
+    schemashot.assert_json_match(cities_list_json, api.Geolocation.cities_list)
 
-#def test_city_info(api, schemashot):
-#    pass
-
-def test_my_geoposition(api, schemashot):
-    resp = api.Geolocation.my_geoposition()
-    rjson = resp.json()
+def test_city_info(api, schemashot, cities_list_json):
+    info = api.Geolocation.city_info(city_id=cities_list_json[0]["id"])
+    rjson = info.json()
     check_is_error(rjson)
-    schemashot.assert_json_match(rjson, api.Geolocation.my_geoposition)
+    schemashot.assert_json_match(rjson, api.Geolocation.city_info)
 
 def test_search_shops(api, schemashot):
     resp = api.Geolocation.Shop.search()

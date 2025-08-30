@@ -1,0 +1,53 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "integer"
+    },
+    "name": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "kladr": {
+      "type": "null"
+    },
+    "fiasid": {
+      "type": "string"
+    },
+    "fias": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "addressId": {
+      "type": "string"
+    },
+    "prefix": {
+      "type": "string"
+    },
+    "countryId": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "addressId",
+    "countryId",
+    "fias",
+    "fiasid",
+    "id",
+    "kladr",
+    "latitude",
+    "longitude",
+    "name",
+    "prefix",
+    "title"
+  ]
+}

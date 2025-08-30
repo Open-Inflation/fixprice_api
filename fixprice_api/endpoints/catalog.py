@@ -44,7 +44,10 @@ class ClassCatalog:
         elif limit > 27 or limit < 1: raise ValueError("`limit` must be in range 1-27")
         
         url = f"{self.CATALOG_URL}/v1/product/in/{category_alias}"
-        if subcategory_alias: url += f"/{subcategory_alias}"
+        real_route = f"/catalog/{category_alias}"
+        if subcategory_alias:
+            url += f"/{subcategory_alias}"
+            real_route += f"/{subcategory_alias}"
         url += f"?page={page}&limit={limit}&sort={sort}"
 
         json_body = {
@@ -59,7 +62,7 @@ class ClassCatalog:
         if subcategory_alias:
             json_body["category"] += f"/{subcategory_alias}"
 
-        return self._parent._request("POST", url=url, json_body=json_body)
+        return self._parent._request("POST", url=url, real_route=real_route, json_body=json_body)
 
 
 class ProductService:

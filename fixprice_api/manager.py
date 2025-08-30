@@ -25,7 +25,7 @@ class FixPriceAPI:
 
     timeout: float          = 15.0
     browser: str            = "firefox"
-    headless: bool          = False
+    headless: bool          = True
     proxy: str | None       = field(default_factory=_pick_https_proxy)
     browser_opts: dict[str, Any] = field(default_factory=dict)
 
@@ -40,7 +40,6 @@ class FixPriceAPI:
         self.session: hrequests.Session = hrequests.Session(
             self.browser,
             timeout=self.timeout,
-            verify=False,
         )
 
         self.Geolocation: ClassGeolocation = ClassGeolocation(self, self.CATALOG_URL)
@@ -107,6 +106,10 @@ class FixPriceAPI:
         Открывает главную страницу сайта в headless браузере, получает cookie сессии
         и извлекает из неё access token для последующих API запросов.
         """
+        self.session.headers.update({ # токен пойдёт в каждый запрос
+            "X-Client-Route": "/catalog"
+        })
+
         with hrequests.BrowserSession(
             session=self.session,
             browser=self.browser,
@@ -142,8 +145,13 @@ class FixPriceAPI:
         print(json_body)
         print(self.session.headers)
 
+        if real_route:
+            self.session.headers.update({ # токен пойдёт в каждый запрос
+                "X-Client-Route": real_route
+            })
+
         # Единая точка входа в чужую библиотеку для удобства
-        resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy, verify=False)
+        resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy)
         if hasattr(resp, "request"):
             raise RuntimeError(
                 "Response object does have `request` attribute. "
