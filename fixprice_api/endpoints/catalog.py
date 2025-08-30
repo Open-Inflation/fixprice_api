@@ -36,7 +36,7 @@ class ClassCatalog:
             category_alias: str,
             subcategory_alias: Optional[str] = None,
             page: int = 1,
-            limit: int = 20,
+            limit: int = 24,
             sort: abstraction.CatalogSort | str = abstraction.CatalogSort.POPULARITY
         ) -> hrequests.Response:
         """Возвращает количество и список товаров в категории/подкатегории."""

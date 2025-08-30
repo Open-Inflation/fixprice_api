@@ -127,7 +127,7 @@ class FixPriceAPI:
         real_route: str | None = None,
         *,
         json_body: Any | None = None,
-        retry: int = 3,
+        retry: int = 5,
     ) -> hrequests.Response:
         """Выполнить HTTP-запрос с возможностью повторов.
         
@@ -180,6 +180,12 @@ class FixPriceAPI:
             self.session.headers.update({ # токен пойдёт в каждый запрос
                 "X-Client-Route": real_route
             })
+        
+        option_resp = self.session.request("OPTIONS", url, json=json_body, timeout=self.timeout, proxy=self.proxy)
+        time.sleep(0.3)
+        print(f"Requesting {method.upper()} {url} ...")
+        print(f"With JSON body: {json_body}") if json_body else None
+        print(self.session.headers)
 
         # Единая точка входа в чужую библиотеку для удобства
         resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy)
@@ -224,6 +230,8 @@ class FixPriceAPI:
             self.session.headers.update({ # токен пойдёт в каждый запрос
                 "X-Key": tok
             })
+        else:
+            print("No token acquired.")
 
         fin_resp.request = Request(
             method=method.upper(),
