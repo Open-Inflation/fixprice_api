@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "chizhik_api"
+name = "fixprice_api"
 dynamic = ["version"]
 description = "A Python API client for Chizhik catalog"
 readme = "README.md"
@@ -12,7 +12,7 @@ license = "MIT"
 authors = [
     { name = "Miskler" }
 ]
-keywords = ["api", "chizhik", "store", "catalog"]
+keywords = ["api", "fixprice", "store", "catalog"]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
@@ -41,12 +41,12 @@ tests = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/Open-Inflation/chizhik_api"
-Repository = "https://github.com/Open-Inflation/chizhik_api"
-Documentation = "https://open-inflation.github.io/chizhik_api/quick_start"
+Homepage = "https://github.com/Open-Inflation/fixprice_api"
+Repository = "https://github.com/Open-Inflation/fixprice_api"
+Documentation = "https://open-inflation.github.io/fixprice_api/quick_start"
 
 [tool.setuptools.dynamic]
-version = { attr = "chizhik_api.__version__" }
+version = { attr = "fixprice_api.__version__" }
 
 [tool.pytest.ini_options]
 pythonpath = ["."]
