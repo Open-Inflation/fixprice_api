@@ -1,32 +1,189 @@
 {
   "$schema": "http://json-schema.org/schema#",
-  "type": "object",
-  "properties": {
-    "name": {
-      "type": "string"
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "sku": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "isFresh": {
+        "type": "boolean"
+      },
+      "isNew": {
+        "type": "boolean"
+      },
+      "isPromo": {
+        "type": "boolean"
+      },
+      "adult": {
+        "type": "boolean"
+      },
+      "isSeason": {
+        "type": "boolean"
+      },
+      "isHit": {
+        "type": "boolean"
+      },
+      "isQRMark": {
+        "type": "boolean"
+      },
+      "forbidden": {
+        "type": "boolean"
+      },
+      "active": {
+        "type": "boolean"
+      },
+      "image": {
+        "type": "integer"
+      },
+      "images": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "title": {
+              "type": "null"
+            },
+            "src": {
+              "type": "string",
+              "format": "uri"
+            }
+          },
+          "required": [
+            "id",
+            "src",
+            "title"
+          ]
+        }
+      },
+      "unit": {
+        "type": "null"
+      },
+      "specialPrice": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "price": {
+                "type": "string"
+              },
+              "active_to": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "active_to",
+              "price"
+            ]
+          }
+        ]
+      },
+      "price": {
+        "type": "string"
+      },
+      "unitPrice": {
+        "type": "string"
+      },
+      "minPrice": {
+        "type": "string"
+      },
+      "maxPrice": {
+        "type": "string"
+      },
+      "variantCount": {
+        "type": "integer"
+      },
+      "variantId": {
+        "type": "null"
+      },
+      "url": {
+        "type": "string"
+      },
+      "inStock": {
+        "type": "integer"
+      },
+      "brand": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "title"
+            ]
+          }
+        ]
+      },
+      "category": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "parentCategory": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "parentCategory",
+          "title"
+        ]
+      }
     },
-    "message": {
-      "type": "string"
-    },
-    "code": {
-      "type": "integer"
-    },
-    "type": {
-      "type": "string"
-    },
-    "status": {
-      "type": "integer"
-    },
-    "comment": {
-      "type": "string"
-    }
-  },
-  "required": [
-    "code",
-    "comment",
-    "message",
-    "name",
-    "status",
-    "type"
-  ]
+    "required": [
+      "active",
+      "adult",
+      "brand",
+      "category",
+      "forbidden",
+      "id",
+      "image",
+      "images",
+      "inStock",
+      "isFresh",
+      "isHit",
+      "isNew",
+      "isPromo",
+      "isQRMark",
+      "isSeason",
+      "maxPrice",
+      "minPrice",
+      "price",
+      "sku",
+      "specialPrice",
+      "title",
+      "unit",
+      "unitPrice",
+      "url",
+      "variantCount",
+      "variantId"
+    ]
+  }
 }
