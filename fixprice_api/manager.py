@@ -140,11 +140,6 @@ class FixPriceAPI:
             json_body: Тело запроса в формате JSON (опционально)
         """
 
-        print(url)
-        print(method)
-        print(json_body)
-        print(self.session.headers)
-
         if real_route:
             self.session.headers.update({ # токен пойдёт в каждый запрос
                 "X-Client-Route": real_route

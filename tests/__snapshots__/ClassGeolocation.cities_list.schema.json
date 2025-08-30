@@ -26,8 +26,7 @@
         "type": "null"
       },
       "fiasid": {
-        "type": "string",
-        "format": "uuid"
+        "type": "string"
       },
       "fias": {
         "type": "string",
