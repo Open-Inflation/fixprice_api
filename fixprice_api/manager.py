@@ -139,14 +139,40 @@ class FixPriceAPI:
                 "Response object does have `request` attribute. "
                 "This may indicate an update in `hrequests` library."
             )
+        elif isinstance(resp, hrequests.ProcessResponse):
+            raise RuntimeError(
+                "Response object is still a `ProcessResponse`. "
+                "This may indicate that the request was not completed. "
+                "Check if the proxy or network settings are correct."
+            )
         
-        if isinstance(resp, hrequests.Response):
-            if self.city_id == None and resp.headers.get("x-city"): self.city_id = resp.headers["x-city"]
-            if self.language == None and resp.headers.get("x-language"): self.language = resp.headers["x-language"]
 
-        resp.request = Request(
+        ctype = resp.headers.get("content-type", "")
+        if "text/html" in ctype:
+            # исполним скрипт в браузерном контексте; куки запишутся в сессию
+            with resp.render(headless=self.headless, browser=self.browser) as rend:
+                rend.awaitSelector(selector="pre", timeout=self.timeout)
+
+                jsn = json.loads(rend.find("pre").text)
+
+                fin_resp = hrequests.Response(
+                    url=resp.url,
+                    status_code=resp.status_code,
+                    headers=resp.headers,
+                    cookies=hrequests.cookies.cookiejar_from_dict(
+                        self.session.cookies.get_dict()
+                    ),
+                    raw=json.dumps(jsn, ensure_ascii=True).encode("utf-8"),
+                )
+        else:
+            fin_resp = resp
+
+        if self.city_id == None and fin_resp.headers.get("x-city"): self.city_id = fin_resp.headers["x-city"]
+        if self.language == None and fin_resp.headers.get("x-language"): self.language = fin_resp.headers["x-language"]
+
+        fin_resp.request = Request(
             method=method.upper(),
             url=url,
             json=json_body,
         )
-        return resp
+        return fin_resp

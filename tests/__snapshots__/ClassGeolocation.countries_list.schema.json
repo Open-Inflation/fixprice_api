@@ -1,0 +1,97 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "title": {
+        "type": "string"
+      },
+      "alias": {
+        "type": "string"
+      },
+      "language": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "alias": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "alias"
+            ]
+          }
+        ]
+      },
+      "city": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              },
+              "latitude": {
+                "type": "number"
+              },
+              "longitude": {
+                "type": "number"
+              },
+              "prefix": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "latitude",
+              "longitude",
+              "prefix",
+              "title"
+            ]
+          }
+        ]
+      },
+      "currency": {
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string"
+          },
+          "symbol": {
+            "type": "string"
+          },
+          "symbolFirst": {
+            "type": "boolean"
+          }
+        },
+        "required": [
+          "symbol",
+          "symbolFirst",
+          "title"
+        ]
+      }
+    },
+    "required": [
+      "alias",
+      "city",
+      "currency",
+      "id",
+      "language",
+      "title"
+    ]
+  }
+}

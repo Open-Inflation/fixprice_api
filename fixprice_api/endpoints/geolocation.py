@@ -18,8 +18,10 @@ class ClassGeolocation:
         self._parent: "FixPriceAPI" = parent
         self.CATALOG_URL: str = CATALOG_URL
 
+        self.Shop: ShopService = ShopService(self._parent, self.CATALOG_URL)
+        """Работа с магазинами."""
 
-    def country_list(self, alias: str = None) -> hrequests.Response:
+    def countries_list(self, alias: str = None) -> hrequests.Response:
         """Возвращает список всех стран, их id и название. `alias` - работает как сортировка."""
         url = f"{self.CATALOG_URL}/v1/location/country"
         if alias:
@@ -29,14 +31,14 @@ class ClassGeolocation:
 
         return self._parent._request("GET", url=url)
 
-    def region_list(self, country_id: int = None) -> hrequests.Response:
+    def regions_list(self, country_id: int = None) -> hrequests.Response:
         """Возвращает список всех регионов, их id и название. Если фильтр не применен - выдача всех регионов независимо от страны."""
         url = f"{self.CATALOG_URL}/v1/location/region"
         if not country_id: url += f"?countryId={country_id}"
 
         return self._parent._request("GET", url=url)
     
-    def city_list(self, country_id: int) -> hrequests.Response:
+    def cities_list(self, country_id: int) -> hrequests.Response:
         """Возвращает список всех городов, их id и название, геопозицию, регион и тип населенного пункта. По умолчанию - по РФ."""
         url = f"{self.CATALOG_URL}/v1/location/city"
         if country_id: url += f"?countryId={country_id}"
