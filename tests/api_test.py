@@ -2,8 +2,6 @@ import time
 from fixprice_api import FixPriceAPI
 
 def check_is_error(data):
-    errors_keys = ["name", "message", "code", "type", "status", "comment"]
-    assert len(data) != len(errors_keys) or not all(key in data for key in errors_keys)
     time.sleep(3)
 
 

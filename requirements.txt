@@ -1,2 +1,4 @@
 hrequests[all]
 requests
+pytest
+pytest-jsonschema-snapshot

@@ -4,7 +4,7 @@ import os
 from dataclasses import dataclass, field
 import json
 from requests import Request
-import urllib
+import time
 
 from .endpoints.catalog import ClassCatalog
 from .endpoints.geolocation import ClassGeolocation
@@ -121,6 +121,42 @@ class FixPriceAPI:
             page.awaitSelector('div#__nuxt', timeout=self.timeout)
 
     def _request(
+        self,
+        method: str,
+        url: str,
+        real_route: str | None = None,
+        *,
+        json_body: Any | None = None,
+        retry: int = 3,
+    ) -> hrequests.Response:
+        """Выполнить HTTP-запрос с возможностью повторов.
+        
+        Args:
+            method: HTTP метод (GET, POST, PUT, DELETE и т.д.)
+            url: URL для запроса
+            real_route: "реальный" маршрут. Отражает путь на морде сайта.
+            json_body: Тело запроса в формате JSON (опционально)
+            retry: Количество попыток при ошибке сети или таймауте (по умолчанию 3)
+        """
+        def check_is_error(data) -> bool:
+            errors_keys = ["name", "message", "code", "type", "status", "comment"]
+            return len(data) != len(errors_keys) or not all(key in data for key in errors_keys)
+
+        for attempt in range(retry):
+            resp = self._fetch(
+                method=method,
+                url=url,
+                real_route=real_route,
+                json_body=json_body,
+            )
+            if check_is_error(resp.json()):
+                return resp
+            else:
+                time.sleep(5)
+        else:
+            raise RuntimeError(f"Failed to complete request after {retry} attempts")
+        
+    def _fetch(
         self,
         method: str,
         url: str,
