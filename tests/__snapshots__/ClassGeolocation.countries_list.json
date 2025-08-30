@@ -1,0 +1,166 @@
+[
+  {
+    "id": 7,
+    "title": "Латвия",
+    "alias": "LV",
+    "language": {
+      "alias": "lv"
+    },
+    "city": {
+      "id": 685,
+      "title": "Рига",
+      "latitude": 56.946845,
+      "longitude": 24.106075,
+      "prefix": "г"
+    },
+    "currency": {
+      "title": "Евро",
+      "symbol": "€",
+      "symbolFirst": true
+    }
+  },
+  {
+    "id": 2,
+    "title": "Россия",
+    "alias": "RU",
+    "language": {
+      "alias": "ru"
+    },
+    "city": {
+      "id": 3,
+      "title": "Москва",
+      "latitude": 55.755819,
+      "longitude": 37.617644,
+      "prefix": "г"
+    },
+    "currency": {
+      "title": "Рубль",
+      "symbol": "₽",
+      "symbolFirst": false
+    }
+  },
+  {
+    "id": 4,
+    "title": "Грузия",
+    "alias": "GE",
+    "language": null,
+    "city": {
+      "id": 372,
+      "title": "Тбилиси",
+      "latitude": 41.693083,
+      "longitude": 44.801561,
+      "prefix": "г"
+    },
+    "currency": {
+      "title": "Грузинский лари",
+      "symbol": "₾",
+      "symbolFirst": false
+    }
+  },
+  {
+    "id": 5,
+    "title": "Киргизия",
+    "alias": "KG",
+    "language": null,
+    "city": {
+      "id": 1289,
+      "title": "Бишкек",
+      "latitude": 42.818885,
+      "longitude": 74.619251,
+      "prefix": "г"
+    },
+    "currency": {
+      "title": "Киргизский сом",
+      "symbol": "с",
+      "symbolFirst": false
+    }
+  },
+  {
+    "id": 6,
+    "title": "Узбекистан",
+    "alias": "UZ",
+    "language": null,
+    "city": {
+      "id": 5,
+      "title": "Ташкент",
+      "latitude": 41.311158,
+      "longitude": 69.279737,
+      "prefix": "г"
+    },
+    "currency": {
+      "title": "Узбекский сум",
+      "symbol": "So'm",
+      "symbolFirst": false
+    }
+  },
+  {
+    "id": 8,
+    "title": "Беларусь",
+    "alias": "BY",
+    "language": null,
+    "city": {
+      "id": 14,
+      "title": "Минск",
+      "latitude": 53.902284,
+      "longitude": 27.561831,
+      "prefix": "г"
+    },
+    "currency": {
+      "title": "Белорусский рубль",
+      "symbol": "руб",
+      "symbolFirst": false
+    }
+  },
+  {
+    "id": 9,
+    "title": "Монголия",
+    "alias": "MN",
+    "language": null,
+    "city": null,
+    "currency": {
+      "title": "Тугрик",
+      "symbol": "₮",
+      "symbolFirst": false
+    }
+  },
+  {
+    "id": 10,
+    "title": "Объединенные Арабские Эмираты",
+    "alias": "AE",
+    "language": {
+      "alias": "en-AE"
+    },
+    "city": {
+      "id": 3756,
+      "title": "Dubai",
+      "latitude": 25.229762,
+      "longitude": 55.289311,
+      "prefix": "city"
+    },
+    "currency": {
+      "title": "Дирхам",
+      "symbol": "AED",
+      "symbolFirst": false
+    }
+  },
+  {
+    "id": 3,
+    "title": "Казахстан",
+    "alias": "KZ",
+    "language": {
+      "alias": "ru"
+    },
+    "city": {
+      "id": 1725,
+      "title": "Астана",
+      "latitude": 51.128207,
+      "longitude": 71.43042,
+      "prefix": "г"
+    },
+    "currency": {
+      "title": "Тенге",
+      "symbol": "₸",
+      "symbolFirst": false
+    }
+  }
+]

@@ -25,11 +25,11 @@ class FixPriceAPI:
 
     timeout: float          = 15.0
     browser: str            = "firefox"
-    headless: bool          = True
+    headless: bool          = False
     proxy: str | None       = field(default_factory=_pick_https_proxy)
     browser_opts: dict[str, Any] = field(default_factory=dict)
 
-    MAIN_SITE_URL: str    = "https://fix-price.com/"
+    MAIN_SITE_URL: str    = "https://fix-price.com/catalog"
     CATALOG_URL: str = "https://api.fix-price.com/buyer"
 
     # будет создана в __post_init__
@@ -40,6 +40,7 @@ class FixPriceAPI:
         self.session: hrequests.Session = hrequests.Session(
             self.browser,
             timeout=self.timeout,
+            verify=False,
         )
 
         self.Geolocation: ClassGeolocation = ClassGeolocation(self, self.CATALOG_URL)
@@ -52,6 +53,7 @@ class FixPriceAPI:
         """Общие методы (например, для формы обратной связи)."""
 
     def __enter__(self):
+        self._warmup()
         return self
 
     def __exit__(self, *exc):
@@ -112,13 +114,14 @@ class FixPriceAPI:
             proxy=self.proxy,
             **self.browser_opts,
         ) as page:
-            page.goto(MAIN_SITE_URL)
-            page.awaitSelector("html[data-lt-installed='true']", timeout=self.timeout)
+            page.goto(self.MAIN_SITE_URL)
+            page.awaitSelector('div#__nuxt', timeout=self.timeout)
 
     def _request(
         self,
         method: str,
         url: str,
+        real_route: str | None = None,
         *,
         json_body: Any | None = None,
     ) -> hrequests.Response:
@@ -130,10 +133,17 @@ class FixPriceAPI:
         Args:
             method: HTTP метод (GET, POST, PUT, DELETE и т.д.)
             url: URL для запроса
+            real_route: "реальный" маршрут. Отражает путь на морде сайта.
             json_body: Тело запроса в формате JSON (опционально)
         """
+
+        print(url)
+        print(method)
+        print(json_body)
+        print(self.session.headers)
+
         # Единая точка входа в чужую библиотеку для удобства
-        resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy)
+        resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy, verify=False)
         if hasattr(resp, "request"):
             raise RuntimeError(
                 "Response object does have `request` attribute. "
@@ -169,6 +179,12 @@ class FixPriceAPI:
 
         if self.city_id == None and fin_resp.headers.get("x-city"): self.city_id = fin_resp.headers["x-city"]
         if self.language == None and fin_resp.headers.get("x-language"): self.language = fin_resp.headers["x-language"]
+        tok = self.session.cookies.get(name="token", domain="fix-price.com")
+        if tok:
+            print("Token acquired:", tok)
+            self.session.headers.update({ # токен пойдёт в каждый запрос
+                "X-Key": tok
+            })
 
         fin_resp.request = Request(
             method=method.upper(),

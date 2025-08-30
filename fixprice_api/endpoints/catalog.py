@@ -37,7 +37,7 @@ class ClassCatalog:
             subcategory_alias: Optional[str] = None,
             page: int = 1,
             limit: int = 20,
-            sort: abstraction.CatalogSort = abstraction.CatalogSort.POPULARITY
+            sort: abstraction.CatalogSort | str = abstraction.CatalogSort.POPULARITY
         ) -> hrequests.Response:
         """Возвращает количество и список товаров в категории/подкатегории."""
         if page < 1: raise ValueError("`page` must be greater than 0")
@@ -46,8 +46,20 @@ class ClassCatalog:
         url = f"{self.CATALOG_URL}/v1/product/in/{category_alias}"
         if subcategory_alias: url += f"/{subcategory_alias}"
         url += f"?page={page}&limit={limit}&sort={sort}"
-        
-        return self._parent._request("POST", url=url)
+
+        json_body = {
+            "category": category_alias,
+            "brand": [],
+            "price": [],
+            "isDividedPrice": False,
+            "isNew": False,
+            "isHit": False,
+            "isSpecialPrice": False
+        }
+        if subcategory_alias:
+            json_body["category"] += f"/{subcategory_alias}"
+
+        return self._parent._request("POST", url=url, json_body=json_body)
 
 
 class ProductService:
