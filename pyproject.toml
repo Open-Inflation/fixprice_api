@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fixprice_api"
 dynamic = ["version"]
-description = "A Python API client for Chizhik catalog"
+description = "A Python API client for FixPrice catalog"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"

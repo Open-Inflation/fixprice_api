@@ -1,7 +1,7 @@
 """Работа с каталогом"""
 
 from typing import Optional, TYPE_CHECKING
-import ..abstraction
+from .. import abstraction
 import hrequests
 
 if TYPE_CHECKING:

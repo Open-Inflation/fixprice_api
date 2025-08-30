@@ -54,7 +54,7 @@ class FixPriceAPI:
     def __enter__(self):
         return self
 
-    async def __exit__(self, *exc):
+    def __exit__(self, *exc):
         pass
     
 
@@ -133,15 +133,16 @@ class FixPriceAPI:
             json_body: Тело запроса в формате JSON (опционально)
         """
         # Единая точка входа в чужую библиотеку для удобства
-        resp: hrequests.Response = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy)
+        resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy)
         if hasattr(resp, "request"):
             raise RuntimeError(
                 "Response object does have `request` attribute. "
                 "This may indicate an update in `hrequests` library."
             )
         
-        if self.city_id == None and resp data["city"]: self.city_id = data["city"]
-        if self.language == None and data["language"]: self.language = data["language"]
+        if isinstance(resp, hrequests.Response):
+            if self.city_id == None and resp.headers.get("x-city"): self.city_id = resp.headers["x-city"]
+            if self.language == None and resp.headers.get("x-language"): self.language = resp.headers["x-language"]
 
         resp.request = Request(
             method=method.upper(),

@@ -1,0 +1,61 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "id": {
+        "type": "integer"
+      },
+      "alias": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      },
+      "src": {
+        "type": "string",
+        "format": "uri"
+      },
+      "isFavorite": {
+        "type": "boolean"
+      },
+      "url": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "stm": {
+        "type": "boolean"
+      },
+      "login": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "updatedAt": {
+        "type": [
+          "null",
+          "string"
+        ]
+      },
+      "isEmpty": {
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "alias",
+      "id",
+      "isEmpty",
+      "isFavorite",
+      "login",
+      "src",
+      "stm",
+      "title",
+      "updatedAt",
+      "url"
+    ]
+  }
+}

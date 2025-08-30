@@ -18,6 +18,6 @@ class ClassAdvertising:
         self.CATALOG_URL: str = CATALOG_URL
 
 
-    def home_brands_list(self) -> dict:
+    def home_brands_list(self) -> hrequests.Response:
         """Возвращает список брендов логотипы которых должны отображаться на главной. Является рекламой."""
         return self._parent._request("GET", f"{self.CATALOG_URL}/v1/home/brand")
