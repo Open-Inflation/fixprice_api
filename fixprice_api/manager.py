@@ -99,6 +99,11 @@ class FixPriceAPI:
                 "x-language": value
             })
 
+    @property
+    def token(self) -> str | None:
+        """Токен доступа для API запросов. READ-ONLY."""
+        return self.session.headers.get("X-Key", None)
+
     # Прогрев сессии (headless ➜ cookie `session` ➜ accessToken)
     def _warmup(self) -> None:
         """Прогрев сессии через браузер для получения токена доступа.
@@ -129,43 +134,7 @@ class FixPriceAPI:
         url: str,
         real_route: str | None = None,
         *,
-        json_body: Any | None = None,
-        retry: int = 5,
-    ) -> hrequests.Response:
-        """Выполнить HTTP-запрос с возможностью повторов.
-        
-        Args:
-            method: HTTP метод (GET, POST, PUT, DELETE и т.д.)
-            url: URL для запроса
-            real_route: "реальный" маршрут. Отражает путь на морде сайта.
-            json_body: Тело запроса в формате JSON (опционально)
-            retry: Количество попыток при ошибке сети или таймауте (по умолчанию 3)
-        """
-        def check_is_error(data) -> bool:
-            errors_keys = ["name", "message", "code", "type", "status", "comment"]
-            return len(data) != len(errors_keys) or not all(key in data for key in errors_keys)
-
-        for attempt in range(retry):
-            resp = self._fetch(
-                method=method,
-                url=url,
-                real_route=real_route,
-                json_body=json_body,
-            )
-            if resp.headers["Content-Type"].startswith("image/") or check_is_error(resp.json()):
-                return resp
-            else:
-                time.sleep(5)
-        else:
-            raise RuntimeError(f"Failed to complete request after {retry} attempts")
-        
-    def _fetch(
-        self,
-        method: str,
-        url: str,
-        real_route: str | None = None,
-        *,
-        json_body: Any | None = None,
+        json_body: Any | None = None
     ) -> hrequests.Response:
         """Выполнить HTTP-запрос через внутреннюю сессию.
         
@@ -223,10 +192,16 @@ class FixPriceAPI:
         if self.language == None and fin_resp.headers.get("x-language"): self.language = fin_resp.headers["x-language"]
         tok = self.session.cookies.get(name="token")
         if tok:
-            print("Token acquired:", tok)
             self.session.headers.update({ # токен пойдёт в каждый запрос
                 "X-Key": tok
             })
+
+        def _is_error(data) -> bool:
+            errors_keys = ["name", "message", "code", "type", "status", "comment"]
+            return len(data) == len(errors_keys) and all(key in data for key in errors_keys)
+        
+        if not resp.headers["Content-Type"].startswith("image/") and _is_error(fin_resp.json()):
+            raise RuntimeError(f"API Error: {fin_resp.json()}")
 
         fin_resp.request = Request(
             method=method.upper(),
