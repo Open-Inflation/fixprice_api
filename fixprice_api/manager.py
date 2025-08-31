@@ -23,8 +23,8 @@ def _pick_https_proxy() -> str | None:
 class FixPriceAPI:
     """Клиент FixPrice."""
 
-    timeout: float          = 15.0
-    browser: str            = "firefox"
+    timeout: float          = 30.0
+    browser: str            = "chrome"
     headless: bool          = True
     proxy: str | None       = field(default_factory=_pick_https_proxy)
     browser_opts: dict[str, Any] = field(default_factory=dict)
@@ -52,7 +52,7 @@ class FixPriceAPI:
         """Общие методы (например, для формы обратной связи)."""
 
     def __enter__(self):
-        self._warmup()
+        #self._warmup()
         return self
 
     def __exit__(self, *exc):
@@ -103,6 +103,9 @@ class FixPriceAPI:
     def _warmup(self) -> None:
         """Прогрев сессии через браузер для получения токена доступа.
         
+        [BUG] - не работает в конфигурации chrome+headless=true
+        Из-за чего временно исключен.
+
         Открывает главную страницу сайта в headless браузере, получает cookie сессии
         и извлекает из неё access token для последующих API запросов.
         """
@@ -149,7 +152,7 @@ class FixPriceAPI:
                 real_route=real_route,
                 json_body=json_body,
             )
-            if check_is_error(resp.json()):
+            if resp.headers["Content-Type"].startswith("image/") or check_is_error(resp.json()):
                 return resp
             else:
                 time.sleep(5)
@@ -180,12 +183,6 @@ class FixPriceAPI:
             self.session.headers.update({ # токен пойдёт в каждый запрос
                 "X-Client-Route": real_route
             })
-        
-        option_resp = self.session.request("OPTIONS", url, json=json_body, timeout=self.timeout, proxy=self.proxy)
-        time.sleep(0.3)
-        print(f"Requesting {method.upper()} {url} ...")
-        print(f"With JSON body: {json_body}") if json_body else None
-        print(self.session.headers)
 
         # Единая точка входа в чужую библиотеку для удобства
         resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy)
@@ -224,14 +221,12 @@ class FixPriceAPI:
 
         if self.city_id == None and fin_resp.headers.get("x-city"): self.city_id = fin_resp.headers["x-city"]
         if self.language == None and fin_resp.headers.get("x-language"): self.language = fin_resp.headers["x-language"]
-        tok = self.session.cookies.get(name="token", domain="fix-price.com")
+        tok = self.session.cookies.get(name="token")
         if tok:
             print("Token acquired:", tok)
             self.session.headers.update({ # токен пойдёт в каждый запрос
                 "X-Key": tok
             })
-        else:
-            print("No token acquired.")
 
         fin_resp.request = Request(
             method=method.upper(),

@@ -24,8 +24,7 @@
       "type": "string"
     },
     "fias": {
-      "type": "string",
-      "format": "uuid"
+      "type": "string"
     },
     "addressId": {
       "type": "string"
