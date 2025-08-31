@@ -35,6 +35,15 @@ class FixPriceAPI:
     # будет создана в __post_init__
     session: hrequests.Session = field(init=False, repr=False)
 
+    Geolocation: ClassGeolocation = field(init=False, repr=False)
+    """Клиент геолокации."""
+    Catalog:     ClassCatalog     = field(init=False, repr=False)
+    """Клиент каталога."""
+    Advertising: ClassAdvertising = field(init=False, repr=False)
+    """Клиент рекламы."""
+    General:     ClassGeneral     = field(init=False, repr=False)
+    """Клиент общих методов."""
+
     # ───── lifecycle ─────
     def __post_init__(self) -> None:
         self.session: hrequests.Session = hrequests.Session(
@@ -42,14 +51,10 @@ class FixPriceAPI:
             timeout=self.timeout,
         )
 
-        self.Geolocation: ClassGeolocation = ClassGeolocation(self, self.CATALOG_URL)
-        """Клиент геолокации."""
-        self.Catalog:     ClassCatalog     = ClassCatalog(self, self.CATALOG_URL)
-        """Методы каталога."""
-        self.Advertising: ClassAdvertising = ClassAdvertising(self, self.CATALOG_URL)
-        """Методы рекламы."""
-        self.General:     ClassGeneral     = ClassGeneral(self, self.CATALOG_URL)
-        """Общие методы (например, для формы обратной связи)."""
+        self.Geolocation = ClassGeolocation(self, self.CATALOG_URL)
+        self.Catalog = ClassCatalog(self, self.CATALOG_URL)
+        self.Advertising = ClassAdvertising(self, self.CATALOG_URL)
+        self.General = ClassGeneral(self, self.CATALOG_URL)
 
     def __enter__(self):
         #self._warmup()

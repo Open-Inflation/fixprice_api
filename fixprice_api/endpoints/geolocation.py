@@ -18,7 +18,9 @@ class ClassGeolocation:
         self._parent: "FixPriceAPI" = parent
         self.CATALOG_URL: str = CATALOG_URL
 
-        self.Shop: ShopService = ShopService(self._parent, self.CATALOG_URL)
+        self.Shop: ShopService = ShopService(
+            self._parent, self.CATALOG_URL
+        )
         """Работа с магазинами."""
 
     def countries_list(self, alias: str = None) -> hrequests.Response:

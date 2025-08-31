@@ -13,19 +13,16 @@ class ClassCatalog:
 
     Включает поиск товаров, получение информации о категориях,
     работу с фидами товаров и отзывами.
-
-    Attributes
-    ----------
-    Product : ProductService
-        Сервис для работы с товарами в каталоге.
     """
 
     def __init__(self, parent: "FixPriceAPI", CATALOG_URL: str):
         self._parent: "FixPriceAPI" = parent
         self.CATALOG_URL: str = CATALOG_URL
+        
         self.Product: ProductService = ProductService(
             parent=self._parent, CATALOG_URL=CATALOG_URL
         )
+        """Сервис для работы с товарами в каталоге."""
 
     def tree(self) -> hrequests.Response:
         """Возвращает список категорий."""
