@@ -1,8 +1,8 @@
 [
   {
-    "id": 5710265,
-    "sku": "5710265",
-    "title": "Бумага \"Classic\", SvetoCopy, А4, 500 листов",
+    "id": 5314178,
+    "sku": "5314178",
+    "title": "Декорация на телескопических ногах, Снежное кружево, в ассортименте",
     "isFresh": false,
     "isNew": false,
     "isPromo": false,
@@ -12,270 +12,1066 @@
     "isQRMark": false,
     "forbidden": false,
     "active": true,
-    "image": 2450966,
+    "image": 2461598,
     "images": [
       {
-        "id": 2450966,
+        "id": 2461598,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/85/8553b4e288ea93bb6dbe212ec8916a12.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/bf/bfa4d4a12e5e52216508375b5cb84b0a.jpg"
       },
       {
-        "id": 2450967,
+        "id": 2461599,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/62/6235999f66ce4210888c92bc4efa7c1b.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e7/e7b0c009daa8d35b506f0bfcbf82740e.jpg"
+      },
+      {
+        "id": 2461600,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/cd/cd156743215536f57c375050b959a59a.jpg"
+      },
+      {
+        "id": 2461601,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5d/5dc249209afce22fde8b8ab1112a853b.jpg"
+      },
+      {
+        "id": 2461602,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/54/547efa19a1e9db08fb4fc350fe49de18.jpeg"
+      },
+      {
+        "id": 2461603,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3f/3fee437000b0060d037b2a00a3fb6250.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "499.00",
+    "unitPrice": "",
+    "minPrice": "499.00",
+    "maxPrice": "499.00",
+    "variantCount": 4,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5314178-dekoratsiya-na-teleskopicheskih-nogah-snejnoe-krujevo-v-assortimente",
+    "inStock": 44,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5330046,
+    "sku": "5330046",
+    "title": "Свеча бенгальская \"Новогодняя\", ТСЗ, 170 мм, 6 шт.",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2403895,
+    "images": [
+      {
+        "id": 2403895,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f1/f14f7104a3211da67c7f3003eb8ac5fc.jpg"
+      },
+      {
+        "id": 2403896,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d3/d303e70eb248eeb5b4420d83abb1a6e5.jpg"
+      },
+      {
+        "id": 2403897,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a2/a2fc5c4cc95356ecb1da92644117b860.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "55.00",
+    "unitPrice": "",
+    "minPrice": "55.00",
+    "maxPrice": "55.00",
+    "variantCount": 1,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5330046-svecha-bengalskaya-novogodnyaya-tsz-170-mm-6-sht",
+    "inStock": 27,
+    "brand": null,
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5330047,
+    "sku": "5330047",
+    "title": "Свеча бенгальская, 160 мм, 6 цветов",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2464042,
+    "images": [
+      {
+        "id": 2464042,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/9e/9ee8260a2680688ce6a99ebe56723702.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "87.00",
+    "unitPrice": "",
+    "minPrice": "87.00",
+    "maxPrice": "87.00",
+    "variantCount": 1,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5330047-svecha-bengalskaya-160-mm-6-tsvetov",
+    "inStock": 16,
+    "brand": null,
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312147,
+    "sku": "5312147",
+    "title": "Декорация новогодняя \"Снежинки\", Снежное кружево, 14 шт., в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2462209,
+    "images": [
+      {
+        "id": 2462209,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/bf/bfdd63fa8e5782426dee1de9f1493bf3.jpg"
+      },
+      {
+        "id": 2462210,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/4b/4b98d09b4e7f038e8a13df2de7d1d50b.jpg"
+      },
+      {
+        "id": 2462211,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/41/41311fbfef39dfe01c7c58ec879c3121.jpg"
+      },
+      {
+        "id": 2462212,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/59/5947baa6f38b6a90f4a17c09d43ef2b4.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "59.00",
+    "unitPrice": "",
+    "minPrice": "59.00",
+    "maxPrice": "59.00",
+    "variantCount": 7,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312147-dekoratsiya-novogodnyaya-snejinki-snejnoe-krujevo-14-sht-v-assortimente",
+    "inStock": 44,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312376,
+    "sku": "5312376",
+    "title": "Новогодняя декорация \"Бант\", Снежное кружево, 12 шт., в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2461547,
+    "images": [
+      {
+        "id": 2461547,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/dd/dd7803ce3eaa5863afb024ef15d477b8.jpg"
+      },
+      {
+        "id": 2461548,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f0/f079557d4e9e3660398a60afae342be6.jpg"
+      },
+      {
+        "id": 2461549,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/87/87caf52b70841db880c65897ac95a702.jpg"
+      },
+      {
+        "id": 2461550,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/93/933fc4c609f1c8afb363a4edb882974e.jpg"
+      },
+      {
+        "id": 2461551,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e7/e75780dd932f99d6e8c046c12bf580a2.jpg"
+      },
+      {
+        "id": 2461552,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ed/edad52d244fd055937163bf35c405ceb.jpg"
+      },
+      {
+        "id": 2461553,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a8/a8a6a7fbf55e2ede517128f87952598e.jpg"
+      },
+      {
+        "id": 2461554,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d3/d35baec2ac8f40c4b58c7a389349367b.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "59.00",
+    "unitPrice": "",
+    "minPrice": "59.00",
+    "maxPrice": "59.00",
+    "variantCount": 7,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312376-novogodnyaya-dekoratsiya-bant-snejnoe-krujevo-12-sht-v-assortimente",
+    "inStock": 73,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5244820,
+    "sku": "5244820",
+    "title": "Светодиодный камин-светильник с эффектом живого огня",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2471285,
+    "images": [
+      {
+        "id": 2471285,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/6f/6fcec22ecdd863958003c25dcdb0840e.png"
+      },
+      {
+        "id": 2471286,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d1/d1fc480f97f389b31d11b03c10d41aab.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "449.00",
+    "unitPrice": "",
+    "minPrice": "449.00",
+    "maxPrice": "449.00",
+    "variantCount": 1,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5244820-svetodiodnyy-kamin-svetilnik-s-effektom-jivogo-ognya",
+    "inStock": 29,
+    "brand": null,
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 1901075,
+    "sku": "1901075",
+    "title": "Шоколадная бомбочка с маршмеллоу, Happy boom, 28 г, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2469089,
+    "images": [
+      {
+        "id": 2469089,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_3_1500.jpg"
+      },
+      {
+        "id": 2469090,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_8.jpg"
+      },
+      {
+        "id": 2469091,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_2_1.jpg"
+      },
+      {
+        "id": 2469092,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_4_1.jpg"
+      },
+      {
+        "id": 2469093,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_5.jpg"
+      },
+      {
+        "id": 2469094,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_6_1.jpg"
+      },
+      {
+        "id": 2469095,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_7.jpg"
+      },
+      {
+        "id": 2469096,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1901075_9.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "59.00",
+    "unitPrice": "",
+    "minPrice": "59.00",
+    "maxPrice": "59.00",
+    "variantCount": 2,
+    "variantId": null,
+    "url": "produkty-i-napitki/konditerskie-izdeliya/p-1901075-shokoladnaya-bombochka-s-marshmellou-appy-boom-28-g-v-assortimente",
+    "inStock": 44,
+    "brand": {
+      "id": 263529,
+      "title": "Конфитрейд"
+    },
+    "category": {
+      "id": 2020,
+      "title": "Кондитерские изделия",
+      "parentCategory": {
+        "id": 2004,
+        "title": "Продукты и напитки"
+      }
+    }
+  },
+  {
+    "id": 5312977,
+    "sku": "5312977",
+    "title": "Декорация ёлочная \"Лошадка\", Снежное кружево, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2464408,
+    "images": [
+      {
+        "id": 2464408,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e7/e75e9dd507cc18d91d530ec2b919e6b5.jpg"
+      },
+      {
+        "id": 2464409,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3e/3e79ca18f060e7468c6e7b5502b97760.jpg"
+      },
+      {
+        "id": 2464410,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/2d/2d6635292b529bd861ed013d65a6ee44.jpg"
+      },
+      {
+        "id": 2464411,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a7/a70727e9d957acaf1448c9176fe996d5.jpg"
+      },
+      {
+        "id": 2464412,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/71/71147a5bc88561a8f7521993e5cffa1d.jpg"
+      },
+      {
+        "id": 2464413,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/bb/bb6c11fea0ff277ce10acc0b0b5dfbe5.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "69.00",
+    "unitPrice": "",
+    "minPrice": "69.00",
+    "maxPrice": "69.00",
+    "variantCount": 6,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312977-dekoratsiya-lochnaya-loshadka-snejnoe-krujevo-v-assortimente",
+    "inStock": 100,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312595,
+    "sku": "5312595",
+    "title": "Украшение ёлочное \"Сосульки\", Снежное кружево, 6 шт., в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2466058,
+    "images": [
+      {
+        "id": 2466058,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/14/14cf8953c46642f950d963b6e93e48a0.jpg"
+      },
+      {
+        "id": 2466059,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/83/836ce67d8a04e18ed8c59204918f4a98.jpg"
+      },
+      {
+        "id": 2466060,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e0/e070bac18a2e7967702318224ce332f7.jpg"
+      },
+      {
+        "id": 2466061,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a1/a142029c248369848e36b671cc7b0cab.jpg"
+      },
+      {
+        "id": 2466062,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ac/ac03b8e7b29cbc13ba783ec05fe0f5f1.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "79.00",
+    "unitPrice": "",
+    "minPrice": "79.00",
+    "maxPrice": "79.00",
+    "variantCount": 4,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312595-ukrashenie-lochnoe-sosulki-snejnoe-krujevo-6-sht-v-assortimente",
+    "inStock": 29,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312979,
+    "sku": "5312979",
+    "title": "Пазл 3D новогодний, Снежное кружево, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2464359,
+    "images": [
+      {
+        "id": 2464359,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a7/a7043e68705f8228fe2ce9d24cd28389.jpg"
+      },
+      {
+        "id": 2464360,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/2f/2f1a0a134e21fe26756f6756b9fbc624.jpg"
+      },
+      {
+        "id": 2464361,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/86/8673796484cc16423da01e4c86070230.jpg"
+      },
+      {
+        "id": 2464362,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/71/71b3ec3ded552f3a8eb4064e3f414fef.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "83.00",
+    "unitPrice": "",
+    "minPrice": "83.00",
+    "maxPrice": "83.00",
+    "variantCount": 5,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312979-pazl-3-novogodniy-snejnoe-krujevo-v-assortimente",
+    "inStock": 67,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312785,
+    "sku": "5312785",
+    "title": "Декорация новогодняя \"Поезд\", Снежное кружево, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2465026,
+    "images": [
+      {
+        "id": 2465026,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/60/60c440a92c09879053c5e82e1636fc7b.jpg"
+      },
+      {
+        "id": 2465027,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/c4/c40fb05e2ea4a970c272075a2e02912a.jpg"
+      },
+      {
+        "id": 2465028,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/89/897cc25c98e70f8999d1fff0d4fec62f.jpg"
+      },
+      {
+        "id": 2465029,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/51/51ff72ab4933328c97fd9c6e863b2ddc.jpg"
+      },
+      {
+        "id": 2465030,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/10/10020e06d284b7ba44d7a070fd681383.jpg"
       }
     ],
     "unit": null,
     "specialPrice": {
-      "price": "319",
+      "price": "160",
       "active_to": "2999-12-31 23:59:59"
     },
-    "price": "349.00",
+    "price": "199.00",
     "unitPrice": "",
-    "minPrice": "349.00",
-    "maxPrice": "349.00",
-    "variantCount": 2,
+    "minPrice": "199.00",
+    "maxPrice": "199.00",
+    "variantCount": 11,
     "variantId": null,
-    "url": "kantstovary/p-5710265-bumaga-lassic-vetoopy-a4-500-listov",
-    "inStock": 38,
-    "brand": null,
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5714068,
-    "sku": "5714068",
-    "title": "Бумага цветная двусторонняя мелованная, 24 листа, 24 цвета, в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2455207,
-    "images": [
-      {
-        "id": 2455207,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/4d/4da5cb180e3af1b03278b4452c8c3610.jpg"
-      },
-      {
-        "id": 2455208,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/33/331896f42df020e5bf9a1b86894514d5.png"
-      },
-      {
-        "id": 2455209,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d1/d12b880831490a6eb18a01d87215177a.jpg"
-      },
-      {
-        "id": 2455210,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/eb/eb798f51d653eae53261bcc21fca1fc7.jpg"
-      },
-      {
-        "id": 2455211,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/74/74ffbcca5926dfb4219c3f456581c0d1.jpg"
-      },
-      {
-        "id": 2455212,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e1/e11aaa18adb8cc2909a824027ad672fd.jpg"
-      },
-      {
-        "id": 2455213,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/c9/c9f5a1ad2e6e4de561ab86434785e8fc.jpg"
-      },
-      {
-        "id": 2455214,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/c1/c134fa3fb3d8f7c83355db291b868ffc.jpg"
-      },
-      {
-        "id": 2455215,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/c9/c9e7a3b7a4dd3b1e3f7b6f5a76d2c1b4.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "69.00",
-    "unitPrice": "",
-    "minPrice": "69.00",
-    "maxPrice": "69.00",
-    "variantCount": 43,
-    "variantId": null,
-    "url": "kantstovary/p-5714068-bumaga-tsvetnaya-dvustoronnyaya-melovannaya-24-lista-24-tsveta-v-assortimente",
-    "inStock": 220,
-    "brand": null,
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5714046,
-    "sku": "5714046",
-    "title": "Картон цветной, А4, 12 листов, 12 цветов, в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2449272,
-    "images": [
-      {
-        "id": 2449272,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3d/3d2239f308ca583f9bd60884a6b76b32.jpg"
-      },
-      {
-        "id": 2449273,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/6a/6a4ba05159db2f5ee925a6a8c3e20d00.jpg"
-      },
-      {
-        "id": 2449274,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8d/8d682fa77d74d0afeca4bc037084f253.jpg"
-      },
-      {
-        "id": 2449275,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/da/da2331ac00ab99605bd8ab98d6eb2b2c.jpg"
-      },
-      {
-        "id": 2449276,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/70/706b332891c5b9ba6cd14a12840a5d77.jpg"
-      },
-      {
-        "id": 2449277,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/69/694aff96ac416d734dfccaeb1c6def96.jpg"
-      },
-      {
-        "id": 2449278,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/6e/6e08b27f8cc2b4badc8ff7d17b5b9356.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "69.00",
-    "unitPrice": "",
-    "minPrice": "69.00",
-    "maxPrice": "69.00",
-    "variantCount": 20,
-    "variantId": null,
-    "url": "kantstovary/p-5714046-karton-tsvetnoy-a4-12-listov-12-tsvetov-v-assortimente",
-    "inStock": 289,
-    "brand": null,
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5703257,
-    "sku": "5703257",
-    "title": "Клей-карандаш с цветным индикатором \"Indicator\", Berlingo, 2 шт., 8 г",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2457341,
-    "images": [
-      {
-        "id": 2457341,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/0f/0f0a4133a30c1fe031b56f505b7c0b6d.jpg"
-      },
-      {
-        "id": 2457342,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e4/e42e503457a70adf23bcde51d1dd0144.jpg"
-      },
-      {
-        "id": 2457343,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/39/39313753c6a736851bb0b3ce1e7f25f6.jpg"
-      },
-      {
-        "id": 2457344,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8f/8f10045b412c7bb2ac10fcf21efe6291.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "62.00",
-    "unitPrice": "",
-    "minPrice": "62.00",
-    "maxPrice": "62.00",
-    "variantCount": 1,
-    "variantId": null,
-    "url": "kantstovary/p-5703257-kley-karandash-s-tsvetnym-indikatorom-ndicator-erlingo-2-sht-8-g",
-    "inStock": 25,
+    "url": "vse-dlya-novogo-goda/p-5312785-dekoratsiya-novogodnyaya-poezd-snejnoe-krujevo-v-assortimente",
+    "inStock": 113,
     "brand": {
-      "id": 136,
-      "title": "BERLINGO"
+      "id": 46,
+      "title": "Снежное кружево"
     },
     "category": {
-      "id": 2027,
-      "title": "Канцтовары",
+      "id": 2031,
+      "title": "Всё для Нового Года!",
       "parentCategory": null
     }
   },
   {
-    "id": 5706165,
-    "sku": "5706165",
-    "title": "Пластилин, Луч, 12 цветов",
+    "id": 5312810,
+    "sku": "5312810",
+    "title": "Наклейка новогодняя, Снежное кружево, 27х34 см, в ассортименте",
     "isFresh": false,
     "isNew": false,
     "isPromo": false,
     "adult": false,
-    "isSeason": true,
+    "isSeason": false,
     "isHit": false,
     "isQRMark": false,
     "forbidden": false,
     "active": true,
-    "image": 2456415,
+    "image": 2462182,
     "images": [
       {
-        "id": 2456415,
+        "id": 2462182,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f9/f9b89236f7d84b707c1cb4229fedb45d.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8a/8a982dd51cc56a84baa748aced7806b6.jpg"
       },
       {
-        "id": 2456416,
+        "id": 2462183,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e3/e38e882e748c0336bda6ac8462b11e8d.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/58/58b2aa7d7e88b25fe84fc8d9de7657ec.jpg"
       },
       {
-        "id": 2456417,
+        "id": 2462184,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8d/8dc550aec4fd2eaecd3ec71378cd0036.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/24/244209b4e2c11bd59cf8ab6de9c999b7.jpg"
+      },
+      {
+        "id": 2462185,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a9/a9b9254c7cf4e89caffc6a733941b3d5.jpg"
+      },
+      {
+        "id": 2462186,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/52/523792946aa09728f5c3795c60c1ff8d.jpg"
+      },
+      {
+        "id": 2462187,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d1/d1ffcc4869ce14d1a75a8f06b3f1b9ca.jpg"
+      },
+      {
+        "id": 2462188,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/99/99eb451b6dc4a946e125c6a6d4387956.jpg"
+      },
+      {
+        "id": 2462189,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/44/44ed543303c9d8fa9a146d4815a37c83.jpg"
+      },
+      {
+        "id": 2462190,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e7/e77466ede36dc3357eeb601a3bf58308.jpg"
+      },
+      {
+        "id": 2462191,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/b5/b5a7b1dd9d36ebc7cbae2f46e567e32b.jpg"
+      },
+      {
+        "id": 2462192,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/38/386eeb62eaf361e1b9b5d9612faab993.jpg"
+      },
+      {
+        "id": 2462193,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/54/54b7a5a0e8d3c7bc7674fadd6f955795.jpg"
+      },
+      {
+        "id": 2462194,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/2d/2d12e0f1c40f4fc36a10fcab5074e1e3.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "99.00",
+    "unitPrice": "",
+    "minPrice": "99.00",
+    "maxPrice": "99.00",
+    "variantCount": 3,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312810-nakleyka-novogodnyaya-snejnoe-krujevo-27h34-sm-v-assortimente",
+    "inStock": 50,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312196,
+    "sku": "5312196",
+    "title": "Бусы новогодние, Снежное кружево, 4 м, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2466389,
+    "images": [
+      {
+        "id": 2466389,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d1/d15846bad7694410e0459a9b7b80e11c.jpg"
+      },
+      {
+        "id": 2466390,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/75/756bed541f1b22b26ea61b44ac29dcfc.jpg"
+      },
+      {
+        "id": 2466391,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/78/78b56bc54d403b520d1e19991784eec2.jpg"
+      },
+      {
+        "id": 2466392,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/14/14a4a957efa66f28ce7316da63095d4c.jpg"
+      },
+      {
+        "id": 2466393,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/67/670e87965be18641bc67d2d16a517615.jpg"
+      },
+      {
+        "id": 2466394,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8a/8a6d0ff85b87fa207953dbfab448faec.jpg"
+      },
+      {
+        "id": 2466395,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/7d/7d4b903fbf789f24862e365c1bccf02b.jpg"
+      },
+      {
+        "id": 2466396,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/2f/2f1a1e9597884337633922d05707f950.jpg"
+      },
+      {
+        "id": 2466397,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/fa/fafaf44565f4b24f70cc598bc0df909e.jpg"
+      },
+      {
+        "id": 2466398,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/17/17c632d8f7fc5b68946887d8d224bc43.jpg"
+      },
+      {
+        "id": 2466399,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ce/ceccb4fb507050691bcd0fab5d162789.jpg"
+      },
+      {
+        "id": 2466400,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/0f/0f261f47be0c449a45d5a46844610155.jpg"
+      },
+      {
+        "id": 2466401,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/70/7007a6ade12d2b8ff7741992bbbeddef.jpg"
+      },
+      {
+        "id": 2466402,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/da/da3af3c89789e5f6ef6fc8be6d1c9d44.jpg"
+      },
+      {
+        "id": 2466403,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/7d/7d0cb6ae9665b31f0c4b84ac7cae51ba.jpg"
+      },
+      {
+        "id": 2466404,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3e/3e430f7536a8e0f992e8ebf6a21888fd.jpg"
+      },
+      {
+        "id": 2466405,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3f/3f228b5004c1215c3b275e7a291a490d.jpg"
+      },
+      {
+        "id": 2466406,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/74/748f7d1bf86e0d3af86bdf0fc46fa384.jpg"
+      },
+      {
+        "id": 2466407,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/98/982ab5cbb292372e5a64b8c3737761b1.jpg"
+      },
+      {
+        "id": 2466408,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ee/eecb30d490431b463817f1caf4128ad5.jpg"
+      },
+      {
+        "id": 2466409,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a5/a5084c07e05837181f6d01e5e22299a8.jpg"
+      },
+      {
+        "id": 2466410,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/91/91b98a27d0f0f121884f6037be7fd544.jpg"
+      },
+      {
+        "id": 2466411,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d8/d8fb1022f08fee4af28674394b824367.jpg"
+      },
+      {
+        "id": 2466412,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f1/f19e3835cebd5eb83fbacc165170ee7f.jpg"
+      },
+      {
+        "id": 2466413,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/1f/1f1cb199f3b55fa895443044c24a3f54.jpg"
+      },
+      {
+        "id": 2466414,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/26/26ef8dbceb5188d392eefa7e4701c529.jpg"
+      },
+      {
+        "id": 2466415,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/4e/4e58a8c8d32ed9cc458fbf61c0dfe232.jpg"
+      },
+      {
+        "id": 2466416,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/1b/1bf5dfe6b591019de482ff8f32101238.jpg"
+      },
+      {
+        "id": 2466417,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/89/89a705db3ac28953fb35e06a319d9088.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "69.00",
+    "unitPrice": "",
+    "minPrice": "69.00",
+    "maxPrice": "69.00",
+    "variantCount": 23,
+    "variantId": null,
+    "url": "dekor-dlya-doma-tovary-dlya-prazdnika/p-5312196-busy-novogodnie-snejnoe-krujevo-4-m-v-assortimente",
+    "inStock": 231,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2113,
+      "title": "Декор для дома, товары для праздника",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 1932228,
+    "sku": "1932228",
+    "title": "Конфеты \"Марсианка\", 180 г, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2457063,
+    "images": [
+      {
+        "id": 2457063,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/17/1715965261dd6f6e474317b534f9d178.jpg"
+      },
+      {
+        "id": 2457064,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/32/32a46c086ad6eb73833e5774cd8d7e97.jpg"
+      },
+      {
+        "id": 2457065,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/10/10f25282f0abb8adc4fd046aae784ef0.jpg"
+      },
+      {
+        "id": 2457066,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/51/51bf1b10e13a1d8836b4d4c7c3d8771f.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "83.00",
+    "unitPrice": "",
+    "minPrice": "83.00",
+    "maxPrice": "83.00",
+    "variantCount": 4,
+    "variantId": null,
+    "url": "produkty-i-napitki/p-1932228-konfety-marsianka-180-g-v-assortimente",
+    "inStock": 72,
+    "brand": {
+      "id": 226,
+      "title": "Марсианка"
+    },
+    "category": {
+      "id": 2004,
+      "title": "Продукты и напитки",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 1932224,
+    "sku": "1932224",
+    "title": "Конфеты \"Французский трюфель\", Bucheron, 130 г",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2423530,
+    "images": [
+      {
+        "id": 2423530,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/db/db754e98ab17fa1aa16c675853f11e2b.jpg"
+      },
+      {
+        "id": 2423531,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/39/398cf44b52ddd475aab11f1bf0cebbc9.jpg"
+      },
+      {
+        "id": 2423532,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/6f/6fafd0a00e625d2d4c387571a9ffb061.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "116.00",
+    "unitPrice": "",
+    "minPrice": "116.00",
+    "maxPrice": "116.00",
+    "variantCount": 1,
+    "variantId": null,
+    "url": "produkty-i-napitki/p-1932224-konfety-frantsuzskiy-tryufel-ucheron-130-g",
+    "inStock": 16,
+    "brand": null,
+    "category": {
+      "id": 2004,
+      "title": "Продукты и напитки",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312993,
+    "sku": "5312993",
+    "title": "Ветка новогодняя, Снежное кружево, 30 см, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2465883,
+    "images": [
+      {
+        "id": 2465883,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8d/8d289de4d845b14d10f1d5c469d7e3b7.jpg"
+      },
+      {
+        "id": 2465884,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/91/91d0435f4ff1ff9139a1dadeef584204.jpg"
+      },
+      {
+        "id": 2465885,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a7/a7dcd72345e39ed58c838532b9267cf0.jpg"
+      },
+      {
+        "id": 2465886,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/c4/c4d50011dc201d3403b6d48052a9c34a.jpg"
       }
     ],
     "unit": null,
@@ -286,329 +1082,22 @@
     "maxPrice": "99.00",
     "variantCount": 1,
     "variantId": null,
-    "url": "kantstovary/p-5706165-plastilin-luch-12-tsvetov",
-    "inStock": 13,
-    "brand": {
-      "id": 15963,
-      "title": "Луч"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5700218,
-    "sku": "5700218",
-    "title": "Набор цветных карандашей, Kid`s Fantasy, 12 шт., в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": true,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2454676,
-    "images": [
-      {
-        "id": 2454676,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/98/98566a49ff8bd4d59fc005c97412f51a.jpg"
-      },
-      {
-        "id": 2454677,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/11/11cfc80e36e17d8e3dd737ff2948a914.jpg"
-      },
-      {
-        "id": 2454678,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/28/282f3afafcbf1535c3424504d36f1bd3.jpg"
-      },
-      {
-        "id": 2454679,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/90/90d6932c9e9787008abea14e65ededa8.jpg"
-      },
-      {
-        "id": 2454680,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d0/d00df3198f6dd861997c9debd5fd7272.jpg"
-      },
-      {
-        "id": 2454681,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a6/a6784a2fc05d66b65c0f651013fe4aa0.jpg"
-      },
-      {
-        "id": 2454682,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5c/5c445c2fcf0b6c7350bd59a42a8cb962.jpg"
-      },
-      {
-        "id": 2454683,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/93/93b798804b427d8ae832cc6963aa4058.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "59.00",
-    "unitPrice": "",
-    "minPrice": "59.00",
-    "maxPrice": "59.00",
-    "variantCount": 75,
-    "variantId": null,
-    "url": "kantstovary/p-5700218-nabor-tsvetnyh-karandashey-ids-antasy-12-sht-v-assortimente",
-    "inStock": 834,
-    "brand": {
-      "id": 15852,
-      "title": "Kid's Fantasy"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5706238,
-    "sku": "5706238",
-    "title": "Пластилин лёгкий, Мульти-Пульти, 12 цветов",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2448240,
-    "images": [
-      {
-        "id": 2448240,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ac/acdb5e83b7b47b8c61017787b424111b.jpg"
-      },
-      {
-        "id": 2448241,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5e/5e7606e9218100dece801c16e24c9d19.jpg"
-      },
-      {
-        "id": 2448242,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/44/446027012d588a20d96fe510a640f7ea.jpg"
-      },
-      {
-        "id": 2448243,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/43/43a0b3c574b3b166e4362d321abbb016.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": {
-      "price": "139",
-      "active_to": "2999-12-31 23:59:59"
-    },
-    "price": "149.00",
-    "unitPrice": "",
-    "minPrice": "149.00",
-    "maxPrice": "149.00",
-    "variantCount": 2,
-    "variantId": null,
-    "url": "kantstovary/p-5706238-plastilin-lgkiy-multi-pulti-12-tsvetov",
-    "inStock": 34,
-    "brand": null,
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5703025,
-    "sku": "5703025",
-    "title": "Набор кистей для рисования, Kid`s Fantasy, 8 шт., в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2453247,
-    "images": [
-      {
-        "id": 2453247,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ce/ced9d005d3618fd648afaa5c516cd726.jpg"
-      },
-      {
-        "id": 2453248,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e0/e06f9f0a6b18bdf191faaa70dfe4ffab.jpg"
-      },
-      {
-        "id": 2453249,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/da/da7126de162844659aca3e7e74b76644.jpg"
-      },
-      {
-        "id": 2453250,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/fa/fa97e0dfba8b0e9aba3cf695063e36bf.jpg"
-      },
-      {
-        "id": 2453251,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5e/5e29978fea63b3c2e052107660418f53.jpg"
-      },
-      {
-        "id": 2453252,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/31/31537f8fb3b415d0aa2c42125cea519d.jpg"
-      },
-      {
-        "id": 2453253,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/9a/9a08e9c084d8ebb48bea3645e40468b0.jpg"
-      },
-      {
-        "id": 2453254,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/bb/bb49e71467650dd276e22096bb0fee56.jpg"
-      },
-      {
-        "id": 2453255,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/57/57ea3907eda08935241af785a21eef9d.jpg"
-      },
-      {
-        "id": 2453256,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/2f/2f3886ae5bfe6a5e966f1ae81f10614c.jpg"
-      },
-      {
-        "id": 2453257,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a8/a8b6bb4baa6123213348c57186d70b9f.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "87.00",
-    "unitPrice": "",
-    "minPrice": "87.00",
-    "maxPrice": "87.00",
-    "variantCount": 18,
-    "variantId": null,
-    "url": "kantstovary/p-5703025-nabor-kistey-dlya-risovaniya-ids-antasy-8-sht-v-assortimente",
-    "inStock": 255,
-    "brand": {
-      "id": 15852,
-      "title": "Kid's Fantasy"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5710267,
-    "sku": "5710267",
-    "title": "Тетрадь школьная, 12 листов, клетка",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2455090,
-    "images": [
-      {
-        "id": 2455090,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/18/1873f313c4eaa6a1c21fa7deb36ce0aa.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "5.90",
-    "unitPrice": "",
-    "minPrice": "5.90",
-    "maxPrice": "5.90",
-    "variantCount": 2,
-    "variantId": null,
-    "url": "kantstovary/p-5710267-tetrad-shkolnaya-12-listov-kletka",
-    "inStock": 38,
-    "brand": null,
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5706312,
-    "sku": "5706312",
-    "title": "Гуашь \"Классическая\", Луч, 12 цветов",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2453963,
-    "images": [
-      {
-        "id": 2453963,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/16/162901ec22975c7d48f65e651a1c3c07.jpg"
-      },
-      {
-        "id": 2453964,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/7f/7f14f8d64c38f5d0a5e580692f9c1bcc.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "174.50",
-    "unitPrice": "",
-    "minPrice": "174.50",
-    "maxPrice": "174.50",
-    "variantCount": 1,
-    "variantId": null,
-    "url": "kantstovary/p-5706312-guash-klassicheskaya-luch-12-tsvetov",
+    "url": "vse-dlya-novogo-goda/p-5312993-vetka-novogodnyaya-snejnoe-krujevo-30-sm-v-assortimente",
     "inStock": 18,
     "brand": {
-      "id": 15963,
-      "title": "Луч"
+      "id": 46,
+      "title": "Снежное кружево"
     },
     "category": {
-      "id": 2027,
-      "title": "Канцтовары",
+      "id": 2031,
+      "title": "Всё для Нового Года!",
       "parentCategory": null
     }
   },
   {
-    "id": 5703145,
-    "sku": "5703145",
-    "title": "Набор ластиков, Hupper Dupper, 8 шт., в ассортименте",
+    "id": 5200304,
+    "sku": "5200304",
+    "title": "Набор для упаковки подарков, Снежное кружево, в ассортименте",
     "isFresh": false,
     "isNew": false,
     "isPromo": false,
@@ -618,302 +1107,32 @@
     "isQRMark": false,
     "forbidden": false,
     "active": true,
-    "image": 2449433,
+    "image": 2467060,
     "images": [
       {
-        "id": 2449433,
+        "id": 2467060,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/42/429831e81da3827d6b40b5413b5cfb9b.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/05/0527fe7125a74946a4c2a86436847cbb.png"
       },
       {
-        "id": 2449434,
+        "id": 2467061,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/9c/9cdd7e2048e1525212b417f9c251accb.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e4/e41bb960db40656ae42734ed5786ca02.jpg"
       },
       {
-        "id": 2449435,
+        "id": 2467062,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/dc/dc8e83d4fd9f67f84e3d7020e3105ae0.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/31/31c2f155574c504c1e3650e6114ce791.jpg"
       },
       {
-        "id": 2449436,
+        "id": 2467063,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/be/be5f482f65ca17bf6fa9aba58c548f70.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/b3/b3cde640d7404b8f4b1a287d7c3d6041.jpg"
       },
       {
-        "id": 2449437,
+        "id": 2467064,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/57/57a9b1c479461eb09bf899488ae93756.jpg"
-      },
-      {
-        "id": 2449438,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/29/2915059c783f0f53811ec292513254eb.jpg"
-      },
-      {
-        "id": 2449439,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/55/550e2e4b49b117b153fee45ebabd5a46.jpg"
-      },
-      {
-        "id": 2449440,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/83/8390fa73f7c4231de8c56e8766de0a3a.jpg"
-      },
-      {
-        "id": 2449441,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/08/08a3f75b3bde64a28c8d0846a9424631.jpg"
-      },
-      {
-        "id": 2449442,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/06/06f8190cb2cbf37691002e260ea3de19.jpg"
-      },
-      {
-        "id": 2449443,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/66/66bcf572d06ff1cd681be7ad3071d4dc.jpg"
-      },
-      {
-        "id": 2449444,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e2/e2e56e37cfed39815ea85ba5010de651.jpg"
-      },
-      {
-        "id": 2449445,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/9f/9fc4484c5a7572c05ea4ab98d6b45e90.jpg"
-      },
-      {
-        "id": 2449446,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/04/04ad04a5cfc100ed311def3a3c79eccf.jpg"
-      },
-      {
-        "id": 2449447,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/80/80a4634ccb41b40cc2aa5a00b96c2a84.jpg"
-      },
-      {
-        "id": 2449448,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/69/69aa19a12bfd259bb7b344ff6eeeb455.jpg"
-      },
-      {
-        "id": 2449449,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/48/48492375c5b7ffebda62156334c350e8.jpg"
-      },
-      {
-        "id": 2449450,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/44/445127b5de344d591b5e0dfdb35a2b61.jpg"
-      },
-      {
-        "id": 2449451,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/80/805bdcbfedf1e3ecefd3d0e0921e7b6e.jpg"
-      },
-      {
-        "id": 2449452,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/19/1975f4464e6708922bf284aed1cef910.jpg"
-      },
-      {
-        "id": 2449453,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f5/f5656ce6c5a2d8c4abfe5e11fb3a9731.jpg"
-      },
-      {
-        "id": 2449454,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ea/ea5aa773d51543e5def19321f3e27584.jpg"
-      },
-      {
-        "id": 2449455,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5a/5a16cb4e3c9ae726216ca2af94acd2da.jpg"
-      },
-      {
-        "id": 2449456,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/bf/bfefe262c5ea38ffa6fc02b1a45aaa33.jpg"
-      },
-      {
-        "id": 2449457,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/29/29cc88797ff4e0ca23003edd3fabcbb9.jpg"
-      },
-      {
-        "id": 2449458,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ed/ede4bd86ea8f891a46dacafa9cad0709.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "59.00",
-    "unitPrice": "",
-    "minPrice": "59.00",
-    "maxPrice": "59.00",
-    "variantCount": 20,
-    "variantId": null,
-    "url": "kantstovary/p-5703145-nabor-lastikov-upper-upper-8-sht-v-assortimente",
-    "inStock": 234,
-    "brand": {
-      "id": 12637,
-      "title": "Hupper Dupper"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5703101,
-    "sku": "5703101",
-    "title": "Клей ПВА-М \"Супер\", Луч, 150 г",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2448503,
-    "images": [
-      {
-        "id": 2448503,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/75/753fe6b3efa693d9f2af7b56bcc0bce4.jpg"
-      },
-      {
-        "id": 2448504,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/6f/6f59633d91239b4f5782fc36ae518a6a.png"
-      },
-      {
-        "id": 2448505,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/45/45d7d28e9c5ebcd32a3522fa6a7e79a5.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "87.00",
-    "unitPrice": "",
-    "minPrice": "87.00",
-    "maxPrice": "87.00",
-    "variantCount": 1,
-    "variantId": null,
-    "url": "kantstovary/p-5703101-kley-pva-m-super-luch-150-g",
-    "inStock": 21,
-    "brand": {
-      "id": 15963,
-      "title": "Луч"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5703099,
-    "sku": "5703099",
-    "title": "Набор простых карандашей, 10 шт., в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": true,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2453996,
-    "images": [
-      {
-        "id": 2453996,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/80/80e51bfacaf65cef345166e808889e7c.jpg"
-      },
-      {
-        "id": 2453997,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/1b/1b606c518d6d74ddfdf99287242b87f9.jpg"
-      },
-      {
-        "id": 2453998,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/9f/9f62492161463012a8af471a4641effb.jpg"
-      },
-      {
-        "id": 2453999,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/86/868cbe668716814f094b46e95617751d.jpg"
-      },
-      {
-        "id": 2454000,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/b5/b57936cee91f6f926c326db5f1a676a6.jpg"
-      },
-      {
-        "id": 2454001,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e3/e32ed37a82e0857d4e41753a25e444e9.jpg"
-      },
-      {
-        "id": 2454002,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f3/f35213956ce5b3375a6cbd007e1879db.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "62.00",
-    "unitPrice": "",
-    "minPrice": "62.00",
-    "maxPrice": "62.00",
-    "variantCount": 50,
-    "variantId": null,
-    "url": "kantstovary/p-5703099-nabor-prostyh-karandashey-10-sht-v-assortimente",
-    "inStock": 548,
-    "brand": null,
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5706213,
-    "sku": "5706213",
-    "title": "Карандаш корректирующий, Berlingo, 8 мл",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": true,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2450802,
-    "images": [
-      {
-        "id": 2450802,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a0/a0291a94faf4c5eedbd204d84a00839e.jpg"
-      },
-      {
-        "id": 2450803,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/91/9104a6ca9e2eddc4b5292570de32ce84.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f6/f6d8e609b02056b1ba2f5e8a30b5c2cc.jpg"
       }
     ],
     "unit": null,
@@ -922,364 +1141,24 @@
     "unitPrice": "",
     "minPrice": "39.50",
     "maxPrice": "39.50",
-    "variantCount": 1,
+    "variantCount": 4,
     "variantId": null,
-    "url": "kantstovary/p-5706213-karandash-korrektiruyuschiy-erlingo-8-ml",
-    "inStock": 26,
-    "brand": {
-      "id": 136,
-      "title": "BERLINGO"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5700472,
-    "sku": "5700472",
-    "title": "Набор шариковых ручек, Berlingo, 8 шт., в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2457425,
-    "images": [
-      {
-        "id": 2457425,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/9c/9cca1ed7e6a09d4b494242a3654f5540.jpg"
-      },
-      {
-        "id": 2457426,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/56/56d444028f3e6260f0b33deb55bb4a06.jpg"
-      },
-      {
-        "id": 2457427,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/38/38864072e759523f144337702c5f67bd.jpg"
-      },
-      {
-        "id": 2457428,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/fe/fe3e3326e9cda7c2caa1fa2c77565c62.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "79.00",
-    "unitPrice": "",
-    "minPrice": "79.00",
-    "maxPrice": "79.00",
-    "variantCount": 8,
-    "variantId": null,
-    "url": "kantstovary/p-5700472-nabor-sharikovyh-ruchek-erlingo-8-sht-v-assortimente",
-    "inStock": 78,
-    "brand": {
-      "id": 136,
-      "title": "BERLINGO"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5703192,
-    "sku": "5703192",
-    "title": "Клей-карандаш, Berlingo, 21 г",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2453982,
-    "images": [
-      {
-        "id": 2453982,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d6/d6946ce067b835214eba6791363a8de6.jpg"
-      },
-      {
-        "id": 2453983,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/50/504c6be83ba964b86f5e031660b73de4.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "62.00",
-    "unitPrice": "",
-    "minPrice": "62.00",
-    "maxPrice": "62.00",
-    "variantCount": 1,
-    "variantId": null,
-    "url": "kantstovary/p-5703192-kley-karandash-erlingo-21-g",
-    "inStock": 30,
-    "brand": {
-      "id": 136,
-      "title": "BERLINGO"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5703091,
-    "sku": "5703091",
-    "title": "Ножницы для детского творчества, Kid's Fantasy, в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": true,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2453113,
-    "images": [
-      {
-        "id": 2453113,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/59/5937255997bcfb6051583dee92c2ccbd.jpg"
-      },
-      {
-        "id": 2453114,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/b4/b464897a3733d51b0bdf83876f05f84a.jpg"
-      },
-      {
-        "id": 2453115,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3b/3b69859b72f6054317d296335b686164.jpg"
-      },
-      {
-        "id": 2453116,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8c/8c1b61501179a120b2a4b9b6b257e560.jpg"
-      },
-      {
-        "id": 2453117,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e5/e50803fc69592b731abb2d896cd6e8b6.jpg"
-      },
-      {
-        "id": 2453118,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/0a/0a70af5739cc72e141131b984e7a2aa5.jpg"
-      },
-      {
-        "id": 2453119,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/94/942a6bc2fc2113c42ad070f29211f232.jpg"
-      },
-      {
-        "id": 2453120,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d3/d3abaef5d6ba0b7440c023c8019e8b18.jpg"
-      },
-      {
-        "id": 2453121,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3b/3b5f8d4da5d147164406cfa7dfa87420.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": {
-      "price": "69",
-      "active_to": "2999-12-31 23:59:59"
-    },
-    "price": "79.00",
-    "unitPrice": "",
-    "minPrice": "79.00",
-    "maxPrice": "79.00",
-    "variantCount": 93,
-    "variantId": null,
-    "url": "kantstovary/p-5703091-nojnitsy-dlya-detskogo-tvorchestva-ids-antasy-v-assortimente",
-    "inStock": 860,
-    "brand": {
-      "id": 15852,
-      "title": "Kid's Fantasy"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5706168,
-    "sku": "5706168",
-    "title": "Клей-карандаш \"Extra\", Erich Krause, 19 г",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": true,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2456944,
-    "images": [
-      {
-        "id": 2456944,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a3/a37dcb758589d03a6dabd19e46211023.jpg"
-      },
-      {
-        "id": 2456945,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/bf/bfd06889df97314fc8917404a53bdc21.jpg"
-      },
-      {
-        "id": 2456946,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/fd/fd9db7f2b9a76b605e671b8e28a53264.jpg"
-      },
-      {
-        "id": 2456947,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3d/3dc71869af5f966b5691988f6aca6059.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "99.00",
-    "unitPrice": "",
-    "minPrice": "99.00",
-    "maxPrice": "99.00",
-    "variantCount": 2,
-    "variantId": null,
-    "url": "kantstovary/p-5706168-kley-karandash-tra-rich-rause-19-g",
-    "inStock": 39,
-    "brand": {
-      "id": 48,
-      "title": "ErichKrause"
-    },
-    "category": {
-      "id": 2027,
-      "title": "Канцтовары",
-      "parentCategory": null
-    }
-  },
-  {
-    "id": 5706338,
-    "sku": "5706338",
-    "title": "Стакан-непроливайка, двойной, в ассортименте",
-    "isFresh": false,
-    "isNew": false,
-    "isPromo": false,
-    "adult": false,
-    "isSeason": false,
-    "isHit": false,
-    "isQRMark": false,
-    "forbidden": false,
-    "active": true,
-    "image": 2448395,
-    "images": [
-      {
-        "id": 2448395,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e3/e3e70ee75dc1f950d75831ed08feae3a.jpg"
-      },
-      {
-        "id": 2448396,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/0b/0b79a60ca9367029ac7c512e8c2e9126.jpg"
-      },
-      {
-        "id": 2448397,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/85/85a495f1ab4ac0da587dab4bd5369796.jpg"
-      },
-      {
-        "id": 2448398,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5a/5acb845a234d3a2472142332663b23cd.jpg"
-      },
-      {
-        "id": 2448399,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/15/15dac4e9127b1c4fb7c8cb7dc6548f76.jpg"
-      },
-      {
-        "id": 2448400,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/57/5782d8f3c616c8fbd09ba0000a8cf284.jpg"
-      },
-      {
-        "id": 2448401,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/86/868da90cb2951a530fb4fdb59d64d3fe.jpg"
-      },
-      {
-        "id": 2448402,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/57/5707b5ec93b86c3e3b2a63dcbecb100c.jpg"
-      },
-      {
-        "id": 2448403,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/63/6391c3fc21e7276b609de6daeddc2c54.jpg"
-      },
-      {
-        "id": 2448404,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/af/af8601f705ad9b170cb04aef78f4bd7c.jpg"
-      },
-      {
-        "id": 2448405,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ba/baf5b332ba8a7762bbf486df977aeda7.jpg"
-      },
-      {
-        "id": 2448406,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/1b/1b53f1e09d15caef86904b0302d2f937.jpg"
-      },
-      {
-        "id": 2448407,
-        "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/97/97f24ea0eee084403a9138571b4443ca.jpg"
-      }
-    ],
-    "unit": null,
-    "specialPrice": null,
-    "price": "35.00",
-    "unitPrice": "",
-    "minPrice": "35.00",
-    "maxPrice": "35.00",
-    "variantCount": 5,
-    "variantId": null,
-    "url": "kantstovary/p-5706338-stakan-neprolivayka-dvoynoy-v-assortimente",
+    "url": "vse-dlya-novogo-goda/p-5200304-nabor-dlya-upakovki-podarkov-snejnoe-krujevo-v-assortimente",
     "inStock": 43,
-    "brand": null,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
     "category": {
-      "id": 2027,
-      "title": "Канцтовары",
+      "id": 2031,
+      "title": "Всё для Нового Года!",
       "parentCategory": null
     }
   },
   {
-    "id": 5706321,
-    "sku": "5706321",
-    "title": "Акварель, LORI, 12 цветов",
+    "id": 5231362,
+    "sku": "5231362",
+    "title": "Набор свечей, Снежное кружево, 3 шт., в ассортименте",
     "isFresh": false,
     "isNew": false,
     "isPromo": false,
@@ -1289,41 +1168,412 @@
     "isQRMark": false,
     "forbidden": false,
     "active": true,
-    "image": 2457106,
+    "image": 2465538,
     "images": [
       {
-        "id": 2457106,
+        "id": 2465538,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/36/361612fab83de264a42bbc98da84634a.png"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ce/ceb7261824933978360fade25e3fb78d.jpg"
       },
       {
-        "id": 2457107,
+        "id": 2465539,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/80/8046a7cdee080f0d0d0626df20101385.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/a4/a47269f5582ad64898349accdb52b7f4.jpg"
       },
       {
-        "id": 2457108,
+        "id": 2465540,
         "title": null,
-        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e4/e45fb47d9628e95cba61c4c9ab28d29d.jpg"
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/11/115ff978272a13fa367b151db294e657.jpg"
+      },
+      {
+        "id": 2465541,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/7e/7e1959643b39856f4eac35eaa2f30afd.jpg"
       }
     ],
     "unit": null,
     "specialPrice": null,
-    "price": "69.00",
+    "price": "133.00",
     "unitPrice": "",
-    "minPrice": "69.00",
-    "maxPrice": "69.00",
-    "variantCount": 1,
+    "minPrice": "133.00",
+    "maxPrice": "133.00",
+    "variantCount": 4,
     "variantId": null,
-    "url": "kantstovary/p-5706321-akvarel--12-tsvetov",
+    "url": "vse-dlya-novogo-goda/p-5231362-nabor-svechey-snejnoe-krujevo-3-sht-v-assortimente",
     "inStock": 29,
     "brand": {
-      "id": 79,
-      "title": "LORI"
+      "id": 46,
+      "title": "Снежное кружево"
     },
     "category": {
-      "id": 2027,
-      "title": "Канцтовары",
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 1901067,
+    "sku": "1901067",
+    "title": "Шоко фигурка \"Символ года\", Монетный двор, 100 г, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2461824,
+    "images": [
+      {
+        "id": 2461824,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/0156_SOKO_figurka_Simvol_Goda_2.png"
+      },
+      {
+        "id": 2461825,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/0156_SOKO_figurka_Simvol_Goda_03_2.png"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "133.00",
+    "unitPrice": "",
+    "minPrice": "133.00",
+    "maxPrice": "133.00",
+    "variantCount": 1,
+    "variantId": null,
+    "url": "produkty-i-napitki/p-1901067-shoko-figurka-simvol-goda-monetnyy-dvor-100-g-v-assortimente",
+    "inStock": 14,
+    "brand": {
+      "id": 163,
+      "title": "Монетный Двор"
+    },
+    "category": {
+      "id": 2004,
+      "title": "Продукты и напитки",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312967,
+    "sku": "5312967",
+    "title": "Гирлянда новогодняя «Роса», Снежное кружево, 20 м, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2467538,
+    "images": [
+      {
+        "id": 2467538,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/cb/cbb8765187dc724ee2dbd432d68c82dc.png"
+      },
+      {
+        "id": 2467539,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ab/ab0943c344441dc7182ad8c0b1e166aa.jpg"
+      },
+      {
+        "id": 2467540,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/69/69919bc54ee26f9debf11b4d10e8642c.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "249.00",
+    "unitPrice": "",
+    "minPrice": "249.00",
+    "maxPrice": "249.00",
+    "variantCount": 3,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312967-girlyanda-novogodnyaya-rosa-snejnoe-krujevo-20-m-v-assortimente",
+    "inStock": 45,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5314227,
+    "sku": "5314227",
+    "title": "Игрушка ёлочная \"Ретро\", Снежное кружево",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2467373,
+    "images": [
+      {
+        "id": 2467373,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/33/3351c3925b27a4274f0b19febe776e4e.png"
+      },
+      {
+        "id": 2467374,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/e7/e7ff6b57920363eab25b7cfa2b559de7.jpg"
+      },
+      {
+        "id": 2467375,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/8a/8abdccd5dd654b0db78686d161988206.jpg"
+      },
+      {
+        "id": 2467376,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/73/73ab8e99aeb5353be2e5e4d9798cd3e4.jpg"
+      },
+      {
+        "id": 2467377,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d8/d8d850b74ef8e1915a48e392395c78c4.jpg"
+      },
+      {
+        "id": 2467378,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f8/f88ab2695c94743abfd42a83ae190b7f.jpg"
+      },
+      {
+        "id": 2467379,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/1c/1c185d1b3098a3f3d88faed3b1339ea8.jpg"
+      },
+      {
+        "id": 2467380,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/13/1389510deb708484a2540815af415a63.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "116.00",
+    "unitPrice": "",
+    "minPrice": "116.00",
+    "maxPrice": "116.00",
+    "variantCount": 8,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5314227-igrushka-lochnaya-retro-snejnoe-krujevo",
+    "inStock": 135,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 1933176,
+    "sku": "1933176",
+    "title": "Воздушное суфле \"Пухлый кролик\", пломбир, 150 г",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2406549,
+    "images": [
+      {
+        "id": 2406549,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/AAI07488.jpg"
+      },
+      {
+        "id": 2406550,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1933176_Konfety_Puhlyj_Krolik_vanil_Plom_NG150gr_1.jpg"
+      },
+      {
+        "id": 2406551,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/Migration_Import/87ca9dfcd1bdf91edc34d213851561b3.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "59.00",
+    "unitPrice": "",
+    "minPrice": "59.00",
+    "maxPrice": "59.00",
+    "variantCount": 1,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-1933176-vozdushnoe-sufle-puhlyy-krolik-plombir-150-g",
+    "inStock": 16,
+    "brand": {
+      "id": 373,
+      "title": "Пухлый Кролик"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312722,
+    "sku": "5312722",
+    "title": "Украшение ёлочное \"Сани\", Снежное кружево, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2467398,
+    "images": [
+      {
+        "id": 2467398,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d3/d3f8ea71b6e6abe92f07d9f5a099f003.png"
+      },
+      {
+        "id": 2467399,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d1/d1ff185fbea551f899420b6ee8db1b5f.jpg"
+      },
+      {
+        "id": 2467400,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/46/464f85eedb3b5ae7b5bc28b94b7a7ed7.jpg"
+      },
+      {
+        "id": 2467401,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/f3/f384a4ccc321cc163b198add160a7691.jpg"
+      },
+      {
+        "id": 2467402,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/70/700ce687ee6c34467fa6840ddd6ed516.jpg"
+      },
+      {
+        "id": 2467403,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/ad/ad1f85705a9eb69244a44d2551188d45.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "59.00",
+    "unitPrice": "",
+    "minPrice": "59.00",
+    "maxPrice": "59.00",
+    "variantCount": 5,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312722-ukrashenie-lochnoe-sani-snejnoe-krujevo-v-assortimente",
+    "inStock": 55,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
+      "parentCategory": null
+    }
+  },
+  {
+    "id": 5312954,
+    "sku": "5312954",
+    "title": "Набор \"Декорация деревянная ёлочка\", Снежное кружево, в ассортименте",
+    "isFresh": false,
+    "isNew": false,
+    "isPromo": false,
+    "adult": false,
+    "isSeason": false,
+    "isHit": false,
+    "isQRMark": false,
+    "forbidden": false,
+    "active": true,
+    "image": 2465846,
+    "images": [
+      {
+        "id": 2465846,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d1/d1f856fe95b930ec9051fe3d7cfacbba.jpg"
+      },
+      {
+        "id": 2465847,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/fb/fb138dd23ab11b6303d94b981996c99b.jpg"
+      },
+      {
+        "id": 2465848,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/2c/2c91dacea8b9d060da95c00d79f8191d.jpg"
+      },
+      {
+        "id": 2465849,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/7a/7aff2e773dbc728970c49dbbf2a66896.jpg"
+      },
+      {
+        "id": 2465850,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/c4/c49c6a4c390bab35118d9be0e075d822.jpg"
+      },
+      {
+        "id": 2465851,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/d7/d7c7013e33081e4908d7eac9864c64be.jpg"
+      },
+      {
+        "id": 2465852,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/c0/c048214a75271bd0e23b6b96a377a22e.jpg"
+      },
+      {
+        "id": 2465853,
+        "title": null,
+        "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/85/851b6e71b2374b63aac3e8dc3cf1ccdb.jpg"
+      }
+    ],
+    "unit": null,
+    "specialPrice": null,
+    "price": "279.00",
+    "unitPrice": "",
+    "minPrice": "279.00",
+    "maxPrice": "279.00",
+    "variantCount": 6,
+    "variantId": null,
+    "url": "vse-dlya-novogo-goda/p-5312954-nabor-dekoratsiya-derevyannaya-lochka-snejnoe-krujevo-v-assortimente",
+    "inStock": 80,
+    "brand": {
+      "id": 46,
+      "title": "Снежное кружево"
+    },
+    "category": {
+      "id": 2031,
+      "title": "Всё для Нового Года!",
       "parentCategory": null
     }
   }

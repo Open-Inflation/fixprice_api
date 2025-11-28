@@ -144,6 +144,20 @@
     }
   },
   {
+    "id": 11,
+    "title": "Сербия",
+    "alias": "RS",
+    "language": {
+      "alias": "sr"
+    },
+    "city": null,
+    "currency": {
+      "title": "Сербский динар",
+      "symbol": "DIN",
+      "symbolFirst": false
+    }
+  },
+  {
     "id": 3,
     "title": "Казахстан",
     "alias": "KZ",

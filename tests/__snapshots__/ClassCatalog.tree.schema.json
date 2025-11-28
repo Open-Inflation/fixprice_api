@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/schema#",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "array",
   "items": {
     "type": "object",
@@ -20,12 +20,12 @@
         "type": "boolean"
       },
       "catalogImage": {
-        "type": "string",
-        "format": "uri"
+        "format": "uri",
+        "type": "string"
       },
       "icon": {
-        "type": "string",
-        "format": "uri"
+        "format": "uri",
+        "type": "string"
       },
       "banner": {
         "type": "object",
