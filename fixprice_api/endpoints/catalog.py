@@ -2,7 +2,7 @@
 
 from typing import Optional, TYPE_CHECKING
 from .. import abstraction
-import hrequests
+from human_requests.abstraction import FetchResponse, HttpMethod
 
 if TYPE_CHECKING:
     from fixprice_api.manager import FixPriceAPI
@@ -15,32 +15,29 @@ class ClassCatalog:
     работу с фидами товаров и отзывами.
     """
 
-    def __init__(self, parent: "FixPriceAPI", CATALOG_URL: str):
+    def __init__(self, parent: "FixPriceAPI"):
         self._parent: "FixPriceAPI" = parent
-        self.CATALOG_URL: str = CATALOG_URL
         
-        self.Product: ProductService = ProductService(
-            parent=self._parent, CATALOG_URL=CATALOG_URL
-        )
+        self.Product: ProductService = ProductService(parent=self._parent)
         """Сервис для работы с товарами в каталоге."""
 
-    def tree(self) -> hrequests.Response:
+    async def tree(self) -> FetchResponse:
         """Возвращает список категорий."""
-        return self._parent._request("GET", f"{self.CATALOG_URL}/v1/category/menu")
+        return await self._parent._request(HttpMethod.GET, f"{self._parent.CATALOG_URL}/v1/category/menu")
 
-    def products_list(
+    async def products_list(
             self,
             category_alias: str,
             subcategory_alias: Optional[str] = None,
             page: int = 1,
             limit: int = 24,
             sort: abstraction.CatalogSort | str = abstraction.CatalogSort.POPULARITY
-        ) -> hrequests.Response:
+        ) -> FetchResponse:
         """Возвращает количество и список товаров в категории/подкатегории."""
         if page < 1: raise ValueError("`page` must be greater than 0")
         elif limit > 27 or limit < 1: raise ValueError("`limit` must be in range 1-27")
         
-        url = f"{self.CATALOG_URL}/v1/product/in/{category_alias}"
+        url = f"{self._parent.CATALOG_URL}/v1/product/in/{category_alias}"
         real_route = f"/catalog/{category_alias}"
         if subcategory_alias:
             url += f"/{subcategory_alias}"
@@ -59,21 +56,20 @@ class ClassCatalog:
         if subcategory_alias:
             json_body["category"] += f"/{subcategory_alias}"
 
-        return self._parent._request("POST", url=url, real_route=real_route, json_body=json_body)
+        return await self._parent._request(HttpMethod.POST, url=url, real_route=real_route, json_body=json_body)
 
 
 class ProductService:
     """Сервис для работы с товарами в каталоге."""
-    def __init__(self, parent: "FixPriceAPI", CATALOG_URL: str):
+    def __init__(self, parent: "FixPriceAPI"):
         self._parent: "FixPriceAPI" = parent
-        self.CATALOG_URL: str = CATALOG_URL
 
-    def balance(
+    async def balance(
             self,
             product_id: int,
             in_stock: bool = True,
             search: Optional[str] = None
-        ) -> hrequests.Response:
+        ) -> FetchResponse:
         """
         Проверка наличия товара в точках города.
         Возвращает информацию о магазине и int количество товара.
@@ -84,8 +80,8 @@ class ProductService:
         """
         if self._parent.city_id == None: raise ValueError("City ID is not set")
 
-        url = f"{self.CATALOG_URL}/v1/store/balance/{product_id}?canPickup=all"
+        url = f"{self._parent.CATALOG_URL}/v1/store/balance/{product_id}?canPickup=all"
         if search: url += f"&addressPart={search}"
         if in_stock: url += "&inStock=true"
 
-        return self._parent._request("GET", url)
+        return await self._parent._request(HttpMethod.GET, url)

@@ -1,10 +1,13 @@
-import hrequests
-from typing import Any
+from typing import Any, Literal
 import os
 from dataclasses import dataclass, field
-import json
-from requests import Request
-import time
+from collections import defaultdict
+from human_requests import HumanBrowser, HumanContext, HumanPage
+from human_requests.abstraction import Proxy, FetchResponse, HttpMethod
+from human_requests.network_analyzer.anomaly_sniffer import (
+    HeaderAnomalySniffer, WaitHeader, WaitSource)
+from camoufox import AsyncCamoufox
+from playwright.async_api import TimeoutError as PWTimeoutError
 
 from .endpoints.catalog import ClassCatalog
 from .endpoints.geolocation import ClassGeolocation
@@ -23,73 +26,144 @@ def _pick_https_proxy() -> str | None:
 class FixPriceAPI:
     """Клиент FixPrice."""
 
-    timeout: float          = 30.0
-    browser: str            = "chrome"
-    headless: bool          = True
-    proxy: str | None       = field(default_factory=_pick_https_proxy)
+    timeout_ms: float       = 10000.0
+    """Время ожидания ответа от сервера в миллисекундах."""
+    headless: bool = True
+    """Запускать браузер в headless режиме?"""
+    proxy: str | dict | None = field(default_factory=_pick_https_proxy)
+    """Прокси-сервер для всех запросов (если нужен). По умолчанию берет из окружения (если есть).
+    Принимает как формат Playwright, так и строчный формат."""
     browser_opts: dict[str, Any] = field(default_factory=dict)
+    """Дополнительные опции для браузера (см. https://camoufox.com/python/installation/)"""
 
-    MAIN_SITE_URL: str    = "https://fix-price.com/catalog"
-    CATALOG_URL: str = "https://api.fix-price.com/buyer"
+    MAIN_SITE_URL: str = "https://fix-price.com/catalog"
+    CATALOG_URL:   str = "https://api.fix-price.com/buyer"
 
     # будет создана в __post_init__
-    session: hrequests.Session = field(init=False, repr=False)
+    session: HumanBrowser = field(init=False, repr=False)
+    """Внутренняя сессия браузера для выполнения HTTP-запросов."""
+    # будет создано в warmup
+    ctx: HumanContext = field(init=False, repr=False)
+    """Внутренний контекст сессии браузера"""
+    page: HumanPage = field(init=False, repr=False)
+    """Внутренний страница сессии браузера"""
 
-    Geolocation: ClassGeolocation = field(init=False, repr=False)
-    """Клиент геолокации."""
-    Catalog:     ClassCatalog     = field(init=False, repr=False)
-    """Клиент каталога."""
-    Advertising: ClassAdvertising = field(init=False, repr=False)
-    """Клиент рекламы."""
-    General:     ClassGeneral     = field(init=False, repr=False)
-    """Клиент общих методов."""
+    unstandard_headers: dict[str, str] = field(init=False, repr=False)
+    """Список нестандартных заголовков пойманных при инициализации"""
+
+    Geolocation: ClassGeolocation = field(init=False)
+    """API для работы с геолокацией."""
+    Catalog: ClassCatalog = field(init=False)
+    """API для работы с каталогом товаров."""
+    Advertising: ClassAdvertising = field(init=False)
+    """API для работы с рекламой."""
+    General: ClassGeneral = field(init=False)
+    """API для работы с общими функциями."""
 
     # ───── lifecycle ─────
     def __post_init__(self) -> None:
-        self.session: hrequests.Session = hrequests.Session(
-            self.browser,
-            timeout=self.timeout,
-        )
+        self.Geolocation = ClassGeolocation(self)
+        self.Catalog = ClassCatalog(self)
+        self.Advertising = ClassAdvertising(self)
+        self.General = ClassGeneral(self)
 
-        self.Geolocation = ClassGeolocation(self, self.CATALOG_URL)
-        self.Catalog = ClassCatalog(self, self.CATALOG_URL)
-        self.Advertising = ClassAdvertising(self, self.CATALOG_URL)
-        self.General = ClassGeneral(self, self.CATALOG_URL)
-
-    def __enter__(self):
-        #self._warmup()
+    async def __aenter__(self):
+        """Вход в контекстный менеджер с автоматическим прогревом сессии."""
+        await self._warmup()
         return self
 
-    def __exit__(self, *exc):
-        pass
+    # Прогрев сессии (headless ➜ cookie `session` ➜ accessToken)
+    async def _warmup(self) -> None:
+        """Прогрев сессии через браузер для получения человекоподобности."""
+        br = await AsyncCamoufox(
+            headless=self.headless,
+            proxy=Proxy(self.proxy).as_dict(),
+            **self.browser_opts,
+            block_images=True
+        ).start()
+
+        self.session = HumanBrowser.replace(br)
+        self.ctx = await self.session.new_context()
+        self.page = await self.ctx.new_page()
+
+        sniffer = HeaderAnomalySniffer(
+            include_subresources=True,  # или False, если интересны только документы
+            url_filter=lambda u: u.startswith(self.CATALOG_URL),
+        )
+        await sniffer.start(self.ctx)
+
+        await self.page.goto(self.CATALOG_URL, wait_until="networkidle")
+
+        ok = False
+        try_count = 3
+        while not ok or try_count <= 0:
+            try_count -= 1
+            try:
+                await self.page.wait_for_selector(
+                    "div#__nuxt", timeout=self.timeout_ms, state="attached"
+                )
+                ok = True
+            except PWTimeoutError:
+                await self.page.reload()
+        if not ok:
+            raise RuntimeError(self.page.content)
+        
+        await sniffer.wait(
+            tasks=[
+                WaitHeader(
+                    source=WaitSource.REQUEST,
+                    headers=["x-key"],
+                )
+            ],
+            timeout_ms=self.timeout_ms,
+        )
+
+        result_sniffer = await sniffer.complete()
+        # Результат: {заголовок: [уникальные значения]}
+        result = defaultdict(set)
+
+        # Проходим по всем URL в 'request'
+        for _url, headers in result_sniffer["request"].items():
+            for header, values in headers.items():
+                result[header].update(values)  # добавляем значения, set уберёт дубли
+
+        # Преобразуем set обратно в list
+        self.unstandard_headers = {k: list(v)[0] for k, v in result.items()}
+
+    async def __aexit__(self, *exc):
+        """Выход из контекстного менеджера с закрытием сессии."""
+        await self.close()
+
+    async def close(self):
+        """Закрыть HTTP-сессию и освободить ресурсы."""
+        await self.session.close()
     
 
     @property
-    def city_id(self) -> str | None:
+    def city_id(self) -> int | None:
         """ID города используемый как фильтр каталога. Если не указан, автоматически назначается в первом ответе сервера. Обычно это `3` (Москва)."""
-        return self.session.headers.get("x-city", None)
+        x = self.unstandard_headers.get("x-city", None)
+        if x: x = int(x)
+        return x
 
     @city_id.setter
-    def city_id(self, value: str | None) -> None:
+    def city_id(self, value: int | None) -> None:
         if value is None:
-            self.session.headers.pop("x-city", None)
+            self.unstandard_headers.pop("x-city", None)
         elif (
-            not isinstance(value, int) and \
-            not isinstance(value, float) \
+            not isinstance(value, (int, float)) \
             and(not isinstance(value, str) and value.isdigit())
         ):
             raise TypeError("`city_id` must be int")
         elif int(value) < 1:
             raise ValueError("`city_id` must be greater than 0")
         else:
-            self.session.headers.update({ # токен пойдёт в каждый запрос
-                "x-city": value
-            })
-    
+            self.unstandard_headers.update({"x-city": int(value)})
+
     @property
     def language(self) -> str | None:
         """Язык используемый как фильтр каталога. ISO-2. Если не указан, автоматически назначается в первом ответе сервера. Обычно это `ru` (Русский)."""
-        return self.session.headers.get("x-language", None)
+        return self.unstandard_headers.get("x-language", None)
 
     @language.setter
     def language(self, value: str | None) -> None:
@@ -98,119 +172,73 @@ class FixPriceAPI:
         if not len(value) in [2, 5]:
             raise ValueError("`language` must be IETF BCP 47. Length must be 2 (ex. `en`) or 5 (ex. `en-AE`)")
         elif value is None:
-            self.session.headers.pop("x-language", None)
+            self.unstandard_headers.pop("x-language", None)
         else:
-            self.session.headers.update({ # токен пойдёт в каждый запрос
+            self.unstandard_headers.update({ # токен пойдёт в каждый запрос
                 "x-language": value
             })
 
     @property
     def token(self) -> str | None:
         """Токен доступа для API запросов. READ-ONLY."""
-        return self.session.headers.get("X-Key", None)
+        return self.unstandard_headers.get("x-key", None)
 
-    # Прогрев сессии (headless ➜ cookie `session` ➜ accessToken)
-    def _warmup(self) -> None:
-        """Прогрев сессии через браузер для получения токена доступа.
+    @property
+    def delivery_type(self) -> Literal["store", "pickup", "courier"] | None:
+        """Способ получения заказа (влияет на каталог).
         
-        [BUG] - не работает в конфигурации chrome+headless=true
-        Из-за чего временно исключен.
+        store - самовывоз из магазина
+        pickup - получить из ПВЗ
+        courier - курьерская доставка"""
+        return self.unstandard_headers.get("x-delivery-type", None)
+    
+    @delivery_type.setter
+    def delivery_type(self, value: Literal["store", "pickup", "courier"]) -> None:
+        self.unstandard_headers.update({"x-delivery-type": value})
 
-        Открывает главную страницу сайта в headless браузере, получает cookie сессии
-        и извлекает из неё access token для последующих API запросов.
-        """
-        self.session.headers.update({ # токен пойдёт в каждый запрос
-            "X-Client-Route": "/catalog"
-        })
+    @property
+    def store_id(self) -> str | None:
+        """Индификатор магазина или ПВЗ. Обычно состоит из 1 латинской буквы и 3 цифр.
+        В терминологии сайта называется PFM"""
+        return self.unstandard_headers.get("x-pfm", None)
 
-        with hrequests.BrowserSession(
-            session=self.session,
-            browser=self.browser,
-            headless=self.headless,
-            proxy=self.proxy,
-            **self.browser_opts,
-        ) as page:
-            page.goto(self.MAIN_SITE_URL)
-            page.awaitSelector('div#__nuxt', timeout=self.timeout)
+    @store_id.setter
+    def store_id(self, value: str) -> None:
+        self.unstandard_headers.update({"x-pfm": value})
 
-    def _request(
+    @property
+    def client_route(self) -> str | None:
+        """Адрес (путь) страницы с которой будет сделан запрос."""
+        return self.unstandard_headers.get("x-client-route", None)
+    
+    @client_route.setter
+    def client_route(self, value: str) -> None:
+        self.unstandard_headers.update({"x-client-route": value})
+
+
+    async def _request(
         self,
-        method: str,
+        method: HttpMethod,
         url: str,
-        real_route: str | None = None,
         *,
-        json_body: Any | None = None
-    ) -> hrequests.Response:
+        json_body: Any | None = None,
+        add_unstandard_headers: bool = True,
+        credentials: bool = True,
+    ) -> FetchResponse:
         """Выполнить HTTP-запрос через внутреннюю сессию.
-        
+
         Единая точка входа для всех HTTP-запросов библиотеки.
-        Добавляет к ответу объект Request для совместимости.
-        
-        Args:
-            method: HTTP метод (GET, POST, PUT, DELETE и т.д.)
-            url: URL для запроса
-            real_route: "реальный" маршрут. Отражает путь на морде сайта.
-            json_body: Тело запроса в формате JSON (опционально)
         """
-
-        if real_route:
-            self.session.headers.update({ # токен пойдёт в каждый запрос
-                "X-Client-Route": real_route
-            })
-
         # Единая точка входа в чужую библиотеку для удобства
-        resp = self.session.request(method.upper(), url, json=json_body, timeout=self.timeout, proxy=self.proxy)
-        if hasattr(resp, "request"):
-            raise RuntimeError(
-                "Response object does have `request` attribute. "
-                "This may indicate an update in `hrequests` library."
-            )
-        elif isinstance(resp, hrequests.ProcessResponse):
-            raise RuntimeError(
-                "Response object is still a `ProcessResponse`. "
-                "This may indicate that the request was not completed. "
-                "Check if the proxy or network settings are correct."
-            )
-        
-
-        ctype = resp.headers.get("content-type", "")
-        if "text/html" in ctype:
-            # исполним скрипт в браузерном контексте; куки запишутся в сессию
-            with resp.render(headless=self.headless, browser=self.browser) as rend:
-                rend.awaitSelector(selector="pre", timeout=self.timeout)
-
-                jsn = json.loads(rend.find("pre").text)
-
-                fin_resp = hrequests.Response(
-                    url=resp.url,
-                    status_code=resp.status_code,
-                    headers=resp.headers,
-                    cookies=hrequests.cookies.cookiejar_from_dict(
-                        self.session.cookies.get_dict()
-                    ),
-                    raw=json.dumps(jsn, ensure_ascii=True).encode("utf-8"),
-                )
-        else:
-            fin_resp = resp
-
-        if self.city_id == None and fin_resp.headers.get("x-city"): self.city_id = fin_resp.headers["x-city"]
-        if self.language == None and fin_resp.headers.get("x-language"): self.language = fin_resp.headers["x-language"]
-        tok = self.session.cookies.get(name="token")
-        if tok:
-            self.session.headers.update({ # токен пойдёт в каждый запрос
-                "X-Key": tok
-            })
-
-        def _is_error(data) -> bool:
-            errors_keys = ["name", "message", "code", "type", "status", "comment"]
-            return len(data) == len(errors_keys) and all(key in data for key in errors_keys)
-        
-        if not resp.headers["Content-Type"].startswith("image/") and _is_error(fin_resp.json()):
-            raise RuntimeError(f"API Error: {fin_resp.json()}")
-
-        fin_resp.request = Request(
-            method=method.upper(),
+        resp: FetchResponse = await self.page.fetch(
             url=url,
-            json=json_body,
+            method=method,
+            body=json_body,
+            mode="cors",
+            credentials="include" if credentials else "omit",
+            timeout_ms=self.timeout_ms,
+            referrer=self.MAIN_SITE_URL,
+            headers={"Accept": "application/json, text/plain, */*"} | (self.unstandard_headers if add_unstandard_headers else {}),
         )
-        return fin_resp
+
+        return resp
