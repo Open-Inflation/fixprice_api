@@ -1,4 +1,4 @@
-fixprice\_api.endpoints.advertising
+﻿fixprice\_api.endpoints.advertising
 ===================================
 
 .. automodule:: fixprice_api.endpoints.advertising
@@ -9,4 +9,5 @@ fixprice\_api.endpoints.advertising
    .. autosummary::
    
       ClassAdvertising
+      FetchResponse
    

@@ -1,4 +1,4 @@
-fixprice\_api.endpoints.general
+﻿fixprice\_api.endpoints.general
 ===============================
 
 .. automodule:: fixprice_api.endpoints.general
@@ -8,5 +8,9 @@ fixprice\_api.endpoints.general
 
    .. autosummary::
    
+      BytesIO
       ClassGeneral
+      ExponentialRetry
+      Proxy
+      RetryClient
    

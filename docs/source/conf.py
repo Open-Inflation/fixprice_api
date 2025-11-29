@@ -124,7 +124,7 @@ nitpick_ignore_regex = [
 # ──────────────────────────────────────────────────────────────────────────────
 intersphinx_mapping = {
     "python": ("https://docs.python.org/3", None),
-    # "requests": ("https://requests.readthedocs.io/en/latest/", None),
+    "human_requests": ("https://miskler.github.io/human-requests/", None)
 }
 
 # ──────────────────────────────────────────────────────────────────────────────

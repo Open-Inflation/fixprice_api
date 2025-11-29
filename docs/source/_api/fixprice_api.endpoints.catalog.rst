@@ -1,4 +1,4 @@
-fixprice\_api.endpoints.catalog
+﻿fixprice\_api.endpoints.catalog
 ===============================
 
 .. automodule:: fixprice_api.endpoints.catalog
@@ -9,5 +9,6 @@ fixprice\_api.endpoints.catalog
    .. autosummary::
    
       ClassCatalog
+      FetchResponse
       ProductService
    

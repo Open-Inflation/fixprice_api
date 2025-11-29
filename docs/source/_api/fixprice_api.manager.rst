@@ -16,10 +16,24 @@
    .. autosummary::
    
       Any
+      AsyncCamoufox
       ClassAdvertising
       ClassCatalog
       ClassGeneral
       ClassGeolocation
+      FetchResponse
       FixPriceAPI
-      Request
+      HeaderAnomalySniffer
+      HumanBrowser
+      HumanContext
+      HumanPage
+      Proxy
+      WaitHeader
+      defaultdict
+   
+   .. rubric:: Exceptions
+
+   .. autosummary::
+   
+      PWTimeoutError
    
