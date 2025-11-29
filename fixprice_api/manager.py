@@ -1,5 +1,6 @@
 from typing import Any, Literal
 import os
+import asyncio
 from dataclasses import dataclass, field
 from collections import defaultdict
 from human_requests import HumanBrowser, HumanContext, HumanPage
@@ -37,7 +38,8 @@ class FixPriceAPI:
     """Дополнительные опции для браузера (см. https://camoufox.com/python/installation/)"""
 
     MAIN_SITE_URL: str = "https://fix-price.com/catalog"
-    CATALOG_URL:   str = "https://api.fix-price.com/buyer"
+    MAIN_SITE_ORIGIN: str = "https://fix-price.com/"
+    CATALOG_URL:   str = "https://a-api.fix-price.com/buyer"
 
     # будет создана в __post_init__
     session: HumanBrowser = field(init=False, repr=False)
@@ -93,32 +95,34 @@ class FixPriceAPI:
         await sniffer.start(self.ctx)
 
         await self.page.goto(self.CATALOG_URL, wait_until="networkidle")
-
         ok = False
         try_count = 3
         while not ok or try_count <= 0:
             try_count -= 1
             try:
                 await self.page.wait_for_selector(
-                    "div#__nuxt", timeout=self.timeout_ms, state="attached"
+                    "pre", timeout=self.timeout_ms, state="attached"
                 )
                 ok = True
             except PWTimeoutError:
                 await self.page.reload()
         if not ok:
             raise RuntimeError(self.page.content)
+
+        await self.page.goto(self.MAIN_SITE_URL, wait_until="networkidle")
         
         await sniffer.wait(
             tasks=[
                 WaitHeader(
                     source=WaitSource.REQUEST,
-                    headers=["x-key"],
+                    headers=["X-Key"],
                 )
             ],
             timeout_ms=self.timeout_ms,
         )
-
+        
         result_sniffer = await sniffer.complete()
+
         # Результат: {заголовок: [уникальные значения]}
         result = defaultdict(set)
 
@@ -129,6 +133,8 @@ class FixPriceAPI:
 
         # Преобразуем set обратно в list
         self.unstandard_headers = {k: list(v)[0] for k, v in result.items()}
+
+        await asyncio.sleep(5)
 
     async def __aexit__(self, *exc):
         """Выход из контекстного менеджера с закрытием сессии."""
@@ -221,6 +227,7 @@ class FixPriceAPI:
         method: HttpMethod,
         url: str,
         *,
+        real_route: str | None = None,
         json_body: Any | None = None,
         add_unstandard_headers: bool = True,
         credentials: bool = True,
@@ -229,6 +236,8 @@ class FixPriceAPI:
 
         Единая точка входа для всех HTTP-запросов библиотеки.
         """
+        self.client_route = real_route
+
         # Единая точка входа в чужую библиотеку для удобства
         resp: FetchResponse = await self.page.fetch(
             url=url,
@@ -237,8 +246,8 @@ class FixPriceAPI:
             mode="cors",
             credentials="include" if credentials else "omit",
             timeout_ms=self.timeout_ms,
-            referrer=self.MAIN_SITE_URL,
-            headers={"Accept": "application/json, text/plain, */*"} | (self.unstandard_headers if add_unstandard_headers else {}),
+            referrer=self.MAIN_SITE_ORIGIN,
+            headers={"Accept": "application/json, text/plain, */*"} | (self.unstandard_headers if add_unstandard_headers else {})
         )
 
         return resp

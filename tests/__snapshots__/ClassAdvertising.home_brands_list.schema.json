@@ -14,8 +14,8 @@
         "type": "string"
       },
       "src": {
-        "format": "uri",
-        "type": "string"
+        "type": "string",
+        "format": "uri"
       },
       "isFavorite": {
         "type": "boolean"

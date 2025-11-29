@@ -1,45 +1,51 @@
 import pytest
 from fixprice_api import FixPriceAPI
 
+
 @pytest.fixture(scope="session")
-def api():
+def anyio_backend():
+    """
+    Переопределяет фикстуру anyio_backend, чтобы использовать asyncio
+    для всей сессии, устраняя ScopeMismatch с фикстурой 'api'.
+    """
+    return "asyncio"
+
+
+@pytest.fixture(scope="session")
+async def api():
     """
     Открываем один экземпляр клиента на всю сессию тестов.
     Корректно зовём менеджер контекста вручную.
     """
-    client = FixPriceAPI()
-    client.__enter__()  # эквивалент 'with FixPriceAPI() as api'
-    try:
+    async with FixPriceAPI() as client:
         yield client
-    finally:
-        client.__exit__(None, None, None)
-
 
 
 @pytest.fixture(scope="session")
-def cities_list_json(api):
+async def cities_list_json(api):
     """Кэш списка городов на сессию."""
-    resp = api.Geolocation.cities_list(country_id=2)
+    resp = await api.Geolocation.cities_list(country_id=2)
     data = resp.json()
     return data
 
+
 @pytest.fixture(scope="session")
-def tree_json(api):
+async def tree_json(api):
     """Кэш дерева категорий на сессию."""
-    resp = api.Catalog.tree()
+    resp = await api.Catalog.tree()
     data = resp.json()
     return data
 
 
 @pytest.fixture(scope="session")
-def first_category_alias(tree_json):
+async def first_category_alias(tree_json):
     """alias первой категории из дерева."""
     return tree_json[0]["alias"]
 
 
 @pytest.fixture(scope="session")
-def products_list_json(api: FixPriceAPI, first_category_alias):
+async def products_list_json(api: FixPriceAPI, first_category_alias):
     """Кэш списка товаров по первой категории."""
-    resp = api.Catalog.products_list(category_alias=first_category_alias)
+    resp = await api.Catalog.products_list(category_alias=first_category_alias)
     data = resp.json()
     return data
