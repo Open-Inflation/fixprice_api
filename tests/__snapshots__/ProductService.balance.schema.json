@@ -1,0 +1,114 @@
+{
+  "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "items": {
+    "type": "object",
+    "required": [
+      "address",
+      "canPayCard",
+      "canPickup",
+      "cityId",
+      "count",
+      "id",
+      "info",
+      "isActive",
+      "latitude",
+      "longitude",
+      "metroStations",
+      "pfm",
+      "scheduleSaturday",
+      "scheduleSunday",
+      "scheduleWeekdays",
+      "temporarilyClosed",
+      "warehouse",
+      "withVariableProduct",
+      "workTime"
+    ],
+    "properties": {
+      "address": {
+        "type": "string"
+      },
+      "canPayCard": {
+        "type": "boolean"
+      },
+      "canPickup": {
+        "type": "boolean"
+      },
+      "cityId": {
+        "type": "integer"
+      },
+      "count": {
+        "type": "integer"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "info": {
+        "type": "null"
+      },
+      "isActive": {
+        "type": "boolean"
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "metroStations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "latitude",
+            "lineColor",
+            "longitude",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "lineColor": {
+              "type": "string"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "pfm": {
+        "type": "string"
+      },
+      "scheduleSaturday": {
+        "type": "string"
+      },
+      "scheduleSunday": {
+        "type": "string"
+      },
+      "scheduleWeekdays": {
+        "type": "string"
+      },
+      "temporarilyClosed": {
+        "type": "boolean"
+      },
+      "warehouse": {
+        "type": "boolean"
+      },
+      "withVariableProduct": {
+        "type": "boolean"
+      },
+      "workTime": {
+        "type": "string"
+      }
+    }
+  }
+}

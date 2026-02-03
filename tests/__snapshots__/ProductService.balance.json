@@ -1,0 +1,95 @@
+[
+  {
+    "id": 611,
+    "pfm": "3702",
+    "address": "г.Москва, ул.Чертановская, д.9, стр.3",
+    "latitude": 55.628571,
+    "longitude": 37.600388,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": true,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "09:00-22:00",
+    "scheduleSaturday": "09:00-22:00",
+    "scheduleSunday": "09:00-22:00",
+    "workTime": "Открыто до 22:00",
+    "metroStations": [
+      {
+        "id": 9163,
+        "name": "Южная",
+        "lineColor": "ADACAC",
+        "latitude": 55.622436,
+        "longitude": 37.609047
+      }
+    ],
+    "temporarilyClosed": false,
+    "count": 14
+  },
+  {
+    "id": 9605,
+    "pfm": "D708",
+    "address": "г.Москва, вн.тер.г. м.о. Коньково, ул.Введенского, д.3, к.6",
+    "latitude": 55.646609,
+    "longitude": 37.546426,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": false,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "09:00-21:00",
+    "scheduleSaturday": "09:00-21:00",
+    "scheduleSunday": "09:00-21:00",
+    "workTime": "Открыто до 21:00",
+    "metroStations": [],
+    "temporarilyClosed": false,
+    "count": 12
+  },
+  {
+    "id": 8889,
+    "pfm": "D197",
+    "address": "г.Москва, ш.Дмитровское, д.37к1",
+    "latitude": 55.83115,
+    "longitude": 37.571776,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": true,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "09:00-22:00",
+    "scheduleSaturday": "09:00-22:00",
+    "scheduleSunday": "09:00-22:00",
+    "workTime": "Открыто до 22:00",
+    "metroStations": [
+      {
+        "id": 9108,
+        "name": "Петровско-Разумовская",
+        "lineColor": "ADACAC",
+        "latitude": 55.836565,
+        "longitude": 37.575512
+      },
+      {
+        "id": 10548,
+        "name": "Петровско-Разумовская",
+        "lineColor": "BED12C",
+        "latitude": 55.836667,
+        "longitude": 37.575556
+      },
+      {
+        "id": 135849,
+        "name": "Петровско-Разумовская",
+        "lineColor": "EA5B04",
+        "latitude": 55.839722,
+        "longitude": 37.568333
+      }
+    ],
+    "temporarilyClosed": false,
+    "count": 10
+  }
+]

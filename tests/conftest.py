@@ -40,7 +40,7 @@ async def tree_json(api):
 @pytest.fixture(scope="session")
 async def first_category_alias(tree_json):
     """alias первой категории из дерева."""
-    return tree_json[0]["alias"]
+    return tree_json[list(tree_json.keys())[0]]["alias"]
 
 
 @pytest.fixture(scope="session")

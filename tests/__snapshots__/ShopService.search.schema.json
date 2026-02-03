@@ -36,6 +36,7 @@
       "id": {
         "type": "integer"
       },
+      "info": {},
       "isActive": {
         "type": "boolean"
       },
@@ -78,13 +79,27 @@
       "pfm": {
         "type": "string"
       },
-      "scheduleSaturday": {},
-      "scheduleSunday": {},
-      "scheduleWeekdays": {},
+      "scheduleSaturday": {
+        "type": "string"
+      },
+      "scheduleSunday": {
+        "type": "string"
+      },
+      "scheduleWeekdays": {
+        "type": "string"
+      },
       "temporarilyClosed": {
         "type": "boolean"
       },
-      "workTime": {}
+      "warehouse": {
+        "type": "boolean"
+      },
+      "withVariableProduct": {
+        "type": "boolean"
+      },
+      "workTime": {
+        "type": "string"
+      }
     }
   }
 }

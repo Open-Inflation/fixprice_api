@@ -19,6 +19,9 @@
     },
     "x-language": {
       "type": "string"
+    },
+    "x-logged": {
+      "type": "string"
     }
   }
 }
