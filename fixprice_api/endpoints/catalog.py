@@ -23,7 +23,7 @@ class ClassCatalog:
 
     async def tree(self) -> FetchResponse:
         """Возвращает список категорий."""
-        return await self._parent._request(HttpMethod.GET, f"{self._parent.CATALOG_URL}/v1/category/menu")
+        return await self._parent._request(HttpMethod.GET, f"{self._parent.CATALOG_URL}/v1/category")
 
     async def products_list(
             self,

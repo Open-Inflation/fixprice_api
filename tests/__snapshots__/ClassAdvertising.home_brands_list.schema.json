@@ -1,50 +1,8 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "items": {
     "type": "object",
-    "properties": {
-      "id": {
-        "type": "integer"
-      },
-      "alias": {
-        "type": "string"
-      },
-      "title": {
-        "type": "string"
-      },
-      "src": {
-        "type": "string",
-        "format": "uri"
-      },
-      "isFavorite": {
-        "type": "boolean"
-      },
-      "url": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "stm": {
-        "type": "boolean"
-      },
-      "login": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "updatedAt": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "isEmpty": {
-        "type": "boolean"
-      }
-    },
     "required": [
       "alias",
       "id",
@@ -56,6 +14,33 @@
       "title",
       "updatedAt",
       "url"
-    ]
+    ],
+    "properties": {
+      "alias": {
+        "type": "string"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "isEmpty": {
+        "type": "boolean"
+      },
+      "isFavorite": {
+        "type": "boolean"
+      },
+      "login": {},
+      "src": {
+        "type": "string",
+        "format": "uri"
+      },
+      "stm": {
+        "type": "boolean"
+      },
+      "title": {
+        "type": "string"
+      },
+      "updatedAt": {},
+      "url": {}
+    }
   }
 }

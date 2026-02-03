@@ -1,8 +1,12 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "items": {
     "type": "object",
+    "required": [
+      "id",
+      "title"
+    ],
     "properties": {
       "id": {
         "type": "integer"
@@ -10,10 +14,6 @@
       "title": {
         "type": "string"
       }
-    },
-    "required": [
-      "id",
-      "title"
-    ]
+    }
   }
 }

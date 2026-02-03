@@ -1,24 +1,24 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "object",
-  "properties": {
-    "x-language": {
-      "type": "string"
-    },
-    "x-city": {
-      "type": "string"
-    },
-    "x-key": {
-      "type": "string"
-    },
-    "x-client-route": {
-      "type": "null"
-    }
-  },
   "required": [
     "x-city",
     "x-client-route",
     "x-key",
     "x-language"
-  ]
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "x-city": {
+      "type": "string"
+    },
+    "x-client-route": {
+      "type": "null"
+    },
+    "x-key": {
+      "type": "string"
+    },
+    "x-language": {
+      "type": "string"
+    }
+  }
 }

@@ -1,94 +1,8 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "items": {
     "type": "object",
-    "properties": {
-      "id": {
-        "type": "integer"
-      },
-      "pfm": {
-        "type": "string"
-      },
-      "address": {
-        "type": "string"
-      },
-      "latitude": {
-        "type": "number"
-      },
-      "longitude": {
-        "type": "number"
-      },
-      "isActive": {
-        "type": "boolean"
-      },
-      "cityId": {
-        "type": "integer"
-      },
-      "canPayCard": {
-        "type": "boolean"
-      },
-      "canPickup": {
-        "type": "boolean"
-      },
-      "scheduleWeekdays": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "scheduleSaturday": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "scheduleSunday": {
-        "type": [
-          "null",
-          "string"
-        ]
-      },
-      "temporarilyClosed": {
-        "type": "boolean"
-      },
-      "metroStations": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "properties": {
-            "id": {
-              "type": "integer"
-            },
-            "name": {
-              "type": "string"
-            },
-            "lineColor": {
-              "type": "string"
-            },
-            "latitude": {
-              "type": "number"
-            },
-            "longitude": {
-              "type": "number"
-            }
-          },
-          "required": [
-            "id",
-            "latitude",
-            "lineColor",
-            "longitude",
-            "name"
-          ]
-        }
-      },
-      "workTime": {
-        "type": [
-          "null",
-          "string"
-        ]
-      }
-    },
     "required": [
       "address",
       "canPayCard",
@@ -105,6 +19,72 @@
       "scheduleWeekdays",
       "temporarilyClosed",
       "workTime"
-    ]
+    ],
+    "properties": {
+      "address": {
+        "type": "string"
+      },
+      "canPayCard": {
+        "type": "boolean"
+      },
+      "canPickup": {
+        "type": "boolean"
+      },
+      "cityId": {
+        "type": "integer"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "isActive": {
+        "type": "boolean"
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "metroStations": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "latitude",
+            "lineColor",
+            "longitude",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "latitude": {
+              "type": "number"
+            },
+            "lineColor": {
+              "type": "string"
+            },
+            "longitude": {
+              "type": "number"
+            },
+            "name": {
+              "type": "string"
+            }
+          }
+        }
+      },
+      "pfm": {
+        "type": "string"
+      },
+      "scheduleSaturday": {},
+      "scheduleSunday": {},
+      "scheduleWeekdays": {},
+      "temporarilyClosed": {
+        "type": "boolean"
+      },
+      "workTime": {}
+    }
   }
 }

@@ -27,9 +27,9 @@ def _pick_https_proxy() -> str | None:
 class FixPriceAPI:
     """Клиент FixPrice."""
 
-    timeout_ms: float       = 10000.0
+    timeout_ms: float       = 50000.0
     """Время ожидания ответа от сервера в миллисекундах."""
-    headless: bool = True
+    headless: bool = False
     """Запускать браузер в headless режиме?"""
     proxy: str | dict | None = field(default_factory=_pick_https_proxy)
     """Прокси-сервер для всех запросов (если нужен). По умолчанию берет из окружения (если есть).
@@ -39,7 +39,7 @@ class FixPriceAPI:
 
     MAIN_SITE_URL: str = "https://fix-price.com/catalog"
     MAIN_SITE_ORIGIN: str = "https://fix-price.com/"
-    CATALOG_URL:   str = "https://a-api.fix-price.com/buyer"
+    CATALOG_URL:   str = "https://api.fix-price.com/buyer"
 
     # будет создана в __post_init__
     session: HumanBrowser = field(init=False, repr=False)
@@ -94,21 +94,6 @@ class FixPriceAPI:
         )
         await sniffer.start(self.ctx)
 
-        await self.page.goto(self.CATALOG_URL, wait_until="networkidle")
-        ok = False
-        try_count = 3
-        while not ok or try_count <= 0:
-            try_count -= 1
-            try:
-                await self.page.wait_for_selector(
-                    "pre", timeout=self.timeout_ms, state="attached"
-                )
-                ok = True
-            except PWTimeoutError:
-                await self.page.reload()
-        if not ok:
-            raise RuntimeError(self.page.content)
-
         await self.page.goto(self.MAIN_SITE_URL, wait_until="networkidle")
         
         await sniffer.wait(
@@ -120,6 +105,9 @@ class FixPriceAPI:
             ],
             timeout_ms=self.timeout_ms,
         )
+
+        await self.page.goto(self.CATALOG_URL, wait_until="networkidle") # ускорение сети, таким образом пропускаем OPTION pre-fetch
+        await self.page.wait_for_selector(selector="body > pre", timeout=self.timeout_ms, state="visible")
         
         result_sniffer = await sniffer.complete()
 
@@ -133,8 +121,6 @@ class FixPriceAPI:
 
         # Преобразуем set обратно в list
         self.unstandard_headers = {k: list(v)[0] for k, v in result.items()}
-
-        await asyncio.sleep(5)
 
     async def __aexit__(self, *exc):
         """Выход из контекстного менеджера с закрытием сессии."""
@@ -239,15 +225,23 @@ class FixPriceAPI:
         self.client_route = real_route
 
         # Единая точка входа в чужую библиотеку для удобства
-        resp: FetchResponse = await self.page.fetch(
-            url=url,
-            method=method,
-            body=json_body,
-            mode="cors",
-            credentials="include" if credentials else "omit",
-            timeout_ms=self.timeout_ms,
-            referrer=self.MAIN_SITE_ORIGIN,
-            headers={"Accept": "application/json, text/plain, */*"} | (self.unstandard_headers if add_unstandard_headers else {})
-        )
+        async def f() -> FetchResponse:
+            return await self.page.fetch(
+                url=url,
+                method=method,
+                body=json_body,
+                mode="cors",
+                credentials="include" if credentials else "omit",
+                timeout_ms=self.timeout_ms,
+                referrer=self.MAIN_SITE_ORIGIN,
+                headers={"Accept": "application/json, text/plain, */*"} | (self.unstandard_headers if add_unstandard_headers else {})
+            )
+
+        resp = await f()
+        if "html" in resp.headers.get("content-type"):
+            temporal_page = await resp.render(wait_until="networkidle")
+            await temporal_page.wait_for_selector(selector="body > pre", timeout=self.timeout_ms, state="visible")
+            await temporal_page.close()
+            resp = await f()
 
         return resp

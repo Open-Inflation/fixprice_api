@@ -1,90 +1,8 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "items": {
     "type": "object",
-    "properties": {
-      "id": {
-        "type": "integer"
-      },
-      "title": {
-        "type": "string"
-      },
-      "alias": {
-        "type": "string"
-      },
-      "language": {
-        "anyOf": [
-          {
-            "type": "null"
-          },
-          {
-            "type": "object",
-            "properties": {
-              "alias": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "alias"
-            ]
-          }
-        ]
-      },
-      "city": {
-        "anyOf": [
-          {
-            "type": "null"
-          },
-          {
-            "type": "object",
-            "properties": {
-              "id": {
-                "type": "integer"
-              },
-              "title": {
-                "type": "string"
-              },
-              "latitude": {
-                "type": "number"
-              },
-              "longitude": {
-                "type": "number"
-              },
-              "prefix": {
-                "type": "string"
-              }
-            },
-            "required": [
-              "id",
-              "latitude",
-              "longitude",
-              "prefix",
-              "title"
-            ]
-          }
-        ]
-      },
-      "currency": {
-        "type": "object",
-        "properties": {
-          "title": {
-            "type": "string"
-          },
-          "symbol": {
-            "type": "string"
-          },
-          "symbolFirst": {
-            "type": "boolean"
-          }
-        },
-        "required": [
-          "symbol",
-          "symbolFirst",
-          "title"
-        ]
-      }
-    },
     "required": [
       "alias",
       "city",
@@ -92,6 +10,38 @@
       "id",
       "language",
       "title"
-    ]
+    ],
+    "properties": {
+      "alias": {
+        "type": "string"
+      },
+      "city": {},
+      "currency": {
+        "type": "object",
+        "required": [
+          "symbol",
+          "symbolFirst",
+          "title"
+        ],
+        "properties": {
+          "symbol": {
+            "type": "string"
+          },
+          "symbolFirst": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string"
+          }
+        }
+      },
+      "id": {
+        "type": "integer"
+      },
+      "language": {},
+      "title": {
+        "type": "string"
+      }
+    }
   }
 }

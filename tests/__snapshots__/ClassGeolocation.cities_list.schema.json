@@ -1,48 +1,8 @@
 {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
   "items": {
     "type": "object",
-    "properties": {
-      "id": {
-        "type": "integer"
-      },
-      "name": {
-        "type": "string"
-      },
-      "title": {
-        "type": "string"
-      },
-      "regionTitle": {
-        "type": "string"
-      },
-      "longitude": {
-        "type": "number"
-      },
-      "latitude": {
-        "type": "number"
-      },
-      "kladr": {
-        "type": "null"
-      },
-      "fiasid": {
-        "format": "uuid",
-        "type": "string"
-      },
-      "fias": {
-        "format": "uuid",
-        "type": "string"
-      },
-      "addressId": {
-        "type": "string"
-      },
-      "prefix": {
-        "type": "string"
-      },
-      "countryId": {
-        "type": "integer"
-      }
-    },
     "required": [
       "addressId",
       "countryId",
@@ -56,6 +16,46 @@
       "prefix",
       "regionTitle",
       "title"
-    ]
+    ],
+    "properties": {
+      "addressId": {
+        "type": "string"
+      },
+      "countryId": {
+        "type": "integer"
+      },
+      "fias": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "fiasid": {
+        "type": "string",
+        "format": "uuid"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "kladr": {
+        "type": "null"
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string"
+      },
+      "prefix": {
+        "type": "string"
+      },
+      "regionTitle": {
+        "type": "string"
+      },
+      "title": {
+        "type": "string"
+      }
+    }
   }
 }
