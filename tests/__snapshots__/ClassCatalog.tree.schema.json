@@ -1,4 +1,267 @@
 {
   "type": "object",
-  "$schema": "https://json-schema.org/draft/2020-12/schema"
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "patternProperties": {
+    "^[0-9]+$": {
+      "type": "object",
+      "required": [
+        "adult",
+        "alias",
+        "banner",
+        "catalogImage",
+        "childrenCount",
+        "hover",
+        "icon",
+        "id",
+        "items",
+        "level",
+        "parentId",
+        "productCount",
+        "shortTitle",
+        "src",
+        "title",
+        "topId",
+        "url"
+      ],
+      "properties": {
+        "adult": {
+          "type": "boolean"
+        },
+        "alias": {
+          "type": "string"
+        },
+        "banner": {
+          "type": "object",
+          "required": [
+            "image",
+            "imageAdaptive",
+            "url"
+          ],
+          "properties": {
+            "image": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "imageAdaptive": {
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "url": {
+              "type": "null"
+            }
+          }
+        },
+        "catalogImage": {
+          "type": "string",
+          "format": "uri"
+        },
+        "childrenCount": {
+          "type": "integer"
+        },
+        "hover": {
+          "type": "string",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string",
+              "format": "uri"
+            }
+          ]
+        },
+        "icon": {
+          "type": "string",
+          "format": "uri"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "items": {
+          "anyOf": [
+            {
+              "type": "object",
+              "patternProperties": {
+                "^[0-9]+$": {
+                  "type": "object",
+                  "required": [
+                    "adult",
+                    "alias",
+                    "banner",
+                    "catalogImage",
+                    "childrenCount",
+                    "hover",
+                    "icon",
+                    "id",
+                    "items",
+                    "level",
+                    "parentId",
+                    "productCount",
+                    "shortTitle",
+                    "src",
+                    "title",
+                    "topId",
+                    "url"
+                  ],
+                  "properties": {
+                    "adult": {
+                      "type": "boolean"
+                    },
+                    "alias": {
+                      "type": "string"
+                    },
+                    "banner": {
+                      "type": "object",
+                      "required": [
+                        "image",
+                        "imageAdaptive",
+                        "url"
+                      ],
+                      "properties": {
+                        "image": {
+                          "type": "null"
+                        },
+                        "imageAdaptive": {
+                          "type": "null"
+                        },
+                        "url": {
+                          "type": "null"
+                        }
+                      }
+                    },
+                    "catalogImage": {
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "childrenCount": {
+                      "type": "integer"
+                    },
+                    "hover": {
+                      "anyOf": [
+                        {
+                          "type": "null"
+                        },
+                        {
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "icon": {
+                      "type": "string",
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      ]
+                    },
+                    "id": {
+                      "type": "integer"
+                    },
+                    "items": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "level": {
+                      "type": "integer"
+                    },
+                    "parentId": {
+                      "type": "integer"
+                    },
+                    "productCount": {
+                      "type": "integer"
+                    },
+                    "shortTitle": {
+                      "type": "string"
+                    },
+                    "src": {
+                      "type": "string",
+                      "anyOf": [
+                        {
+                          "type": "string"
+                        },
+                        {
+                          "type": "string",
+                          "format": "uri"
+                        }
+                      ]
+                    },
+                    "title": {
+                      "type": "string"
+                    },
+                    "topId": {
+                      "type": "integer"
+                    },
+                    "url": {
+                      "type": "string"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "array",
+              "items": {}
+            }
+          ]
+        },
+        "level": {
+          "type": "integer"
+        },
+        "parentId": {
+          "type": "null"
+        },
+        "productCount": {
+          "type": "integer"
+        },
+        "shortTitle": {
+          "type": "string"
+        },
+        "src": {
+          "type": "string",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "string",
+              "format": "uri"
+            }
+          ]
+        },
+        "title": {
+          "type": "string"
+        },
+        "topId": {
+          "type": "integer"
+        },
+        "url": {
+          "type": "string"
+        }
+      }
+    }
+  }
 }

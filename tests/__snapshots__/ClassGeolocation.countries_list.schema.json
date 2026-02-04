@@ -15,7 +15,40 @@
       "alias": {
         "type": "string"
       },
-      "city": {},
+      "city": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "latitude",
+              "longitude",
+              "prefix",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "latitude": {
+                "type": "number"
+              },
+              "longitude": {
+                "type": "number"
+              },
+              "prefix": {
+                "type": "string"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
       "currency": {
         "type": "object",
         "required": [
@@ -38,7 +71,24 @@
       "id": {
         "type": "integer"
       },
-      "language": {},
+      "language": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "alias"
+            ],
+            "properties": {
+              "alias": {
+                "type": "string"
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
       "title": {
         "type": "string"
       }

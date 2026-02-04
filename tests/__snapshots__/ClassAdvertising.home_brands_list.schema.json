@@ -28,7 +28,16 @@
       "isFavorite": {
         "type": "boolean"
       },
-      "login": {},
+      "login": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
       "src": {
         "type": "string",
         "format": "uri"
@@ -39,8 +48,35 @@
       "title": {
         "type": "string"
       },
-      "updatedAt": {},
-      "url": {}
+      "updatedAt": {
+        "anyOf": [
+          {
+            "type": "string"
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "url": {
+        "anyOf": [
+          {
+            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "format": "uri"
+              }
+            ]
+          },
+          {
+            "type": "null"
+          }
+        ]
+      }
     }
   }
 }

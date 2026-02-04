@@ -9,6 +9,7 @@
       "canPickup",
       "cityId",
       "id",
+      "info",
       "isActive",
       "latitude",
       "longitude",
@@ -18,6 +19,8 @@
       "scheduleSunday",
       "scheduleWeekdays",
       "temporarilyClosed",
+      "warehouse",
+      "withVariableProduct",
       "workTime"
     ],
     "properties": {
@@ -36,7 +39,16 @@
       "id": {
         "type": "integer"
       },
-      "info": {},
+      "info": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "string"
+          }
+        ]
+      },
       "isActive": {
         "type": "boolean"
       },

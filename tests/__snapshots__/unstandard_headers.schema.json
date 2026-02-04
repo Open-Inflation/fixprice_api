@@ -4,7 +4,8 @@
     "x-city",
     "x-client-route",
     "x-key",
-    "x-language"
+    "x-language",
+    "x-logged"
   ],
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
