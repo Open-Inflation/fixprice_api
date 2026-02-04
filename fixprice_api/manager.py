@@ -29,7 +29,7 @@ class FixPriceAPI:
 
     timeout_ms: float       = 15000.0
     """Время ожидания ответа от сервера в миллисекундах."""
-    headless: bool = False
+    headless: bool = True
     """Запускать браузер в headless режиме?"""
     proxy: str | dict | None = field(default_factory=_pick_https_proxy)
     """Прокси-сервер для всех запросов (если нужен). По умолчанию берет из окружения (если есть).
