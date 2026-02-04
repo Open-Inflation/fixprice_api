@@ -27,7 +27,7 @@ def _pick_https_proxy() -> str | None:
 class FixPriceAPI:
     """Клиент FixPrice."""
 
-    timeout_ms: float       = 15000.0
+    timeout_ms: float       = 25000.0
     """Время ожидания ответа от сервера в миллисекундах."""
     headless: bool = True
     """Запускать браузер в headless режиме?"""
