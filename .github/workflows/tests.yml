@@ -36,13 +36,12 @@ jobs:
             requirements.txt
             pyproject.toml
 
-      - name: Install project (dev)
+      - name: Install project (venv)
         run: |
           python -m venv venv
-          source venv/bin/activate
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
+          venv/bin/python -m pip install -U pip
+          venv/bin/python -m pip install -r requirements.txt
 
-      - name: Run tests
+      - name: Run tests (venv)
         run: |
-          make test-quick
+          venv/bin/python -m pytest --tb=short
