@@ -36,7 +36,6 @@ jobs:
         run: |
           python -m venv venv
           venv/bin/python -m pip install -U pip
-          venv/bin/python -m pip install --no-binary=numpy numpy
           venv/bin/python -m pip install -r requirements.txt
 
       - name: Run tests (venv)
