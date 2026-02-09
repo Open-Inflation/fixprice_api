@@ -145,7 +145,26 @@
         "type": "string"
       },
       "specialPrice": {
-        "type": "null"
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "object",
+            "required": [
+              "active_to",
+              "price"
+            ],
+            "properties": {
+              "active_to": {
+                "type": "string"
+              },
+              "price": {
+                "type": "string"
+              }
+            }
+          }
+        ]
       },
       "title": {
         "type": "string"
