@@ -19,7 +19,7 @@
       "imageAdaptive": "https://img.fix-price.com/_marketplace/category_banner/adaptive/d35fd49326231932fdabf954a1f4970f.jpg",
       "url": null
     },
-    "productCount": 288,
+    "productCount": 285,
     "items": {
       "2961": {
         "id": 2961,
@@ -64,7 +64,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 122,
+        "productCount": 120,
         "items": []
       },
       "2963": {
@@ -87,12 +87,35 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 81,
+        "productCount": 80,
         "items": []
       }
     }
   },
   "2": {
+    "id": 2917,
+    "alias": "kollektsiya-bijouterie",
+    "adult": false,
+    "shortTitle": "",
+    "title": "Коллекция бижутерии",
+    "src": "",
+    "parentId": null,
+    "icon": "https://img.fix-price.com/_marketplace/categories/18bb33fc7565cfcb6e0619cd043c4cb5.png",
+    "hover": "",
+    "catalogImage": "https://img.fix-price.com/_marketplace/categories/2bbaf1fec7a7d63c13cdee12edebe125.png",
+    "topId": 2917,
+    "level": 1,
+    "url": "kollektsiya-bijouterie",
+    "childrenCount": 0,
+    "banner": {
+      "image": "https://img.fix-price.com/_marketplace/category_banner/d8485341b80175e6d6a3e04fcee906d3.jpg",
+      "imageAdaptive": "https://img.fix-price.com/_marketplace/category_banner/adaptive/7b0506e2b6f0bf981277dbed86d5cfda.jpg",
+      "url": null
+    },
+    "productCount": 7,
+    "items": []
+  },
+  "3": {
     "id": 2956,
     "alias": "kollektsiya-aksessuarov-dlya-volos",
     "adult": false,
@@ -115,7 +138,7 @@
     "productCount": 10,
     "items": []
   },
-  "3": {
+  "4": {
     "id": 2965,
     "alias": "kollektsiya-babushkiny-retsepty",
     "adult": false,
@@ -138,7 +161,7 @@
     "productCount": 23,
     "items": []
   },
-  "4": {
+  "5": {
     "id": 2966,
     "alias": "kollektsiya-v-aziatskikh-traditsiyakh",
     "adult": false,
@@ -158,30 +181,7 @@
       "imageAdaptive": "https://img.fix-price.com/_marketplace/category_banner/adaptive/fe0474061b6e224b5d5d711271ed163c.jpg",
       "url": null
     },
-    "productCount": 25,
-    "items": []
-  },
-  "5": {
-    "id": 2964,
-    "alias": "kollektsiya-zimniy-rassvet",
-    "adult": false,
-    "shortTitle": "",
-    "title": "Коллекция Зимний рассвет",
-    "src": "https://img.fix-price.com/_marketplace/categories/d988fc783d9bf8f37568bbb8daf8640e.png",
-    "parentId": null,
-    "icon": "https://img.fix-price.com/_marketplace/categories/bfe9aed93bb082a4fa450bc573d8560b.png",
-    "hover": "https://img.fix-price.com/_marketplace/categories/3904c43549c869ab5e3e208aec0c5242.png",
-    "catalogImage": "https://img.fix-price.com/_marketplace/categories/c31e08bf7e9eaac74a701f0b1987efb7.png",
-    "topId": 2964,
-    "level": 1,
-    "url": "kollektsiya-zimniy-rassvet",
-    "childrenCount": 0,
-    "banner": {
-      "image": "https://img.fix-price.com/_marketplace/category_banner/12d24608923db8b29c1be30eab12f85c.jpg",
-      "imageAdaptive": "https://img.fix-price.com/_marketplace/category_banner/adaptive/f3dbe1f6a819f102b4f697b6da858684.jpg",
-      "url": null
-    },
-    "productCount": 42,
+    "productCount": 24,
     "items": []
   },
   "6": {
@@ -204,7 +204,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 523,
+    "productCount": 535,
     "items": {
       "2783": {
         "id": 2783,
@@ -226,7 +226,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 166,
+        "productCount": 169,
         "items": []
       },
       "2888": {
@@ -295,7 +295,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 111,
+        "productCount": 104,
         "items": []
       },
       "2788": {
@@ -318,7 +318,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 75,
+        "productCount": 61,
         "items": []
       },
       "2785": {
@@ -341,7 +341,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 65,
+        "productCount": 62,
         "items": []
       },
       "2787": {
@@ -364,7 +364,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 18,
+        "productCount": 5,
         "items": []
       },
       "2786": {
@@ -387,7 +387,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 25,
+        "productCount": 26,
         "items": []
       },
       "2789": {
@@ -410,7 +410,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 17,
+        "productCount": 10,
         "items": []
       }
     }
@@ -435,31 +435,8 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 94,
+    "productCount": 95,
     "items": {
-      "2954": {
-        "id": 2954,
-        "alias": "sneki",
-        "adult": false,
-        "shortTitle": "",
-        "title": "Снеки",
-        "src": "",
-        "parentId": 2922,
-        "icon": "",
-        "hover": null,
-        "catalogImage": null,
-        "topId": 2922,
-        "level": 2,
-        "url": "aziatskie-khity/sneki",
-        "childrenCount": 0,
-        "banner": {
-          "image": null,
-          "imageAdaptive": null,
-          "url": null
-        },
-        "productCount": 17,
-        "items": []
-      },
       "2939": {
         "id": 2939,
         "alias": "napitki-azia",
@@ -503,7 +480,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 52,
+        "productCount": 53,
         "items": []
       },
       "2937": {
@@ -528,6 +505,29 @@
         },
         "productCount": 9,
         "items": []
+      },
+      "2954": {
+        "id": 2954,
+        "alias": "sneki",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Снеки",
+        "src": "",
+        "parentId": 2922,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2922,
+        "level": 2,
+        "url": "aziatskie-khity/sneki",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 17,
+        "items": []
       }
     }
   },
@@ -551,7 +551,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 269,
+    "productCount": 288,
     "items": []
   },
   "9": {
@@ -597,7 +597,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 83,
+    "productCount": 135,
     "items": []
   },
   "11": {
@@ -620,7 +620,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 247,
+    "productCount": 333,
     "items": []
   },
   "12": {
@@ -643,7 +643,7 @@
       "imageAdaptive": "https://img.fix-price.com/_marketplace/category_banner/adaptive/318b2e20dd90b51edaa6885fbdf7939d.jpg",
       "url": null
     },
-    "productCount": 359,
+    "productCount": 368,
     "items": {
       "2525": {
         "id": 2525,
@@ -711,7 +711,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 188,
+        "productCount": 195,
         "items": []
       },
       "2126": {
@@ -780,7 +780,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 17,
+        "productCount": 19,
         "items": []
       }
     }
@@ -805,7 +805,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 947,
+    "productCount": 971,
     "items": {
       "2005": {
         "id": 2005,
@@ -873,7 +873,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 33,
+        "productCount": 34,
         "items": []
       },
       "2796": {
@@ -896,7 +896,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 34,
+        "productCount": 32,
         "items": []
       },
       "2020": {
@@ -919,7 +919,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 359,
+        "productCount": 365,
         "items": []
       },
       "2854": {
@@ -942,7 +942,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 59,
+        "productCount": 58,
         "items": []
       },
       "2009": {
@@ -1011,7 +1011,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 55,
+        "productCount": 54,
         "items": []
       },
       "2007": {
@@ -1034,7 +1034,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 40,
+        "productCount": 46,
         "items": []
       },
       "2006": {
@@ -1172,7 +1172,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 82,
+        "productCount": 84,
         "items": []
       },
       "2021": {
@@ -1241,7 +1241,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 63,
+        "productCount": 66,
         "items": []
       },
       "2807": {
@@ -1264,7 +1264,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 2,
+        "productCount": 12,
         "items": []
       }
     }
@@ -1289,7 +1289,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 211,
+    "productCount": 214,
     "items": {
       "2811": {
         "id": 2811,
@@ -1449,7 +1449,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 10,
+        "productCount": 11,
         "items": []
       },
       "2692": {
@@ -1495,7 +1495,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 28,
+        "productCount": 29,
         "items": []
       },
       "2056": {
@@ -1518,7 +1518,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 18,
+        "productCount": 19,
         "items": []
       },
       "2055": {
@@ -1566,7 +1566,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 265,
+    "productCount": 269,
     "items": {
       "2840": {
         "id": 2840,
@@ -1657,7 +1657,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 31,
+        "productCount": 30,
         "items": []
       },
       "2830": {
@@ -1703,7 +1703,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 55,
+        "productCount": 56,
         "items": []
       },
       "2086": {
@@ -1772,7 +1772,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 39,
+        "productCount": 41,
         "items": []
       },
       "2841": {
@@ -1820,7 +1820,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 227,
+    "productCount": 224,
     "items": {
       "2072": {
         "id": 2072,
@@ -1842,7 +1842,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 83,
+        "productCount": 82,
         "items": []
       },
       "2071": {
@@ -1888,7 +1888,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 122,
+        "productCount": 119,
         "items": []
       },
       "2779": {
@@ -1911,7 +1911,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 17,
+        "productCount": 18,
         "items": []
       }
     }
@@ -1936,7 +1936,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 65,
+    "productCount": 66,
     "items": {
       "2868": {
         "id": 2868,
@@ -2050,7 +2050,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 7,
+        "productCount": 8,
         "items": []
       },
       "2873": {
@@ -2098,7 +2098,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 308,
+    "productCount": 305,
     "items": {
       "2081": {
         "id": 2081,
@@ -2189,7 +2189,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 160,
+        "productCount": 159,
         "items": []
       },
       "2079": {
@@ -2212,7 +2212,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 75,
+        "productCount": 73,
         "items": []
       }
     }
@@ -2237,7 +2237,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 2983,
+    "productCount": 2962,
     "items": {
       "2239": {
         "id": 2239,
@@ -2282,7 +2282,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 122,
+        "productCount": 119,
         "items": []
       },
       "2096": {
@@ -2305,7 +2305,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 280,
+        "productCount": 283,
         "items": []
       },
       "2065": {
@@ -2328,7 +2328,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 79,
+        "productCount": 80,
         "items": []
       },
       "2061": {
@@ -2351,7 +2351,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 46,
+        "productCount": 45,
         "items": []
       },
       "2254": {
@@ -2420,7 +2420,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 12,
+        "productCount": 10,
         "items": []
       },
       "2236": {
@@ -2443,7 +2443,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 2027,
+        "productCount": 2008,
         "items": []
       },
       "2058": {
@@ -2489,7 +2489,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 31,
+        "productCount": 30,
         "items": []
       },
       "2063": {
@@ -2512,7 +2512,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 65,
+        "productCount": 66,
         "items": []
       }
     }
@@ -2537,7 +2537,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 462,
+    "productCount": 463,
     "items": {
       "2842": {
         "id": 2842,
@@ -2559,7 +2559,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 282,
+        "productCount": 283,
         "items": []
       },
       "2845": {
@@ -2676,7 +2676,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 875,
+    "productCount": 872,
     "items": {
       "2821": {
         "id": 2821,
@@ -2698,7 +2698,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 51,
+        "productCount": 48,
         "items": []
       },
       "2155": {
@@ -2721,7 +2721,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 58,
+        "productCount": 57,
         "items": []
       },
       "2818": {
@@ -2744,7 +2744,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 119,
+        "productCount": 120,
         "items": []
       },
       "2827": {
@@ -2790,7 +2790,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 41,
+        "productCount": 40,
         "items": []
       },
       "2819": {
@@ -2813,7 +2813,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 277,
+        "productCount": 278,
         "items": []
       },
       "2817": {
@@ -2836,7 +2836,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 79,
+        "productCount": 78,
         "items": []
       },
       "2823": {
@@ -2882,7 +2882,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 106,
+        "productCount": 107,
         "items": []
       },
       "2828": {
@@ -2930,7 +2930,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 274,
+    "productCount": 277,
     "items": {
       "2905": {
         "id": 2905,
@@ -2975,7 +2975,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 47,
+        "productCount": 46,
         "items": []
       },
       "2088": {
@@ -2998,7 +2998,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 62,
+        "productCount": 63,
         "items": []
       },
       "2190": {
@@ -3021,7 +3021,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 92,
+        "productCount": 94,
         "items": []
       },
       "2906": {
@@ -3044,7 +3044,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 20,
+        "productCount": 21,
         "items": []
       }
     }
@@ -3069,7 +3069,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 91,
+    "productCount": 92,
     "items": {
       "2810": {
         "id": 2810,
@@ -3137,7 +3137,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 11,
+        "productCount": 12,
         "items": []
       },
       "2808": {
@@ -3208,7 +3208,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 545,
+    "productCount": 549,
     "items": {
       "2171": {
         "id": 2171,
@@ -3230,7 +3230,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 96,
+        "productCount": 97,
         "items": []
       },
       "2168": {
@@ -3391,7 +3391,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 19,
+        "productCount": 20,
         "items": []
       },
       "2165": {
@@ -3460,7 +3460,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 32,
+        "productCount": 34,
         "items": []
       },
       "2859": {
@@ -3576,7 +3576,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 9,
+        "productCount": 10,
         "items": []
       },
       "2198": {
@@ -3599,7 +3599,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 20,
+        "productCount": 21,
         "items": []
       },
       "2896": {
@@ -3622,7 +3622,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 54,
+        "productCount": 55,
         "items": []
       },
       "2123": {
@@ -3645,7 +3645,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 29,
+        "productCount": 28,
         "items": []
       },
       "2738": {
@@ -3668,7 +3668,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 66,
+        "productCount": 67,
         "items": []
       },
       "2224": {
@@ -3691,7 +3691,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 47,
+        "productCount": 46,
         "items": []
       },
       "2732": {
@@ -3806,7 +3806,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 13,
+        "productCount": 12,
         "items": []
       },
       "2180": {
@@ -3829,7 +3829,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 128,
+        "productCount": 127,
         "items": []
       }
     }
@@ -3924,7 +3924,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 61,
+    "productCount": 62,
     "items": {
       "2048": {
         "id": 2048,
@@ -3946,7 +3946,7 @@
           "imageAdaptive": null,
           "url": null
         },
-        "productCount": 57,
+        "productCount": 58,
         "items": []
       },
       "2248": {
