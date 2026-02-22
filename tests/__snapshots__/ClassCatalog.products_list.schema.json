@@ -39,26 +39,19 @@
         "type": "boolean"
       },
       "brand": {
-        "anyOf": [
-          {
-            "type": "object",
-            "required": [
-              "id",
-              "title"
-            ],
-            "properties": {
-              "id": {
-                "type": "integer"
-              },
-              "title": {
-                "type": "string"
-              }
-            }
+        "type": "object",
+        "required": [
+          "id",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
           },
-          {
-            "type": "null"
+          "title": {
+            "type": "string"
           }
-        ]
+        }
       },
       "category": {
         "type": "object",
@@ -145,26 +138,7 @@
         "type": "string"
       },
       "specialPrice": {
-        "anyOf": [
-          {
-            "type": "null"
-          },
-          {
-            "type": "object",
-            "required": [
-              "active_to",
-              "price"
-            ],
-            "properties": {
-              "active_to": {
-                "type": "string"
-              },
-              "price": {
-                "type": "string"
-              }
-            }
-          }
-        ]
+        "type": "null"
       },
       "title": {
         "type": "string"
@@ -182,7 +156,14 @@
         "type": "integer"
       },
       "variantId": {
-        "type": "null"
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "integer"
+          }
+        ]
       }
     }
   }

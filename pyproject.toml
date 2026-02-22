@@ -59,4 +59,5 @@ filterwarnings = [
     "ignore:Event loop is closed:RuntimeWarning",
 ]
 anyio_mode = "auto"
+autotest_start_class = "fixprice_api.FixPriceAPI"
 addopts = "-v --tb=short --disable-warnings"

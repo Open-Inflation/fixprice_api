@@ -12,6 +12,12 @@ test:
 test-quick:
 	pytest --tb=short
 
+lint:
+	python -m black --check fixprice_api tests
+
+type-check:
+	python -m mypy fixprice_api
+
 format:
 	black chizhik_api/ tests/
 	isort chizhik_api/ tests/

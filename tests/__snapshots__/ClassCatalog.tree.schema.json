@@ -94,6 +94,10 @@
         "items": {
           "anyOf": [
             {
+              "type": "array",
+              "items": {}
+            },
+            {
               "type": "object",
               "patternProperties": {
                 "^[0-9]+$": {
@@ -221,10 +225,6 @@
                   }
                 }
               }
-            },
-            {
-              "type": "array",
-              "items": {}
             }
           ]
         },

@@ -1,15 +1,18 @@
 from typing import Any, Literal
 import os
-import asyncio
 from dataclasses import dataclass, field
 from collections import defaultdict
 from human_requests import HumanBrowser, HumanContext, HumanPage
 from human_requests.abstraction import Proxy, FetchResponse, HttpMethod
 from human_requests.network_analyzer.anomaly_sniffer import (
-    HeaderAnomalySniffer, WaitHeader, WaitSource)
+    HeaderAnomalySniffer,
+    WaitHeader,
+    WaitSource,
+)
 from camoufox import AsyncCamoufox
 from playwright.async_api import TimeoutError as PWTimeoutError
 
+from human_requests import ApiParent, api_child_field
 from .endpoints.catalog import ClassCatalog
 from .endpoints.geolocation import ClassGeolocation
 from .endpoints.advertising import ClassAdvertising
@@ -23,11 +26,12 @@ def _pick_https_proxy() -> str | None:
     """Возвращает прокси из HTTPS_PROXY/https_proxy (если заданы)."""
     return os.getenv("HTTPS_PROXY") or os.getenv("https_proxy")
 
+
 @dataclass
-class FixPriceAPI:
+class FixPriceAPI(ApiParent):
     """Клиент FixPrice."""
 
-    timeout_ms: float       = 35000.0
+    timeout_ms: float = 35000.0
     """Время ожидания ответа от сервера в миллисекундах."""
     headless: bool = True
     """Запускать браузер в headless режиме?"""
@@ -39,7 +43,7 @@ class FixPriceAPI:
 
     MAIN_SITE_URL: str = "https://fix-price.com/catalog"
     MAIN_SITE_ORIGIN: str = "https://fix-price.com/"
-    CATALOG_URL:   str = "https://api.fix-price.com/buyer"
+    CATALOG_URL: str = "https://api.fix-price.com/buyer"
 
     # будет создана в __post_init__
     session: HumanBrowser = field(init=False, repr=False)
@@ -53,21 +57,14 @@ class FixPriceAPI:
     unstandard_headers: dict[str, str] = field(init=False, repr=False)
     """Список нестандартных заголовков пойманных при инициализации"""
 
-    Geolocation: ClassGeolocation = field(init=False)
+    Geolocation: ClassGeolocation = api_child_field(ClassGeolocation)
     """API для работы с геолокацией."""
-    Catalog: ClassCatalog = field(init=False)
+    Catalog: ClassCatalog = api_child_field(ClassCatalog)
     """API для работы с каталогом товаров."""
-    Advertising: ClassAdvertising = field(init=False)
+    Advertising: ClassAdvertising = api_child_field(ClassAdvertising)
     """API для работы с рекламой."""
-    General: ClassGeneral = field(init=False)
+    General: ClassGeneral = api_child_field(ClassGeneral)
     """API для работы с общими функциями."""
-
-    # ───── lifecycle ─────
-    def __post_init__(self) -> None:
-        self.Geolocation = ClassGeolocation(self)
-        self.Catalog = ClassCatalog(self)
-        self.Advertising = ClassAdvertising(self)
-        self.General = ClassGeneral(self)
 
     async def __aenter__(self):
         """Вход в контекстный менеджер с автоматическим прогревом сессии."""
@@ -81,7 +78,7 @@ class FixPriceAPI:
             headless=self.headless,
             proxy=Proxy(self.proxy).as_dict(),
             **self.browser_opts,
-            block_images=True
+            block_images=True,
         ).start()
 
         self.session = HumanBrowser.replace(br)
@@ -95,7 +92,7 @@ class FixPriceAPI:
         await sniffer.start(self.ctx)
 
         await self.page.goto(self.MAIN_SITE_URL, wait_until="networkidle")
-        
+
         await sniffer.wait(
             tasks=[
                 WaitHeader(
@@ -106,9 +103,13 @@ class FixPriceAPI:
             timeout_ms=self.timeout_ms,
         )
 
-        await self.page.goto(self.CATALOG_URL, wait_until="networkidle") # ускорение сети, таким образом пропускаем OPTION pre-fetch
-        await self.page.wait_for_selector(selector="body > pre", timeout=self.timeout_ms, state="visible")
-        
+        await self.page.goto(
+            self.CATALOG_URL, wait_until="networkidle"
+        )  # ускорение сети, таким образом пропускаем OPTION pre-fetch
+        await self.page.wait_for_selector(
+            selector="body > pre", timeout=self.timeout_ms, state="visible"
+        )
+
         result_sniffer = await sniffer.complete()
 
         # Результат: {заголовок: [уникальные значения]}
@@ -129,22 +130,21 @@ class FixPriceAPI:
     async def close(self):
         """Закрыть HTTP-сессию и освободить ресурсы."""
         await self.session.close()
-    
 
     @property
     def city_id(self) -> int | None:
         """ID города используемый как фильтр каталога. Если не указан, автоматически назначается в первом ответе сервера. Обычно это `3` (Москва)."""
         x = self.unstandard_headers.get("x-city", None)
-        if x: x = int(x)
+        if x:
+            x = int(x)
         return x
 
     @city_id.setter
     def city_id(self, value: int | None) -> None:
         if value is None:
             self.unstandard_headers.pop("x-city", None)
-        elif (
-            not isinstance(value, (int, float)) \
-            and(not isinstance(value, str) and value.isdigit())
+        elif not isinstance(value, (int, float)) and (
+            not isinstance(value, str) and value.isdigit()
         ):
             raise TypeError("`city_id` must be int")
         elif int(value) < 1:
@@ -162,13 +162,15 @@ class FixPriceAPI:
         if not isinstance(value, str):
             raise TypeError("`language` must be str")
         if not len(value) in [2, 5]:
-            raise ValueError("`language` must be IETF BCP 47. Length must be 2 (ex. `en`) or 5 (ex. `en-AE`)")
+            raise ValueError(
+                "`language` must be IETF BCP 47. Length must be 2 (ex. `en`) or 5 (ex. `en-AE`)"
+            )
         elif value is None:
             self.unstandard_headers.pop("x-language", None)
         else:
-            self.unstandard_headers.update({ # токен пойдёт в каждый запрос
-                "x-language": value
-            })
+            self.unstandard_headers.update(
+                {"x-language": value}  # токен пойдёт в каждый запрос
+            )
 
     @property
     def token(self) -> str | None:
@@ -178,12 +180,12 @@ class FixPriceAPI:
     @property
     def delivery_type(self) -> Literal["store", "pickup", "courier"] | None:
         """Способ получения заказа (влияет на каталог).
-        
+
         store - самовывоз из магазина
         pickup - получить из ПВЗ
         courier - курьерская доставка"""
         return self.unstandard_headers.get("x-delivery-type", None)
-    
+
     @delivery_type.setter
     def delivery_type(self, value: Literal["store", "pickup", "courier"]) -> None:
         self.unstandard_headers.update({"x-delivery-type": value})
@@ -202,11 +204,10 @@ class FixPriceAPI:
     def client_route(self) -> str | None:
         """Адрес (путь) страницы с которой будет сделан запрос."""
         return self.unstandard_headers.get("x-client-route", None)
-    
+
     @client_route.setter
     def client_route(self, value: str) -> None:
         self.unstandard_headers.update({"x-client-route": value})
-
 
     async def _request(
         self,
@@ -234,13 +235,16 @@ class FixPriceAPI:
                 credentials="include" if credentials else "omit",
                 timeout_ms=self.timeout_ms,
                 referrer=self.MAIN_SITE_ORIGIN,
-                headers={"Accept": "application/json, text/plain, */*"} | (self.unstandard_headers if add_unstandard_headers else {})
+                headers={"Accept": "application/json, text/plain, */*"}
+                | (self.unstandard_headers if add_unstandard_headers else {}),
             )
 
         resp = await f()
         if "html" in resp.headers.get("content-type"):
             temporal_page = await resp.render(wait_until="networkidle")
-            await temporal_page.wait_for_selector(selector="body > pre", timeout=self.timeout_ms, state="visible")
+            await temporal_page.wait_for_selector(
+                selector="body > pre", timeout=self.timeout_ms, state="visible"
+            )
             await temporal_page.close()
             resp = await f()
 

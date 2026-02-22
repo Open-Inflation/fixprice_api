@@ -42,10 +42,10 @@
       "info": {
         "anyOf": [
           {
-            "type": "null"
+            "type": "string"
           },
           {
-            "type": "string"
+            "type": "null"
           }
         ]
       },
@@ -92,34 +92,13 @@
         "type": "string"
       },
       "scheduleSaturday": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
+        "type": "string"
       },
       "scheduleSunday": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
+        "type": "string"
       },
       "scheduleWeekdays": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
+        "type": "string"
       },
       "temporarilyClosed": {
         "type": "boolean"
@@ -131,14 +110,7 @@
         "type": "boolean"
       },
       "workTime": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
+        "type": "string"
       }
     }
   }
