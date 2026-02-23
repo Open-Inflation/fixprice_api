@@ -26,9 +26,10 @@ class ClassGeneral(ApiChild["FixPriceAPI"]):
             attempts=retry_attempts, start_timeout=3.0, max_timeout=timeout
         )
 
+        px = self._parent.proxy if isinstance(self._parent.proxy, Proxy) else Proxy(self._parent.proxy)
         async with RetryClient(retry_options=retry_options) as retry_client:
             async with retry_client.get(
-                url, raise_for_status=True, proxy=Proxy(self._parent.proxy).as_str()
+                url, raise_for_status=True, proxy=px.as_str()
             ) as resp:
                 body = await resp.read()
                 file = BytesIO(body)
