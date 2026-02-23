@@ -1,161 +1,131 @@
-# FixPrice API (not official / не официальный)
+<div align="center">
 
-FixPrice - https://fix-price.com/
+# FixPrice API (not official)
 
-# Usage / Использование
+![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Ffixprice_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300)
+[![Tests](https://github.com/Open-Inflation/fixprice_api/actions/workflows/tests.yml/badge.svg)](https://github.com/Open-Inflation/fixprice_api/actions/workflows/tests.yml)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/fixprice_api)
+![PyPI - Package Version](https://img.shields.io/pypi/v/fixprice_api?color=blue)
+[![PyPI - Downloads](https://img.shields.io/pypi/dm/fixprice_api?label=PyPi%20downloads)](https://pypi.org/project/fixprice-api/)
+[![License](https://img.shields.io/github/license/Open-Inflation/fixprice_api)](https://github.com/Open-Inflation/fixprice_api/blob/main/LICENSE)
+[![Discord](https://img.shields.io/discord/792572437292253224?label=Discord&labelColor=%232c2f33&color=%237289da)](https://discord.gg/UnJnGHNbBp)
+[![Telegram](https://img.shields.io/badge/Telegram-24A1DE)](https://t.me/miskler_dev)
 
-> `product_info` не реализован т.к. информация вшита в страницу.
+FixPrice (Фикс Прайс) - https://fix-price.com/
 
+**[⭐ Star us on GitHub](https://github.com/Open-Inflation/fixprice_api)** | **[📚 Read the Docs](https://open-inflation.github.io/fixprice_api/quick_start)** | **[🐛 Report Bug](https://github.com/Open-Inflation/fixprice_api/issues)**
 
-### Базовая структура
+### Принцип работы
+
+</div>
+
+> Библиотека полностью повторяет сетевую работу обычного пользователя на сайте.
+
+<div align="center">
+
+# Usage
+
+</div>
+
+```bash
+pip install fixprice_api
+python -m camoufox fetch
+```
+
 ```py
 import asyncio
-from fixprice_api import FixPrice, CatalogSort
+from fixprice_api import FixPriceAPI, CatalogSort
+from PIL import Image
+
 
 async def main():
-    ...
+    async with FixPriceAPI() as api:
+        # 1. Получаем дерево категорий
+        tree_data = (await api.Catalog.tree()).json()
+        first_alias = tree_data[next(iter(tree_data))]["alias"]
+        print(f"Первая категория: {first_alias}")
+
+        # 2. Список товаров в категории
+        products = (
+            await api.Catalog.products_list(
+                category_alias=first_alias,
+                page=1,
+                limit=24,
+                sort=CatalogSort.POPULARITY,
+            )
+        ).json()
+        first_product_id = products[0]["id"]
+        print(f"Первый товар: {products[0]['title']!s:.60s} ({first_product_id})")
+
+        # 3. Геолокация (влияет на каталог и баланс)
+        cities = (await api.Geolocation.cities_list(country_id=2)).json()  # Россия
+        api.city_id = cities[0]["id"]
+        print(f"Текущий city_id: {api.city_id}")
+
+        # 4. Проверка наличия товара по магазинам
+        balance = (await api.Catalog.Product.balance(product_id=first_product_id)).json()
+        print(f"Проверено магазинов: {len(balance)}")
+
+        # 5. Загрузка изображения
+        image_url = products[0]["images"][0]["src"]
+        image_stream = await api.General.download_image(image_url)
+        with Image.open(image_stream) as img:
+            print(f"Image format: {img.format}, size: {img.size}")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
 ```
 
-### Взаимодействие с каталогом
-
-```py
-async with FixPrice() as Api:
-    # Получение списка категорий
-    categories = await Api.Catalog.categories_list()
-    products = []
-    tq = tqdm(categories, desc='Обработано категорий')
-
-    async def process_sub(category_alias, subcategory_alias=None, depth=0):
-        page = 1 # Счет от единицы, а не нуля!
-        limit = 27 # Максимальное значение
-
-        while page > 0:
-            # count - общее количество айтемов на всех страницах (в данном случае не используем)
-            count, catalog = await Api.Catalog.products_list(
-                category_alias=category_alias,
-                subcategory_alias=subcategory_alias,
-                page=page,
-                limit=limit,
-                sort=CatalogSort.POPULARITY
-            )
-            if not catalog:
-                break
-            
-            for product in catalog:
-                products.append(f'{product["title"]} ({product["id"]})')
-                tq.set_description(f'Обработано карточек: {len(products)}')
-            
-            if len(catalog) <= 0:
-                break
-            
-            time.sleep(0.4) # Специально замедляем обработку, чтобы не получить код 429, советую эксперементировать
-            page += 1
-        
-    # Обход всех категорий и подкатегорий
-    for category in tq:
-        subcategories = category.get("items", [])
-        # Можно и не обрабатывать подкатегории отдельно, зависит от желания и ТЗ
-        if subcategories:
-            for subcategory in subcategories:
-                await process_sub(category["alias"], subcategory["alias"])
-        else:
-            await process_sub(category["alias"])
-
-    tq.close()
-
-    # Вывод статистики
-    print(f'Общее количество встреченных карточек: {len(products)}')
-    print(f'Уникальных товаров: {len(set(products))}')
-    print(f'Среднее количество повторений карточки: {round(len(products) / len(set(products)), 2)}')
-```
 ```bash
-> Обработано карточек: 6019: 100%|███████████████| 29/29 [04:29<00:00,  9.29s/it]
-> Общее количество встреченных карточек: 6019
-> Уникальных товаров: 4900
-> Среднее количество повторений карточки: 1.23
+> Первая категория: kosmetika-i-gigiena
+> Первый товар: Крем для рук и тела, 150 мл (2345678)
+> Текущий city_id: 3
+> Проверено магазинов: 339
+> Image format: WEBP, size: (190, 190)
 ```
 
-### Работа с геолокацией в сессии:
-*От геолокации зависит выдача каталога!*
-```py
-async with FixPrice() as Api:
-    print(f"ID города перед первым запросом: {Api.city_id}, язык: {Api.language}") # По умолчанию не назначено
-    await Api.Catalog.home_brands_list() # Можем обработать любую функцию
-    print(f"ID города после первого запроса: {Api.city_id}, язык: {Api.language}") # Сервер прислал стандартные значения
-
-    country = await Api.Geolocation.country_list(alias="RU") # alias работает сортировкой
-
-    # получаем объект "Объединенные Арабские Эмираты"
-    print(f"Найдена страна {country[0]['title']} ({country[0]['id']}), валюта: {country[0]['currency']['title']} / {country[0]['currency']['symbol']}")
-
-    citys = await Api.Geolocation.city_list(country_id=country[0]["id"]) # получаем список городов
-
-    Api.city_id = citys[0]["id"] # меняем ID города
-    print(f"Город изменен на {citys[0]['name']} ({citys[0]['id']})")
-
-    # Вне РФ каталог не работает
-    print(f"Категории: {len(await Api.Catalog.categories_list())} штук")
-```
-```bash
-> ID города перед первым запросом: None, язык: None
-> ID города после первого запроса: 3, язык: ru
-> Найдена страна Россия (2), валюта: Рубль / ₽
-> Город изменен на Щербинка (229)
-> Категории: 29 штук
-```
-
-### Проверка наличия товара
-```py
-async with FixPrice() as Api:
-    Api.city_id = 3 # Обязательно указываем перед запросом город, иначе ошибка
-    check = await Api.Store.product_balance(1851089) # Круассан, 7DAYS, 110 г, с двойным кремом
-
-    stoks = []
-    for i in check:
-        stoks.append(i.get("count", 0))
-
-    print(f"Самое большое количество: {max(stoks)}")
-    print(f"Самое малое количество: {min(stoks)}")
-    print(f"Среднее количество: {round(sum(stoks) / len(stoks), 2)}")
-    print(f"Обработано {len(stoks)} магазинов")
-```
-```bash
-> Самое большое количество: 67
-> Самое малое количество: 10
-> Среднее количество: 28.5
-> Обработано 339 магазинов
-```
-
-### Загрузка изображений
-```py
-async with FixPrice() as Api:
-    img = await Api.General.download_image("https://img.fix-price.com/190x190/_marketplace/images/origin/90/903ce795a221a6978444a86391816f93.jpg")
-
-    with open(img.name, "wb") as f:
-        f.write(img.read())
-```
-
-### Или параллельная загрузка
-```py
-async with FixPrice() as Api:
-    tasks = [
-        Api.General.download_image("https://img.fix-price.com/190x190/_marketplace/images/origin/90/903ce795a221a6978444a86391816f93.jpg"),
-        Api.General.download_image("https://img.fix-price.com/190x190/_marketplace/images/origin/51/519a1d3c838e3e7e30493fb9b1f69a05.jpg")
-    ]
-
-    results = await asyncio.gather(*tasks)
-    for result in results:
-        with open(result.name, "wb") as f:
-            f.write(result.read())
-```
+Для более подробной информации смотрите референсы [документации](https://open-inflation.github.io/fixprice_api/quick_start).
 
 ---
 
-### Report / Обратная связь
+## Автотесты API (pytest + snapshots)
+
+В проекте используется автотест-фреймворк из `human_requests`:
+
+- endpoint-методы в бизнес-коде помечаются `@autotest`;
+- pytest-плагин сам находит эти методы и запускает их;
+- JSON-ответы проверяются через `pytest-jsonschema-snapshot` (`schemashot`);
+- параметры вызова и пост-обработка результата регистрируются в `tests/api_test.py` через:
+  - `@autotest_params`
+  - `@autotest_hook`
+  - `@autotest_depends_on`
+
+Минимальная конфигурация уже включена в `pyproject.toml`:
+
+```ini
+[tool.pytest.ini_options]
+anyio_mode = "auto"
+autotest_start_class = "fixprice_api.FixPriceAPI"
+```
+
+Запуск тестов:
+
+```bash
+pytest
+```
+
+Важно:
+
+- используется `pytest-anyio` (не `pytest-asyncio`);
+- ручные тесты остаются только для кейсов, которые не относятся к JSON-схемам endpoint-методов (например, `download_image`).
+
+---
+
+<div align="center">
+
+### Report
 
 If you have any problems using it / suggestions, do not hesitate to write to the [project's GitHub](https://github.com/Open-Inflation/fixprice_api/issues)!
 
-Если у вас возникнут проблемы в использовании / пожелания, не стесняйтесь писать на [GitHub проекта](https://github.com/Open-Inflation/fixprice_api/issues)!
+</div>
