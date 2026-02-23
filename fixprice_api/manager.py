@@ -19,14 +19,6 @@ from .endpoints.advertising import ClassAdvertising
 from .endpoints.general import ClassGeneral
 
 
-# ---------------------------------------------------------------------------
-# Главный клиент
-# ---------------------------------------------------------------------------
-def _pick_https_proxy() -> str | None:
-    """Возвращает прокси из HTTPS_PROXY/https_proxy (если заданы)."""
-    return os.getenv("HTTPS_PROXY") or os.getenv("https_proxy")
-
-
 @dataclass
 class FixPriceAPI(ApiParent):
     """Клиент FixPrice."""
@@ -35,7 +27,7 @@ class FixPriceAPI(ApiParent):
     """Время ожидания ответа от сервера в миллисекундах."""
     headless: bool = True
     """Запускать браузер в headless режиме?"""
-    proxy: str | dict | None = field(default_factory=_pick_https_proxy)
+    proxy: str | dict | None = field(default_factory=Proxy.from_env)
     """Прокси-сервер для всех запросов (если нужен). По умолчанию берет из окружения (если есть).
     Принимает как формат Playwright, так и строчный формат."""
     browser_opts: dict[str, Any] = field(default_factory=dict)
