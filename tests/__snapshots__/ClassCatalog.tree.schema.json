@@ -61,18 +61,52 @@
               ]
             },
             "url": {
-              "type": "null"
+              "anyOf": [
+                {
+                  "type": "string",
+                  "format": "uri"
+                },
+                {
+                  "type": "null"
+                }
+              ]
             }
           }
         },
         "catalogImage": {
-          "type": "string",
-          "format": "uri"
+          "anyOf": [
+            {
+              "type": "string",
+              "format": "uri"
+            },
+            {
+              "type": "null"
+            }
+          ]
         },
         "childrenCount": {
           "type": "integer"
         },
         "hover": {
+          "anyOf": [
+            {
+              "type": "string",
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string",
+                  "format": "uri"
+                }
+              ]
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "icon": {
           "type": "string",
           "anyOf": [
             {
@@ -84,19 +118,11 @@
             }
           ]
         },
-        "icon": {
-          "type": "string",
-          "format": "uri"
-        },
         "id": {
           "type": "integer"
         },
         "items": {
           "anyOf": [
-            {
-              "type": "array",
-              "items": {}
-            },
             {
               "type": "object",
               "patternProperties": {
@@ -150,10 +176,19 @@
                     "catalogImage": {
                       "anyOf": [
                         {
-                          "type": "null"
+                          "type": "string",
+                          "anyOf": [
+                            {
+                              "type": "string"
+                            },
+                            {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          ]
                         },
                         {
-                          "type": "string"
+                          "type": "null"
                         }
                       ]
                     },
@@ -163,10 +198,10 @@
                     "hover": {
                       "anyOf": [
                         {
-                          "type": "null"
+                          "type": "string"
                         },
                         {
-                          "type": "string"
+                          "type": "null"
                         }
                       ]
                     },
@@ -225,6 +260,10 @@
                   }
                 }
               }
+            },
+            {
+              "type": "array",
+              "items": {}
             }
           ]
         },

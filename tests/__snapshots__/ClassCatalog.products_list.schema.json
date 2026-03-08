@@ -39,19 +39,26 @@
         "type": "boolean"
       },
       "brand": {
-        "type": "object",
-        "required": [
-          "id",
-          "title"
-        ],
-        "properties": {
-          "id": {
-            "type": "integer"
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string"
+              }
+            }
           },
-          "title": {
-            "type": "string"
+          {
+            "type": "null"
           }
-        }
+        ]
       },
       "category": {
         "type": "object",
