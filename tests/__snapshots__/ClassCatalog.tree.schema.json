@@ -74,39 +74,13 @@
           }
         },
         "catalogImage": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "uri"
-            },
-            {
-              "type": "null"
-            }
-          ]
+          "type": "string",
+          "format": "uri"
         },
         "childrenCount": {
           "type": "integer"
         },
         "hover": {
-          "anyOf": [
-            {
-              "type": "string",
-              "anyOf": [
-                {
-                  "type": "string"
-                },
-                {
-                  "type": "string",
-                  "format": "uri"
-                }
-              ]
-            },
-            {
-              "type": "null"
-            }
-          ]
-        },
-        "icon": {
           "type": "string",
           "anyOf": [
             {
@@ -117,6 +91,10 @@
               "format": "uri"
             }
           ]
+        },
+        "icon": {
+          "type": "string",
+          "format": "uri"
         },
         "id": {
           "type": "integer"
