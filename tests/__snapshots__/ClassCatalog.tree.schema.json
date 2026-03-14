@@ -42,7 +42,15 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "format": "uri"
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  ]
                 },
                 {
                   "type": "null"
@@ -53,7 +61,15 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "format": "uri"
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  ]
                 },
                 {
                   "type": "null"
@@ -64,7 +80,15 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "format": "uri"
+                  "anyOf": [
+                    {
+                      "type": "string"
+                    },
+                    {
+                      "type": "string",
+                      "format": "uri"
+                    }
+                  ]
                 },
                 {
                   "type": "null"
@@ -77,7 +101,15 @@
           "anyOf": [
             {
               "type": "string",
-              "format": "uri"
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string",
+                  "format": "uri"
+                }
+              ]
             },
             {
               "type": "null"
