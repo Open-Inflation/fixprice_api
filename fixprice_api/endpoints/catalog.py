@@ -2,8 +2,9 @@
 
 from __future__ import annotations
 
-import asyncio
 import json
+from types import MethodType
+from ..tools import AwaitableDict
 
 from playwright.async_api import Response as PWResponse
 from dataclasses import dataclass
@@ -120,12 +121,12 @@ class ProductService(ApiChild["FixPriceAPI"]):
         category: str | None = None,
         product_id: int | None = None,
         slug: str | None = None,
-    ) -> dict:
+    ) -> PWResponse:
         """
         Информация СПАРСИВАЕТСЯ (в отличии от других методов).
         Инфо о товаре со страницы типа
         https://fix-price.com/catalog/produkty-i-napitki/p-1902248-shokoladnye-konfety-inis-nickers-135-g
-        
+
         Либо предоставляете url напрямую, например `products[0]["url"]`
 
         Данные карточки лежат в obj["data"][0]["categoryData"]["product"]
@@ -141,33 +142,42 @@ class ProductService(ApiChild["FixPriceAPI"]):
             real_url += url
 
         page = await self._parent.ctx.new_page()
-        await page.goto(real_url, wait_until="domcontentloaded")
+        try:
+            resp = await page.goto(real_url, wait_until="domcontentloaded")
+            if resp is None:
+                raise RuntimeError("page.goto() returned None")
 
-        raw_json = await page.evaluate("""
-        () => {
-            const marker = "window.__NUXT__=";
+            raw_json = await page.evaluate("""
+            () => {
+                const marker = "window.__NUXT__=";
 
-            for (const s of document.scripts) {
-                const txt = s.textContent || "";
-                const idx = txt.indexOf(marker);
+                for (const s of document.scripts) {
+                    const txt = s.textContent || "";
+                    const idx = txt.indexOf(marker);
 
-                if (idx !== -1) {
-                    let expr = txt.slice(idx + marker.length).trim();
+                    if (idx !== -1) {
+                        let expr = txt.slice(idx + marker.length).trim();
 
-                    if (expr.endsWith(";")) {
-                        expr = expr.slice(0, -1);
+                        if (expr.endsWith(";")) {
+                            expr = expr.slice(0, -1);
+                        }
+
+                        const obj = Function('"use strict"; return (' + expr + ')')();
+                        return JSON.stringify(obj);
                     }
-
-                    const obj = Function('"use strict"; return (' + expr + ')')();
-                    return JSON.stringify(obj);
                 }
+
+                return null;
             }
+            """)
 
-            return null;
-        }
-        """)
-        nuxt_data = json.loads(raw_json)["data"][0]["categoryData"]["product"] if raw_json else None
+            nuxt_data = json.loads(raw_json)["data"][0]["categoryData"]["product"] if raw_json else None
 
-        await page.close()
-        
-        return nuxt_data
+            def _json(self):
+                return AwaitableDict(nuxt_data)
+
+            resp.json = MethodType(_json, resp)
+
+            return resp
+        finally:
+            await page.close()
