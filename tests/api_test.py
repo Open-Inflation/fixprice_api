@@ -79,9 +79,9 @@ def _capture_product_id(
 
     for key in ["id", "url"]:
         value = data[0].get(key)
-        if not isinstance(value[key], int):
+        if not isinstance(value, int):
             pytest.fail(f"Catalog.products_list did not return a valid {key}.")
-        ctx.state[f"autotest_product_{key}"] = value[key]
+        ctx.state[f"autotest_product_{key}"] = value
 
 
 @autotest_depends_on(ClassCatalog.products_list)
