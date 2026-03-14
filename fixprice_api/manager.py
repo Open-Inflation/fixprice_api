@@ -153,14 +153,14 @@ class FixPriceAPI(ApiParent):
 
     @language.setter
     def language(self, value: str | None) -> None:
-        if not isinstance(value, str):
+        if value is None:
+            self.unstandard_headers.pop("x-language", None)
+        elif not isinstance(value, str):
             raise TypeError("`language` must be str")
-        if not len(value) in [2, 5]:
+        elif not len(value) in [2, 5]:
             raise ValueError(
                 "`language` must be IETF BCP 47. Length must be 2 (ex. `en`) or 5 (ex. `en-AE`)"
             )
-        elif value is None:
-            self.unstandard_headers.pop("x-language", None)
         else:
             self.unstandard_headers.update(
                 {"x-language": value}  # токен пойдёт в каждый запрос
@@ -217,7 +217,8 @@ class FixPriceAPI(ApiParent):
 
         Единая точка входа для всех HTTP-запросов библиотеки.
         """
-        self.client_route = real_route
+        if real_route:
+            self.client_route = real_route
 
         # Единая точка входа в чужую библиотеку для удобства
         async def f() -> FetchResponse:
