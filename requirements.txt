@@ -7,3 +7,7 @@ pytest
 pytest-anyio
 pytest-jsonschema-snapshot
 pillow
+
+black
+flake8
+mypy

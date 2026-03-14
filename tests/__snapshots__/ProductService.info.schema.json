@@ -1,0 +1,488 @@
+{
+  "type": "object",
+  "required": [
+    "_headers",
+    "active",
+    "adult",
+    "bonusCommunicationEnable",
+    "brand",
+    "category",
+    "description",
+    "extraDescriptions",
+    "forbidden",
+    "id",
+    "image",
+    "images",
+    "informers",
+    "isCart",
+    "isFavorite",
+    "isFresh",
+    "isHit",
+    "isNew",
+    "isPromo",
+    "isQRMark",
+    "isSeason",
+    "properties",
+    "sku",
+    "specialPrice",
+    "title",
+    "unitPrice",
+    "unitType",
+    "url",
+    "variants",
+    "video",
+    "videoLink"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "_headers": {
+      "type": "object",
+      "required": [
+        "access-control-allow-credentials",
+        "access-control-allow-headers",
+        "access-control-allow-methods",
+        "access-control-allow-origin",
+        "access-control-expose-headers",
+        "access-control-max-age",
+        "cache-control",
+        "content-type",
+        "date",
+        "is-logged",
+        "server",
+        "transfer-encoding",
+        "vary",
+        "x-city",
+        "x-language",
+        "x-logged"
+      ],
+      "properties": {
+        "access-control-allow-credentials": {
+          "type": "string"
+        },
+        "access-control-allow-headers": {
+          "type": "string"
+        },
+        "access-control-allow-methods": {
+          "type": "string"
+        },
+        "access-control-allow-origin": {
+          "type": "string"
+        },
+        "access-control-expose-headers": {
+          "type": "string"
+        },
+        "access-control-max-age": {
+          "type": "string"
+        },
+        "cache-control": {
+          "type": "string"
+        },
+        "content-type": {
+          "type": "string"
+        },
+        "date": {
+          "type": "string"
+        },
+        "is-logged": {
+          "type": "string"
+        },
+        "server": {
+          "type": "string"
+        },
+        "transfer-encoding": {
+          "type": "string"
+        },
+        "vary": {
+          "type": "string"
+        },
+        "x-city": {
+          "type": "string"
+        },
+        "x-language": {
+          "type": "string"
+        },
+        "x-logged": {
+          "type": "string"
+        }
+      }
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "adult": {
+      "type": "boolean"
+    },
+    "bonusCommunicationEnable": {
+      "type": "boolean"
+    },
+    "brand": {
+      "type": "object",
+      "required": [
+        "alias",
+        "id",
+        "isFavorite",
+        "isSTM",
+        "login",
+        "src",
+        "title",
+        "updated_at",
+        "url"
+      ],
+      "properties": {
+        "alias": {
+          "type": "string"
+        },
+        "id": {
+          "type": "integer"
+        },
+        "isFavorite": {
+          "type": "boolean"
+        },
+        "isSTM": {
+          "type": "boolean"
+        },
+        "login": {
+          "type": "null"
+        },
+        "src": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        },
+        "updated_at": {
+          "type": "null"
+        },
+        "url": {
+          "type": "null"
+        }
+      }
+    },
+    "category": {
+      "type": "integer"
+    },
+    "description": {
+      "type": "string"
+    },
+    "extraDescriptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "alias",
+          "id",
+          "title",
+          "value"
+        ],
+        "properties": {
+          "alias": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "value": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "object",
+                "required": [
+                  "carbohydrates",
+                  "description",
+                  "energyValue",
+                  "fats",
+                  "protein"
+                ],
+                "properties": {
+                  "carbohydrates": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "energyValue": {
+                    "type": "string"
+                  },
+                  "fats": {
+                    "type": "string"
+                  },
+                  "protein": {
+                    "type": "string"
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    "forbidden": {
+      "type": "boolean"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "image": {
+      "type": "integer"
+    },
+    "images": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "src",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "src": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "informers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "alias"
+        ],
+        "properties": {
+          "alias": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "isCart": {
+      "type": "boolean"
+    },
+    "isFavorite": {
+      "type": "boolean"
+    },
+    "isFresh": {
+      "type": "boolean"
+    },
+    "isHit": {
+      "type": "boolean"
+    },
+    "isNew": {
+      "type": "boolean"
+    },
+    "isPromo": {
+      "type": "boolean"
+    },
+    "isQRMark": {
+      "type": "boolean"
+    },
+    "isSeason": {
+      "type": "boolean"
+    },
+    "properties": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "alias",
+          "id",
+          "title",
+          "value"
+        ],
+        "properties": {
+          "alias": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sku": {
+      "type": "string"
+    },
+    "specialPrice": {
+      "type": "null"
+    },
+    "title": {
+      "type": "string"
+    },
+    "unitPrice": {
+      "type": "string"
+    },
+    "unitType": {
+      "type": "null"
+    },
+    "url": {
+      "type": "string"
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "barcode",
+          "count",
+          "dimensions",
+          "fixPrice",
+          "height",
+          "id",
+          "image",
+          "length",
+          "price",
+          "properties",
+          "title",
+          "unitPrice",
+          "weight",
+          "width"
+        ],
+        "properties": {
+          "barcode": {
+            "type": "string"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "dimensions": {
+            "type": "object",
+            "required": [
+              "height",
+              "isPackage",
+              "length",
+              "weight",
+              "width"
+            ],
+            "properties": {
+              "height": {
+                "type": "integer"
+              },
+              "isPackage": {
+                "type": "boolean"
+              },
+              "length": {
+                "type": "integer"
+              },
+              "weight": {
+                "type": "integer"
+              },
+              "width": {
+                "type": "integer"
+              }
+            }
+          },
+          "fixPrice": {
+            "type": "string"
+          },
+          "height": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "image": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "integer"
+              }
+            ]
+          },
+          "images": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "src",
+                "title"
+              ],
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "src": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "title": {
+                  "type": "null"
+                }
+              }
+            }
+          },
+          "length": {
+            "type": "integer"
+          },
+          "price": {
+            "type": "string"
+          },
+          "properties": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "alias",
+                "id",
+                "title",
+                "value"
+              ],
+              "properties": {
+                "alias": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "title": {
+            "type": "string"
+          },
+          "unitPrice": {
+            "type": "string"
+          },
+          "weight": {
+            "type": "integer"
+          },
+          "width": {
+            "type": "integer"
+          }
+        }
+      }
+    },
+    "video": {
+      "type": "null"
+    },
+    "videoLink": {
+      "type": "null"
+    }
+  }
+}

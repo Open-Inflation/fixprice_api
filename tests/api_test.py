@@ -3,8 +3,17 @@ from typing import Any
 import pytest
 from fixprice_api.endpoints.catalog import ClassCatalog, ProductService
 from fixprice_api.endpoints.geolocation import ClassGeolocation
-from human_requests import autotest_data, autotest_depends_on, autotest_hook, autotest_params
-from human_requests.autotest import AutotestCallContext, AutotestContext, AutotestDataContext
+from human_requests import (
+    autotest_data,
+    autotest_depends_on,
+    autotest_hook,
+    autotest_params,
+)
+from human_requests.autotest import (
+    AutotestCallContext,
+    AutotestContext,
+    AutotestDataContext,
+)
 from PIL import Image
 
 

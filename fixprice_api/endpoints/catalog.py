@@ -106,7 +106,7 @@ class ProductService(ApiChild["FixPriceAPI"]):
             url += "&inStock=true"
 
         return await self._parent._request(HttpMethod.GET, url)
-    
+
     @overload
     async def info(self, *, url: str): ...
 
@@ -135,7 +135,9 @@ class ProductService(ApiChild["FixPriceAPI"]):
         real_url = "https://fix-price.com/catalog/"
         if url is None:
             if category is None or product_id is None or slug is None:
-                raise TypeError("Either url or (category, product_id, slug) must be provided")
+                raise TypeError(
+                    "Either url or (category, product_id, slug) must be provided"
+                )
 
             real_url += f"{category}/p-{product_id}-{slug}"
         else:
@@ -171,7 +173,11 @@ class ProductService(ApiChild["FixPriceAPI"]):
             }
             """)
 
-            nuxt_data = json.loads(raw_json)["data"][0]["categoryData"]["product"] if raw_json else None
+            nuxt_data = (
+                json.loads(raw_json)["data"][0]["categoryData"]["product"]
+                if raw_json
+                else None
+            )
 
             def _json(self):
                 return AwaitableDict(nuxt_data)

@@ -1,0 +1,185 @@
+{
+  "id": 1912108,
+  "title": "Воздушное суфле \"Весенняя серия\", Пухлый Кролик, 150 г",
+  "sku": "1912108",
+  "category": 2004,
+  "isFresh": false,
+  "isNew": false,
+  "isPromo": false,
+  "isSeason": false,
+  "isHit": false,
+  "isFavorite": false,
+  "isCart": false,
+  "isQRMark": false,
+  "image": 2423776,
+  "adult": false,
+  "description": "Воздушное суфле \"Весенняя серия\", Пухлый Кролик, со вкусом пломбира имеет нежную текстуру. Разноцветное, фигурное. Масса нетто: 150 г.",
+  "video": null,
+  "videoLink": null,
+  "forbidden": false,
+  "active": true,
+  "unitType": null,
+  "specialPrice": null,
+  "images": [
+    {
+      "id": 2423776,
+      "title": null,
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg"
+    },
+    {
+      "id": 2423777,
+      "title": null,
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg"
+    }
+  ],
+  "properties": [
+    {
+      "id": 12,
+      "alias": "prodCountry",
+      "value": "Россия",
+      "title": "Страна производства"
+    },
+    {
+      "id": 13,
+      "alias": "manufacturer",
+      "value": "ООО \"ТД \"Алтей\"",
+      "title": "Производитель"
+    }
+  ],
+  "extraDescriptions": [
+    {
+      "id": 0,
+      "alias": "nutritionalValue",
+      "value": "Пищевая ценность на 100г. Продукта: белки 0г.; жиры 0г.; углеводы 0г. Энергетическая ценность: 0 ккал.",
+      "title": "Пищевая ценность"
+    },
+    {
+      "id": 1,
+      "alias": "composition",
+      "value": "Сахар, патока крахмальная,желатин пищевой,крахмал кукурузный,ароматизатор пломбир, красители синий блестящий, желтый хинолиновый, понсо 4R.",
+      "title": "Состав"
+    },
+    {
+      "id": 2,
+      "alias": "manufacturerAddress",
+      "value": "623733, Свердловская область, Режевской район, село Останино, ул. Центральная, д.10",
+      "title": "Адрес производителя"
+    },
+    {
+      "id": 3,
+      "alias": "nutritionalValueSeparated",
+      "value": {
+        "description": "Пищевая ценность на 100г",
+        "energyValue": "",
+        "protein": "",
+        "fats": "",
+        "carbohydrates": ""
+      },
+      "title": "Пищевая ценность с разбивкой по элементам"
+    }
+  ],
+  "variants": [
+    {
+      "id": 65185,
+      "image": null,
+      "title": "",
+      "width": 60,
+      "height": 140,
+      "length": 270,
+      "weight": 152,
+      "barcode": "1912108",
+      "properties": [
+        {
+          "id": 100,
+          "alias": "fake",
+          "value": "Ассортимент",
+          "title": "Вариант"
+        }
+      ],
+      "count": 10,
+      "price": "59.00",
+      "dimensions": {
+        "width": 60,
+        "height": 140,
+        "weight": 152,
+        "length": 270,
+        "isPackage": true
+      },
+      "fixPrice": "59.00",
+      "unitPrice": ""
+    },
+    {
+      "id": 65184,
+      "image": 1688072,
+      "title": "",
+      "width": 60,
+      "height": 140,
+      "images": [
+        {
+          "id": 1688072,
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/25b9c9d882e1461afeaafafc89eab494_1.jpg",
+          "title": null
+        }
+      ],
+      "length": 270,
+      "weight": 152,
+      "barcode": "4650139150280",
+      "properties": [
+        {
+          "id": 9,
+          "alias": "variant",
+          "value": "Пломбир",
+          "title": "Вариант"
+        }
+      ],
+      "count": 6,
+      "price": "59.00",
+      "dimensions": {
+        "width": 60,
+        "height": 140,
+        "weight": 152,
+        "length": 270,
+        "isPackage": true
+      },
+      "fixPrice": "59.00",
+      "unitPrice": ""
+    }
+  ],
+  "unitPrice": "",
+  "url": "produkty-i-napitki/p-1912108-vozdushnoe-sufle-vesennyaya-seriya-puhlyy-krolik-150-g",
+  "brand": {
+    "id": 373,
+    "src": "",
+    "url": null,
+    "alias": "",
+    "login": null,
+    "title": "Пухлый Кролик",
+    "updated_at": null,
+    "isSTM": false,
+    "isFavorite": false
+  },
+  "informers": [
+    {
+      "alias": "loyaltyProgram"
+    }
+  ],
+  "bonusCommunicationEnable": false,
+  "_headers": {
+    "x-language": "ru",
+    "x-city": "3",
+    "is-logged": "",
+    "x-logged": "",
+    "vary": "X-City, X-Language, X-Pfm, X-Delivery-Type, X-Logged",
+    "cache-control": "public, max-age=3600",
+    "content-type": "application/json; charset=UTF-8",
+    "access-control-allow-origin": "*",
+    "access-control-allow-methods": "GET, POST, PUT, DELETE, HEAD, OPTIONS",
+    "access-control-allow-headers": "X-Client-Route, X-Access-Token, Content-Type, X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Delivery-Type, X-Web-Application-Type, X-Open-Id, Cache-Control, Vary, X-Logged",
+    "access-control-expose-headers": "X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Web-Application-Type, X-Open-Id, X-Child, Cache-Control, Vary, X-Logged",
+    "access-control-allow-credentials": "true",
+    "access-control-max-age": "3600",
+    "server": "Unit/1.34.2",
+    "date": "Sat, 14 Mar 2026 20:56:16 GMT",
+    "transfer-encoding": "chunked"
+  }
+}
