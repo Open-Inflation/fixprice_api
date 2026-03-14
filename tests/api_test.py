@@ -77,11 +77,11 @@ def _capture_product_id(
     if not isinstance(data, list) or not data:
         pytest.fail("Catalog.products_list returned empty data.")
 
-    product_id = data[0].get("id")
-    if not isinstance(product_id, int):
-        pytest.fail("Catalog.products_list did not return a valid product id.")
-
-    ctx.state["autotest_product_id"] = product_id
+    for key in ["id", "url"]:
+        value = data[0].get(key)
+        if not isinstance(value[key], int):
+            pytest.fail(f"Catalog.products_list did not return a valid {key}.")
+        ctx.state[f"autotest_product_{key}"] = value[key]
 
 
 @autotest_depends_on(ClassCatalog.products_list)
@@ -91,6 +91,15 @@ def _product_balance_params(ctx: AutotestCallContext) -> dict[str, int]:
     if isinstance(cached_id, int):
         return {"product_id": cached_id}
     pytest.fail("ProductService.balance depends on Catalog.products_list.")
+
+
+@autotest_depends_on(ClassCatalog.products_list)
+@autotest_params(target=ProductService.info)
+def _product_info_params(ctx: AutotestCallContext) -> dict[str, int]:
+    cached_id = ctx.state.get("autotest_product_url")
+    if isinstance(cached_id, int):
+        return {"url": cached_id}
+    pytest.fail("ProductService.info depends on Catalog.products_list.")
 
 
 @autotest_data(name="unstandard_headers")
