@@ -55,6 +55,7 @@ async def main():
             )
         ).json()
         first_product_id = products[0]["id"]
+        first_product_url = products[0]["url"]
         print(f"Первый товар: {products[0]['title']!s:.60s} ({first_product_id})")
 
         # 3. Геолокация (влияет на каталог и баланс)
@@ -66,7 +67,11 @@ async def main():
         balance = (await api.Catalog.Product.balance(product_id=first_product_id)).json()
         print(f"Проверено магазинов: {len(balance)}")
 
-        # 5. Загрузка изображения
+        # 5. Подробное инфо о товаре
+        info = (await api.Catalog.Product.info(url=first_product_url)).json()
+        print(f"Подробно о товаре: {list(info.keys())}")
+
+        # 6. Загрузка изображения
         image_url = products[0]["images"][0]["src"]
         image_stream = await api.General.download_image(image_url)
         with Image.open(image_stream) as img:

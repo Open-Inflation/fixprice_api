@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import json
 from types import MethodType
-from ..tools import AwaitableDict
 
 from playwright.async_api import Response as PWResponse
 from dataclasses import dataclass
@@ -180,7 +179,7 @@ class ProductService(ApiChild["FixPriceAPI"]):
             )
 
             def _json(self):
-                return AwaitableDict(nuxt_data)
+                return nuxt_data
 
             resp.json = MethodType(_json, resp)
 
