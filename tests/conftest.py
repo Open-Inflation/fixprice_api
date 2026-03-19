@@ -17,7 +17,7 @@ async def api():
     Открываем один экземпляр клиента на всю сессию тестов.
     Корректно зовём менеджер контекста вручную.
     """
-    async with FixPriceAPI() as client:
+    async with FixPriceAPI(test_mode=True) as client:
         yield client
 
 

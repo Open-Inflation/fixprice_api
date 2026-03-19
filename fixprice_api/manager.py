@@ -1,5 +1,4 @@
 from typing import Any, Literal
-import os
 from dataclasses import dataclass, field
 from collections import defaultdict
 from human_requests import HumanBrowser, HumanContext, HumanPage
@@ -9,8 +8,7 @@ from human_requests.network_analyzer.anomaly_sniffer import (
     WaitHeader,
     WaitSource,
 )
-from camoufox import AsyncCamoufox
-from playwright.async_api import TimeoutError as PWTimeoutError
+from camoufox import AsyncCamoufox, DefaultAddons
 
 from human_requests import ApiParent, api_child_field
 from .endpoints.catalog import ClassCatalog
@@ -27,6 +25,8 @@ class FixPriceAPI(ApiParent):
     """Время ожидания ответа от сервера в миллисекундах."""
     headless: bool = True
     """Запускать браузер в headless режиме?"""
+    test_mode: bool = False
+    """Режим тестирования предполагает более глубокий _warmup который не требуется для обычного использования"""
     proxy: str | dict | Proxy | None = field(default_factory=Proxy.from_env)
     """Прокси-сервер для всех запросов (если нужен). По умолчанию берет из окружения (если есть).
     Принимает как формат Playwright, так и строчный формат."""
@@ -47,6 +47,8 @@ class FixPriceAPI(ApiParent):
     """Внутренний страница сессии браузера"""
 
     unstandard_headers: dict[str, str] = field(init=False, repr=False)
+    """Список нестандартных заголовков пойманных при инициализации"""
+    unstandard_urls: dict[str, list[str]] = field(init=False, repr=False)
     """Список нестандартных заголовков пойманных при инициализации"""
 
     Geolocation: ClassGeolocation = api_child_field(ClassGeolocation)
@@ -70,8 +72,11 @@ class FixPriceAPI(ApiParent):
         br = await AsyncCamoufox(
             headless=self.headless,
             proxy=px.as_dict(),
+            humanize=True,
             **self.browser_opts,
             block_images=True,
+            i_know_what_im_doing=True,
+            exclude_addons=[DefaultAddons.UBO]
         ).start()
 
         self.session = HumanBrowser.replace(br)
@@ -97,6 +102,17 @@ class FixPriceAPI(ApiParent):
             timeout_ms=self.timeout_ms,
         )
 
+        if self.test_mode:
+            btn = self.page.locator("div.selected-city > div.buttons > button.button.normal").first
+            await btn.wait_for(state="visible", timeout=self.timeout_ms)
+            await btn.click(timeout=self.timeout_ms)
+
+            await self.page.locator("a.link.product-category").first.click()
+            await self.page.wait_for_selector(
+                selector="div.page-content", timeout=self.timeout_ms, state="visible"
+            )
+            await self.page.wait_for_load_state("load")
+
         await self.page.goto(
             self.CATALOG_URL, wait_until="networkidle"
         )  # ускорение сети, таким образом пропускаем OPTION pre-fetch
@@ -116,6 +132,7 @@ class FixPriceAPI(ApiParent):
 
         # Преобразуем set обратно в list
         self.unstandard_headers = {k: list(v)[0] for k, v in result.items()}
+        self.unstandard_urls = result_sniffer["request"]
 
     async def __aexit__(self, *exc):
         """Выход из контекстного менеджера с закрытием сессии."""

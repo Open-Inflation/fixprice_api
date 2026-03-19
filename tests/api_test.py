@@ -115,6 +115,10 @@ def _product_info_params(ctx: AutotestCallContext) -> dict[str, str]:
 def _unstandard_headers_data(ctx: AutotestDataContext) -> dict[str, Any]:
     return ctx.api.unstandard_headers
 
+@autotest_data(name="unstandard_urls")
+def _unstandard_urls_data(ctx: AutotestDataContext) -> dict[str, Any]:
+    return ctx.api.unstandard_urls
+
 
 async def test_download_image(api, products_list_json):
     img_url = products_list_json[0]["images"][0]["src"]

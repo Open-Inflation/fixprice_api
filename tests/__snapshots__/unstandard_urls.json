@@ -1,0 +1,87 @@
+{
+  "https://api.fix-price.com/buyer/v1/config/ecom.product.special.price.date.show": {
+    "x-language": [
+      "ru"
+    ],
+    "x-city": [
+      "3"
+    ],
+    "x-key": [
+      "L3d3S25BdzhGam9JejFiNEQvOWJUQT09OjprTkM1TmpoOHk0OWtveVhJUlBwTEVBPT0=:8dbc25f87a4aba4652e55cbf64d136f0"
+    ],
+    "x-logged": [
+      ""
+    ],
+    "x-client-route": [
+      "/catalog"
+    ]
+  },
+  "https://api.fix-price.com/buyer/v1/banner/suitable?type=1&path=https:%2F%2Ffix-price.com%2Fcatalog": {
+    "x-language": [
+      "ru"
+    ],
+    "x-city": [
+      "3"
+    ],
+    "x-key": [
+      "L3d3S25BdzhGam9JejFiNEQvOWJUQT09OjprTkM1TmpoOHk0OWtveVhJUlBwTEVBPT0=:8dbc25f87a4aba4652e55cbf64d136f0"
+    ],
+    "x-logged": [
+      ""
+    ],
+    "x-client-route": [
+      "/catalog"
+    ]
+  },
+  "https://api.fix-price.com/buyer/v2/geo/ip": {
+    "x-language": [
+      "ru"
+    ],
+    "x-city": [
+      "3"
+    ],
+    "x-key": [
+      "L3d3S25BdzhGam9JejFiNEQvOWJUQT09OjprTkM1TmpoOHk0OWtveVhJUlBwTEVBPT0=:8dbc25f87a4aba4652e55cbf64d136f0"
+    ],
+    "x-logged": [
+      ""
+    ],
+    "x-client-route": [
+      "/catalog"
+    ]
+  },
+  "https://api.fix-price.com/buyer/v1/cookie-config": {
+    "x-language": [
+      "ru"
+    ],
+    "x-city": [
+      "3"
+    ],
+    "x-key": [
+      "L3d3S25BdzhGam9JejFiNEQvOWJUQT09OjprTkM1TmpoOHk0OWtveVhJUlBwTEVBPT0=:8dbc25f87a4aba4652e55cbf64d136f0"
+    ],
+    "x-logged": [
+      ""
+    ],
+    "x-client-route": [
+      "/catalog"
+    ]
+  },
+  "https://api.fix-price.com/buyer/v2/geo/ip?utm_referrer=https%3a%2f%2ffix-price.com%2f": {
+    "x-language": [
+      "ru"
+    ],
+    "x-city": [
+      "3"
+    ],
+    "x-key": [
+      "L3d3S25BdzhGam9JejFiNEQvOWJUQT09OjprTkM1TmpoOHk0OWtveVhJUlBwTEVBPT0=:8dbc25f87a4aba4652e55cbf64d136f0"
+    ],
+    "x-logged": [
+      ""
+    ],
+    "x-client-route": [
+      "/catalog"
+    ]
+  }
+}
