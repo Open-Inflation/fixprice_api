@@ -13,7 +13,14 @@
       "type": "string"
     },
     "x-client-route": {
-      "type": "null"
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string"
+        }
+      ]
     },
     "x-key": {
       "type": "string"

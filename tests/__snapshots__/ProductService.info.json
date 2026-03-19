@@ -96,7 +96,7 @@
           "title": "Вариант"
         }
       ],
-      "count": 10,
+      "count": 11,
       "price": "59.00",
       "dimensions": {
         "width": 60,
@@ -132,7 +132,7 @@
           "title": "Вариант"
         }
       ],
-      "count": 6,
+      "count": 11,
       "price": "59.00",
       "dimensions": {
         "width": 60,
@@ -179,7 +179,8 @@
     "access-control-allow-credentials": "true",
     "access-control-max-age": "3600",
     "server": "Unit/1.34.2",
-    "date": "Sat, 14 Mar 2026 20:56:16 GMT",
+    "date": "Thu, 19 Mar 2026 05:05:19 GMT",
+    "connection": "close",
     "transfer-encoding": "chunked"
   }
 }
