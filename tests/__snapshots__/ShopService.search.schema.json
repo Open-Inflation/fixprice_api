@@ -1,145 +1,218 @@
 {
-  "type": "array",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "items": {
-    "type": "object",
-    "required": [
-      "address",
-      "canPayCard",
-      "canPickup",
-      "cityId",
-      "id",
-      "info",
-      "isActive",
-      "latitude",
-      "longitude",
-      "metroStations",
-      "pfm",
-      "scheduleSaturday",
-      "scheduleSunday",
-      "scheduleWeekdays",
-      "temporarilyClosed",
-      "warehouse",
-      "withVariableProduct",
-      "workTime"
-    ],
-    "properties": {
-      "address": {
-        "type": "string"
-      },
-      "canPayCard": {
-        "type": "boolean"
-      },
-      "canPickup": {
-        "type": "boolean"
-      },
-      "cityId": {
-        "type": "integer"
-      },
-      "id": {
-        "type": "integer"
-      },
-      "info": {
-        "anyOf": [
-          {
-            "type": "null"
-          },
-          {
+  "anyOf": [
+    {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "address",
+          "canPayCard",
+          "canPickup",
+          "cityId",
+          "id",
+          "info",
+          "isActive",
+          "latitude",
+          "longitude",
+          "metroStations",
+          "pfm",
+          "scheduleSaturday",
+          "scheduleSunday",
+          "scheduleWeekdays",
+          "temporarilyClosed",
+          "warehouse",
+          "withVariableProduct",
+          "workTime"
+        ],
+        "properties": {
+          "address": {
             "type": "string"
+          },
+          "canPayCard": {
+            "type": "boolean"
+          },
+          "canPickup": {
+            "type": "boolean"
+          },
+          "cityId": {
+            "type": "integer"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "info": {
+            "anyOf": [
+              {
+                "type": "null"
+              },
+              {
+                "type": "string"
+              }
+            ]
+          },
+          "isActive": {
+            "type": "boolean"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "metroStations": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "latitude",
+                "lineColor",
+                "longitude",
+                "name"
+              ],
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "latitude": {
+                  "type": "number"
+                },
+                "lineColor": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "number"
+                },
+                "name": {
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "pfm": {
+            "type": "string"
+          },
+          "scheduleSaturday": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "scheduleSunday": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "scheduleWeekdays": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "temporarilyClosed": {
+            "type": "boolean"
+          },
+          "warehouse": {
+            "type": "boolean"
+          },
+          "withVariableProduct": {
+            "type": "boolean"
+          },
+          "workTime": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ]
           }
-        ]
-      },
-      "isActive": {
-        "type": "boolean"
-      },
-      "latitude": {
-        "type": "number"
-      },
-      "longitude": {
-        "type": "number"
-      },
-      "metroStations": {
-        "type": "array",
-        "items": {
+        }
+      }
+    },
+    {
+      "type": "object",
+      "required": [
+        "code",
+        "comment",
+        "details",
+        "message",
+        "name",
+        "previous",
+        "status",
+        "type"
+      ],
+      "properties": {
+        "code": {
+          "type": "integer"
+        },
+        "comment": {
+          "type": "string"
+        },
+        "details": {
+          "type": "null"
+        },
+        "message": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "previous": {
           "type": "object",
           "required": [
-            "id",
-            "latitude",
-            "lineColor",
-            "longitude",
-            "name"
+            "code",
+            "message",
+            "name",
+            "type"
           ],
           "properties": {
-            "id": {
+            "code": {
               "type": "integer"
             },
-            "latitude": {
-              "type": "number"
-            },
-            "lineColor": {
+            "message": {
               "type": "string"
-            },
-            "longitude": {
-              "type": "number"
             },
             "name": {
               "type": "string"
+            },
+            "type": {
+              "type": "string"
             }
           }
+        },
+        "status": {
+          "type": "integer"
+        },
+        "type": {
+          "type": "string"
         }
-      },
-      "pfm": {
-        "type": "string"
-      },
-      "scheduleSaturday": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
-      },
-      "scheduleSunday": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
-      },
-      "scheduleWeekdays": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
-      },
-      "temporarilyClosed": {
-        "type": "boolean"
-      },
-      "warehouse": {
-        "type": "boolean"
-      },
-      "withVariableProduct": {
-        "type": "boolean"
-      },
-      "workTime": {
-        "anyOf": [
-          {
-            "type": "string"
-          },
-          {
-            "type": "null"
-          }
-        ]
       }
     }
-  }
+  ],
+  "required": [
+    "code",
+    "comment",
+    "details",
+    "message",
+    "name",
+    "previous",
+    "status",
+    "type"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
 }

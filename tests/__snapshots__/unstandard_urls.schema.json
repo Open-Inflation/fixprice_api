@@ -1,0 +1,223 @@
+{
+  "type": "object",
+  "required": [
+    "https://api.fix-price.com/buyer/v1/banner/suitable?type=1&path=https:%2F%2Ffix-price.com%2Fcatalog",
+    "https://api.fix-price.com/buyer/v1/config/ecom.product.special.price.date.show",
+    "https://api.fix-price.com/buyer/v1/cookie-config",
+    "https://api.fix-price.com/buyer/v2/geo/ip",
+    "https://api.fix-price.com/buyer/v2/geo/ip?utm_referrer=https%3a%2f%2ffix-price.com%2f"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "https://api.fix-price.com/buyer/v1/banner/suitable?type=1&path=https:%2F%2Ffix-price.com%2Fcatalog": {
+      "type": "object",
+      "required": [
+        "x-city",
+        "x-client-route",
+        "x-key",
+        "x-language",
+        "x-logged"
+      ],
+      "properties": {
+        "x-city": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-client-route": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-key": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-logged": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "https://api.fix-price.com/buyer/v1/config/ecom.product.special.price.date.show": {
+      "type": "object",
+      "required": [
+        "x-city",
+        "x-client-route",
+        "x-key",
+        "x-language",
+        "x-logged"
+      ],
+      "properties": {
+        "x-city": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-client-route": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-key": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-logged": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "https://api.fix-price.com/buyer/v1/cookie-config": {
+      "type": "object",
+      "required": [
+        "x-city",
+        "x-client-route",
+        "x-key",
+        "x-language",
+        "x-logged"
+      ],
+      "properties": {
+        "x-city": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-client-route": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-key": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-logged": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "https://api.fix-price.com/buyer/v2/geo/ip": {
+      "type": "object",
+      "required": [
+        "x-city",
+        "x-client-route",
+        "x-key",
+        "x-language",
+        "x-logged"
+      ],
+      "properties": {
+        "x-city": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-client-route": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-key": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-logged": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "https://api.fix-price.com/buyer/v2/geo/ip?utm_referrer=https%3a%2f%2ffix-price.com%2f": {
+      "type": "object",
+      "required": [
+        "x-city",
+        "x-client-route",
+        "x-key",
+        "x-language",
+        "x-logged"
+      ],
+      "properties": {
+        "x-city": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-client-route": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-key": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-language": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "x-logged": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}
