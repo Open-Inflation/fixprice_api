@@ -23,11 +23,27 @@
     },
     "fias": {
       "type": "string",
-      "format": "uuid"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string",
+          "format": "uuid"
+        }
+      ]
     },
     "fiasid": {
       "type": "string",
-      "format": "uuid"
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "string",
+          "format": "uuid"
+        }
+      ]
     },
     "id": {
       "type": "integer"

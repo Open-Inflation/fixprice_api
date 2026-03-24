@@ -51,7 +51,16 @@
       "updatedAt": {
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "format": "date-time"
+              }
+            ]
           },
           {
             "type": "null"

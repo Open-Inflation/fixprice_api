@@ -1,13 +1,13 @@
 {
-  "id": 479,
-  "name": "Саранск",
-  "title": "Саранск",
-  "longitude": 45.183938,
-  "latitude": 54.187433,
+  "id": 3972,
+  "name": "посёлок городского типа Псебай",
+  "title": "посёлок городского типа Псебай",
+  "longitude": 40.788185,
+  "latitude": 44.111959,
   "kladr": null,
-  "fiasid": "1ccfdc3c-be0f-4e42-ab4d-98f90de972d9",
-  "fias": "1ccfdc3c-be0f-4e42-ab4d-98f90de972d9",
+  "fiasid": "",
+  "fias": "",
   "addressId": "",
-  "prefix": "г",
+  "prefix": "пгт",
   "countryId": 2
 }

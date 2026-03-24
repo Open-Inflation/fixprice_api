@@ -204,15 +204,5 @@
       }
     }
   ],
-  "required": [
-    "code",
-    "comment",
-    "details",
-    "message",
-    "name",
-    "previous",
-    "status",
-    "type"
-  ],
   "$schema": "https://json-schema.org/draft/2020-12/schema"
 }
