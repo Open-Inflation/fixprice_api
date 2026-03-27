@@ -11,7 +11,7 @@
   "isFavorite": false,
   "isCart": false,
   "isQRMark": false,
-  "image": 2423776,
+  "image": 2378036,
   "adult": false,
   "description": "Воздушное суфле \"Весенняя серия\", Пухлый Кролик, со вкусом пломбира имеет нежную текстуру. Разноцветное, фигурное. Масса нетто: 150 г.",
   "video": null,
@@ -22,14 +22,14 @@
   "specialPrice": null,
   "images": [
     {
-      "id": 2423776,
-      "title": null,
-      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg"
+      "id": 2378036,
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
+      "title": null
     },
     {
-      "id": 2423777,
-      "title": null,
-      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg"
+      "id": 2378037,
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg",
+      "title": null
     }
   ],
   "properties": [
@@ -78,16 +78,39 @@
       "title": "Пищевая ценность с разбивкой по элементам"
     }
   ],
+  "resources": [
+    {
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
+      "videoType": null,
+      "link": null
+    },
+    {
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg",
+      "videoType": null,
+      "link": null
+    }
+  ],
   "variants": [
     {
       "id": 65185,
-      "image": null,
       "title": "",
       "width": 60,
       "height": 140,
       "length": 270,
       "weight": 152,
       "barcode": "1912108",
+      "resources": [
+        {
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
+          "videoType": null,
+          "link": null
+        },
+        {
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg",
+          "videoType": null,
+          "link": null
+        }
+      ],
       "properties": [
         {
           "id": 100,
@@ -105,25 +128,32 @@
         "length": 270,
         "isPackage": true
       },
+      "image": 2378036,
+      "images": [
+        {
+          "id": 2378036,
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
+          "title": null
+        }
+      ],
       "fixPrice": "59.00",
       "unitPrice": ""
     },
     {
       "id": 65184,
-      "image": 1688072,
       "title": "",
       "width": 60,
       "height": 140,
-      "images": [
-        {
-          "id": 1688072,
-          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/25b9c9d882e1461afeaafafc89eab494_1.jpg",
-          "title": null
-        }
-      ],
       "length": 270,
       "weight": 152,
       "barcode": "4650139150280",
+      "resources": [
+        {
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/25b9c9d882e1461afeaafafc89eab494_1.jpg",
+          "videoType": null,
+          "link": null
+        }
+      ],
       "properties": [
         {
           "id": 9,
@@ -132,7 +162,7 @@
           "title": "Вариант"
         }
       ],
-      "count": 8,
+      "count": 11,
       "price": "59.00",
       "dimensions": {
         "width": 60,
@@ -141,6 +171,14 @@
         "length": 270,
         "isPackage": true
       },
+      "image": 1892049,
+      "images": [
+        {
+          "id": 1892049,
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/25b9c9d882e1461afeaafafc89eab494_1.jpg",
+          "title": null
+        }
+      ],
       "fixPrice": "59.00",
       "unitPrice": ""
     }
@@ -174,12 +212,12 @@
     "content-type": "application/json; charset=UTF-8",
     "access-control-allow-origin": "*",
     "access-control-allow-methods": "GET, POST, PUT, DELETE, HEAD, OPTIONS",
-    "access-control-allow-headers": "X-Client-Route, X-Access-Token, Content-Type, X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Delivery-Type, X-Web-Application-Type, X-Open-Id, Cache-Control, Vary, X-Logged",
+    "access-control-allow-headers": "X-Client-Route, X-Access-Token, Content-Type, X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Delivery-Type, X-Web-Application-Type, X-Open-Id, Cache-Control, Vary, X-Logged, X-TESTCASE",
     "access-control-expose-headers": "X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Web-Application-Type, X-Open-Id, X-Child, Cache-Control, Vary, X-Logged",
     "access-control-allow-credentials": "true",
     "access-control-max-age": "3600",
     "server": "Unit/1.34.2",
-    "date": "Thu, 19 Mar 2026 07:31:18 GMT",
+    "date": "Fri, 27 Mar 2026 05:22:45 GMT",
     "connection": "close",
     "transfer-encoding": "chunked"
   }

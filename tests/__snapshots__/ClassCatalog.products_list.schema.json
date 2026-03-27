@@ -141,6 +141,29 @@
       "price": {
         "type": "string"
       },
+      "resources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "link",
+            "src",
+            "videoType"
+          ],
+          "properties": {
+            "link": {
+              "type": "null"
+            },
+            "src": {
+              "type": "string",
+              "format": "uri"
+            },
+            "videoType": {
+              "type": "null"
+            }
+          }
+        }
+      },
       "sku": {
         "type": "string"
       },
