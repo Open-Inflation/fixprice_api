@@ -11,7 +11,7 @@
   "isFavorite": false,
   "isCart": false,
   "isQRMark": false,
-  "image": 2378036,
+  "image": 5972752,
   "adult": false,
   "description": "Воздушное суфле \"Весенняя серия\", Пухлый Кролик, со вкусом пломбира имеет нежную текстуру. Разноцветное, фигурное. Масса нетто: 150 г.",
   "video": null,
@@ -22,12 +22,12 @@
   "specialPrice": null,
   "images": [
     {
-      "id": 2378036,
+      "id": 5972752,
       "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
       "title": null
     },
     {
-      "id": 2378037,
+      "id": 5972753,
       "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg",
       "title": null
     }
@@ -119,7 +119,7 @@
           "title": "Вариант"
         }
       ],
-      "count": 6,
+      "count": 13,
       "price": "59.00",
       "dimensions": {
         "width": 60,
@@ -128,10 +128,10 @@
         "length": 270,
         "isPackage": true
       },
-      "image": 2378036,
+      "image": 5972752,
       "images": [
         {
-          "id": 2378036,
+          "id": 5972752,
           "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
           "title": null
         }
@@ -162,7 +162,7 @@
           "title": "Вариант"
         }
       ],
-      "count": 11,
+      "count": 13,
       "price": "59.00",
       "dimensions": {
         "width": 60,
@@ -171,10 +171,10 @@
         "length": 270,
         "isPackage": true
       },
-      "image": 1892049,
+      "image": 4743807,
       "images": [
         {
-          "id": 1892049,
+          "id": 4743807,
           "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/25b9c9d882e1461afeaafafc89eab494_1.jpg",
           "title": null
         }
@@ -217,7 +217,7 @@
     "access-control-allow-credentials": "true",
     "access-control-max-age": "3600",
     "server": "Unit/1.34.2",
-    "date": "Fri, 27 Mar 2026 05:22:45 GMT",
+    "date": "Sat, 28 Mar 2026 05:09:02 GMT",
     "connection": "close",
     "transfer-encoding": "chunked"
   }
