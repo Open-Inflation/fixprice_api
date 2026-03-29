@@ -16,7 +16,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
     "addressId": {
-      "type": "string"
+      "type": "string",
+      "j2sEnumRejected": true
     },
     "countryId": {
       "type": "integer"
@@ -42,13 +43,18 @@
       "type": "number"
     },
     "name": {
-      "type": "string"
+      "type": "string",
+      "j2sEnumRejected": true
     },
     "prefix": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "г"
+      ]
     },
     "title": {
-      "type": "string"
+      "type": "string",
+      "j2sEnumRejected": true
     }
   }
 }

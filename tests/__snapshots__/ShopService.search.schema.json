@@ -84,7 +84,8 @@
                   "type": "number"
                 },
                 "name": {
-                  "type": "string"
+                  "type": "string",
+                  "j2sEnumRejected": true
                 }
               }
             }
@@ -161,16 +162,19 @@
           "type": "integer"
         },
         "comment": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         },
         "details": {
           "type": "null"
         },
         "message": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         },
         "name": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         },
         "previous": {
           "type": "object",
@@ -185,13 +189,18 @@
               "type": "integer"
             },
             "message": {
-              "type": "string"
+              "type": "string",
+              "j2sEnumRejected": true
             },
             "name": {
-              "type": "string"
+              "type": "string",
+              "j2sEnumRejected": true
             },
             "type": {
-              "type": "string"
+              "type": "string",
+              "enum": [
+                "Exception"
+              ]
             }
           }
         },
@@ -199,7 +208,8 @@
           "type": "integer"
         },
         "type": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         }
       }
     }

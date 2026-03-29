@@ -51,7 +51,8 @@
                 "type": "integer"
               },
               "title": {
-                "type": "string"
+                "type": "string",
+                "j2sEnumRejected": true
               }
             }
           },
@@ -75,7 +76,8 @@
             "type": "null"
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           }
         }
       },
@@ -133,13 +135,16 @@
         "type": "boolean"
       },
       "maxPrice": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "minPrice": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "price": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "resources": {
         "type": "array",
@@ -165,22 +170,26 @@
         }
       },
       "sku": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "specialPrice": {
         "type": "null"
       },
       "title": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "unit": {
         "type": "null"
       },
       "unitPrice": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "url": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "variantCount": {
         "type": "integer"

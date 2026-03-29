@@ -10,7 +10,8 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
     "x-city": {
-      "type": "string"
+      "type": "string",
+      "j2sEnumRejected": true
     },
     "x-client-route": {
       "anyOf": [
@@ -18,18 +19,24 @@
           "type": "null"
         },
         {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         }
       ]
     },
     "x-key": {
-      "type": "string"
+      "type": "string",
+      "j2sEnumRejected": true
     },
     "x-language": {
-      "type": "string"
+      "type": "string",
+      "enum": [
+        "ru"
+      ]
     },
     "x-logged": {
-      "type": "string"
+      "type": "string",
+      "j2sEnumRejected": true
     }
   }
 }
