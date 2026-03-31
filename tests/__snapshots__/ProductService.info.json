@@ -11,7 +11,7 @@
   "isFavorite": false,
   "isCart": false,
   "isQRMark": false,
-  "image": 13159732,
+  "image": 16831843,
   "adult": false,
   "description": "Воздушное суфле \"Весенняя серия\", Пухлый Кролик, со вкусом пломбира имеет нежную текстуру. Разноцветное, фигурное. Масса нетто: 150 г.",
   "video": null,
@@ -22,12 +22,12 @@
   "specialPrice": null,
   "images": [
     {
-      "id": 13159732,
+      "id": 16831843,
       "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
       "title": null
     },
     {
-      "id": 13159733,
+      "id": 16831844,
       "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg",
       "title": null
     }
@@ -119,7 +119,7 @@
           "title": "Вариант"
         }
       ],
-      "count": 6,
+      "count": 12,
       "price": "59.00",
       "dimensions": {
         "width": 60,
@@ -128,10 +128,10 @@
         "length": 270,
         "isPackage": true
       },
-      "image": 13159732,
+      "image": 16831843,
       "images": [
         {
-          "id": 13159732,
+          "id": 16831843,
           "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg",
           "title": null
         }
@@ -162,7 +162,7 @@
           "title": "Вариант"
         }
       ],
-      "count": 10,
+      "count": 9,
       "price": "59.00",
       "dimensions": {
         "width": 60,
@@ -171,10 +171,10 @@
         "length": 270,
         "isPackage": true
       },
-      "image": 10443347,
+      "image": 13254619,
       "images": [
         {
-          "id": 10443347,
+          "id": 13254619,
           "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/25b9c9d882e1461afeaafafc89eab494_1.jpg",
           "title": null
         }
@@ -217,7 +217,7 @@
     "access-control-allow-credentials": "true",
     "access-control-max-age": "3600",
     "server": "Unit/1.34.2",
-    "date": "Mon, 30 Mar 2026 05:38:32 GMT",
+    "date": "Tue, 31 Mar 2026 05:21:55 GMT",
     "connection": "close",
     "transfer-encoding": "chunked"
   }
