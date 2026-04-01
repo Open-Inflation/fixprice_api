@@ -146,6 +146,10 @@
     "adult": {
       "type": "boolean"
     },
+    "badges": {
+      "type": "array",
+      "items": {}
+    },
     "bonusCommunicationEnable": {
       "type": "boolean"
     },
@@ -399,6 +403,41 @@
               },
               "length": {
                 "type": "integer"
+              },
+              "units": {
+                "type": "object",
+                "required": [
+                  "height",
+                  "length",
+                  "weight",
+                  "width"
+                ],
+                "properties": {
+                  "height": {
+                    "type": "string",
+                    "enum": [
+                      "мм"
+                    ]
+                  },
+                  "length": {
+                    "type": "string",
+                    "enum": [
+                      "мм"
+                    ]
+                  },
+                  "weight": {
+                    "type": "string",
+                    "enum": [
+                      "г"
+                    ]
+                  },
+                  "width": {
+                    "type": "string",
+                    "enum": [
+                      "мм"
+                    ]
+                  }
+                }
               },
               "weight": {
                 "type": "integer"

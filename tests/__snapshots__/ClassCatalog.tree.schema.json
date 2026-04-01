@@ -83,10 +83,7 @@
                   "type": "string",
                   "anyOf": [
                     {
-                      "type": "string",
-                      "enum": [
-                        "/specials/1027"
-                      ]
+                      "type": "string"
                     },
                     {
                       "type": "string",

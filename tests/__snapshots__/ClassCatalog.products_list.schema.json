@@ -38,6 +38,10 @@
       "adult": {
         "type": "boolean"
       },
+      "badges": {
+        "type": "array",
+        "items": {}
+      },
       "brand": {
         "anyOf": [
           {
