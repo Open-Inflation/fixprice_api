@@ -69,7 +69,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 13
+    "count": 12
   },
   {
     "id": 756,
@@ -98,7 +98,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 18
   },
   {
     "id": 7009,
@@ -127,7 +127,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 29
+    "count": 27
   },
   {
     "id": 624,
@@ -192,7 +192,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 31
+    "count": 27
   },
   {
     "id": 9324,
@@ -250,7 +250,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 19
   },
   {
     "id": 651,
@@ -286,7 +286,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 20
   },
   {
     "id": 590,
@@ -358,7 +358,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 18
   },
   {
     "id": 898,
@@ -387,7 +387,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 21
   },
   {
     "id": 797,
@@ -408,7 +408,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 23
   },
   {
     "id": 8929,
@@ -473,43 +473,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 30
-  },
-  {
-    "id": 8597,
-    "pfm": "8971",
-    "address": "г.Москва, Проспект Вернадского, пр-т Вернадского, д.62",
-    "latitude": 55.675753,
-    "longitude": 37.495455,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 1118,
-        "name": "Проспект Вернадского",
-        "lineColor": "E42313",
-        "latitude": 55.676549,
-        "longitude": 37.504584
-      },
-      {
-        "id": 97814,
-        "name": "Проспект Вернадского",
-        "lineColor": "88CDCF",
-        "latitude": 55.677778,
-        "longitude": 37.505
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
+    "count": 29
   },
   {
     "id": 730,
@@ -538,7 +502,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 16
   },
   {
     "id": 9152,
@@ -588,7 +552,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 34
+    "count": 33
   },
   {
     "id": 655,
@@ -617,7 +581,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 23
   },
   {
     "id": 11888,
@@ -638,7 +602,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 22
   },
   {
     "id": 640,
@@ -716,7 +680,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 9172,
@@ -745,7 +709,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 9977,
@@ -810,7 +774,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 17
   },
   {
     "id": 9605,
@@ -852,7 +816,7 @@
     "workTime": "Открыто до 22:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 19
   },
   {
     "id": 867,
@@ -909,7 +873,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 22
   },
   {
     "id": 9035,
@@ -930,7 +894,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 21
   },
   {
     "id": 10281,
@@ -959,7 +923,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 16
+    "count": 11
   },
   {
     "id": 11892,
@@ -980,7 +944,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 12
+    "count": 11
   },
   {
     "id": 8893,
@@ -1009,7 +973,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 41
+    "count": 40
   },
   {
     "id": 9938,
@@ -1038,7 +1002,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 23
   },
   {
     "id": 589,
@@ -1146,7 +1110,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 16
   },
   {
     "id": 750,
@@ -1239,7 +1203,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 14
+    "count": 13
   },
   {
     "id": 894,
@@ -1268,7 +1232,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 22
   },
   {
     "id": 897,
@@ -1304,7 +1268,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 11749,
@@ -1391,7 +1355,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 18
   },
   {
     "id": 10216,
@@ -1441,7 +1405,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 23
   },
   {
     "id": 7847,
@@ -1547,7 +1511,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 26
   },
   {
     "id": 623,
@@ -1647,7 +1611,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 29
+    "count": 28
   },
   {
     "id": 10007,
@@ -1676,36 +1640,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 14
-  },
-  {
-    "id": 6942,
-    "pfm": "8090",
-    "address": "г.Москва, ш.Варшавское, д.33, стр.12",
-    "latitude": 55.692112,
-    "longitude": 37.6222,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 95532,
-        "name": "Верхние Котлы",
-        "lineColor": "CC4C6E",
-        "latitude": 55.69,
-        "longitude": 37.618889
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
+    "count": 13
   },
   {
     "id": 936,
@@ -1848,7 +1783,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 34
+    "count": 31
   },
   {
     "id": 10257,
@@ -1877,7 +1812,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 649,
@@ -1956,7 +1891,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 14
   },
   {
     "id": 9984,
@@ -2106,7 +2041,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 11
+    "count": 10
   },
   {
     "id": 633,
@@ -2149,7 +2084,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 13
+    "count": 11
   },
   {
     "id": 954,
@@ -2178,7 +2113,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 967,
@@ -2236,7 +2171,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 35
+    "count": 34
   },
   {
     "id": 7307,
@@ -2257,7 +2192,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 34
+    "count": 31
   },
   {
     "id": 9220,
@@ -2286,7 +2221,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 34
+    "count": 33
   },
   {
     "id": 746,
@@ -2343,7 +2278,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 16
+    "count": 15
   },
   {
     "id": 8500,
@@ -2372,7 +2307,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 23
   },
   {
     "id": 10953,
@@ -2408,7 +2343,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 22
   },
   {
     "id": 11405,
@@ -2465,7 +2400,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 7222,
@@ -2494,7 +2429,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 36
+    "count": 35
   },
   {
     "id": 9452,
@@ -2559,7 +2494,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 27
   },
   {
     "id": 7929,
@@ -2588,7 +2523,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 597,
@@ -2638,7 +2573,28 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 24
+  },
+  {
+    "id": 765,
+    "pfm": "3211",
+    "address": "г.Москва, ул.Михалковская, д.4",
+    "latitude": 55.837399,
+    "longitude": 37.538071,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": true,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "09:00-22:00",
+    "scheduleSaturday": "09:00-22:00",
+    "scheduleSunday": "09:00-22:00",
+    "workTime": "Откроется в 09:00",
+    "metroStations": [],
+    "temporarilyClosed": false,
+    "count": 22
   },
   {
     "id": 11478,
@@ -2746,7 +2702,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 29
+    "count": 26
   },
   {
     "id": 715,
@@ -2767,7 +2723,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 6979,
@@ -2845,7 +2801,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 31
   },
   {
     "id": 960,
@@ -2938,7 +2894,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 31
+    "count": 26
   },
   {
     "id": 678,
@@ -3002,7 +2958,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 809,
@@ -3031,7 +2987,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 24
   },
   {
     "id": 680,
@@ -3074,7 +3030,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 26
   },
   {
     "id": 796,
@@ -3103,7 +3059,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 23
   },
   {
     "id": 804,
@@ -3139,7 +3095,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 16
+    "count": 13
   },
   {
     "id": 800,
@@ -3168,7 +3124,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 23
   },
   {
     "id": 7116,
@@ -3204,7 +3160,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 27
   },
   {
     "id": 11228,
@@ -3233,7 +3189,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 30
+    "count": 29
   },
   {
     "id": 923,
@@ -3254,7 +3210,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 19
   },
   {
     "id": 8889,
@@ -3297,7 +3253,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 15
+    "count": 14
   },
   {
     "id": 6822,
@@ -3354,7 +3310,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 732,
@@ -3375,7 +3331,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 21
   },
   {
     "id": 10548,
@@ -3476,7 +3432,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 18
   },
   {
     "id": 921,
@@ -3534,7 +3490,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 18
+    "count": 17
   },
   {
     "id": 5714,
@@ -3570,7 +3526,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 27
   },
   {
     "id": 6071,
@@ -3606,7 +3562,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 25
   },
   {
     "id": 841,
@@ -3649,7 +3605,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 7146,
@@ -3678,7 +3634,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 35
+    "count": 33
   },
   {
     "id": 8424,
@@ -3707,7 +3663,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 41
+    "count": 39
   },
   {
     "id": 9544,
@@ -3728,7 +3684,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 18
+    "count": 16
   },
   {
     "id": 10243,
@@ -3757,7 +3713,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 29
+    "count": 26
   },
   {
     "id": 791,
@@ -3857,28 +3813,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 36
-  },
-  {
-    "id": 824,
-    "pfm": "4005",
-    "address": "г.Москва, ул.Нагатинская набережная, д.12, к.4, стр.2",
-    "latitude": 55.68124,
-    "longitude": 37.648591,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:30",
-    "scheduleSaturday": "09:00-21:30",
-    "scheduleSunday": "09:00-21:30",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 10
+    "count": 35
   },
   {
     "id": 829,
@@ -3899,43 +3834,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
-  },
-  {
-    "id": 885,
-    "pfm": "4410",
-    "address": "г.Москва, ул.Митинcкая, д.51",
-    "latitude": 55.852521,
-    "longitude": 37.351914,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 3183,
-        "name": "Митино",
-        "lineColor": "0072BA",
-        "latitude": 55.846098,
-        "longitude": 37.36122
-      },
-      {
-        "id": 3463,
-        "name": "Пятницкое шоссе",
-        "lineColor": "0072BA",
-        "latitude": 55.853634,
-        "longitude": 37.353108
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
+    "count": 18
   },
   {
     "id": 6251,
@@ -3964,7 +3863,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 26
   },
   {
     "id": 815,
@@ -3993,7 +3892,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 26
   },
   {
     "id": 7767,
@@ -4057,7 +3956,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 19
   },
   {
     "id": 7807,
@@ -4086,7 +3985,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 664,
@@ -4164,7 +4063,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 22
   },
   {
     "id": 641,
@@ -4193,7 +4092,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 11361,
@@ -4243,7 +4142,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 30
+    "count": 27
   },
   {
     "id": 7849,
@@ -4254,7 +4153,7 @@
     "isActive": true,
     "cityId": 3,
     "canPayCard": true,
-    "canPickup": false,
+    "canPickup": true,
     "warehouse": false,
     "info": null,
     "withVariableProduct": false,
@@ -4264,7 +4163,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 17
   },
   {
     "id": 7853,
@@ -4371,7 +4270,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 792,
@@ -4392,7 +4291,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 33
+    "count": 32
   },
   {
     "id": 7886,
@@ -4442,7 +4341,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 7946,
@@ -4500,7 +4399,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 18
+    "count": 17
   },
   {
     "id": 10058,
@@ -4550,7 +4449,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 23
   },
   {
     "id": 862,
@@ -4586,7 +4485,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 32
+    "count": 30
   },
   {
     "id": 863,
@@ -4657,7 +4556,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 21
   },
   {
     "id": 737,
@@ -4686,7 +4585,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 19
   },
   {
     "id": 853,
@@ -4722,7 +4621,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 21
   },
   {
     "id": 932,
@@ -4751,7 +4650,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 23
   },
   {
     "id": 7030,
@@ -4787,7 +4686,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 31
+    "count": 29
   },
   {
     "id": 11614,
@@ -4852,7 +4751,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 887,
@@ -4873,7 +4772,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 17
+    "count": 15
   },
   {
     "id": 11727,
@@ -4902,7 +4801,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 13
+    "count": 12
   },
   {
     "id": 5593,
@@ -4923,7 +4822,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 17
+    "count": 13
   },
   {
     "id": 716,
@@ -5024,7 +4923,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 27
   },
   {
     "id": 596,
@@ -5053,7 +4952,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 34
+    "count": 33
   },
   {
     "id": 619,
@@ -5082,7 +4981,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 8042,
@@ -5125,7 +5024,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 30
+    "count": 28
   },
   {
     "id": 8958,
@@ -5218,7 +5117,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 32
+    "count": 31
   },
   {
     "id": 9994,
@@ -5254,7 +5153,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 21
   },
   {
     "id": 11300,
@@ -5290,7 +5189,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 29
+    "count": 28
   },
   {
     "id": 904,
@@ -5405,7 +5304,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 31
+    "count": 29
   },
   {
     "id": 11537,
@@ -5498,7 +5397,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 32
+    "count": 31
   },
   {
     "id": 912,
@@ -5719,7 +5618,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 24
   },
   {
     "id": 900,
@@ -5748,7 +5647,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 14
+    "count": 10
   },
   {
     "id": 9648,
@@ -5784,7 +5683,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 18
   },
   {
     "id": 939,
@@ -5885,7 +5784,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 24
   },
   {
     "id": 8730,
@@ -5928,7 +5827,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 31
+    "count": 29
   },
   {
     "id": 906,
@@ -5986,7 +5885,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 24
   },
   {
     "id": 930,
@@ -6123,7 +6022,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 27
   },
   {
     "id": 879,
@@ -6159,7 +6058,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 22
   },
   {
     "id": 9222,
@@ -6201,7 +6100,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 22
   },
   {
     "id": 6016,
@@ -6266,7 +6165,43 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 18
+  },
+  {
+    "id": 736,
+    "pfm": "2658",
+    "address": "г.Москва, пр-д Окружной, вл.2А, стр.1",
+    "latitude": 55.803934,
+    "longitude": 37.74463,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": true,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "09:00-22:00",
+    "scheduleSaturday": "09:00-22:00",
+    "scheduleSunday": "09:00-22:00",
+    "workTime": "Откроется в 09:00",
+    "metroStations": [
+      {
+        "id": 1155,
+        "name": "Черкизовская",
+        "lineColor": "E42313",
+        "latitude": 55.802787,
+        "longitude": 37.744863
+      },
+      {
+        "id": 95521,
+        "name": "Локомотив",
+        "lineColor": "CC4C6E",
+        "latitude": 55.803219,
+        "longitude": 37.745742
+      }
+    ],
+    "temporarilyClosed": false,
+    "count": 32
   },
   {
     "id": 941,
@@ -6389,7 +6324,50 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 32
+    "count": 31
+  },
+  {
+    "id": 779,
+    "pfm": "3444",
+    "address": "г.Москва, пр-т Рязанский, д.99А",
+    "latitude": 55.712578,
+    "longitude": 37.816486,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": true,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "09:00-21:00",
+    "scheduleSaturday": "09:00-21:00",
+    "scheduleSunday": "09:00-21:00",
+    "workTime": "Откроется в 09:00",
+    "metroStations": [
+      {
+        "id": 733,
+        "name": "Выхино",
+        "lineColor": "943E90",
+        "latitude": 55.715983,
+        "longitude": 37.816788
+      },
+      {
+        "id": 98762,
+        "name": "Юго-Восточная",
+        "lineColor": "CC0066",
+        "latitude": 55.71,
+        "longitude": 37.82
+      },
+      {
+        "id": 135860,
+        "name": "Выхино",
+        "lineColor": "EA5B04",
+        "latitude": 55.716575,
+        "longitude": 37.815911
+      }
+    ],
+    "temporarilyClosed": false,
+    "count": 21
   },
   {
     "id": 878,
@@ -6418,7 +6396,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 32
+    "count": 30
   },
   {
     "id": 604,
@@ -6439,7 +6417,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 37
+    "count": 36
   },
   {
     "id": 637,
@@ -6468,7 +6446,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 23
   },
   {
     "id": 805,
@@ -6647,7 +6625,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 31
+    "count": 30
   },
   {
     "id": 11756,
@@ -6719,7 +6697,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 26
   },
   {
     "id": 955,
@@ -6748,7 +6726,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 24
   },
   {
     "id": 671,
@@ -6784,7 +6762,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 727,
@@ -6842,7 +6820,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 21
   },
   {
     "id": 8196,
@@ -6878,7 +6856,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 18
   },
   {
     "id": 964,
@@ -6899,7 +6877,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 21
   },
   {
     "id": 965,
@@ -6956,7 +6934,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 24
   },
   {
     "id": 8206,
@@ -6992,7 +6970,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 21
   },
   {
     "id": 974,
@@ -7042,7 +7020,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 28
+    "count": 26
   },
   {
     "id": 982,
@@ -7071,7 +7049,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 31
+    "count": 28
   },
   {
     "id": 5459,
@@ -7100,7 +7078,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 25
   },
   {
     "id": 5559,
@@ -7203,27 +7181,6 @@
     "count": 23
   },
   {
-    "id": 5728,
-    "pfm": "5828",
-    "address": "Москва, вн.тер. г. муниципальный округ Ивановское , ул. Саянская, 2А",
-    "latitude": 55.767225,
-    "longitude": 37.824212,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 10
-  },
-  {
     "id": 8268,
     "pfm": "8728",
     "address": "г.Москва, ш.Ленинградское, д.58, стр26, пом3/2",
@@ -7250,7 +7207,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 20
   },
   {
     "id": 870,
@@ -7358,7 +7315,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 13
+    "count": 10
   },
   {
     "id": 810,
@@ -7408,7 +7365,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 19
   },
   {
     "id": 8325,
@@ -7509,7 +7466,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 15
+    "count": 12
   },
   {
     "id": 8471,
@@ -7530,7 +7487,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 18
   },
   {
     "id": 8564,
@@ -7595,7 +7552,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 21
   },
   {
     "id": 8793,
@@ -7716,7 +7673,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 22
   },
   {
     "id": 788,
@@ -7759,7 +7716,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 13
+    "count": 12
   },
   {
     "id": 826,
@@ -7788,7 +7745,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 842,
@@ -7817,7 +7774,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 17
+    "count": 15
   },
   {
     "id": 799,
@@ -7909,7 +7866,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 21
   },
   {
     "id": 601,
@@ -7945,7 +7902,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 20
   },
   {
     "id": 593,
@@ -8046,7 +8003,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 645,
@@ -8147,7 +8104,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 19
   },
   {
     "id": 940,
@@ -8186,6 +8143,27 @@
     "count": 26
   },
   {
+    "id": 738,
+    "pfm": "2688",
+    "address": "г.Москва, вн.тер.г.муницип.округ Марьино, ул.Братиславская, д.31, к.1",
+    "latitude": 55.652664,
+    "longitude": 37.767717,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": true,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "09:00-22:00",
+    "scheduleSaturday": "09:00-22:00",
+    "scheduleSunday": "09:00-22:00",
+    "workTime": "Откроется в 09:00",
+    "metroStations": [],
+    "temporarilyClosed": false,
+    "count": 27
+  },
+  {
     "id": 745,
     "pfm": "2858",
     "address": "г.Москва, ул.Череповецкая, д.12",
@@ -8212,7 +8190,36 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 30
+    "count": 26
+  },
+  {
+    "id": 767,
+    "pfm": "3257",
+    "address": "г.Москва, пр-т Андропова, д.8",
+    "latitude": 55.69587,
+    "longitude": 37.664896,
+    "isActive": true,
+    "cityId": 3,
+    "canPayCard": true,
+    "canPickup": true,
+    "warehouse": false,
+    "info": null,
+    "withVariableProduct": false,
+    "scheduleWeekdays": "10:00-22:00",
+    "scheduleSaturday": "10:00-22:00",
+    "scheduleSunday": "10:00-22:00",
+    "workTime": "Откроется в 10:00",
+    "metroStations": [
+      {
+        "id": 2512,
+        "name": "Технопарк",
+        "lineColor": "4FB04F",
+        "latitude": 55.695,
+        "longitude": 37.664167
+      }
+    ],
+    "temporarilyClosed": false,
+    "count": 26
   },
   {
     "id": 605,
@@ -8326,7 +8333,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 15
+    "count": 12
   },
   {
     "id": 630,
@@ -8355,7 +8362,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 17
   },
   {
     "id": 848,
@@ -8426,7 +8433,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 859,
@@ -8447,7 +8454,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 16
   },
   {
     "id": 857,
@@ -8468,7 +8475,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 22
   },
   {
     "id": 873,
@@ -8497,7 +8504,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 886,
@@ -8526,7 +8533,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 24
   },
   {
     "id": 881,
@@ -8547,7 +8554,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 29
+    "count": 28
   },
   {
     "id": 910,
@@ -8639,7 +8646,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 17
+    "count": 14
   },
   {
     "id": 944,
@@ -8681,7 +8688,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 26
   },
   {
     "id": 668,
@@ -8702,7 +8709,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 21
   },
   {
     "id": 938,
@@ -8723,7 +8730,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 32
+    "count": 31
   },
   {
     "id": 937,
@@ -8867,27 +8874,6 @@
     "count": 32
   },
   {
-    "id": 5994,
-    "pfm": "5923",
-    "address": "г.Москва, пр-д Ферганский, д.10а, стр.3",
-    "latitude": 55.695786,
-    "longitude": 37.820455,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 10
-  },
-  {
     "id": 652,
     "pfm": "779",
     "address": "г.Москва, ул.Лескова, д.26А",
@@ -8906,7 +8892,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 21
   },
   {
     "id": 6218,
@@ -8935,7 +8921,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 6874,
@@ -8956,7 +8942,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 23
+    "count": 21
   },
   {
     "id": 7117,
@@ -8977,7 +8963,7 @@
     "workTime": "Откроется в 08:30",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 30
+    "count": 29
   },
   {
     "id": 7897,
@@ -9019,7 +9005,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 24
   },
   {
     "id": 8210,
@@ -9040,7 +9026,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 19
+    "count": 16
   },
   {
     "id": 8265,
@@ -9076,7 +9062,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 20
   },
   {
     "id": 8285,
@@ -9118,7 +9104,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 22
+    "count": 21
   },
   {
     "id": 8324,
@@ -9139,7 +9125,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 32
+    "count": 30
   },
   {
     "id": 723,
@@ -9181,7 +9167,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 23
   },
   {
     "id": 8524,
@@ -9202,7 +9188,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 26
   },
   {
     "id": 8656,
@@ -9223,36 +9209,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 33
-  },
-  {
-    "id": 8687,
-    "pfm": "D036",
-    "address": "г.Москва, вн.тер.г.муницип.округ Хорошево-Мневники, наб.Карамышевская, д.2А",
-    "latitude": 55.768755,
-    "longitude": 37.494208,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 97806,
-        "name": "Народное Ополчение",
-        "lineColor": "88CDCF",
-        "latitude": 55.77592,
-        "longitude": 37.485073
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
+    "count": 29
   },
   {
     "id": 9067,
@@ -9281,28 +9238,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
-  },
-  {
-    "id": 9146,
-    "pfm": "D379",
-    "address": "г.Москва, вн.тер.г.муниц.округ Бирюлево Западное, ул.Медынская, д.7, стр.1",
-    "latitude": 55.586738,
-    "longitude": 37.648084,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:30",
-    "scheduleSaturday": "09:00-21:30",
-    "scheduleSunday": "09:00-21:30",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 12
+    "count": 26
   },
   {
     "id": 9208,
@@ -9338,28 +9274,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 20
-  },
-  {
-    "id": 9209,
-    "pfm": "D430",
-    "address": "г.Москва, Вешняки, ул.Молдагуловой, д.12а",
-    "latitude": 55.726497,
-    "longitude": 37.81336,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 10
+    "count": 17
   },
   {
     "id": 9354,
@@ -9409,7 +9324,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 20
+    "count": 18
   },
   {
     "id": 9435,
@@ -9438,7 +9353,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
+    "count": 23
   },
   {
     "id": 9458,
@@ -9480,7 +9395,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 26
   },
   {
     "id": 9782,
@@ -9501,7 +9416,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 30
+    "count": 27
   },
   {
     "id": 9922,
@@ -9530,7 +9445,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 46
+    "count": 42
   },
   {
     "id": 10087,
@@ -9572,7 +9487,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 24
   },
   {
     "id": 10284,
@@ -9593,7 +9508,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 25
   },
   {
     "id": 10545,
@@ -9643,7 +9558,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 25
   },
   {
     "id": 10836,
@@ -9706,7 +9621,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 21
+    "count": 33
   },
   {
     "id": 11455,
@@ -9727,7 +9642,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 29
+    "count": 26
   },
   {
     "id": 11575,
@@ -9756,7 +9671,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 26
+    "count": 25
   },
   {
     "id": 11620,
