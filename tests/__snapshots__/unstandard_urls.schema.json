@@ -4,7 +4,8 @@
     "https://api.fix-price.com/buyer/v1/banner/suitable?type=1&path=https:%2F%2Ffix-price.com%2Fcatalog",
     "https://api.fix-price.com/buyer/v1/config/ecom.product.special.price.date.show",
     "https://api.fix-price.com/buyer/v1/cookie-config",
-    "https://api.fix-price.com/buyer/v2/geo/ip"
+    "https://api.fix-price.com/buyer/v2/geo/ip",
+    "https://api.fix-price.com/buyer/v2/geo/ip?utm_referrer=https%3a%2f%2ffix-price.com%2f"
   ],
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
