@@ -7,7 +7,7 @@
       "3"
     ],
     "x-key": [
-      "QU1IVllCbkNyazg1bU1NaUgrRzJxdz09Ojp0Nm5SSnpxWmNHRkx3OENLbXFRWDdRPT0=:299ea1ccf682698bb2aa0e37688e806f"
+      "RkVWYnBZNlVGNmJWK0srb1NxN0VyUT09Ojp6UUM0VjBRWTBCM05GdTFabGFmQnlRPT0=:91285332756a0fe4752ecc7433eece05"
     ],
     "x-logged": [
       ""
@@ -24,7 +24,7 @@
       "3"
     ],
     "x-key": [
-      "QU1IVllCbkNyazg1bU1NaUgrRzJxdz09Ojp0Nm5SSnpxWmNHRkx3OENLbXFRWDdRPT0=:299ea1ccf682698bb2aa0e37688e806f"
+      "RkVWYnBZNlVGNmJWK0srb1NxN0VyUT09Ojp6UUM0VjBRWTBCM05GdTFabGFmQnlRPT0=:91285332756a0fe4752ecc7433eece05"
     ],
     "x-logged": [
       ""
@@ -41,7 +41,7 @@
       "3"
     ],
     "x-key": [
-      "QU1IVllCbkNyazg1bU1NaUgrRzJxdz09Ojp0Nm5SSnpxWmNHRkx3OENLbXFRWDdRPT0=:299ea1ccf682698bb2aa0e37688e806f"
+      "RkVWYnBZNlVGNmJWK0srb1NxN0VyUT09Ojp6UUM0VjBRWTBCM05GdTFabGFmQnlRPT0=:91285332756a0fe4752ecc7433eece05"
     ],
     "x-logged": [
       ""
@@ -58,24 +58,7 @@
       "3"
     ],
     "x-key": [
-      "QU1IVllCbkNyazg1bU1NaUgrRzJxdz09Ojp0Nm5SSnpxWmNHRkx3OENLbXFRWDdRPT0=:299ea1ccf682698bb2aa0e37688e806f"
-    ],
-    "x-logged": [
-      ""
-    ],
-    "x-client-route": [
-      "/catalog"
-    ]
-  },
-  "https://api.fix-price.com/buyer/v2/geo/ip?utm_referrer=https%3a%2f%2ffix-price.com%2f": {
-    "x-language": [
-      "ru"
-    ],
-    "x-city": [
-      "3"
-    ],
-    "x-key": [
-      "QU1IVllCbkNyazg1bU1NaUgrRzJxdz09Ojp0Nm5SSnpxWmNHRkx3OENLbXFRWDdRPT0=:299ea1ccf682698bb2aa0e37688e806f"
+      "RkVWYnBZNlVGNmJWK0srb1NxN0VyUT09Ojp6UUM0VjBRWTBCM05GdTFabGFmQnlRPT0=:91285332756a0fe4752ecc7433eece05"
     ],
     "x-logged": [
       ""

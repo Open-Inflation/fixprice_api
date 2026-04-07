@@ -83,7 +83,8 @@
                   "type": "string",
                   "anyOf": [
                     {
-                      "type": "string"
+                      "type": "string",
+                      "j2sEnumRejected": true
                     },
                     {
                       "type": "string",
