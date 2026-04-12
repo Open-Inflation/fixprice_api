@@ -1,34 +1,5 @@
 [
   {
-    "id": 756,
-    "pfm": "3534",
-    "address": "Москва, ул. 3 Владимирская, 24, 1",
-    "latitude": 55.756336,
-    "longitude": 37.78827,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 8107,
-        "name": "Перово",
-        "lineColor": "FFCD1C",
-        "latitude": 55.75098,
-        "longitude": 37.78422
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 13
-  },
-  {
     "id": 624,
     "pfm": "4232",
     "address": "г.Москва, ш.Варшавское, д.26, стр.5, 6, 7, 8",
@@ -65,135 +36,6 @@
     "count": 24
   },
   {
-    "id": 795,
-    "pfm": "3589",
-    "address": "г.Москва, б-вар Адмирала Ушакова, д.12",
-    "latitude": 55.54781,
-    "longitude": 37.550298,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 12166,
-        "name": "Улица Скобелевская",
-        "lineColor": "BAC8E8",
-        "latitude": 55.548103,
-        "longitude": 37.552721
-      },
-      {
-        "id": 132739,
-        "name": "Бутово",
-        "lineColor": "E74683",
-        "latitude": 55.548279,
-        "longitude": 37.555668
-      },
-      {
-        "id": 12169,
-        "name": "Бульвар Адмирала Ушакова",
-        "lineColor": "BAC8E8",
-        "latitude": 55.545207,
-        "longitude": 37.542329
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 12
-  },
-  {
-    "id": 797,
-    "pfm": "3626",
-    "address": "г.Москва, ш.Коровинское, д.26/2",
-    "latitude": 55.883217,
-    "longitude": 37.519485,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 18
-  },
-  {
-    "id": 8929,
-    "pfm": "D226",
-    "address": "г.Москва, ул.Профсоюзная, д.61А",
-    "latitude": 55.655336,
-    "longitude": 37.54218,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 641,
-        "name": "Калужская",
-        "lineColor": "F07E24",
-        "latitude": 55.656682,
-        "longitude": 37.540075
-      },
-      {
-        "id": 97816,
-        "name": "Воронцовская",
-        "lineColor": "88CDCF",
-        "latitude": 55.658333,
-        "longitude": 37.540833
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 15
-  },
-  {
-    "id": 9486,
-    "pfm": "D641",
-    "address": "г.Москва, Соколиная Гора, пр-т Буденного, д.18б",
-    "latitude": 55.767351,
-    "longitude": 37.72876,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 135854,
-        "name": "Сортировочная",
-        "lineColor": "EA5B04",
-        "latitude": 55.763611,
-        "longitude": 37.720833
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 19
-  },
-  {
     "id": 11888,
     "pfm": "H518",
     "address": "г.Москва, вн.тер.г.муницип.округ Зюзино, б-вар Симферопольский, д.4",
@@ -212,7 +54,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 34
+    "count": 23
   },
   {
     "id": 9977,
@@ -248,194 +90,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 21
-  },
-  {
-    "id": 687,
-    "pfm": "600",
-    "address": "г.Москва, пр-т Вернадского, д.86Б, стр.1",
-    "latitude": 55.662237,
-    "longitude": 37.480301,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 1162,
-        "name": "Юго-Западная",
-        "lineColor": "E42313",
-        "latitude": 55.663146,
-        "longitude": 37.482852
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 29
-  },
-  {
-    "id": 11818,
-    "pfm": "H456",
-    "address": "г.Москва, ул.Щепкина, д.33",
-    "latitude": 55.779606,
-    "longitude": 37.628852,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "08:00-22:00",
-    "scheduleSaturday": "08:00-22:00",
-    "scheduleSunday": "08:00-22:00",
-    "workTime": "Открыто до 22:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 33
-  },
-  {
-    "id": 10281,
-    "pfm": "G194",
-    "address": "г.Москва, вн.тер.г.муницип.округ Котловка, ул.Нагорная, д.31, стр.А",
-    "latitude": 55.674493,
-    "longitude": 37.59759,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 986,
-        "name": "Нагорная",
-        "lineColor": "ADACAC",
-        "latitude": 55.672962,
-        "longitude": 37.610397
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 24
-  },
-  {
-    "id": 589,
-    "pfm": "2340",
-    "address": "г.Москва, ул.Южнобутовская, д.58",
-    "latitude": 55.536843,
-    "longitude": 37.529412,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 12167,
-        "name": "Бунинская аллея",
-        "lineColor": "BAC8E8",
-        "latitude": 55.537977,
-        "longitude": 37.515899
-      },
-      {
-        "id": 12168,
-        "name": "Улица Горчакова",
-        "lineColor": "BAC8E8",
-        "latitude": 55.542281,
-        "longitude": 37.532063
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 24
-  },
-  {
-    "id": 7894,
-    "pfm": "8448",
-    "address": "г.Москва, ул.Воронежская, д.7",
-    "latitude": 55.610026,
-    "longitude": 37.728042,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 238,
-        "name": "Домодедовская",
-        "lineColor": "4FB04F",
-        "latitude": 55.610131,
-        "longitude": 37.717111
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 24
-  },
-  {
-    "id": 9232,
-    "pfm": "D448",
-    "address": "г.Москва, вн. тер. г. муниц. округ Рязанский, ул.Зарайская, д.37А",
-    "latitude": 55.729569,
-    "longitude": 37.772002,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 98764,
-        "name": "Стахановская",
-        "lineColor": "CC0066",
-        "latitude": 55.73,
-        "longitude": 37.76
-      },
-      {
-        "id": 135857,
-        "name": "Перово",
-        "lineColor": "EA5B04",
-        "latitude": 55.735556,
-        "longitude": 37.765
-      },
-      {
-        "id": 135858,
-        "name": "Плющево",
-        "lineColor": "EA5B04",
-        "latitude": 55.730556,
-        "longitude": 37.774167
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 17
+    "count": 11
   },
   {
     "id": 623,
@@ -485,7 +140,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 49
+    "count": 20
   },
   {
     "id": 10007,
@@ -543,179 +198,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 11
-  },
-  {
-    "id": 8500,
-    "pfm": "8904",
-    "address": "г.Москва, Крылатское, ул.Крылатские Холмы, д.29",
-    "latitude": 55.756613,
-    "longitude": 37.417427,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 365,
-        "name": "Крылатское",
-        "lineColor": "0072BA",
-        "latitude": 55.756842,
-        "longitude": 37.408139
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 25
-  },
-  {
-    "id": 9913,
-    "pfm": "D891",
-    "address": "г.Москва, вн.тер.г.муницип.округ Северное Бутово, ул.Куликовская, д.3",
-    "latitude": 55.570716,
-    "longitude": 37.564715,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 9170,
-        "name": "Бульвар Дмитрия Донского",
-        "lineColor": "ADACAC",
-        "latitude": 55.568201,
-        "longitude": 37.576856
-      },
-      {
-        "id": 12171,
-        "name": "Улица Старокачаловская",
-        "lineColor": "BAC8E8",
-        "latitude": 55.569194,
-        "longitude": 37.576074
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 25
-  },
-  {
-    "id": 6973,
-    "pfm": "8110",
-    "address": "г.Москва, ш.Бесединское, д.15",
-    "latitude": 55.624911,
-    "longitude": 37.7612,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 2257,
-        "name": "Алма-Атинская",
-        "lineColor": "4FB04F",
-        "latitude": 55.63349,
-        "longitude": 37.765678
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
-  },
-  {
-    "id": 6979,
-    "pfm": "8113",
-    "address": "г.Москва, пр-д Карачаровский 2-й, д.4",
-    "latitude": 55.72979,
-    "longitude": 37.753752,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 98764,
-        "name": "Стахановская",
-        "lineColor": "CC0066",
-        "latitude": 55.73,
-        "longitude": 37.76
-      },
-      {
-        "id": 135857,
-        "name": "Перово",
-        "lineColor": "EA5B04",
-        "latitude": 55.735556,
-        "longitude": 37.765
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
-  },
-  {
-    "id": 970,
-    "pfm": "5436",
-    "address": "г.Москва, пер.Колодезный, д.3",
-    "latitude": 55.798176,
-    "longitude": 37.697433,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 12
-  },
-  {
-    "id": 7729,
-    "pfm": "8342",
-    "address": "г.Москва, ш.Новокуркинское, д.1",
-    "latitude": 55.88535,
-    "longitude": 37.4062,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 7
+    "count": 13
   },
   {
     "id": 960,
@@ -779,173 +262,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
-  },
-  {
-    "id": 8258,
-    "pfm": "8721",
-    "address": "г.Москва, ул.Мурановская, д.7",
-    "latitude": 55.891268,
-    "longitude": 37.597619,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 922,
-        "name": "Бибирево",
-        "lineColor": "ADACAC",
-        "latitude": 55.883868,
-        "longitude": 37.603011
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 6
-  },
-  {
-    "id": 7116,
-    "pfm": "8190",
-    "address": "г.Москва, Измайлово, ул.Первомайская, д.42.",
-    "latitude": 55.792799,
-    "longitude": 37.787102,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 3106,
-        "name": "Первомайская",
-        "lineColor": "0072BA",
-        "latitude": 55.794376,
-        "longitude": 37.799364
-      },
-      {
-        "id": 340,
-        "name": "Измайловская",
-        "lineColor": "0072BA",
-        "latitude": 55.787713,
-        "longitude": 37.779896
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 22
-  },
-  {
-    "id": 5714,
-    "pfm": "5817",
-    "address": "г.Москва,  ул.Ивантеевская, д.25а.",
-    "latitude": 55.816784,
-    "longitude": 37.735132,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 1148,
-        "name": "Бульвар Рокоссовского",
-        "lineColor": "E42313",
-        "latitude": 55.814916,
-        "longitude": 37.732227
-      },
-      {
-        "id": 95520,
-        "name": "Бульвар Рокоссовского",
-        "lineColor": "CC4C6E",
-        "latitude": 55.817222,
-        "longitude": 37.736944
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 13
-  },
-  {
-    "id": 6071,
-    "pfm": "5972",
-    "address": "г.Москва, ул.Мастеркова, д.6",
-    "latitude": 55.707902,
-    "longitude": 37.656784,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-21:00",
-    "scheduleSaturday": "10:00-21:00",
-    "scheduleSunday": "10:00-21:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 22,
-        "name": "Автозаводская",
-        "lineColor": "4FB04F",
-        "latitude": 55.706634,
-        "longitude": 37.657008
-      },
-      {
-        "id": 95530,
-        "name": "Автозаводская",
-        "lineColor": "CC4C6E",
-        "latitude": 55.70631,
-        "longitude": 37.66314
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
-  },
-  {
-    "id": 8424,
-    "pfm": "8843",
-    "address": "г.Москва, ул.Днепропетровская, д.2",
-    "latitude": 55.623186,
-    "longitude": 37.604,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 9163,
-        "name": "Южная",
-        "lineColor": "ADACAC",
-        "latitude": 55.622436,
-        "longitude": 37.609047
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 10
+    "count": 11
   },
   {
     "id": 6903,
@@ -1002,43 +319,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 27
-  },
-  {
-    "id": 11786,
-    "pfm": "H424",
-    "address": "г.Москва, ул.Новозаводская, д.25к6",
-    "latitude": 55.75117,
-    "longitude": 37.500555,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 414,
-        "name": "Багратионовская",
-        "lineColor": "1EBCEF",
-        "latitude": 55.743544,
-        "longitude": 37.497042
-      },
-      {
-        "id": 4151,
-        "name": "Фили",
-        "lineColor": "1EBCEF",
-        "latitude": 55.746763,
-        "longitude": 37.514035
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 26
+    "count": 19
   },
   {
     "id": 7807,
@@ -1067,179 +348,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
-  },
-  {
-    "id": 9876,
-    "pfm": "D865",
-    "address": "г.Москва, вн. тер. г. муниц. округ Савеловский, ул.1-я Хуторская, д.8",
-    "latitude": 55.802963,
-    "longitude": 37.570303,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 935,
-        "name": "Дмитровская",
-        "lineColor": "ADACAC",
-        "latitude": 55.808056,
-        "longitude": 37.581734
-      },
-      {
-        "id": 132723,
-        "name": "Дмитровская",
-        "lineColor": "E74683",
-        "latitude": 55.808056,
-        "longitude": 37.581734
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 15
-  },
-  {
-    "id": 11847,
-    "pfm": "H477",
-    "address": "г.Москва, вн.тер.г.муницип.округ Алтуфьевский, ш.Алтуфьевское, д.79",
-    "latitude": 55.881351,
-    "longitude": 37.585392,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 10
-  },
-  {
-    "id": 641,
-    "pfm": "2113",
-    "address": "г.Москва, ул.Мусоргского, д.1Б",
-    "latitude": 55.862429,
-    "longitude": 37.62007,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 997,
-        "name": "Отрадное",
-        "lineColor": "ADACAC",
-        "latitude": 55.864273,
-        "longitude": 37.605066
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 24
-  },
-  {
-    "id": 7853,
-    "pfm": "8418",
-    "address": "г.Москва, Обручевский, пр-т Ленинcкий, д.99",
-    "latitude": 55.669139,
-    "longitude": 37.519323,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 97815,
-        "name": "Новаторская",
-        "lineColor": "88CDCF",
-        "latitude": 55.670833,
-        "longitude": 37.52
-      },
-      {
-        "id": 137921,
-        "name": "Новаторская",
-        "lineColor": "03795F",
-        "latitude": 55.670833,
-        "longitude": 37.52
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 19
-  },
-  {
-    "id": 792,
-    "pfm": "3566",
-    "address": "г.Москва, ул.Юных Ленинцев, д.99",
-    "latitude": 55.698635,
-    "longitude": 37.77944,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 10
-  },
-  {
-    "id": 7946,
-    "pfm": "8483",
-    "address": "г.Москва, ул.Бабушкина Летчика, д.15",
-    "latitude": 55.864026,
-    "longitude": 37.674166,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 613,
-        "name": "Бабушкинская",
-        "lineColor": "F07E24",
-        "latitude": 55.870641,
-        "longitude": 37.664341
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 20
+    "count": 22
   },
   {
     "id": 10058,
@@ -1268,7 +377,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 20
   },
   {
     "id": 10306,
@@ -1289,281 +398,7 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 34
-  },
-  {
-    "id": 11614,
-    "pfm": "H288",
-    "address": "г.Москва, вн.тер.г.муницип.округ Левобережный, ул.Фестивальная, д.17, корп.1А",
-    "latitude": 55.856295,
-    "longitude": 37.47862,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 2674,
-        "name": "Беломорская",
-        "lineColor": "4FB04F",
-        "latitude": 55.8651,
-        "longitude": 37.4764
-      },
-      {
-        "id": 2125,
-        "name": "Речной вокзал",
-        "lineColor": "4FB04F",
-        "latitude": 55.854152,
-        "longitude": 37.476728
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 13
-  },
-  {
-    "id": 8076,
-    "pfm": "8577",
-    "address": "г.Москва, б-вар Бескудниковский, д.55, к.1",
-    "latitude": 55.872675,
-    "longitude": 37.539963,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "08:30-21:30",
-    "scheduleSaturday": "08:30-21:30",
-    "scheduleSunday": "08:30-21:30",
-    "workTime": "Откроется в 08:30",
-    "metroStations": [
-      {
-        "id": 10835,
-        "name": "Яхромская",
-        "lineColor": "BED12C",
-        "latitude": 55.8775,
-        "longitude": 37.545833
-      }
-    ],
-    "temporarilyClosed": false,
     "count": 25
-  },
-  {
-    "id": 11109,
-    "pfm": "G878",
-    "address": "г.Москва, ш.Можайское, д.31, к.1",
-    "latitude": 55.718362,
-    "longitude": 37.419555,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 131705,
-        "name": "Рабочий Посёлок",
-        "lineColor": "F5A528",
-        "latitude": 55.726957,
-        "longitude": 37.415577
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 18
-  },
-  {
-    "id": 10652,
-    "pfm": "G519",
-    "address": "г.Москва, вн.тер.г.муницип.округ Чертаново Южное, ул.Кирпичные Выемки, д.2, к.1",
-    "latitude": 55.587248,
-    "longitude": 37.601197,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 910,
-        "name": "Аннино",
-        "lineColor": "ADACAC",
-        "latitude": 55.583477,
-        "longitude": 37.596999
-      },
-      {
-        "id": 132737,
-        "name": "Красный строитель",
-        "lineColor": "E74683",
-        "latitude": 55.589455,
-        "longitude": 37.615093
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 20
-  },
-  {
-    "id": 8679,
-    "pfm": "D030",
-    "address": "г.Москва, пр-д Локомотивный, д.4",
-    "latitude": 55.838012,
-    "longitude": 37.5767,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 9108,
-        "name": "Петровско-Разумовская",
-        "lineColor": "ADACAC",
-        "latitude": 55.836565,
-        "longitude": 37.575512
-      },
-      {
-        "id": 10548,
-        "name": "Петровско-Разумовская",
-        "lineColor": "BED12C",
-        "latitude": 55.836667,
-        "longitude": 37.575556
-      },
-      {
-        "id": 135849,
-        "name": "Петровско-Разумовская",
-        "lineColor": "EA5B04",
-        "latitude": 55.839722,
-        "longitude": 37.568333
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 14
-  },
-  {
-    "id": 9648,
-    "pfm": "D731",
-    "address": "г.Москва, Замоскворечье, ул.Кожевническая, д.7, стр.1",
-    "latitude": 55.729858,
-    "longitude": 37.645699,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-21:00",
-    "scheduleSaturday": "10:00-21:00",
-    "scheduleSunday": "10:00-19:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 2101,
-        "name": "Павелецкая",
-        "lineColor": "4FB04F",
-        "latitude": 55.729741,
-        "longitude": 37.638693
-      },
-      {
-        "id": 5102,
-        "name": "Павелецкая",
-        "lineColor": "915133",
-        "latitude": 55.731414,
-        "longitude": 37.636294
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 14
-  },
-  {
-    "id": 772,
-    "pfm": "3326",
-    "address": "г.Москва, ул.Нижегородская, д.72/2",
-    "latitude": 55.732874,
-    "longitude": 37.711015,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 132728,
-        "name": "Калитники",
-        "lineColor": "E74683",
-        "latitude": 55.733981,
-        "longitude": 37.702203
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 17
-  },
-  {
-    "id": 794,
-    "pfm": "3577",
-    "address": "г.Москва, вн.тер.г. мун.округ Новогиреево, пр-т Зеленый, д.83А",
-    "latitude": 55.752465,
-    "longitude": 37.821068,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-21:00",
-    "scheduleSaturday": "10:00-21:00",
-    "scheduleSunday": "10:00-21:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [
-      {
-        "id": 888,
-        "name": "Новогиреево",
-        "lineColor": "FFCD1C",
-        "latitude": 55.752237,
-        "longitude": 37.814587
-      },
-      {
-        "id": 136883,
-        "name": "Новогиреево",
-        "lineColor": "00CC66",
-        "latitude": 55.744444,
-        "longitude": 37.818333
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 13
   },
   {
     "id": 779,
@@ -1606,28 +441,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 35
-  },
-  {
-    "id": 909,
-    "pfm": "4832",
-    "address": "г.Москва,  Кузьминки, пр-т Волгоградский, вл.171а",
-    "latitude": 55.702579,
-    "longitude": 37.791239,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 20
+    "count": 33
   },
   {
     "id": 11756,
@@ -1670,56 +484,6 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
-  },
-  {
-    "id": 5559,
-    "pfm": "5711",
-    "address": "г.Москва, ул.Генерала Белобородова, д.24.",
-    "latitude": 55.830711,
-    "longitude": 37.354076,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 20
-  },
-  {
-    "id": 5980,
-    "pfm": "5902",
-    "address": "г.Москва, ул.Лухмановская, д.8.",
-    "latitude": 55.714656,
-    "longitude": 37.899524,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 98677,
-        "name": "Лухмановская",
-        "lineColor": "CC0066",
-        "latitude": 55.7078,
-        "longitude": 37.9004
-      }
-    ],
-    "temporarilyClosed": false,
     "count": 13
   },
   {
@@ -1741,36 +505,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 1
-  },
-  {
-    "id": 8325,
-    "pfm": "8768",
-    "address": "г.Москва, ш.Варшавское, д.160",
-    "latitude": 55.582917,
-    "longitude": 37.595387,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 910,
-        "name": "Аннино",
-        "lineColor": "ADACAC",
-        "latitude": 55.583477,
-        "longitude": 37.596999
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 18
+    "count": 16
   },
   {
     "id": 8612,
@@ -1799,49 +534,7 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 25
-  },
-  {
-    "id": 8955,
-    "pfm": "D245",
-    "address": "г.Москва, вн.тер.г.мун. округ Северное Бутово, ул.Поляны, д.8",
-    "latitude": 55.565605,
-    "longitude": 37.556128,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 18
-  },
-  {
-    "id": 11585,
-    "pfm": "H269",
-    "address": "г.Москва, вн.тер.г.муницип.округ Молжаниновский, ул.Синявинская, д.9",
-    "latitude": 55.948946,
-    "longitude": 37.348653,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-22:00",
-    "scheduleSaturday": "09:00-22:00",
-    "scheduleSunday": "09:00-22:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 11
+    "count": 20
   },
   {
     "id": 593,
@@ -1880,35 +573,6 @@
     "count": 41
   },
   {
-    "id": 803,
-    "pfm": "3659",
-    "address": "г.Москва, вн.тер.г.муницип.округ Чертаново Южное, пр-д Россошанский, д.3",
-    "latitude": 55.600974,
-    "longitude": 37.609191,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 9147,
-        "name": "Улица Академика Янгеля",
-        "lineColor": "ADACAC",
-        "latitude": 55.596753,
-        "longitude": 37.601498
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 12
-  },
-  {
     "id": 908,
     "pfm": "4768",
     "address": "г.Москва, ул.Доброслободская, д.21",
@@ -1935,14 +599,14 @@
       }
     ],
     "temporarilyClosed": false,
-    "count": 27
+    "count": 19
   },
   {
-    "id": 767,
-    "pfm": "3257",
-    "address": "г.Москва, пр-т Андропова, д.8",
-    "latitude": 55.69587,
-    "longitude": 37.664896,
+    "id": 605,
+    "pfm": "3351",
+    "address": "г.Москва, Северное Бутово, б-вар Дмитрия Донского, д.1",
+    "latitude": 55.574874,
+    "longitude": 37.580104,
     "isActive": true,
     "cityId": 3,
     "canPayCard": true,
@@ -1956,15 +620,29 @@
     "workTime": "Откроется в 10:00",
     "metroStations": [
       {
-        "id": 2512,
-        "name": "Технопарк",
-        "lineColor": "4FB04F",
-        "latitude": 55.695,
-        "longitude": 37.664167
+        "id": 9170,
+        "name": "Бульвар Дмитрия Донского",
+        "lineColor": "ADACAC",
+        "latitude": 55.568201,
+        "longitude": 37.576856
+      },
+      {
+        "id": 12171,
+        "name": "Улица Старокачаловская",
+        "lineColor": "BAC8E8",
+        "latitude": 55.569194,
+        "longitude": 37.576074
+      },
+      {
+        "id": 12466,
+        "name": "Лесопарковая",
+        "lineColor": "BAC8E8",
+        "latitude": 55.581656,
+        "longitude": 37.577816
       }
     ],
     "temporarilyClosed": false,
-    "count": 24
+    "count": 22
   },
   {
     "id": 848,
@@ -1988,35 +666,6 @@
     "count": 24
   },
   {
-    "id": 845,
-    "pfm": "4130",
-    "address": "г.Москва, вн.тер.г.муницип.округ Перово, ул.1-я Владимирская, д.31",
-    "latitude": 55.752257,
-    "longitude": 37.779009,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [
-      {
-        "id": 8107,
-        "name": "Перово",
-        "lineColor": "FFCD1C",
-        "latitude": 55.75098,
-        "longitude": 37.78422
-      }
-    ],
-    "temporarilyClosed": false,
-    "count": 13
-  },
-  {
     "id": 621,
     "pfm": "514",
     "address": "г.Москва, ул.Первомайская, д.121",
@@ -2035,28 +684,7 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 28
-  },
-  {
-    "id": 971,
-    "pfm": "5435",
-    "address": "г.Москва, ул.Шоссейная, д.30",
-    "latitude": 55.68371,
-    "longitude": 37.723325,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 14
+    "count": 24
   },
   {
     "id": 652,
@@ -2078,69 +706,6 @@
     "metroStations": [],
     "temporarilyClosed": false,
     "count": 27
-  },
-  {
-    "id": 7117,
-    "pfm": "8193",
-    "address": "г.Москва, ул.Джанкойская, д.1, стр.5",
-    "latitude": 55.540202,
-    "longitude": 37.572658,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "08:30-21:30",
-    "scheduleSaturday": "08:30-21:30",
-    "scheduleSunday": "08:30-21:30",
-    "workTime": "Откроется в 08:30",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 26
-  },
-  {
-    "id": 7897,
-    "pfm": "8451",
-    "address": "г.Москва, ш.Каширское, д.65, к.3",
-    "latitude": 55.598897,
-    "longitude": 37.725796,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 14
-  },
-  {
-    "id": 8324,
-    "pfm": "8767",
-    "address": "г.Москва, пр-д Чечерский (п Воскресенское), д.51",
-    "latitude": 55.524236,
-    "longitude": 37.518031,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "10:00-22:00",
-    "scheduleSaturday": "10:00-22:00",
-    "scheduleSunday": "10:00-22:00",
-    "workTime": "Откроется в 10:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 24
   },
   {
     "id": 9354,
@@ -2172,27 +737,6 @@
     "count": 17
   },
   {
-    "id": 9406,
-    "pfm": "D585",
-    "address": "г.Москва, вн.тер.г.муницип.округ Москворечье-Сабурово, ул.Москворечье, д.31, к.2",
-    "latitude": 55.645874,
-    "longitude": 37.659847,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 15
-  },
-  {
     "id": 9458,
     "pfm": "D624",
     "address": "г.Москва, вн.тер.г.муниц.ок.Царицыно, ул.Кантемировская, д.7, К.1",
@@ -2211,27 +755,6 @@
     "workTime": "Откроется в 09:00",
     "metroStations": [],
     "temporarilyClosed": false,
-    "count": 21
-  },
-  {
-    "id": 11345,
-    "pfm": "H100",
-    "address": "г.Москва, вн.тер.г.муницип.округ Косино-Ухтомский, ул.Николая Старостина, д.4",
-    "latitude": 55.73081,
-    "longitude": 37.850613,
-    "isActive": true,
-    "cityId": 3,
-    "canPayCard": true,
-    "canPickup": true,
-    "warehouse": false,
-    "info": null,
-    "withVariableProduct": false,
-    "scheduleWeekdays": "09:00-21:00",
-    "scheduleSaturday": "09:00-21:00",
-    "scheduleSunday": "09:00-21:00",
-    "workTime": "Откроется в 09:00",
-    "metroStations": [],
-    "temporarilyClosed": false,
-    "count": 18
+    "count": 10
   }
 ]
