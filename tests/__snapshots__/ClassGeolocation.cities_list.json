@@ -14,6 +14,20 @@
     "countryId": 2
   },
   {
+    "id": 243,
+    "name": "Чехов",
+    "title": "Чехов",
+    "regionTitle": "Московская область",
+    "longitude": 37.454357,
+    "latitude": 55.14235,
+    "kladr": null,
+    "fiasid": "7eeb876e-7b67-4ed7-91ec-0588712db96c",
+    "fias": "7eeb876e-7b67-4ed7-91ec-0588712db96c",
+    "addressId": "",
+    "prefix": "д",
+    "countryId": 2
+  },
+  {
     "id": 3975,
     "name": "Коммунарка",
     "title": "Коммунарка",
@@ -39,20 +53,6 @@
     "fias": "555e7d61-d9a7-4ba6-9770-6caa8198c483",
     "addressId": "",
     "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 243,
-    "name": "Чехов",
-    "title": "Чехов",
-    "regionTitle": "Московская область",
-    "longitude": 37.454357,
-    "latitude": 55.14235,
-    "kladr": null,
-    "fiasid": "7eeb876e-7b67-4ed7-91ec-0588712db96c",
-    "fias": "7eeb876e-7b67-4ed7-91ec-0588712db96c",
-    "addressId": "",
-    "prefix": "д",
     "countryId": 2
   },
   {
@@ -98,6 +98,20 @@
     "countryId": 2
   },
   {
+    "id": 199,
+    "name": "Пенза",
+    "title": "Пенза",
+    "regionTitle": "Пензенская область",
+    "longitude": 45.018316,
+    "latitude": 53.195042,
+    "kladr": null,
+    "fiasid": "ff3292b1-a1d2-47d4-b35b-ac06b50555cc",
+    "fias": "ff3292b1-a1d2-47d4-b35b-ac06b50555cc",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 226,
     "name": "Магнитогорск",
     "title": "Магнитогорск",
@@ -121,6 +135,20 @@
     "kladr": null,
     "fiasid": "963efb34-c804-43b4-9298-8e145d188ed0",
     "fias": "963efb34-c804-43b4-9298-8e145d188ed0",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 479,
+    "name": "Саранск",
+    "title": "Саранск",
+    "regionTitle": "Республика Мордовия",
+    "longitude": 45.183938,
+    "latitude": 54.187433,
+    "kladr": null,
+    "fiasid": "1ccfdc3c-be0f-4e42-ab4d-98f90de972d9",
+    "fias": "1ccfdc3c-be0f-4e42-ab4d-98f90de972d9",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -154,20 +182,6 @@
     "countryId": 2
   },
   {
-    "id": 479,
-    "name": "Саранск",
-    "title": "Саранск",
-    "regionTitle": "Республика Мордовия",
-    "longitude": 45.183938,
-    "latitude": 54.187433,
-    "kladr": null,
-    "fiasid": "1ccfdc3c-be0f-4e42-ab4d-98f90de972d9",
-    "fias": "1ccfdc3c-be0f-4e42-ab4d-98f90de972d9",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 192,
     "name": "Краснодар",
     "title": "Краснодар",
@@ -177,34 +191,6 @@
     "kladr": null,
     "fiasid": "7dfa745e-aa19-4688-b121-b655c11e482f",
     "fias": "7dfa745e-aa19-4688-b121-b655c11e482f",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 24,
-    "name": "Волгоград",
-    "title": "Волгоград",
-    "regionTitle": "Волгоградская область",
-    "longitude": 44.516975,
-    "latitude": 48.707067,
-    "kladr": null,
-    "fiasid": "a52b7389-0cfe-46fb-ae15-298652a64cf8",
-    "fias": "a52b7389-0cfe-46fb-ae15-298652a64cf8",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 893,
-    "name": "Гуково",
-    "title": "Гуково",
-    "regionTitle": "Ростовская область",
-    "longitude": 39.934929,
-    "latitude": 48.061025,
-    "kladr": null,
-    "fiasid": "eef55456-4d89-4620-b361-d620221ad3a7",
-    "fias": "eef55456-4d89-4620-b361-d620221ad3a7",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -224,15 +210,15 @@
     "countryId": 2
   },
   {
-    "id": 3877,
-    "name": "Ленина",
-    "title": "Ленина",
-    "regionTitle": "Краснодарский край",
-    "longitude": 49.678335,
-    "latitude": 58.612572,
+    "id": 24,
+    "name": "Волгоград",
+    "title": "Волгоград",
+    "regionTitle": "Волгоградская область",
+    "longitude": 44.516975,
+    "latitude": 48.707067,
     "kladr": null,
-    "fiasid": "",
-    "fias": "",
+    "fiasid": "a52b7389-0cfe-46fb-ae15-298652a64cf8",
+    "fias": "a52b7389-0cfe-46fb-ae15-298652a64cf8",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -252,29 +238,29 @@
     "countryId": 2
   },
   {
-    "id": 199,
-    "name": "Пенза",
-    "title": "Пенза",
-    "regionTitle": "Пензенская область",
-    "longitude": 45.018316,
-    "latitude": 53.195042,
+    "id": 3877,
+    "name": "Ленина",
+    "title": "Ленина",
+    "regionTitle": "Краснодарский край",
+    "longitude": 49.678335,
+    "latitude": 58.612572,
     "kladr": null,
-    "fiasid": "ff3292b1-a1d2-47d4-b35b-ac06b50555cc",
-    "fias": "ff3292b1-a1d2-47d4-b35b-ac06b50555cc",
+    "fiasid": "",
+    "fias": "",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
   },
   {
-    "id": 169,
-    "name": "Псков",
-    "title": "Псков",
-    "regionTitle": "Псковская область",
-    "longitude": 28.33246,
-    "latitude": 57.819274,
+    "id": 893,
+    "name": "Гуково",
+    "title": "Гуково",
+    "regionTitle": "Ростовская область",
+    "longitude": 39.934929,
+    "latitude": 48.061025,
     "kladr": null,
-    "fiasid": "2858811e-448a-482e-9863-e03bf06bb5d4",
-    "fias": "2858811e-448a-482e-9863-e03bf06bb5d4",
+    "fiasid": "eef55456-4d89-4620-b361-d620221ad3a7",
+    "fias": "eef55456-4d89-4620-b361-d620221ad3a7",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -303,6 +289,20 @@
     "kladr": null,
     "fiasid": "bc643e13-dcc5-4fa4-8cb1-94f71c5c18f4",
     "fias": "bc643e13-dcc5-4fa4-8cb1-94f71c5c18f4",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 169,
+    "name": "Псков",
+    "title": "Псков",
+    "regionTitle": "Псковская область",
+    "longitude": 28.33246,
+    "latitude": 57.819274,
+    "kladr": null,
+    "fiasid": "2858811e-448a-482e-9863-e03bf06bb5d4",
+    "fias": "2858811e-448a-482e-9863-e03bf06bb5d4",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -672,6 +672,20 @@
     "countryId": 2
   },
   {
+    "id": 3,
+    "name": "Москва",
+    "title": "Москва",
+    "regionTitle": "г. Москва",
+    "longitude": 37.617644,
+    "latitude": 55.755819,
+    "kladr": null,
+    "fiasid": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+    "fias": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 3695,
     "name": "Шебалино",
     "title": "Шебалино",
@@ -695,20 +709,6 @@
     "kladr": null,
     "fiasid": "8d72434a-977f-418b-80e0-f37ff75d52e4",
     "fias": "8d72434a-977f-418b-80e0-f37ff75d52e4",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 3,
-    "name": "Москва",
-    "title": "Москва",
-    "regionTitle": "г. Москва",
-    "longitude": 37.617644,
-    "latitude": 55.755819,
-    "kladr": null,
-    "fiasid": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
-    "fias": "0c5b2444-70a0-4932-980c-b4dc0d3f02b5",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -882,6 +882,20 @@
     "countryId": 2
   },
   {
+    "id": 127,
+    "name": "Омск",
+    "title": "Омск",
+    "regionTitle": "Омская область",
+    "longitude": 73.368221,
+    "latitude": 54.989347,
+    "kladr": null,
+    "fiasid": "140e31da-27bf-4519-9ea0-6185d681d44e",
+    "fias": "140e31da-27bf-4519-9ea0-6185d681d44e",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 139,
     "name": "Россошь",
     "title": "Россошь",
@@ -947,20 +961,6 @@
     "kladr": null,
     "fiasid": "d70b2917-8cea-4555-a9fe-6d2c72d8d9cc",
     "fias": "d70b2917-8cea-4555-a9fe-6d2c72d8d9cc",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 127,
-    "name": "Омск",
-    "title": "Омск",
-    "regionTitle": "Омская область",
-    "longitude": 73.368221,
-    "latitude": 54.989347,
-    "kladr": null,
-    "fiasid": "140e31da-27bf-4519-9ea0-6185d681d44e",
-    "fias": "140e31da-27bf-4519-9ea0-6185d681d44e",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1036,6 +1036,20 @@
     "countryId": 2
   },
   {
+    "id": 961,
+    "name": "Йошкар-Ола",
+    "title": "Йошкар-Ола",
+    "regionTitle": "Республика Марий Эл",
+    "longitude": 47.886178,
+    "latitude": 56.6316,
+    "kladr": null,
+    "fiasid": "0648e41c-a09b-4eac-91cd-8cf61b9ccb7b",
+    "fias": "0648e41c-a09b-4eac-91cd-8cf61b9ccb7b",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 3835,
     "name": "Бакчар",
     "title": "Бакчар",
@@ -1064,34 +1078,6 @@
     "countryId": 2
   },
   {
-    "id": 397,
-    "name": "Ярославль",
-    "title": "Ярославль",
-    "regionTitle": "Ярославская область",
-    "longitude": 39.893813,
-    "latitude": 57.626559,
-    "kladr": null,
-    "fiasid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
-    "fias": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 961,
-    "name": "Йошкар-Ола",
-    "title": "Йошкар-Ола",
-    "regionTitle": "Республика Марий Эл",
-    "longitude": 47.886178,
-    "latitude": 56.6316,
-    "kladr": null,
-    "fiasid": "0648e41c-a09b-4eac-91cd-8cf61b9ccb7b",
-    "fias": "0648e41c-a09b-4eac-91cd-8cf61b9ccb7b",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 1536,
     "name": "Киров",
     "title": "Киров",
@@ -1101,6 +1087,20 @@
     "kladr": null,
     "fiasid": "452a2ddf-88a1-4e35-8d8d-8635493768d4",
     "fias": "452a2ddf-88a1-4e35-8d8d-8635493768d4",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 397,
+    "name": "Ярославль",
+    "title": "Ярославль",
+    "regionTitle": "Ярославская область",
+    "longitude": 39.893813,
+    "latitude": 57.626559,
+    "kladr": null,
+    "fiasid": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
+    "fias": "6b1bab7d-ee45-4168-a2a6-4ce2880d90d3",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1157,6 +1157,20 @@
     "kladr": null,
     "fiasid": "e3a88932-c76e-4158-842c-d710a9856df1",
     "fias": "e3a88932-c76e-4158-842c-d710a9856df1",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 20,
+    "name": "Петрозаводск",
+    "title": "Петрозаводск",
+    "regionTitle": "Республика Карелия",
+    "longitude": 34.346878,
+    "latitude": 61.785021,
+    "kladr": null,
+    "fiasid": "ccc34487-8fd4-4e71-b032-f4e6c82fb354",
+    "fias": "ccc34487-8fd4-4e71-b032-f4e6c82fb354",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1260,15 +1274,15 @@
     "countryId": 2
   },
   {
-    "id": 20,
-    "name": "Петрозаводск",
-    "title": "Петрозаводск",
-    "regionTitle": "Республика Карелия",
-    "longitude": 34.346878,
-    "latitude": 61.785021,
+    "id": 46,
+    "name": "Набережные Челны",
+    "title": "Набережные Челны",
+    "regionTitle": "Республика Татарстан",
+    "longitude": 52.407031,
+    "latitude": 55.741009,
     "kladr": null,
-    "fiasid": "ccc34487-8fd4-4e71-b032-f4e6c82fb354",
-    "fias": "ccc34487-8fd4-4e71-b032-f4e6c82fb354",
+    "fiasid": "748d7afa-7407-4876-9f40-764ecdd09bbd",
+    "fias": "748d7afa-7407-4876-9f40-764ecdd09bbd",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1442,6 +1456,20 @@
     "countryId": 2
   },
   {
+    "id": 495,
+    "name": "Нальчик",
+    "title": "Нальчик",
+    "regionTitle": "Кабардино-Балкарская Республика",
+    "longitude": 43.607081,
+    "latitude": 43.485259,
+    "kladr": null,
+    "fiasid": "913a82e3-b671-43d5-97b4-8a08b8ee2d28",
+    "fias": "913a82e3-b671-43d5-97b4-8a08b8ee2d28",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 964,
     "name": "Белебей",
     "title": "Белебей",
@@ -1512,20 +1540,6 @@
     "countryId": 2
   },
   {
-    "id": 46,
-    "name": "Набережные Челны",
-    "title": "Набережные Челны",
-    "regionTitle": "Республика Татарстан",
-    "longitude": 52.407031,
-    "latitude": 55.741009,
-    "kladr": null,
-    "fiasid": "748d7afa-7407-4876-9f40-764ecdd09bbd",
-    "fias": "748d7afa-7407-4876-9f40-764ecdd09bbd",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 3805,
     "name": "им. Цюрупы",
     "title": "им. Цюрупы",
@@ -1577,20 +1591,6 @@
     "kladr": null,
     "fiasid": "23d59dbe-1aed-4564-84da-fe921f9ce294",
     "fias": "23d59dbe-1aed-4564-84da-fe921f9ce294",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 495,
-    "name": "Нальчик",
-    "title": "Нальчик",
-    "regionTitle": "Кабардино-Балкарская Республика",
-    "longitude": 43.607081,
-    "latitude": 43.485259,
-    "kladr": null,
-    "fiasid": "913a82e3-b671-43d5-97b4-8a08b8ee2d28",
-    "fias": "913a82e3-b671-43d5-97b4-8a08b8ee2d28",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1792,20 +1792,6 @@
     "countryId": 2
   },
   {
-    "id": 155,
-    "name": "Великий Новгород",
-    "title": "Великий Новгород",
-    "regionTitle": "Новгородская область",
-    "longitude": 31.269816,
-    "latitude": 58.522857,
-    "kladr": null,
-    "fiasid": "8d0a05bf-3b8a-43e9-ac26-7ce61d7c4560",
-    "fias": "8d0a05bf-3b8a-43e9-ac26-7ce61d7c4560",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 387,
     "name": "Саров",
     "title": "Саров",
@@ -1831,6 +1817,20 @@
     "fias": "8b59f551-a754-4922-a4e5-63135b80b5a1",
     "addressId": "",
     "prefix": "с",
+    "countryId": 2
+  },
+  {
+    "id": 155,
+    "name": "Великий Новгород",
+    "title": "Великий Новгород",
+    "regionTitle": "Новгородская область",
+    "longitude": 31.269816,
+    "latitude": 58.522857,
+    "kladr": null,
+    "fiasid": "8d0a05bf-3b8a-43e9-ac26-7ce61d7c4560",
+    "fias": "8d0a05bf-3b8a-43e9-ac26-7ce61d7c4560",
+    "addressId": "",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -1862,20 +1862,6 @@
     "countryId": 2
   },
   {
-    "id": 55,
-    "name": "Екатеринбург",
-    "title": "Екатеринбург",
-    "regionTitle": "Свердловская область",
-    "longitude": 60.597474,
-    "latitude": 56.838011,
-    "kladr": null,
-    "fiasid": "2763c110-cb8b-416a-9dac-ad28a55b4402",
-    "fias": "2763c110-cb8b-416a-9dac-ad28a55b4402",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 98,
     "name": "Гороховец",
     "title": "Гороховец",
@@ -1890,15 +1876,15 @@
     "countryId": 2
   },
   {
-    "id": 735,
-    "name": "Чебоксары",
-    "title": "Чебоксары",
-    "regionTitle": "Чувашская Республика – Чувашия",
-    "longitude": 47.247728,
-    "latitude": 56.139918,
+    "id": 55,
+    "name": "Екатеринбург",
+    "title": "Екатеринбург",
+    "regionTitle": "Свердловская область",
+    "longitude": 60.597474,
+    "latitude": 56.838011,
     "kladr": null,
-    "fiasid": "dd8caeab-c685-4f2a-bf5f-550aca1bbc48",
-    "fias": "dd8caeab-c685-4f2a-bf5f-550aca1bbc48",
+    "fiasid": "2763c110-cb8b-416a-9dac-ad28a55b4402",
+    "fias": "2763c110-cb8b-416a-9dac-ad28a55b4402",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1918,15 +1904,15 @@
     "countryId": 2
   },
   {
-    "id": 166,
-    "name": "Ульяновск",
-    "title": "Ульяновск",
-    "regionTitle": "Ульяновская область",
-    "longitude": 48.403132,
-    "latitude": 54.314192,
+    "id": 735,
+    "name": "Чебоксары",
+    "title": "Чебоксары",
+    "regionTitle": "Чувашская Республика – Чувашия",
+    "longitude": 47.247728,
+    "latitude": 56.139918,
     "kladr": null,
-    "fiasid": "bebfd75d-a0da-4bf9-8307-2e2c85eac463",
-    "fias": "bebfd75d-a0da-4bf9-8307-2e2c85eac463",
+    "fiasid": "dd8caeab-c685-4f2a-bf5f-550aca1bbc48",
+    "fias": "dd8caeab-c685-4f2a-bf5f-550aca1bbc48",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1946,20 +1932,6 @@
     "countryId": 2
   },
   {
-    "id": 35,
-    "name": "Санкт-Петербург",
-    "title": "Санкт-Петербург",
-    "regionTitle": "г. Санкт-Петербург",
-    "longitude": 30.315877,
-    "latitude": 59.939099,
-    "kladr": null,
-    "fiasid": "c2deb16a-0330-4f05-821f-1d09c93331e6",
-    "fias": "c2deb16a-0330-4f05-821f-1d09c93331e6",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 1103,
     "name": "Чапаевск",
     "title": "Чапаевск",
@@ -1974,15 +1946,29 @@
     "countryId": 2
   },
   {
-    "id": 73,
-    "name": "Ставрополь",
-    "title": "Ставрополь",
-    "regionTitle": "Ставропольский край",
-    "longitude": 41.96911,
-    "latitude": 45.043317,
+    "id": 166,
+    "name": "Ульяновск",
+    "title": "Ульяновск",
+    "regionTitle": "Ульяновская область",
+    "longitude": 48.403132,
+    "latitude": 54.314192,
     "kladr": null,
-    "fiasid": "2a1c7bdb-05ea-492f-9e1c-b3999f79dcbc",
-    "fias": "2a1c7bdb-05ea-492f-9e1c-b3999f79dcbc",
+    "fiasid": "bebfd75d-a0da-4bf9-8307-2e2c85eac463",
+    "fias": "bebfd75d-a0da-4bf9-8307-2e2c85eac463",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 35,
+    "name": "Санкт-Петербург",
+    "title": "Санкт-Петербург",
+    "regionTitle": "г. Санкт-Петербург",
+    "longitude": 30.315877,
+    "latitude": 59.939099,
+    "kladr": null,
+    "fiasid": "c2deb16a-0330-4f05-821f-1d09c93331e6",
+    "fias": "c2deb16a-0330-4f05-821f-1d09c93331e6",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -1999,6 +1985,20 @@
     "fias": "e2af4fa8-38b2-4787-a327-62a01cedebf7",
     "addressId": "",
     "prefix": "пгт",
+    "countryId": 2
+  },
+  {
+    "id": 73,
+    "name": "Ставрополь",
+    "title": "Ставрополь",
+    "regionTitle": "Ставропольский край",
+    "longitude": 41.96911,
+    "latitude": 45.043317,
+    "kladr": null,
+    "fiasid": "2a1c7bdb-05ea-492f-9e1c-b3999f79dcbc",
+    "fias": "2a1c7bdb-05ea-492f-9e1c-b3999f79dcbc",
+    "addressId": "",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -2114,20 +2114,6 @@
     "countryId": 2
   },
   {
-    "id": 236,
-    "name": "Одинцово",
-    "title": "Одинцово",
-    "regionTitle": "Московская область",
-    "longitude": 37.263663,
-    "latitude": 55.679138,
-    "kladr": null,
-    "fiasid": "6ae8ad9e-aa6c-4849-92d8-8e637059c9b0",
-    "fias": "6ae8ad9e-aa6c-4849-92d8-8e637059c9b0",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 3968,
     "name": "Ростов Великий",
     "title": "Ростов Великий",
@@ -2198,6 +2184,20 @@
     "countryId": 2
   },
   {
+    "id": 236,
+    "name": "Одинцово",
+    "title": "Одинцово",
+    "regionTitle": "Московская область",
+    "longitude": 37.263663,
+    "latitude": 55.679138,
+    "kladr": null,
+    "fiasid": "6ae8ad9e-aa6c-4849-92d8-8e637059c9b0",
+    "fias": "6ae8ad9e-aa6c-4849-92d8-8e637059c9b0",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 59,
     "name": "Нижний Тагил",
     "title": "Нижний Тагил",
@@ -2235,6 +2235,20 @@
     "kladr": null,
     "fiasid": "978c4d8c-f724-43b1-aa95-0c1fc49dc6b7",
     "fias": "978c4d8c-f724-43b1-aa95-0c1fc49dc6b7",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 333,
+    "name": "Пушкино",
+    "title": "Пушкино",
+    "regionTitle": "Московская область",
+    "longitude": 37.847164,
+    "latitude": 56.011318,
+    "kladr": null,
+    "fiasid": "7f22cfa4-34fa-4fa0-bcb0-620cd8402cfa",
+    "fias": "7f22cfa4-34fa-4fa0-bcb0-620cd8402cfa",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -2310,6 +2324,20 @@
     "countryId": 2
   },
   {
+    "id": 91,
+    "name": "Ростов-на-Дону",
+    "title": "Ростов-на-Дону",
+    "regionTitle": "Ростовская область",
+    "longitude": 39.720358,
+    "latitude": 47.222078,
+    "kladr": null,
+    "fiasid": "c1cfe4b9-f7c2-423c-abfa-6ed1c05a15c5",
+    "fias": "c1cfe4b9-f7c2-423c-abfa-6ed1c05a15c5",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1430,
     "name": "Таловая",
     "title": "Таловая",
@@ -2352,29 +2380,15 @@
     "countryId": 2
   },
   {
-    "id": 333,
-    "name": "Пушкино",
-    "title": "Пушкино",
-    "regionTitle": "Московская область",
-    "longitude": 37.847164,
-    "latitude": 56.011318,
+    "id": 975,
+    "name": "Воронеж",
+    "title": "Воронеж",
+    "regionTitle": "Воронежская область",
+    "longitude": 39.200269,
+    "latitude": 51.660786,
     "kladr": null,
-    "fiasid": "7f22cfa4-34fa-4fa0-bcb0-620cd8402cfa",
-    "fias": "7f22cfa4-34fa-4fa0-bcb0-620cd8402cfa",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 91,
-    "name": "Ростов-на-Дону",
-    "title": "Ростов-на-Дону",
-    "regionTitle": "Ростовская область",
-    "longitude": 39.720358,
-    "latitude": 47.222078,
-    "kladr": null,
-    "fiasid": "c1cfe4b9-f7c2-423c-abfa-6ed1c05a15c5",
-    "fias": "c1cfe4b9-f7c2-423c-abfa-6ed1c05a15c5",
+    "fiasid": "5bf5ddff-6353-4a3d-80c4-6fb27f00c6c1",
+    "fias": "5bf5ddff-6353-4a3d-80c4-6fb27f00c6c1",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -2433,20 +2447,6 @@
     "fias": "9af43d4b-d23f-481b-9870-c87457322ab1",
     "addressId": "",
     "prefix": "рп",
-    "countryId": 2
-  },
-  {
-    "id": 975,
-    "name": "Воронеж",
-    "title": "Воронеж",
-    "regionTitle": "Воронежская область",
-    "longitude": 39.200269,
-    "latitude": 51.660786,
-    "kladr": null,
-    "fiasid": "5bf5ddff-6353-4a3d-80c4-6fb27f00c6c1",
-    "fias": "5bf5ddff-6353-4a3d-80c4-6fb27f00c6c1",
-    "addressId": "",
-    "prefix": "г",
     "countryId": 2
   },
   {
@@ -2562,20 +2562,6 @@
     "countryId": 2
   },
   {
-    "id": 572,
-    "name": "Ижевск",
-    "title": "Ижевск",
-    "regionTitle": "Удмуртская Республика",
-    "longitude": 53.2069,
-    "latitude": 56.852676,
-    "kladr": null,
-    "fiasid": "deb1d05a-71ce-40d1-b726-6ba85d70d58f",
-    "fias": "deb1d05a-71ce-40d1-b726-6ba85d70d58f",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 3913,
     "name": "Таштагол",
     "title": "Таштагол",
@@ -2585,6 +2571,20 @@
     "kladr": null,
     "fiasid": "6be8ac27-9aa0-4784-ba97-a15f066995d9",
     "fias": "6be8ac27-9aa0-4784-ba97-a15f066995d9",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 572,
+    "name": "Ижевск",
+    "title": "Ижевск",
+    "regionTitle": "Удмуртская Республика",
+    "longitude": 53.2069,
+    "latitude": 56.852676,
+    "kladr": null,
+    "fiasid": "deb1d05a-71ce-40d1-b726-6ba85d70d58f",
+    "fias": "deb1d05a-71ce-40d1-b726-6ba85d70d58f",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -2828,6 +2828,20 @@
     "countryId": 2
   },
   {
+    "id": 1548,
+    "name": "Иваново",
+    "title": "Иваново",
+    "regionTitle": "Ивановская область",
+    "longitude": 40.97393,
+    "latitude": 57.000353,
+    "kladr": null,
+    "fiasid": "40c6863e-2a5f-4033-a377-3416533948bd",
+    "fias": "40c6863e-2a5f-4033-a377-3416533948bd",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 3627,
     "name": "Таежный",
     "title": "Таежный",
@@ -2856,20 +2870,6 @@
     "countryId": 2
   },
   {
-    "id": 124,
-    "name": "Красная Гора",
-    "title": "Красная Гора",
-    "regionTitle": "Брянская область",
-    "longitude": 31.603405,
-    "latitude": 53.004447,
-    "kladr": null,
-    "fiasid": "d0bcaa60-0155-459d-a148-c8d4ed1be531",
-    "fias": "d0bcaa60-0155-459d-a148-c8d4ed1be531",
-    "addressId": "",
-    "prefix": "пгт",
-    "countryId": 2
-  },
-  {
     "id": 28,
     "name": "Пермь",
     "title": "Пермь",
@@ -2881,6 +2881,20 @@
     "fias": "a309e4ce-2f36-4106-b1ca-53e0f48a6d95",
     "addressId": "",
     "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 124,
+    "name": "Красная Гора",
+    "title": "Красная Гора",
+    "regionTitle": "Брянская область",
+    "longitude": 31.603405,
+    "latitude": 53.004447,
+    "kladr": null,
+    "fiasid": "d0bcaa60-0155-459d-a148-c8d4ed1be531",
+    "fias": "d0bcaa60-0155-459d-a148-c8d4ed1be531",
+    "addressId": "",
+    "prefix": "пгт",
     "countryId": 2
   },
   {
@@ -3010,6 +3024,34 @@
     "countryId": 2
   },
   {
+    "id": 1381,
+    "name": "Знаменка",
+    "title": "Знаменка",
+    "regionTitle": "Тамбовская область",
+    "longitude": 41.445213,
+    "latitude": 52.411203,
+    "kladr": null,
+    "fiasid": "c1aec886-8869-4690-93c5-35bf19872597",
+    "fias": "c1aec886-8869-4690-93c5-35bf19872597",
+    "addressId": "",
+    "prefix": "рп",
+    "countryId": 2
+  },
+  {
+    "id": 550,
+    "name": "Тамбов",
+    "title": "Тамбов",
+    "regionTitle": "Тамбовская область",
+    "longitude": 41.45275,
+    "latitude": 52.721295,
+    "kladr": null,
+    "fiasid": "ea2a1270-1e19-4224-b1a0-4228b9de3c7a",
+    "fias": "ea2a1270-1e19-4224-b1a0-4228b9de3c7a",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 979,
     "name": "Учалы",
     "title": "Учалы",
@@ -3052,20 +3094,6 @@
     "countryId": 2
   },
   {
-    "id": 1381,
-    "name": "Знаменка",
-    "title": "Знаменка",
-    "regionTitle": "Тамбовская область",
-    "longitude": 41.445213,
-    "latitude": 52.411203,
-    "kladr": null,
-    "fiasid": "c1aec886-8869-4690-93c5-35bf19872597",
-    "fias": "c1aec886-8869-4690-93c5-35bf19872597",
-    "addressId": "",
-    "prefix": "рп",
-    "countryId": 2
-  },
-  {
     "id": 1252,
     "name": "Семилуки",
     "title": "Семилуки",
@@ -3075,20 +3103,6 @@
     "kladr": null,
     "fiasid": "15d507b5-f67e-4ee6-9f25-683562699fac",
     "fias": "15d507b5-f67e-4ee6-9f25-683562699fac",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 550,
-    "name": "Тамбов",
-    "title": "Тамбов",
-    "regionTitle": "Тамбовская область",
-    "longitude": 41.45275,
-    "latitude": 52.721295,
-    "kladr": null,
-    "fiasid": "ea2a1270-1e19-4224-b1a0-4228b9de3c7a",
-    "fias": "ea2a1270-1e19-4224-b1a0-4228b9de3c7a",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -3178,6 +3192,20 @@
     "countryId": 2
   },
   {
+    "id": 530,
+    "name": "Тюмень",
+    "title": "Тюмень",
+    "regionTitle": "Тюменская область",
+    "longitude": 65.541227,
+    "latitude": 57.152985,
+    "kladr": null,
+    "fiasid": "9ae64229-9f7b-4149-b27a-d1f6ec74b5ce",
+    "fias": "9ae64229-9f7b-4149-b27a-d1f6ec74b5ce",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1389,
     "name": "Медногорск",
     "title": "Медногорск",
@@ -3201,20 +3229,6 @@
     "kladr": null,
     "fiasid": "ac2abd40-bb9b-41df-abd8-a319afd88f00",
     "fias": "ac2abd40-bb9b-41df-abd8-a319afd88f00",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 530,
-    "name": "Тюмень",
-    "title": "Тюмень",
-    "regionTitle": "Тюменская область",
-    "longitude": 65.541227,
-    "latitude": 57.152985,
-    "kladr": null,
-    "fiasid": "9ae64229-9f7b-4149-b27a-d1f6ec74b5ce",
-    "fias": "9ae64229-9f7b-4149-b27a-d1f6ec74b5ce",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -3285,20 +3299,6 @@
     "kladr": null,
     "fiasid": "dce97bff-deb2-4fd9-9aec-4f4327bbf89b",
     "fias": "dce97bff-deb2-4fd9-9aec-4f4327bbf89b",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 1548,
-    "name": "Иваново",
-    "title": "Иваново",
-    "regionTitle": "Ивановская область",
-    "longitude": 40.97393,
-    "latitude": 57.000353,
-    "kladr": null,
-    "fiasid": "40c6863e-2a5f-4033-a377-3416533948bd",
-    "fias": "40c6863e-2a5f-4033-a377-3416533948bd",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -3612,20 +3612,6 @@
     "countryId": 2
   },
   {
-    "id": 1329,
-    "name": "Спасск-Рязанский",
-    "title": "Спасск-Рязанский",
-    "regionTitle": "Рязанская область",
-    "longitude": 40.380988,
-    "latitude": 54.403896,
-    "kladr": null,
-    "fiasid": "94484f92-28a1-4880-a723-0af2f4fce2ca",
-    "fias": "94484f92-28a1-4880-a723-0af2f4fce2ca",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 118,
     "name": "Брянск",
     "title": "Брянск",
@@ -3635,6 +3621,20 @@
     "kladr": null,
     "fiasid": "414b71cf-921e-4bfc-b6e0-f7395d16aaef",
     "fias": "414b71cf-921e-4bfc-b6e0-f7395d16aaef",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 1329,
+    "name": "Спасск-Рязанский",
+    "title": "Спасск-Рязанский",
+    "regionTitle": "Рязанская область",
+    "longitude": 40.380988,
+    "latitude": 54.403896,
+    "kladr": null,
+    "fiasid": "94484f92-28a1-4880-a723-0af2f4fce2ca",
+    "fias": "94484f92-28a1-4880-a723-0af2f4fce2ca",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -3794,20 +3794,6 @@
     "countryId": 2
   },
   {
-    "id": 517,
-    "name": "Курган",
-    "title": "Курган",
-    "regionTitle": "Курганская область",
-    "longitude": 65.341118,
-    "latitude": 55.441004,
-    "kladr": null,
-    "fiasid": "3bbda77d-ba3f-4457-9d44-c440815cda89",
-    "fias": "3bbda77d-ba3f-4457-9d44-c440815cda89",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 219,
     "name": "Верхний Уфалей",
     "title": "Верхний Уфалей",
@@ -3817,6 +3803,20 @@
     "kladr": null,
     "fiasid": "03aa453a-c7d6-4567-9a59-34a9e9cc1eac",
     "fias": "03aa453a-c7d6-4567-9a59-34a9e9cc1eac",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 517,
+    "name": "Курган",
+    "title": "Курган",
+    "regionTitle": "Курганская область",
+    "longitude": 65.341118,
+    "latitude": 55.441004,
+    "kladr": null,
+    "fiasid": "3bbda77d-ba3f-4457-9d44-c440815cda89",
+    "fias": "3bbda77d-ba3f-4457-9d44-c440815cda89",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -4172,20 +4172,6 @@
     "countryId": 2
   },
   {
-    "id": 23,
-    "name": "Майкоп",
-    "title": "Майкоп",
-    "regionTitle": "Республика Адыгея",
-    "longitude": 40.105852,
-    "latitude": 44.606683,
-    "kladr": null,
-    "fiasid": "8cfbe842-e803-49ca-9347-1ef90481dd98",
-    "fias": "8cfbe842-e803-49ca-9347-1ef90481dd98",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 74,
     "name": "Мурманск",
     "title": "Мурманск",
@@ -4293,6 +4279,20 @@
     "kladr": null,
     "fiasid": "115db243-1238-412f-a2a1-6d53ef30ba9e",
     "fias": "115db243-1238-412f-a2a1-6d53ef30ba9e",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 23,
+    "name": "Майкоп",
+    "title": "Майкоп",
+    "regionTitle": "Республика Адыгея",
+    "longitude": 40.105852,
+    "latitude": 44.606683,
+    "kladr": null,
+    "fiasid": "8cfbe842-e803-49ca-9347-1ef90481dd98",
+    "fias": "8cfbe842-e803-49ca-9347-1ef90481dd98",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -4690,6 +4690,20 @@
     "countryId": 2
   },
   {
+    "id": 71,
+    "name": "Элиста",
+    "title": "Элиста",
+    "regionTitle": "Республика Калмыкия",
+    "longitude": 44.269759,
+    "latitude": 46.307743,
+    "kladr": null,
+    "fiasid": "d5bd18b9-22c1-48e2-9b4a-3b7a4c89a3cb",
+    "fias": "d5bd18b9-22c1-48e2-9b4a-3b7a4c89a3cb",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1021,
     "name": "Топки",
     "title": "Топки",
@@ -4970,20 +4984,6 @@
     "countryId": 2
   },
   {
-    "id": 71,
-    "name": "Элиста",
-    "title": "Элиста",
-    "regionTitle": "Республика Калмыкия",
-    "longitude": 44.269759,
-    "latitude": 46.307743,
-    "kladr": null,
-    "fiasid": "d5bd18b9-22c1-48e2-9b4a-3b7a4c89a3cb",
-    "fias": "d5bd18b9-22c1-48e2-9b4a-3b7a4c89a3cb",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 1047,
     "name": "Кострома",
     "title": "Кострома",
@@ -5054,20 +5054,6 @@
     "countryId": 2
   },
   {
-    "id": 70,
-    "name": "Горно-Алтайск",
-    "title": "Горно-Алтайск",
-    "regionTitle": "Республика Алтай",
-    "longitude": 85.960634,
-    "latitude": 51.957804,
-    "kladr": null,
-    "fiasid": "0839d751-b940-4d3d-afb6-5df03fdd7791",
-    "fias": "0839d751-b940-4d3d-afb6-5df03fdd7791",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 3816,
     "name": "Каменномостский",
     "title": "Каменномостский",
@@ -5093,6 +5079,20 @@
     "fias": "a74e5d6a-7e3d-4958-aef5-73b359998969",
     "addressId": "",
     "prefix": "с",
+    "countryId": 2
+  },
+  {
+    "id": 70,
+    "name": "Горно-Алтайск",
+    "title": "Горно-Алтайск",
+    "regionTitle": "Республика Алтай",
+    "longitude": 85.960634,
+    "latitude": 51.957804,
+    "kladr": null,
+    "fiasid": "0839d751-b940-4d3d-afb6-5df03fdd7791",
+    "fias": "0839d751-b940-4d3d-afb6-5df03fdd7791",
+    "addressId": "",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -5138,20 +5138,6 @@
     "countryId": 2
   },
   {
-    "id": 143,
-    "name": "Уфа",
-    "title": "Уфа",
-    "regionTitle": "Республика Башкортостан",
-    "longitude": 55.958736,
-    "latitude": 54.735152,
-    "kladr": null,
-    "fiasid": "7339e834-2cb4-4734-a4c7-1fca2c66e562",
-    "fias": "7339e834-2cb4-4734-a4c7-1fca2c66e562",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 698,
     "name": "Новоаннинский",
     "title": "Новоаннинский",
@@ -5161,6 +5147,20 @@
     "kladr": null,
     "fiasid": "254f7c3a-fc21-4405-8779-eee0a7a5c63f",
     "fias": "254f7c3a-fc21-4405-8779-eee0a7a5c63f",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 143,
+    "name": "Уфа",
+    "title": "Уфа",
+    "regionTitle": "Республика Башкортостан",
+    "longitude": 55.958736,
+    "latitude": 54.735152,
+    "kladr": null,
+    "fiasid": "7339e834-2cb4-4734-a4c7-1fca2c66e562",
+    "fias": "7339e834-2cb4-4734-a4c7-1fca2c66e562",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -6244,20 +6244,6 @@
     "countryId": 2
   },
   {
-    "id": 1043,
-    "name": "Новоалтайск",
-    "title": "Новоалтайск",
-    "regionTitle": "Алтайский край",
-    "longitude": 83.931079,
-    "latitude": 53.412021,
-    "kladr": null,
-    "fiasid": "aa288d9f-4b2a-42a6-97f0-3502dddfa383",
-    "fias": "aa288d9f-4b2a-42a6-97f0-3502dddfa383",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 205,
     "name": "Беково",
     "title": "Беково",
@@ -6286,15 +6272,15 @@
     "countryId": 2
   },
   {
-    "id": 1046,
-    "name": "Мценск",
-    "title": "Мценск",
-    "regionTitle": "Орловская область",
-    "longitude": 36.575006,
-    "latitude": 53.278939,
+    "id": 1043,
+    "name": "Новоалтайск",
+    "title": "Новоалтайск",
+    "regionTitle": "Алтайский край",
+    "longitude": 83.931079,
+    "latitude": 53.412021,
     "kladr": null,
-    "fiasid": "76f2780b-0f1c-4818-98a4-13da5c8a2c80",
-    "fias": "76f2780b-0f1c-4818-98a4-13da5c8a2c80",
+    "fiasid": "aa288d9f-4b2a-42a6-97f0-3502dddfa383",
+    "fias": "aa288d9f-4b2a-42a6-97f0-3502dddfa383",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -6337,34 +6323,6 @@
     "kladr": null,
     "fiasid": "230c2f4d-fd9d-46fc-8bbd-b8de26810790",
     "fias": "230c2f4d-fd9d-46fc-8bbd-b8de26810790",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 319,
-    "name": "Орел",
-    "title": "Орел",
-    "regionTitle": "Орловская область",
-    "longitude": 36.064358,
-    "latitude": 52.970756,
-    "kladr": null,
-    "fiasid": "2abed4d9-5565-4885-bc96-f4ffccc6cba4",
-    "fias": "2abed4d9-5565-4885-bc96-f4ffccc6cba4",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 40,
-    "name": "Казань",
-    "title": "Казань",
-    "regionTitle": "Республика Татарстан",
-    "longitude": 49.106414,
-    "latitude": 55.796127,
-    "kladr": null,
-    "fiasid": "93b3df57-4c89-44df-ac42-96f05e9cd3b9",
-    "fias": "93b3df57-4c89-44df-ac42-96f05e9cd3b9",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -6426,6 +6384,34 @@
     "countryId": 2
   },
   {
+    "id": 1046,
+    "name": "Мценск",
+    "title": "Мценск",
+    "regionTitle": "Орловская область",
+    "longitude": 36.575006,
+    "latitude": 53.278939,
+    "kladr": null,
+    "fiasid": "76f2780b-0f1c-4818-98a4-13da5c8a2c80",
+    "fias": "76f2780b-0f1c-4818-98a4-13da5c8a2c80",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 319,
+    "name": "Орел",
+    "title": "Орел",
+    "regionTitle": "Орловская область",
+    "longitude": 36.064358,
+    "latitude": 52.970756,
+    "kladr": null,
+    "fiasid": "2abed4d9-5565-4885-bc96-f4ffccc6cba4",
+    "fias": "2abed4d9-5565-4885-bc96-f4ffccc6cba4",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 3918,
     "name": "Змеиногорск",
     "title": "Змеиногорск",
@@ -6465,6 +6451,20 @@
     "fias": "1ab146c9-59b8-4c88-a3df-07519585c413",
     "addressId": "",
     "prefix": "рп",
+    "countryId": 2
+  },
+  {
+    "id": 40,
+    "name": "Казань",
+    "title": "Казань",
+    "regionTitle": "Республика Татарстан",
+    "longitude": 49.106414,
+    "latitude": 55.796127,
+    "kladr": null,
+    "fiasid": "93b3df57-4c89-44df-ac42-96f05e9cd3b9",
+    "fias": "93b3df57-4c89-44df-ac42-96f05e9cd3b9",
+    "addressId": "",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -6636,20 +6636,6 @@
     "countryId": 2
   },
   {
-    "id": 1059,
-    "name": "Рязань",
-    "title": "Рязань",
-    "regionTitle": "Рязанская область",
-    "longitude": 39.741917,
-    "latitude": 54.629565,
-    "kladr": null,
-    "fiasid": "86e5bae4-ef58-4031-b34f-5e9ff914cd55",
-    "fias": "86e5bae4-ef58-4031-b34f-5e9ff914cd55",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 1063,
     "name": "Рославль",
     "title": "Рославль",
@@ -6692,15 +6678,15 @@
     "countryId": 2
   },
   {
-    "id": 1336,
-    "name": "Десногорск",
-    "title": "Десногорск",
-    "regionTitle": "Смоленская область",
-    "longitude": 33.287881,
-    "latitude": 54.152351,
+    "id": 1059,
+    "name": "Рязань",
+    "title": "Рязань",
+    "regionTitle": "Рязанская область",
+    "longitude": 39.741917,
+    "latitude": 54.629565,
     "kladr": null,
-    "fiasid": "5e2b3d5b-cd14-4116-8837-8878b5ccc057",
-    "fias": "5e2b3d5b-cd14-4116-8837-8878b5ccc057",
+    "fiasid": "86e5bae4-ef58-4031-b34f-5e9ff914cd55",
+    "fias": "86e5bae4-ef58-4031-b34f-5e9ff914cd55",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -6715,6 +6701,20 @@
     "kladr": null,
     "fiasid": "59cb1f1f-16f9-47eb-9487-14a6c00e8621",
     "fias": "59cb1f1f-16f9-47eb-9487-14a6c00e8621",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 1336,
+    "name": "Десногорск",
+    "title": "Десногорск",
+    "regionTitle": "Смоленская область",
+    "longitude": 33.287881,
+    "latitude": 54.152351,
+    "kladr": null,
+    "fiasid": "5e2b3d5b-cd14-4116-8837-8878b5ccc057",
+    "fias": "5e2b3d5b-cd14-4116-8837-8878b5ccc057",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -7042,34 +7042,6 @@
     "countryId": 2
   },
   {
-    "id": 281,
-    "name": "Вологда",
-    "title": "Вологда",
-    "regionTitle": "Вологодская область",
-    "longitude": 39.891523,
-    "latitude": 59.220501,
-    "kladr": null,
-    "fiasid": "023484a5-f98d-4849-82e1-b7e0444b54ef",
-    "fias": "023484a5-f98d-4849-82e1-b7e0444b54ef",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 288,
-    "name": "Соликамск",
-    "title": "Соликамск",
-    "regionTitle": "Пермский край",
-    "longitude": 56.770391,
-    "latitude": 59.649193,
-    "kladr": null,
-    "fiasid": "8b698775-fe5e-4fc0-9f0d-272855d82d15",
-    "fias": "8b698775-fe5e-4fc0-9f0d-272855d82d15",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 1344,
     "name": "Товарковский",
     "title": "Товарковский",
@@ -7112,20 +7084,6 @@
     "countryId": 2
   },
   {
-    "id": 418,
-    "name": "Смоленск",
-    "title": "Смоленск",
-    "regionTitle": "Смоленская область",
-    "longitude": 32.045287,
-    "latitude": 54.782635,
-    "kladr": null,
-    "fiasid": "d414a2e8-9e1e-48c1-94a4-7308d5608177",
-    "fias": "d414a2e8-9e1e-48c1-94a4-7308d5608177",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 1337,
     "name": "Богородицк",
     "title": "Богородицк",
@@ -7135,6 +7093,34 @@
     "kladr": null,
     "fiasid": "e80009cb-c8c9-4dda-90cb-082b6e0d5d8c",
     "fias": "e80009cb-c8c9-4dda-90cb-082b6e0d5d8c",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 281,
+    "name": "Вологда",
+    "title": "Вологда",
+    "regionTitle": "Вологодская область",
+    "longitude": 39.891523,
+    "latitude": 59.220501,
+    "kladr": null,
+    "fiasid": "023484a5-f98d-4849-82e1-b7e0444b54ef",
+    "fias": "023484a5-f98d-4849-82e1-b7e0444b54ef",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 288,
+    "name": "Соликамск",
+    "title": "Соликамск",
+    "regionTitle": "Пермский край",
+    "longitude": 56.770391,
+    "latitude": 59.649193,
+    "kladr": null,
+    "fiasid": "8b698775-fe5e-4fc0-9f0d-272855d82d15",
+    "fias": "8b698775-fe5e-4fc0-9f0d-272855d82d15",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -7163,6 +7149,20 @@
     "kladr": null,
     "fiasid": "ff4e0e65-f17d-4ba6-832d-d1bd12859e00",
     "fias": "ff4e0e65-f17d-4ba6-832d-d1bd12859e00",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 418,
+    "name": "Смоленск",
+    "title": "Смоленск",
+    "regionTitle": "Смоленская область",
+    "longitude": 32.045287,
+    "latitude": 54.782635,
+    "kladr": null,
+    "fiasid": "d414a2e8-9e1e-48c1-94a4-7308d5608177",
+    "fias": "d414a2e8-9e1e-48c1-94a4-7308d5608177",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -7448,20 +7448,6 @@
     "countryId": 2
   },
   {
-    "id": 181,
-    "name": "Тула",
-    "title": "Тула",
-    "regionTitle": "Тульская область",
-    "longitude": 37.617348,
-    "latitude": 54.193122,
-    "kladr": null,
-    "fiasid": "b2601b18-6da2-4789-9fbe-800dde06a2bb",
-    "fias": "b2601b18-6da2-4789-9fbe-800dde06a2bb",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 588,
     "name": "Донской",
     "title": "Донской",
@@ -7473,6 +7459,20 @@
     "fias": "dc8fbc8d-da2e-4bbb-a55c-94446fa7ad77",
     "addressId": "",
     "prefix": "мкр",
+    "countryId": 2
+  },
+  {
+    "id": 181,
+    "name": "Тула",
+    "title": "Тула",
+    "regionTitle": "Тульская область",
+    "longitude": 37.617348,
+    "latitude": 54.193122,
+    "kladr": null,
+    "fiasid": "b2601b18-6da2-4789-9fbe-800dde06a2bb",
+    "fias": "b2601b18-6da2-4789-9fbe-800dde06a2bb",
+    "addressId": "",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -7588,6 +7588,20 @@
     "countryId": 2
   },
   {
+    "id": 189,
+    "name": "Самара",
+    "title": "Самара",
+    "regionTitle": "Самарская область",
+    "longitude": 50.100202,
+    "latitude": 53.195878,
+    "kladr": null,
+    "fiasid": "bb035cc3-1dc2-4627-9d25-a1bf2d4b936b",
+    "fias": "bb035cc3-1dc2-4627-9d25-a1bf2d4b936b",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 447,
     "name": "Реутов",
     "title": "Реутов",
@@ -7613,20 +7627,6 @@
     "fias": "6c5b1483-abdb-400c-bf97-1ae014eb18db",
     "addressId": "",
     "prefix": "рп",
-    "countryId": 2
-  },
-  {
-    "id": 189,
-    "name": "Самара",
-    "title": "Самара",
-    "regionTitle": "Самарская область",
-    "longitude": 50.100202,
-    "latitude": 53.195878,
-    "kladr": null,
-    "fiasid": "bb035cc3-1dc2-4627-9d25-a1bf2d4b936b",
-    "fias": "bb035cc3-1dc2-4627-9d25-a1bf2d4b936b",
-    "addressId": "",
-    "prefix": "г",
     "countryId": 2
   },
   {
@@ -7807,6 +7807,20 @@
     "kladr": null,
     "fiasid": "f5743b34-7858-46b4-99ca-050a4efa356d",
     "fias": "f5743b34-7858-46b4-99ca-050a4efa356d",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 499,
+    "name": "Баксан",
+    "title": "Баксан",
+    "regionTitle": "Кабардино-Балкарская Республика",
+    "longitude": 43.534622,
+    "latitude": 43.681946,
+    "kladr": null,
+    "fiasid": "67851dfd-e142-451a-b6b1-ea5e9bc7f0c1",
+    "fias": "67851dfd-e142-451a-b6b1-ea5e9bc7f0c1",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -8089,20 +8103,6 @@
     "fias": "9d1f7fb9-b4e2-47ce-be5c-ecda8ec841ce",
     "addressId": "",
     "prefix": "с",
-    "countryId": 2
-  },
-  {
-    "id": 499,
-    "name": "Баксан",
-    "title": "Баксан",
-    "regionTitle": "Кабардино-Балкарская Республика",
-    "longitude": 43.534622,
-    "latitude": 43.681946,
-    "kladr": null,
-    "fiasid": "67851dfd-e142-451a-b6b1-ea5e9bc7f0c1",
-    "fias": "67851dfd-e142-451a-b6b1-ea5e9bc7f0c1",
-    "addressId": "",
-    "prefix": "г",
     "countryId": 2
   },
   {
@@ -9352,20 +9352,6 @@
     "countryId": 2
   },
   {
-    "id": 520,
-    "name": "Растуново",
-    "title": "Растуново",
-    "regionTitle": "Московская область",
-    "longitude": 37.84092,
-    "latitude": 55.275098,
-    "kladr": null,
-    "fiasid": "7377b88b-d6ba-4085-9e59-1b7e8ec97ebb",
-    "fias": "7377b88b-d6ba-4085-9e59-1b7e8ec97ebb",
-    "addressId": "",
-    "prefix": "с",
-    "countryId": 2
-  },
-  {
     "id": 1683,
     "name": "Адыгейск",
     "title": "Адыгейск",
@@ -9576,6 +9562,34 @@
     "countryId": 2
   },
   {
+    "id": 520,
+    "name": "Растуново",
+    "title": "Растуново",
+    "regionTitle": "Московская область",
+    "longitude": 37.84092,
+    "latitude": 55.275098,
+    "kladr": null,
+    "fiasid": "7377b88b-d6ba-4085-9e59-1b7e8ec97ebb",
+    "fias": "7377b88b-d6ba-4085-9e59-1b7e8ec97ebb",
+    "addressId": "",
+    "prefix": "с",
+    "countryId": 2
+  },
+  {
+    "id": 378,
+    "name": "Арзамас",
+    "title": "Арзамас",
+    "regionTitle": "Нижегородская область",
+    "longitude": 43.814133,
+    "latitude": 55.386799,
+    "kladr": null,
+    "fiasid": "7e42f157-87d6-4111-a406-17432e814723",
+    "fias": "7e42f157-87d6-4111-a406-17432e814723",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1645,
     "name": "Сергиевск",
     "title": "Сергиевск",
@@ -9613,20 +9627,6 @@
     "kladr": null,
     "fiasid": "ac598324-b704-4957-a66e-e8142677981b",
     "fias": "ac598324-b704-4957-a66e-e8142677981b",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 378,
-    "name": "Арзамас",
-    "title": "Арзамас",
-    "regionTitle": "Нижегородская область",
-    "longitude": 43.814133,
-    "latitude": 55.386799,
-    "kladr": null,
-    "fiasid": "7e42f157-87d6-4111-a406-17432e814723",
-    "fias": "7e42f157-87d6-4111-a406-17432e814723",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -9685,6 +9685,20 @@
     "fias": "a69e1fe5-684d-4997-8ac8-c1694f8c1871",
     "addressId": "",
     "prefix": "п",
+    "countryId": 2
+  },
+  {
+    "id": 284,
+    "name": "Геленджик",
+    "title": "Геленджик",
+    "regionTitle": "Краснодарский край",
+    "longitude": 38.077115,
+    "latitude": 44.561012,
+    "kladr": null,
+    "fiasid": "e157b9c0-f908-48bc-a1d7-39c482a501a5",
+    "fias": "e157b9c0-f908-48bc-a1d7-39c482a501a5",
+    "addressId": "",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -9893,20 +9907,6 @@
     "kladr": null,
     "fiasid": "9bd0970e-7fbb-4a64-a625-af7670526dba",
     "fias": "9bd0970e-7fbb-4a64-a625-af7670526dba",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 284,
-    "name": "Геленджик",
-    "title": "Геленджик",
-    "regionTitle": "Краснодарский край",
-    "longitude": 38.077115,
-    "latitude": 44.561012,
-    "kladr": null,
-    "fiasid": "e157b9c0-f908-48bc-a1d7-39c482a501a5",
-    "fias": "e157b9c0-f908-48bc-a1d7-39c482a501a5",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -10122,6 +10122,20 @@
     "countryId": 2
   },
   {
+    "id": 278,
+    "name": "Подольск",
+    "title": "Подольск",
+    "regionTitle": "Московская область",
+    "longitude": 37.544997,
+    "latitude": 55.431136,
+    "kladr": null,
+    "fiasid": "b22cf685-e391-42c8-aab5-a9aadb9193d4",
+    "fias": "b22cf685-e391-42c8-aab5-a9aadb9193d4",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1217,
     "name": "Асино",
     "title": "Асино",
@@ -10147,20 +10161,6 @@
     "fias": "00f83cdc-838b-498e-a8ed-d13074f73f09",
     "addressId": "",
     "prefix": "пгт",
-    "countryId": 2
-  },
-  {
-    "id": 278,
-    "name": "Подольск",
-    "title": "Подольск",
-    "regionTitle": "Московская область",
-    "longitude": 37.544997,
-    "latitude": 55.431136,
-    "kladr": null,
-    "fiasid": "b22cf685-e391-42c8-aab5-a9aadb9193d4",
-    "fias": "b22cf685-e391-42c8-aab5-a9aadb9193d4",
-    "addressId": "",
-    "prefix": "г",
     "countryId": 2
   },
   {
@@ -10780,20 +10780,6 @@
     "countryId": 2
   },
   {
-    "id": 85,
-    "name": "Белгород",
-    "title": "Белгород",
-    "regionTitle": "Белгородская область",
-    "longitude": 36.587277,
-    "latitude": 50.595414,
-    "kladr": null,
-    "fiasid": "02e9c019-ab4d-4fa0-928e-d6c0a41dc256",
-    "fias": "02e9c019-ab4d-4fa0-928e-d6c0a41dc256",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 645,
     "name": "Октябрьское",
     "title": "Октябрьское",
@@ -10845,6 +10831,20 @@
     "kladr": null,
     "fiasid": "85825f48-3d48-403d-9379-b94d8a9719fb",
     "fias": "85825f48-3d48-403d-9379-b94d8a9719fb",
+    "addressId": "",
+    "prefix": "ст-ца",
+    "countryId": 2
+  },
+  {
+    "id": 773,
+    "name": "Калининская",
+    "title": "Калининская",
+    "regionTitle": "Краснодарский край",
+    "longitude": 38.661747,
+    "latitude": 45.485684,
+    "kladr": null,
+    "fiasid": "6cb3d4da-8fce-4bdb-a64f-ae6ee87cc9ef",
+    "fias": "6cb3d4da-8fce-4bdb-a64f-ae6ee87cc9ef",
     "addressId": "",
     "prefix": "ст-ца",
     "countryId": 2
@@ -10934,17 +10934,17 @@
     "countryId": 2
   },
   {
-    "id": 773,
-    "name": "Калининская",
-    "title": "Калининская",
-    "regionTitle": "Краснодарский край",
-    "longitude": 38.661747,
-    "latitude": 45.485684,
+    "id": 85,
+    "name": "Белгород",
+    "title": "Белгород",
+    "regionTitle": "Белгородская область",
+    "longitude": 36.587277,
+    "latitude": 50.595414,
     "kladr": null,
-    "fiasid": "6cb3d4da-8fce-4bdb-a64f-ae6ee87cc9ef",
-    "fias": "6cb3d4da-8fce-4bdb-a64f-ae6ee87cc9ef",
+    "fiasid": "02e9c019-ab4d-4fa0-928e-d6c0a41dc256",
+    "fias": "02e9c019-ab4d-4fa0-928e-d6c0a41dc256",
     "addressId": "",
-    "prefix": "ст-ца",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -11536,6 +11536,20 @@
     "countryId": 2
   },
   {
+    "id": 536,
+    "name": "Черкесск",
+    "title": "Черкесск",
+    "regionTitle": "Карачаево-Черкесская Республика",
+    "longitude": 42.048279,
+    "latitude": 44.228374,
+    "kladr": null,
+    "fiasid": "2a4a7c93-f3f8-4042-8cbf-e04ab64f5e08",
+    "fias": "2a4a7c93-f3f8-4042-8cbf-e04ab64f5e08",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1087,
     "name": "Чаадаевка",
     "title": "Чаадаевка",
@@ -11937,20 +11951,6 @@
     "kladr": null,
     "fiasid": "9bacca6d-4ed5-4fae-a76d-d281ce884d04",
     "fias": "9bacca6d-4ed5-4fae-a76d-d281ce884d04",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 536,
-    "name": "Черкесск",
-    "title": "Черкесск",
-    "regionTitle": "Карачаево-Черкесская Республика",
-    "longitude": 42.048279,
-    "latitude": 44.228374,
-    "kladr": null,
-    "fiasid": "2a4a7c93-f3f8-4042-8cbf-e04ab64f5e08",
-    "fias": "2a4a7c93-f3f8-4042-8cbf-e04ab64f5e08",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -15624,6 +15624,20 @@
     "countryId": 2
   },
   {
+    "id": 944,
+    "name": "Ульяновка",
+    "title": "Ульяновка",
+    "regionTitle": "Ленинградская область",
+    "longitude": 30.757929,
+    "latitude": 59.636168,
+    "kladr": null,
+    "fiasid": "1bd8b082-75ce-4c42-93eb-c00937dac980",
+    "fias": "1bd8b082-75ce-4c42-93eb-c00937dac980",
+    "addressId": "",
+    "prefix": "пгт",
+    "countryId": 2
+  },
+  {
     "id": 1385,
     "name": "Нерехта",
     "title": "Нерехта",
@@ -15988,20 +16002,6 @@
     "countryId": 2
   },
   {
-    "id": 944,
-    "name": "Ульяновка",
-    "title": "Ульяновка",
-    "regionTitle": "Ленинградская область",
-    "longitude": 30.757929,
-    "latitude": 59.636168,
-    "kladr": null,
-    "fiasid": "1bd8b082-75ce-4c42-93eb-c00937dac980",
-    "fias": "1bd8b082-75ce-4c42-93eb-c00937dac980",
-    "addressId": "",
-    "prefix": "пгт",
-    "countryId": 2
-  },
-  {
     "id": 1265,
     "name": "Анна",
     "title": "Анна",
@@ -16067,20 +16067,6 @@
     "kladr": null,
     "fiasid": "24694c2c-bab5-4fc7-9666-5ad984536465",
     "fias": "24694c2c-bab5-4fc7-9666-5ad984536465",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 1392,
-    "name": "Прохладный",
-    "title": "Прохладный",
-    "regionTitle": "Кабардино-Балкарская Республика",
-    "longitude": 44.01055,
-    "latitude": 43.75904,
-    "kladr": null,
-    "fiasid": "22973a33-7a1c-449d-9535-def88bd91ed3",
-    "fias": "22973a33-7a1c-449d-9535-def88bd91ed3",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -16324,6 +16310,20 @@
     "countryId": 2
   },
   {
+    "id": 1450,
+    "name": "Кадников",
+    "title": "Кадников",
+    "regionTitle": "Вологодская область",
+    "longitude": 40.341112,
+    "latitude": 59.501748,
+    "kladr": null,
+    "fiasid": "eb52b8bf-131d-4250-9a09-c0d41a7d42ee",
+    "fias": "eb52b8bf-131d-4250-9a09-c0d41a7d42ee",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 368,
     "name": "Красная Яруга",
     "title": "Красная Яруга",
@@ -16534,6 +16534,20 @@
     "countryId": 2
   },
   {
+    "id": 1392,
+    "name": "Прохладный",
+    "title": "Прохладный",
+    "regionTitle": "Кабардино-Балкарская Республика",
+    "longitude": 44.01055,
+    "latitude": 43.75904,
+    "kladr": null,
+    "fiasid": "22973a33-7a1c-449d-9535-def88bd91ed3",
+    "fias": "22973a33-7a1c-449d-9535-def88bd91ed3",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1397,
     "name": "Новосергиевка",
     "title": "Новосергиевка",
@@ -16669,20 +16683,6 @@
     "kladr": null,
     "fiasid": "284264da-5fb5-4301-b36a-1127d751329d",
     "fias": "284264da-5fb5-4301-b36a-1127d751329d",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 1450,
-    "name": "Кадников",
-    "title": "Кадников",
-    "regionTitle": "Вологодская область",
-    "longitude": 40.341112,
-    "latitude": 59.501748,
-    "kladr": null,
-    "fiasid": "eb52b8bf-131d-4250-9a09-c0d41a7d42ee",
-    "fias": "eb52b8bf-131d-4250-9a09-c0d41a7d42ee",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -16921,6 +16921,20 @@
     "kladr": null,
     "fiasid": "f658a2c0-1f7d-4423-9465-e55d3553bf86",
     "fias": "f658a2c0-1f7d-4423-9465-e55d3553bf86",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 78,
+    "name": "Дегтярск",
+    "title": "Дегтярск",
+    "regionTitle": "Свердловская область",
+    "longitude": 60.086674,
+    "latitude": 56.698468,
+    "kladr": null,
+    "fiasid": "079bd9a9-7a84-4e6e-8a69-e73433e51e41",
+    "fias": "079bd9a9-7a84-4e6e-8a69-e73433e51e41",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -17175,20 +17189,6 @@
     "fias": "246fe276-6e95-4037-a858-8b805f87d8c3",
     "addressId": "",
     "prefix": "с",
-    "countryId": 2
-  },
-  {
-    "id": 78,
-    "name": "Дегтярск",
-    "title": "Дегтярск",
-    "regionTitle": "Свердловская область",
-    "longitude": 60.086674,
-    "latitude": 56.698468,
-    "kladr": null,
-    "fiasid": "079bd9a9-7a84-4e6e-8a69-e73433e51e41",
-    "fias": "079bd9a9-7a84-4e6e-8a69-e73433e51e41",
-    "addressId": "",
-    "prefix": "г",
     "countryId": 2
   },
   {
@@ -18970,6 +18970,20 @@
     "countryId": 2
   },
   {
+    "id": 348,
+    "name": "Абакан",
+    "title": "Абакан",
+    "regionTitle": "Республика Хакасия",
+    "longitude": 91.442396,
+    "latitude": 53.721152,
+    "kladr": null,
+    "fiasid": "42a02e11-a337-4d50-8596-fc76dae7c62a",
+    "fias": "42a02e11-a337-4d50-8596-fc76dae7c62a",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
     "id": 1166,
     "name": "Новая Адыгея",
     "title": "Новая Адыгея",
@@ -19063,20 +19077,6 @@
     "kladr": null,
     "fiasid": "04b8181c-124d-495d-b8ef-825518186df9",
     "fias": "04b8181c-124d-495d-b8ef-825518186df9",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
-    "id": 348,
-    "name": "Абакан",
-    "title": "Абакан",
-    "regionTitle": "Республика Хакасия",
-    "longitude": 91.442396,
-    "latitude": 53.721152,
-    "kladr": null,
-    "fiasid": "42a02e11-a337-4d50-8596-fc76dae7c62a",
-    "fias": "42a02e11-a337-4d50-8596-fc76dae7c62a",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -19726,20 +19726,6 @@
     "countryId": 2
   },
   {
-    "id": 656,
-    "name": "Темрюк",
-    "title": "Темрюк",
-    "regionTitle": "Краснодарский край",
-    "longitude": 37.365388,
-    "latitude": 45.282044,
-    "kladr": null,
-    "fiasid": "3d6724a2-9641-44e6-bc69-097d93c01cb9",
-    "fias": "3d6724a2-9641-44e6-bc69-097d93c01cb9",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 228,
     "name": "Павловский Посад",
     "title": "Павловский Посад",
@@ -19791,6 +19777,20 @@
     "kladr": null,
     "fiasid": "ef65fa9c-6516-4175-a00a-6410a4a6f2d6",
     "fias": "ef65fa9c-6516-4175-a00a-6410a4a6f2d6",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 656,
+    "name": "Темрюк",
+    "title": "Темрюк",
+    "regionTitle": "Краснодарский край",
+    "longitude": 37.365388,
+    "latitude": 45.282044,
+    "kladr": null,
+    "fiasid": "3d6724a2-9641-44e6-bc69-097d93c01cb9",
+    "fias": "3d6724a2-9641-44e6-bc69-097d93c01cb9",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -22778,20 +22778,6 @@
     "countryId": 2
   },
   {
-    "id": 764,
-    "name": "Черепаново",
-    "title": "Черепаново",
-    "regionTitle": "Новосибирская область",
-    "longitude": 83.37221,
-    "latitude": 54.228417,
-    "kladr": null,
-    "fiasid": "e849dc37-0f3b-4a66-8f0e-780c75927025",
-    "fias": "e849dc37-0f3b-4a66-8f0e-780c75927025",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 727,
     "name": "Кореновск",
     "title": "Кореновск",
@@ -22801,6 +22787,20 @@
     "kladr": null,
     "fiasid": "76e1af12-0fae-42b0-8771-02191d803ad0",
     "fias": "76e1af12-0fae-42b0-8771-02191d803ad0",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 764,
+    "name": "Черепаново",
+    "title": "Черепаново",
+    "regionTitle": "Новосибирская область",
+    "longitude": 83.37221,
+    "latitude": 54.228417,
+    "kladr": null,
+    "fiasid": "e849dc37-0f3b-4a66-8f0e-780c75927025",
+    "fias": "e849dc37-0f3b-4a66-8f0e-780c75927025",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -23464,20 +23464,6 @@
     "countryId": 2
   },
   {
-    "id": 809,
-    "name": "Кемерово",
-    "title": "Кемерово",
-    "regionTitle": "Кемеровская область",
-    "longitude": 86.086847,
-    "latitude": 55.355198,
-    "kladr": null,
-    "fiasid": "94bb19a3-c1fa-410b-8651-ac1bf7c050cd",
-    "fias": "94bb19a3-c1fa-410b-8651-ac1bf7c050cd",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 3868,
     "name": "Витязево",
     "title": "Витязево",
@@ -23487,6 +23473,20 @@
     "kladr": null,
     "fiasid": "81373791-6319-429d-8af2-6da6d8f44296",
     "fias": "81373791-6319-429d-8af2-6da6d8f44296",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 809,
+    "name": "Кемерово",
+    "title": "Кемерово",
+    "regionTitle": "Кемеровская область",
+    "longitude": 86.086847,
+    "latitude": 55.355198,
+    "kladr": null,
+    "fiasid": "94bb19a3-c1fa-410b-8651-ac1bf7c050cd",
+    "fias": "94bb19a3-c1fa-410b-8651-ac1bf7c050cd",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
@@ -24752,20 +24752,6 @@
     "countryId": 2
   },
   {
-    "id": 1724,
-    "name": "Хилок",
-    "title": "Хилок",
-    "regionTitle": "Забайкальский край",
-    "longitude": 110.459021,
-    "latitude": 51.363406,
-    "kladr": null,
-    "fiasid": "a4b18a69-c5df-4022-ba9b-a29f99acfa42",
-    "fias": "a4b18a69-c5df-4022-ba9b-a29f99acfa42",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 75,
     "name": "Оленегорск",
     "title": "Оленегорск",
@@ -24920,20 +24906,6 @@
     "countryId": 2
   },
   {
-    "id": 183,
-    "name": "Володарск",
-    "title": "Володарск",
-    "regionTitle": "Нижегородская область",
-    "longitude": 43.179977,
-    "latitude": 56.223621,
-    "kladr": null,
-    "fiasid": "b92c9e2b-161d-4043-87ef-ed255529f7c6",
-    "fias": "b92c9e2b-161d-4043-87ef-ed255529f7c6",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 904,
     "name": "Ровное",
     "title": "Ровное",
@@ -24945,6 +24917,20 @@
     "fias": "0d32ffa6-f507-49f3-a8ba-64caa675bb36",
     "addressId": "",
     "prefix": "рп",
+    "countryId": 2
+  },
+  {
+    "id": 183,
+    "name": "Володарск",
+    "title": "Володарск",
+    "regionTitle": "Нижегородская область",
+    "longitude": 43.179977,
+    "latitude": 56.223621,
+    "kladr": null,
+    "fiasid": "b92c9e2b-161d-4043-87ef-ed255529f7c6",
+    "fias": "b92c9e2b-161d-4043-87ef-ed255529f7c6",
+    "addressId": "",
+    "prefix": "г",
     "countryId": 2
   },
   {
@@ -25368,20 +25354,6 @@
     "countryId": 2
   },
   {
-    "id": 99,
-    "name": "Солнечногорск",
-    "title": "Солнечногорск",
-    "regionTitle": "Московская область",
-    "longitude": 36.977631,
-    "latitude": 56.185107,
-    "kladr": null,
-    "fiasid": "d4dadcfd-355d-4fe9-963d-48ad122a7778",
-    "fias": "d4dadcfd-355d-4fe9-963d-48ad122a7778",
-    "addressId": "",
-    "prefix": "г",
-    "countryId": 2
-  },
-  {
     "id": 3919,
     "name": "Манжерок",
     "title": "Манжерок",
@@ -25433,6 +25405,20 @@
     "kladr": null,
     "fiasid": "6edd2a33-d03a-4d59-83c3-e14de6890a49",
     "fias": "6edd2a33-d03a-4d59-83c3-e14de6890a49",
+    "addressId": "",
+    "prefix": "г",
+    "countryId": 2
+  },
+  {
+    "id": 99,
+    "name": "Солнечногорск",
+    "title": "Солнечногорск",
+    "regionTitle": "Московская область",
+    "longitude": 36.977631,
+    "latitude": 56.185107,
+    "kladr": null,
+    "fiasid": "d4dadcfd-355d-4fe9-963d-48ad122a7778",
+    "fias": "d4dadcfd-355d-4fe9-963d-48ad122a7778",
     "addressId": "",
     "prefix": "г",
     "countryId": 2
