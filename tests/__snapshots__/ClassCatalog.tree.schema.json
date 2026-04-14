@@ -81,16 +81,7 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "anyOf": [
-                    {
-                      "type": "string",
-                      "j2sEnumRejected": true
-                    },
-                    {
-                      "type": "string",
-                      "format": "uri"
-                    }
-                  ]
+                  "j2sEnumRejected": true
                 },
                 {
                   "type": "null"
@@ -213,16 +204,7 @@
                       "anyOf": [
                         {
                           "type": "string",
-                          "anyOf": [
-                            {
-                              "type": "string",
-                              "j2sEnumRejected": true
-                            },
-                            {
-                              "type": "string",
-                              "format": "uri"
-                            }
-                          ]
+                          "j2sEnumRejected": true
                         },
                         {
                           "type": "null"

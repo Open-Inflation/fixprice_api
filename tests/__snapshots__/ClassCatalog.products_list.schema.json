@@ -40,36 +40,7 @@
       },
       "badges": {
         "type": "array",
-        "items": {
-          "type": "object",
-          "required": [
-            "alias",
-            "color",
-            "id",
-            "title"
-          ],
-          "properties": {
-            "alias": {
-              "type": "string",
-              "enum": [
-                "special_price"
-              ]
-            },
-            "color": {
-              "type": "string",
-              "enum": [
-                "#FF1E2D"
-              ]
-            },
-            "id": {
-              "type": "integer"
-            },
-            "title": {
-              "type": "string",
-              "j2sEnumRejected": true
-            }
-          }
-        }
+        "items": {}
       },
       "brand": {
         "anyOf": [
@@ -207,28 +178,7 @@
         "j2sEnumRejected": true
       },
       "specialPrice": {
-        "anyOf": [
-          {
-            "type": "null"
-          },
-          {
-            "type": "object",
-            "required": [
-              "active_to",
-              "price"
-            ],
-            "properties": {
-              "active_to": {
-                "type": "string",
-                "format": "date-time"
-              },
-              "price": {
-                "type": "string",
-                "j2sEnumRejected": true
-              }
-            }
-          }
-        ]
+        "type": "null"
       },
       "title": {
         "type": "string",
