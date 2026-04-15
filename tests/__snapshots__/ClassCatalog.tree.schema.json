@@ -190,10 +190,26 @@
                       ],
                       "properties": {
                         "image": {
-                          "type": "null"
+                          "anyOf": [
+                            {
+                              "type": "null"
+                            },
+                            {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          ]
                         },
                         "imageAdaptive": {
-                          "type": "null"
+                          "anyOf": [
+                            {
+                              "type": "null"
+                            },
+                            {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          ]
                         },
                         "url": {
                           "type": "null"
