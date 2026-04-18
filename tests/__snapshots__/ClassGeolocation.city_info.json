@@ -1,13 +1,13 @@
 {
-  "id": 24,
-  "name": "Волгоград",
-  "title": "Волгоград",
-  "longitude": 44.516975,
-  "latitude": 48.707067,
+  "id": 243,
+  "name": "Чехов",
+  "title": "Чехов",
+  "longitude": 37.454357,
+  "latitude": 55.14235,
   "kladr": null,
-  "fiasid": "a52b7389-0cfe-46fb-ae15-298652a64cf8",
-  "fias": "a52b7389-0cfe-46fb-ae15-298652a64cf8",
+  "fiasid": "7eeb876e-7b67-4ed7-91ec-0588712db96c",
+  "fias": "7eeb876e-7b67-4ed7-91ec-0588712db96c",
   "addressId": "",
-  "prefix": "г",
+  "prefix": "д",
   "countryId": 2
 }

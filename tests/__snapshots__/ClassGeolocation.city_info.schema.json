@@ -49,7 +49,7 @@
     "prefix": {
       "type": "string",
       "enum": [
-        "г"
+        "д"
       ]
     },
     "title": {
