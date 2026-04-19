@@ -8,6 +8,7 @@
     "brand",
     "category",
     "description",
+    "extraDescriptions",
     "forbidden",
     "id",
     "image",
@@ -56,86 +57,55 @@
       ],
       "properties": {
         "access-control-allow-credentials": {
-          "type": "string",
-          "enum": [
-            "true"
-          ]
+          "type": "string"
         },
         "access-control-allow-headers": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "access-control-allow-methods": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "access-control-allow-origin": {
-          "type": "string",
-          "enum": [
-            "*"
-          ]
+          "type": "string"
         },
         "access-control-expose-headers": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "access-control-max-age": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "cache-control": {
-          "type": "string",
-          "enum": [
-            "public, max-age=3600"
-          ]
+          "type": "string"
         },
         "connection": {
-          "type": "string",
-          "enum": [
-            "close"
-          ]
+          "type": "string"
         },
         "content-type": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "date": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "is-logged": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "server": {
-          "type": "string",
-          "enum": [
-            "Unit/1.34.2"
-          ]
+          "type": "string"
         },
         "transfer-encoding": {
-          "type": "string",
-          "enum": [
-            "chunked"
-          ]
+          "type": "string"
         },
         "vary": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "x-city": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "x-language": {
-          "type": "string",
-          "enum": [
-            "ru"
-          ]
+          "type": "string"
         },
         "x-logged": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         }
       }
     },
@@ -144,10 +114,6 @@
     },
     "adult": {
       "type": "boolean"
-    },
-    "badges": {
-      "type": "array",
-      "items": {}
     },
     "bonusCommunicationEnable": {
       "type": "boolean"
@@ -167,8 +133,7 @@
       ],
       "properties": {
         "alias": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "id": {
           "type": "integer"
@@ -180,55 +145,19 @@
           "type": "boolean"
         },
         "login": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string",
-              "enum": [
-                "tshashmurina"
-              ]
-            }
-          ]
+          "type": "null"
         },
         "src": {
-          "type": "string",
-          "anyOf": [
-            {
-              "type": "string"
-            },
-            {
-              "type": "string",
-              "format": "uri"
-            }
-          ]
+          "type": "string"
         },
         "title": {
-          "type": "string",
-          "j2sEnumRejected": true
+          "type": "string"
         },
         "updated_at": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string",
-              "format": "date-time"
-            }
-          ]
+          "type": "null"
         },
         "url": {
-          "anyOf": [
-            {
-              "type": "null"
-            },
-            {
-              "type": "string",
-              "format": "uri"
-            }
-          ]
+          "type": "null"
         }
       }
     },
@@ -236,8 +165,7 @@
       "type": "integer"
     },
     "description": {
-      "type": "string",
-      "j2sEnumRejected": true
+      "type": "string"
     },
     "extraDescriptions": {
       "type": "array",
@@ -257,8 +185,7 @@
             "type": "integer"
           },
           "title": {
-            "type": "string",
-            "j2sEnumRejected": true
+            "type": "string"
           },
           "value": {
             "anyOf": [
@@ -266,7 +193,31 @@
                 "type": "string"
               },
               {
-                "type": "object"
+                "type": "object",
+                "required": [
+                  "carbohydrates",
+                  "description",
+                  "energyValue",
+                  "fats",
+                  "protein"
+                ],
+                "properties": {
+                  "carbohydrates": {
+                    "type": "string"
+                  },
+                  "description": {
+                    "type": "string"
+                  },
+                  "energyValue": {
+                    "type": "string"
+                  },
+                  "fats": {
+                    "type": "string"
+                  },
+                  "protein": {
+                    "type": "string"
+                  }
+                }
               }
             ]
           }
@@ -283,7 +234,27 @@
       "type": "integer"
     },
     "images": {
-      "$ref": "#/$defs/Images"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "src",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "src": {
+            "type": "string",
+            "format": "uri"
+          },
+          "title": {
+            "type": "null"
+          }
+        }
+      }
     },
     "informers": {
       "type": "array",
@@ -294,10 +265,7 @@
         ],
         "properties": {
           "alias": {
-            "type": "string",
-            "enum": [
-              "loyaltyProgram"
-            ]
+            "type": "string"
           }
         }
       }
@@ -327,32 +295,48 @@
       "type": "boolean"
     },
     "properties": {
-      "$ref": "#/$defs/Array1"
-    },
-    "resources": {
-      "$ref": "#/$defs/Resources"
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "alias",
+          "id",
+          "title",
+          "value"
+        ],
+        "properties": {
+          "alias": {
+            "type": "string"
+          },
+          "id": {
+            "type": "integer"
+          },
+          "title": {
+            "type": "string"
+          },
+          "value": {
+            "type": "string"
+          }
+        }
+      }
     },
     "sku": {
-      "type": "string",
-      "j2sEnumRejected": true
+      "type": "string"
     },
     "specialPrice": {
       "type": "null"
     },
     "title": {
-      "type": "string",
-      "j2sEnumRejected": true
+      "type": "string"
     },
     "unitPrice": {
-      "type": "string",
-      "j2sEnumRejected": true
+      "type": "string"
     },
     "unitType": {
       "type": "null"
     },
     "url": {
-      "type": "string",
-      "j2sEnumRejected": true
+      "type": "string"
     },
     "variants": {
       "type": "array",
@@ -368,6 +352,7 @@
           "image",
           "length",
           "price",
+          "properties",
           "title",
           "unitPrice",
           "weight",
@@ -375,8 +360,7 @@
         ],
         "properties": {
           "barcode": {
-            "type": "string",
-            "j2sEnumRejected": true
+            "type": "string"
           },
           "count": {
             "type": "integer"
@@ -400,41 +384,6 @@
               "length": {
                 "type": "integer"
               },
-              "units": {
-                "type": "object",
-                "required": [
-                  "height",
-                  "length",
-                  "weight",
-                  "width"
-                ],
-                "properties": {
-                  "height": {
-                    "type": "string",
-                    "enum": [
-                      "мм"
-                    ]
-                  },
-                  "length": {
-                    "type": "string",
-                    "enum": [
-                      "мм"
-                    ]
-                  },
-                  "weight": {
-                    "type": "string",
-                    "enum": [
-                      "г"
-                    ]
-                  },
-                  "width": {
-                    "type": "string",
-                    "enum": [
-                      "мм"
-                    ]
-                  }
-                }
-              },
               "weight": {
                 "type": "integer"
               },
@@ -444,8 +393,7 @@
             }
           },
           "fixPrice": {
-            "type": "string",
-            "j2sEnumRejected": true
+            "type": "string"
           },
           "height": {
             "type": "integer"
@@ -464,28 +412,65 @@
             ]
           },
           "images": {
-            "$ref": "#/$defs/Images"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "id",
+                "src",
+                "title"
+              ],
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "src": {
+                  "type": "string",
+                  "format": "uri"
+                },
+                "title": {
+                  "type": "null"
+                }
+              }
+            }
           },
           "length": {
             "type": "integer"
           },
           "price": {
-            "type": "string",
-            "j2sEnumRejected": true
+            "type": "string"
           },
           "properties": {
-            "$ref": "#/$defs/Array1"
-          },
-          "resources": {
-            "$ref": "#/$defs/Resources"
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "alias",
+                "id",
+                "title",
+                "value"
+              ],
+              "properties": {
+                "alias": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "value": {
+                  "type": "string"
+                }
+              }
+            }
           },
           "title": {
-            "type": "string",
-            "j2sEnumRejected": true
+            "type": "string"
           },
           "unitPrice": {
-            "type": "string",
-            "j2sEnumRejected": true
+            "type": "string"
           },
           "weight": {
             "type": "integer"
@@ -501,95 +486,6 @@
     },
     "videoLink": {
       "type": "null"
-    }
-  },
-  "$defs": {
-    "Array1": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "required": [
-          "alias",
-          "id",
-          "title",
-          "value"
-        ],
-        "minProperties": 1,
-        "properties": {
-          "alias": {
-            "type": "string",
-            "enum": [
-              "prodCountry",
-              "fake"
-            ]
-          },
-          "id": {
-            "type": "integer"
-          },
-          "title": {
-            "type": "string",
-            "j2sEnumRejected": true
-          },
-          "value": {
-            "type": "string",
-            "enum": [
-              "Китай (КНР)",
-              "Ассортимент"
-            ]
-          }
-        }
-      }
-    },
-    "Images": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "required": [
-          "id",
-          "src",
-          "title"
-        ],
-        "minProperties": 1,
-        "properties": {
-          "id": {
-            "type": "integer"
-          },
-          "src": {
-            "type": "string",
-            "format": "uri"
-          },
-          "title": {
-            "type": "null"
-          }
-        }
-      }
-    },
-    "Resources": {
-      "type": "array",
-      "minItems": 1,
-      "items": {
-        "type": "object",
-        "required": [
-          "link",
-          "src",
-          "videoType"
-        ],
-        "minProperties": 1,
-        "properties": {
-          "link": {
-            "type": "null"
-          },
-          "src": {
-            "type": "string",
-            "format": "uri"
-          },
-          "videoType": {
-            "type": "null"
-          }
-        }
-      }
     }
   }
 }
