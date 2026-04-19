@@ -58,7 +58,6 @@ extensions = [
     "sphinx.ext.linkcode",
     "sphinx.ext.doctest",
     "sphinx.ext.duration",
-    "enum_tools.autoenum",
     "jsoncrack_for_sphinx",
     # "myst_parser",  # если понадобится Markdown/MyST — просто раскомментируй
 ]
