@@ -2,8 +2,12 @@
 
 from __future__ import annotations
 
+import json
+from types import MethodType
+
+from playwright.async_api import Response as PWResponse
 from dataclasses import dataclass
-from typing import Optional, TYPE_CHECKING
+from typing import Optional, TYPE_CHECKING, overload
 from .. import abstraction
 from human_requests import autotest
 from human_requests.abstraction import FetchResponse, HttpMethod
@@ -101,3 +105,84 @@ class ProductService(ApiChild["FixPriceAPI"]):
             url += "&inStock=true"
 
         return await self._parent._request(HttpMethod.GET, url)
+
+    @overload
+    async def info(self, *, url: str): ...
+
+    @overload
+    async def info(self, *, category: str, product_id: int, slug: str): ...
+
+    @autotest
+    async def info(
+        self,
+        *,
+        url: str | None = None,
+        category: str | None = None,
+        product_id: int | None = None,
+        slug: str | None = None,
+    ) -> PWResponse:
+        """
+        Информация СПАРСИВАЕТСЯ (в отличии от других методов).
+        Инфо о товаре со страницы типа
+        https://fix-price.com/catalog/produkty-i-napitki/p-1902248-shokoladnye-konfety-inis-nickers-135-g
+
+        Либо предоставляете url напрямую, например `products[0]["url"]`
+
+        Данные карточки лежат в obj["data"][0]["categoryData"]["product"]
+        """
+
+        real_url = "https://fix-price.com/catalog/"
+        if url is None:
+            if category is None or product_id is None or slug is None:
+                raise TypeError(
+                    "Either url or (category, product_id, slug) must be provided"
+                )
+
+            real_url += f"{category}/p-{product_id}-{slug}"
+        else:
+            real_url += url
+
+        page = await self._parent.ctx.new_page()
+        try:
+            resp = await page.goto(real_url, wait_until="domcontentloaded")
+            if resp is None:
+                raise RuntimeError("page.goto() returned None")
+
+            raw_json = await page.evaluate("""
+            () => {
+                const marker = "window.__NUXT__=";
+
+                for (const s of document.scripts) {
+                    const txt = s.textContent || "";
+                    const idx = txt.indexOf(marker);
+
+                    if (idx !== -1) {
+                        let expr = txt.slice(idx + marker.length).trim();
+
+                        if (expr.endsWith(";")) {
+                            expr = expr.slice(0, -1);
+                        }
+
+                        const obj = Function('"use strict"; return (' + expr + ')')();
+                        return JSON.stringify(obj);
+                    }
+                }
+
+                return null;
+            }
+            """)
+
+            nuxt_data = (
+                json.loads(raw_json)["data"][0]["categoryData"]["product"]
+                if raw_json
+                else None
+            )
+
+            def _json(self):
+                return nuxt_data
+
+            resp.json = MethodType(_json, resp)
+
+            return resp
+        finally:
+            await page.close()

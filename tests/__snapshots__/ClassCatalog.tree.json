@@ -760,20 +760,20 @@
     },
     "productCount": 1003,
     "items": {
-      "2796": {
-        "id": 2796,
-        "alias": "soki-i-nektary",
+      "2807": {
+        "id": 2807,
+        "alias": "vody",
         "adult": false,
         "shortTitle": "",
-        "title": "Соки и нектары",
+        "title": "Вода",
         "src": "",
         "parentId": 2004,
-        "icon": "https://img.fix-price.com/_marketplace/categories/6e8086ed596f1e52a8df544a1b1eb7b8.png",
+        "icon": "https://img.fix-price.com/_marketplace/categories/43595582bfd57184d1123fa608070b3d.png",
         "hover": "",
         "catalogImage": "",
         "topId": 2004,
         "level": 2,
-        "url": "produkty-i-napitki/soki-i-nektary",
+        "url": "produkty-i-napitki/vody",
         "childrenCount": 0,
         "banner": {
           "image": null,
@@ -995,15 +995,84 @@
         "alias": "molochnye-produkty",
         "adult": false,
         "shortTitle": "",
-        "title": "Молочные продукты",
+        "title": "Бакалея",
         "src": "",
         "parentId": 2004,
-        "icon": "https://img.fix-price.com/_marketplace/categories/62249baa26eb8a0e48c08fe320787b99.png",
+        "icon": "https://img.fix-price.com/_marketplace/categories/72bd756438f0d1cf39a1d672e03790c8.png",
         "hover": "",
         "catalogImage": "",
         "topId": 2004,
         "level": 2,
-        "url": "produkty-i-napitki/molochnye-produkty",
+        "url": "produkty-i-napitki/bakaleya",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 66,
+        "items": []
+      },
+      "2854": {
+        "id": 2854,
+        "alias": "alkogolnaya-produktsiya",
+        "adult": true,
+        "shortTitle": "",
+        "title": "Алкогольная продукция",
+        "src": "",
+        "parentId": 2004,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2004,
+        "level": 2,
+        "url": "produkty-i-napitki/alkogolnaya-produktsiya",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 57,
+        "items": []
+      },
+      "2375": {
+        "id": 2375,
+        "alias": "bady",
+        "adult": false,
+        "shortTitle": "",
+        "title": "БАДы",
+        "src": "",
+        "parentId": 2004,
+        "icon": "https://img.fix-price.com/_marketplace/categories/e0a7c699a4c9c63a278a95dcf3f8bc89.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2004,
+        "level": 2,
+        "url": "produkty-i-napitki/bady",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 1,
+        "items": []
+      },
+      "2796": {
+        "id": 2796,
+        "alias": "soki-i-nektary",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Соки и нектары",
+        "src": "",
+        "parentId": 2004,
+        "icon": "https://img.fix-price.com/_marketplace/categories/6e8086ed596f1e52a8df544a1b1eb7b8.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2004,
+        "level": 2,
+        "url": "produkty-i-napitki/soki-i-nektary",
         "childrenCount": 0,
         "banner": {
           "image": null,
@@ -1219,6 +1288,29 @@
         },
         "productCount": 13,
         "items": []
+      },
+      "2806": {
+        "id": 2806,
+        "alias": "napitki",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Напитки",
+        "src": "",
+        "parentId": 2004,
+        "icon": "https://img.fix-price.com/_marketplace/categories/78ed3f01ab4359b1910e5629f9e9e930.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2004,
+        "level": 2,
+        "url": "produkty-i-napitki/napitki",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 36,
+        "items": []
       }
     }
   },
@@ -1242,7 +1334,7 @@
       "imageAdaptive": null,
       "url": null
     },
-    "productCount": 225,
+    "productCount": 227,
     "items": {
       "2057": {
         "id": 2057,
@@ -1495,6 +1587,167 @@
           "url": null
         },
         "productCount": 19,
+        "items": []
+      },
+      "2692": {
+        "id": 2692,
+        "alias": "sredstva-protiv-nasekomykh",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Средства против насекомых",
+        "src": "",
+        "parentId": 2045,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2045,
+        "level": 2,
+        "url": "bytovaya-khimiya/sredstva-protiv-nasekomykh",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 8,
+        "items": []
+      },
+      "2050": {
+        "id": 2050,
+        "alias": "sredstva-dlya-stirki",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Средства для стирки",
+        "src": "",
+        "parentId": 2045,
+        "icon": "https://img.fix-price.com/_marketplace/categories/a69cea1943d78bec877cde35a1db329a.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2045,
+        "level": 2,
+        "url": "bytovaya-khimiya/sredstva-dlya-stirki",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 61,
+        "items": []
+      },
+      "2056": {
+        "id": 2056,
+        "alias": "sredstva-dlya-vannoy",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Средства для ванной",
+        "src": "",
+        "parentId": 2045,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2045,
+        "level": 2,
+        "url": "bytovaya-khimiya/sredstva-dlya-vannoy",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 24,
+        "items": []
+      },
+      "2055": {
+        "id": 2055,
+        "alias": "sredstva-dlya-mytya-posudy",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Средства для мытья посуды",
+        "src": "",
+        "parentId": 2045,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2045,
+        "level": 2,
+        "url": "bytovaya-khimiya/sredstva-dlya-mytya-posudy",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 31,
+        "items": []
+      },
+      "2811": {
+        "id": 2811,
+        "alias": "otbelivateli-i-pyatnovyvoditeli",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Отбеливатели и пятновыводители",
+        "src": "",
+        "parentId": 2045,
+        "icon": "https://img.fix-price.com/_marketplace/categories/8d223787ccbed7b7ab3644d8faf2f461.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2045,
+        "level": 2,
+        "url": "bytovaya-khimiya/otbelivateli-i-pyatnovyvoditeli",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 14,
+        "items": []
+      },
+      "2051": {
+        "id": 2051,
+        "alias": "konditsionery-dlya-belya",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Кондиционеры для белья",
+        "src": "",
+        "parentId": 2045,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2045,
+        "level": 2,
+        "url": "bytovaya-khimiya/konditsionery-dlya-belya",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 16,
+        "items": []
+      },
+      "2046": {
+        "id": 2046,
+        "alias": "sredstva-dlya-kukhni",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Средства для кухни",
+        "src": "",
+        "parentId": 2045,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2045,
+        "level": 2,
+        "url": "bytovaya-khimiya/sredstva-dlya-kukhni",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 10,
         "items": []
       }
     }
@@ -1796,6 +2049,29 @@
           "url": null
         },
         "productCount": 91,
+        "items": []
+      },
+      "2060": {
+        "id": 2060,
+        "alias": "gigienicheskie-sredstva",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Гигиенические средства",
+        "src": "",
+        "parentId": 2059,
+        "icon": "https://img.fix-price.com/_marketplace/categories/26c1dae570d1d604cb620b19be49b81b.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2059,
+        "level": 2,
+        "url": "kosmetika-i-gigiena/gigienicheskie-sredstva",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 119,
         "items": []
       },
       "2779": {
@@ -2167,6 +2443,98 @@
         },
         "productCount": 155,
         "items": []
+      },
+      "2080": {
+        "id": 2080,
+        "alias": "dlya-tela",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Для тела",
+        "src": "",
+        "parentId": 2075,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2075,
+        "level": 2,
+        "url": "krasota-i-zdorove/dlya-tela",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 163,
+        "items": []
+      },
+      "2079": {
+        "id": 2079,
+        "alias": "dlya-litsa",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Для лица",
+        "src": "",
+        "parentId": 2075,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2075,
+        "level": 2,
+        "url": "krasota-i-zdorove/dlya-litsa",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 82,
+        "items": []
+      },
+      "2194": {
+        "id": 2194,
+        "alias": "dlya-volos",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Для волос",
+        "src": "",
+        "parentId": 2075,
+        "icon": "https://img.fix-price.com/_marketplace/categories/de78b094eb2b19507632c2bc0114e5bc.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2075,
+        "level": 2,
+        "url": "krasota-i-zdorove/dlya-volos",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 60,
+        "items": []
+      },
+      "2154": {
+        "id": 2154,
+        "alias": "makiyazh",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Макияж",
+        "src": "",
+        "parentId": 2075,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2075,
+        "level": 2,
+        "url": "krasota-i-zdorove/makiyazh",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 11,
+        "items": []
       }
     }
   },
@@ -2420,6 +2788,29 @@
           "url": null
         },
         "productCount": 25,
+        "items": []
+      },
+      "2236": {
+        "id": 2236,
+        "alias": "dlya-kukhni",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Для кухни",
+        "src": "",
+        "parentId": 2064,
+        "icon": "https://img.fix-price.com/_marketplace/categories/2c0596bae4add34b968d2f92b007cd3c.png",
+        "hover": "",
+        "catalogImage": "",
+        "topId": 2064,
+        "level": 2,
+        "url": "dlya-doma/dlya-kukhni",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 1982,
         "items": []
       },
       "2239": {
@@ -3762,12 +4153,12 @@
         "productCount": 133,
         "items": []
       },
-      "2078": {
-        "id": 2078,
-        "alias": "britvennye-prinadlezhnosti",
+      "2896": {
+        "id": 2896,
+        "alias": "bizhuteriya",
         "adult": false,
         "shortTitle": "",
-        "title": "Бритвенные принадлежности",
+        "title": "Бижутерия",
         "src": "",
         "parentId": 2146,
         "icon": "",
@@ -3775,7 +4166,7 @@
         "catalogImage": null,
         "topId": 2146,
         "level": 2,
-        "url": "aksessuary/britvennye-prinadlezhnosti",
+        "url": "aksessuary/bizhuteriya",
         "childrenCount": 0,
         "banner": {
           "image": null,
@@ -3853,6 +4244,29 @@
           "url": null
         },
         "productCount": 38,
+        "items": []
+      },
+      "2095": {
+        "id": 2095,
+        "alias": "sport",
+        "adult": false,
+        "shortTitle": "",
+        "title": "Спорт",
+        "src": "",
+        "parentId": 2094,
+        "icon": "",
+        "hover": null,
+        "catalogImage": null,
+        "topId": 2094,
+        "level": 2,
+        "url": "sport-i-otdykh/sport",
+        "childrenCount": 0,
+        "banner": {
+          "image": null,
+          "imageAdaptive": null,
+          "url": null
+        },
+        "productCount": 35,
         "items": []
       }
     }

@@ -44,7 +44,7 @@ class ClassGeolocation(ApiChild["FixPriceAPI"], ApiParent):
     async def regions_list(self, country_id: int = None) -> FetchResponse:
         """Возвращает список всех регионов, их id и название. Если фильтр не применен - выдача всех регионов независимо от страны."""
         url = f"{self._parent.CATALOG_URL}/v1/location/region"
-        if not country_id:
+        if country_id:
             url += f"?countryId={country_id}"
 
         return await self._parent._request(HttpMethod.GET, url=url)

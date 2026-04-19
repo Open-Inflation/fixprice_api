@@ -1,4 +1,3 @@
-
 class CatalogSort:
     POPULARITY = "sold"
     """Сначало самые популярные"""

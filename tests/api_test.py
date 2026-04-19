@@ -3,8 +3,17 @@ from typing import Any
 import pytest
 from fixprice_api.endpoints.catalog import ClassCatalog, ProductService
 from fixprice_api.endpoints.geolocation import ClassGeolocation
-from human_requests import autotest_data, autotest_depends_on, autotest_hook, autotest_params
-from human_requests.autotest import AutotestCallContext, AutotestContext, AutotestDataContext
+from human_requests import (
+    autotest_data,
+    autotest_depends_on,
+    autotest_hook,
+    autotest_params,
+)
+from human_requests.autotest import (
+    AutotestCallContext,
+    AutotestContext,
+    AutotestDataContext,
+)
 from PIL import Image
 
 
@@ -77,11 +86,11 @@ def _capture_product_id(
     if not isinstance(data, list) or not data:
         pytest.fail("Catalog.products_list returned empty data.")
 
-    product_id = data[0].get("id")
-    if not isinstance(product_id, int):
-        pytest.fail("Catalog.products_list did not return a valid product id.")
-
-    ctx.state["autotest_product_id"] = product_id
+    for key, type in [("id", int), ("url", str)]:
+        value = data[0].get(key)
+        if not isinstance(value, type):
+            pytest.fail(f"Catalog.products_list did not return a valid {key}.")
+        ctx.state[f"autotest_product_{key}"] = value
 
 
 @autotest_depends_on(ClassCatalog.products_list)
@@ -93,9 +102,22 @@ def _product_balance_params(ctx: AutotestCallContext) -> dict[str, int]:
     pytest.fail("ProductService.balance depends on Catalog.products_list.")
 
 
+@autotest_depends_on(ClassCatalog.products_list)
+@autotest_params(target=ProductService.info)
+def _product_info_params(ctx: AutotestCallContext) -> dict[str, str]:
+    cached_id = ctx.state.get("autotest_product_url")
+    if isinstance(cached_id, str):
+        return {"url": cached_id}
+    pytest.fail("ProductService.info depends on Catalog.products_list.")
+
+
 @autotest_data(name="unstandard_headers")
 def _unstandard_headers_data(ctx: AutotestDataContext) -> dict[str, Any]:
     return ctx.api.unstandard_headers
+
+@autotest_data(name="unstandard_urls")
+def _unstandard_urls_data(ctx: AutotestDataContext) -> dict[str, Any]:
+    return ctx.api.unstandard_urls
 
 
 async def test_download_image(api, products_list_json):

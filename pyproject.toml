@@ -41,6 +41,17 @@ tests = [
     "pytest-jsonschema-snapshot",
     "jsoncrack-for-sphinx",
 ]
+dev = [
+    "pytest",
+    "pytest-anyio",
+    "pytest-jsonschema-snapshot",
+    "jsoncrack-for-sphinx",
+    "pillow",
+    "black",
+    "flake8",
+    "mypy",
+    "isort",
+]
 
 [project.urls]
 Homepage = "https://github.com/Open-Inflation/fixprice_api"
