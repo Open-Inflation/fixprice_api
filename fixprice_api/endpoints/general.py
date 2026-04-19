@@ -1,11 +1,11 @@
 """Общий (не класифицируемый) функционал"""
 
-from typing import TYPE_CHECKING
 from io import BytesIO
-from human_requests.abstraction import Proxy
-from aiohttp_retry import ExponentialRetry, RetryClient
+from typing import TYPE_CHECKING
 
+from aiohttp_retry import ExponentialRetry, RetryClient
 from human_requests import ApiChild
+from human_requests.abstraction import Proxy
 
 if TYPE_CHECKING:
     from fixprice_api.manager import FixPriceAPI

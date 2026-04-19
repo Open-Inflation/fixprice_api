@@ -3,11 +3,10 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from human_requests import autotest
-from human_requests.abstraction import FetchResponse, HttpMethod
 from typing import TYPE_CHECKING
 
-from human_requests import ApiChild, ApiParent, api_child_field
+from human_requests import ApiChild, ApiParent, api_child_field, autotest
+from human_requests.abstraction import FetchResponse, HttpMethod
 
 if TYPE_CHECKING:
     from fixprice_api.manager import FixPriceAPI

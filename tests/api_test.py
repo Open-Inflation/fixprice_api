@@ -1,20 +1,14 @@
 from typing import Any
 
 import pytest
+from human_requests import (autotest_data, autotest_depends_on, autotest_hook,
+                            autotest_params)
+from human_requests.autotest import (AutotestCallContext, AutotestContext,
+                                     AutotestDataContext)
+from PIL import Image
+
 from fixprice_api.endpoints.catalog import ClassCatalog, ProductService
 from fixprice_api.endpoints.geolocation import ClassGeolocation
-from human_requests import (
-    autotest_data,
-    autotest_depends_on,
-    autotest_hook,
-    autotest_params,
-)
-from human_requests.autotest import (
-    AutotestCallContext,
-    AutotestContext,
-    AutotestDataContext,
-)
-from PIL import Image
 
 
 @autotest_hook(target=ClassCatalog.tree)
@@ -114,6 +108,7 @@ def _product_info_params(ctx: AutotestCallContext) -> dict[str, str]:
 @autotest_data(name="unstandard_headers")
 def _unstandard_headers_data(ctx: AutotestDataContext) -> dict[str, Any]:
     return ctx.api.unstandard_headers
+
 
 @autotest_data(name="unstandard_urls")
 def _unstandard_urls_data(ctx: AutotestDataContext) -> dict[str, Any]:
