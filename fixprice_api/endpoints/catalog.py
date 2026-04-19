@@ -172,8 +172,9 @@ class ProductService(ApiChild["FixPriceAPI"]):
             }
             """)
 
+
             nuxt_data = (
-                json.loads(raw_json)["data"][0]["categoryData"]["product"]
+                json.loads(raw_json)["useState"]["uniquePseudoAsyncDataStateKey"]["product"]
                 if raw_json
                 else None
             )
