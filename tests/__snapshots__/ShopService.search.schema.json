@@ -25,7 +25,8 @@
     ],
     "properties": {
       "address": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "canPayCard": {
         "type": "boolean"
@@ -45,7 +46,8 @@
             "type": "null"
           },
           {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           }
         ]
       },
@@ -77,24 +79,28 @@
               "type": "number"
             },
             "lineColor": {
-              "type": "string"
+              "type": "string",
+              "j2sEnumRejected": true
             },
             "longitude": {
               "type": "number"
             },
             "name": {
-              "type": "string"
+              "type": "string",
+              "j2sEnumRejected": true
             }
           }
         }
       },
       "pfm": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "scheduleSaturday": {
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           },
           {
             "type": "null"
@@ -104,7 +110,8 @@
       "scheduleSunday": {
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           },
           {
             "type": "null"
@@ -114,7 +121,8 @@
       "scheduleWeekdays": {
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           },
           {
             "type": "null"
@@ -133,7 +141,8 @@
       "workTime": {
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           },
           {
             "type": "null"

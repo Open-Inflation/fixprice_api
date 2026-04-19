@@ -26,7 +26,8 @@
     ],
     "properties": {
       "address": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "canPayCard": {
         "type": "boolean"
@@ -74,28 +75,72 @@
               "type": "number"
             },
             "lineColor": {
-              "type": "string"
+              "type": "string",
+              "j2sEnumRejected": true
             },
             "longitude": {
               "type": "number"
             },
             "name": {
-              "type": "string"
+              "type": "string",
+              "j2sEnumRejected": true
             }
           }
         }
       },
       "pfm": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "scheduleSaturday": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "09:00-21:00",
+          "09:00-22:00",
+          "10:00-22:00",
+          "09:30-21:30",
+          "08:00-20:00",
+          "08:00-22:00",
+          "10:00-21:00",
+          "08:00-21:00",
+          "08:30-21:30",
+          "09:00-21:30",
+          "09:00-20:00"
+        ]
       },
       "scheduleSunday": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "09:00-21:00",
+          "09:00-22:00",
+          "10:00-22:00",
+          "09:30-21:30",
+          "08:00-20:00",
+          "08:00-22:00",
+          "10:00-21:00",
+          "08:00-21:00",
+          "08:30-21:30",
+          "09:00-21:30",
+          "09:00-20:00",
+          "10:00-19:00",
+          "09:00-19:00"
+        ]
       },
       "scheduleWeekdays": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "09:00-21:00",
+          "09:00-22:00",
+          "10:00-22:00",
+          "09:30-21:30",
+          "08:00-20:00",
+          "08:00-22:00",
+          "10:00-21:00",
+          "08:00-21:00",
+          "08:30-21:30",
+          "09:00-21:30",
+          "09:00-20:00"
+        ]
       },
       "temporarilyClosed": {
         "type": "boolean"
@@ -107,7 +152,16 @@
         "type": "boolean"
       },
       "workTime": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "Откроется в 09:00",
+          "Откроется в 10:00",
+          "Откроется в 09:30",
+          "Открыто до 20:00",
+          "Открыто до 22:00",
+          "Открыто до 21:00",
+          "Открыто до 21:30"
+        ]
       }
     }
   }

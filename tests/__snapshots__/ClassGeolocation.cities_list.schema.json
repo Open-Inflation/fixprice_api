@@ -19,7 +19,8 @@
     ],
     "properties": {
       "addressId": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "countryId": {
         "type": "integer"
@@ -28,7 +29,8 @@
         "type": "string",
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           },
           {
             "type": "string",
@@ -40,7 +42,8 @@
         "type": "string",
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           },
           {
             "type": "string",
@@ -61,16 +64,37 @@
         "type": "number"
       },
       "name": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "prefix": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "г",
+          "д",
+          "пгт",
+          "гп",
+          "рп",
+          "ст-ца",
+          "п",
+          "с",
+          "г.о.г",
+          "с/п",
+          "дп",
+          "мкр",
+          "аул",
+          "сл",
+          "х",
+          "п/ст"
+        ]
       },
       "regionTitle": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "title": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       }
     }
   }

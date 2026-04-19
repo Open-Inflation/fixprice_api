@@ -17,7 +17,8 @@
     ],
     "properties": {
       "alias": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "id": {
         "type": "integer"
@@ -31,7 +32,12 @@
       "login": {
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "tshashmurina",
+              "ebukhtoiarov",
+              "vrodina"
+            ]
           },
           {
             "type": "null"
@@ -46,12 +52,22 @@
         "type": "boolean"
       },
       "title": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       },
       "updatedAt": {
         "anyOf": [
           {
-            "type": "string"
+            "type": "string",
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "string",
+                "format": "date-time"
+              }
+            ]
           },
           {
             "type": "null"
@@ -64,7 +80,8 @@
             "type": "string",
             "anyOf": [
               {
-                "type": "string"
+                "type": "string",
+                "j2sEnumRejected": true
               },
               {
                 "type": "string",

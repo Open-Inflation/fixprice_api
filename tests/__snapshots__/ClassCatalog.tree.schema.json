@@ -28,7 +28,8 @@
           "type": "boolean"
         },
         "alias": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         },
         "banner": {
           "type": "object",
@@ -80,15 +81,7 @@
               "anyOf": [
                 {
                   "type": "string",
-                  "anyOf": [
-                    {
-                      "type": "string"
-                    },
-                    {
-                      "type": "string",
-                      "format": "uri"
-                    }
-                  ]
+                  "j2sEnumRejected": true
                 },
                 {
                   "type": "null"
@@ -125,7 +118,8 @@
               "type": "string",
               "anyOf": [
                 {
-                  "type": "string"
+                  "type": "string",
+                  "j2sEnumRejected": true
                 },
                 {
                   "type": "string",
@@ -184,7 +178,8 @@
                       "type": "boolean"
                     },
                     "alias": {
-                      "type": "string"
+                      "type": "string",
+                      "j2sEnumRejected": true
                     },
                     "banner": {
                       "type": "object",
@@ -195,10 +190,26 @@
                       ],
                       "properties": {
                         "image": {
-                          "type": "null"
+                          "anyOf": [
+                            {
+                              "type": "null"
+                            },
+                            {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          ]
                         },
                         "imageAdaptive": {
-                          "type": "null"
+                          "anyOf": [
+                            {
+                              "type": "null"
+                            },
+                            {
+                              "type": "string",
+                              "format": "uri"
+                            }
+                          ]
                         },
                         "url": {
                           "type": "null"
@@ -209,15 +220,7 @@
                       "anyOf": [
                         {
                           "type": "string",
-                          "anyOf": [
-                            {
-                              "type": "string"
-                            },
-                            {
-                              "type": "string",
-                              "format": "uri"
-                            }
-                          ]
+                          "j2sEnumRejected": true
                         },
                         {
                           "type": "null"
@@ -230,7 +233,8 @@
                     "hover": {
                       "anyOf": [
                         {
-                          "type": "string"
+                          "type": "string",
+                          "j2sEnumRejected": true
                         },
                         {
                           "type": "null"
@@ -241,7 +245,8 @@
                       "type": "string",
                       "anyOf": [
                         {
-                          "type": "string"
+                          "type": "string",
+                          "j2sEnumRejected": true
                         },
                         {
                           "type": "string",
@@ -266,13 +271,15 @@
                       "type": "integer"
                     },
                     "shortTitle": {
-                      "type": "string"
+                      "type": "string",
+                      "j2sEnumRejected": true
                     },
                     "src": {
                       "type": "string",
                       "anyOf": [
                         {
-                          "type": "string"
+                          "type": "string",
+                          "j2sEnumRejected": true
                         },
                         {
                           "type": "string",
@@ -281,13 +288,15 @@
                       ]
                     },
                     "title": {
-                      "type": "string"
+                      "type": "string",
+                      "j2sEnumRejected": true
                     },
                     "topId": {
                       "type": "integer"
                     },
                     "url": {
-                      "type": "string"
+                      "type": "string",
+                      "j2sEnumRejected": true
                     }
                   }
                 }
@@ -309,13 +318,15 @@
           "type": "integer"
         },
         "shortTitle": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         },
         "src": {
           "type": "string",
           "anyOf": [
             {
-              "type": "string"
+              "type": "string",
+              "j2sEnumRejected": true
             },
             {
               "type": "string",
@@ -324,13 +335,15 @@
           ]
         },
         "title": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         },
         "topId": {
           "type": "integer"
         },
         "url": {
-          "type": "string"
+          "type": "string",
+          "j2sEnumRejected": true
         }
       }
     }

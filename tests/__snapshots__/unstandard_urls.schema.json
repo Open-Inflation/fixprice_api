@@ -10,174 +10,23 @@
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
     "https://api.fix-price.com/buyer/v1/banner/suitable?type=1&path=https:%2F%2Ffix-price.com%2Fcatalog": {
-      "type": "object",
-      "required": [
-        "x-city",
-        "x-client-route",
-        "x-key",
-        "x-language",
-        "x-logged"
-      ],
-      "properties": {
-        "x-city": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-client-route": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-key": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-language": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-logged": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
+      "$ref": "#/$defs/Object1"
     },
     "https://api.fix-price.com/buyer/v1/config/ecom.product.special.price.date.show": {
-      "type": "object",
-      "required": [
-        "x-city",
-        "x-client-route",
-        "x-key",
-        "x-language",
-        "x-logged"
-      ],
-      "properties": {
-        "x-city": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-client-route": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-key": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-language": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-logged": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
+      "$ref": "#/$defs/Object1"
     },
     "https://api.fix-price.com/buyer/v1/cookie-config": {
-      "type": "object",
-      "required": [
-        "x-city",
-        "x-client-route",
-        "x-key",
-        "x-language",
-        "x-logged"
-      ],
-      "properties": {
-        "x-city": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-client-route": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-key": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-language": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-logged": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
+      "$ref": "#/$defs/Object1"
     },
     "https://api.fix-price.com/buyer/v2/geo/ip": {
-      "type": "object",
-      "required": [
-        "x-city",
-        "x-client-route",
-        "x-key",
-        "x-language",
-        "x-logged"
-      ],
-      "properties": {
-        "x-city": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-client-route": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-key": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-language": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        },
-        "x-logged": {
-          "type": "array",
-          "items": {
-            "type": "string"
-          }
-        }
-      }
+      "$ref": "#/$defs/Object1"
     },
     "https://api.fix-price.com/buyer/v2/geo/ip?utm_referrer=https%3a%2f%2ffix-price.com%2f": {
+      "$ref": "#/$defs/Object1"
+    }
+  },
+  "$defs": {
+    "Object1": {
       "type": "object",
       "required": [
         "x-city",
@@ -186,35 +35,50 @@
         "x-language",
         "x-logged"
       ],
+      "minProperties": 1,
       "properties": {
         "x-city": {
           "type": "array",
+          "minItems": 1,
           "items": {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           }
         },
         "x-client-route": {
           "type": "array",
+          "minItems": 1,
           "items": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "/catalog"
+            ]
           }
         },
         "x-key": {
           "type": "array",
+          "minItems": 1,
           "items": {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           }
         },
         "x-language": {
           "type": "array",
+          "minItems": 1,
           "items": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "ru"
+            ]
           }
         },
         "x-logged": {
           "type": "array",
+          "minItems": 1,
           "items": {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           }
         }
       }

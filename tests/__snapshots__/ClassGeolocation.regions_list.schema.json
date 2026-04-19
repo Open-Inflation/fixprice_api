@@ -12,7 +12,8 @@
         "type": "integer"
       },
       "title": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       }
     }
   }

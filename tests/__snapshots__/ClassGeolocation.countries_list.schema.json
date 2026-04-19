@@ -13,7 +13,19 @@
     ],
     "properties": {
       "alias": {
-        "type": "string"
+        "type": "string",
+        "enum": [
+          "LV",
+          "RU",
+          "GE",
+          "KG",
+          "UZ",
+          "BY",
+          "MN",
+          "AE",
+          "RS",
+          "KZ"
+        ]
       },
       "city": {
         "anyOf": [
@@ -37,10 +49,15 @@
                 "type": "number"
               },
               "prefix": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "г",
+                  "city"
+                ]
               },
               "title": {
-                "type": "string"
+                "type": "string",
+                "j2sEnumRejected": true
               }
             }
           },
@@ -58,13 +75,26 @@
         ],
         "properties": {
           "symbol": {
-            "type": "string"
+            "type": "string",
+            "enum": [
+              "€",
+              "₽",
+              "₾",
+              "с",
+              "So'm",
+              "руб",
+              "₮",
+              "AED",
+              "DIN",
+              "₸"
+            ]
           },
           "symbolFirst": {
             "type": "boolean"
           },
           "title": {
-            "type": "string"
+            "type": "string",
+            "j2sEnumRejected": true
           }
         }
       },
@@ -80,7 +110,13 @@
             ],
             "properties": {
               "alias": {
-                "type": "string"
+                "type": "string",
+                "enum": [
+                  "lv",
+                  "ru",
+                  "en-AE",
+                  "sr"
+                ]
               }
             }
           },
@@ -90,7 +126,8 @@
         ]
       },
       "title": {
-        "type": "string"
+        "type": "string",
+        "j2sEnumRejected": true
       }
     }
   }
