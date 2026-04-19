@@ -1,4 +1,5 @@
 import pytest
+
 from fixprice_api import FixPriceAPI
 
 

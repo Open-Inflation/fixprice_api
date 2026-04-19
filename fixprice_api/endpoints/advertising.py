@@ -1,10 +1,9 @@
 """Реклама"""
 
-from human_requests import autotest
-from human_requests.abstraction import FetchResponse, HttpMethod
 from typing import TYPE_CHECKING
 
-from human_requests import ApiChild
+from human_requests import ApiChild, autotest
+from human_requests.abstraction import FetchResponse, HttpMethod
 
 if TYPE_CHECKING:
     from fixprice_api.manager import FixPriceAPI

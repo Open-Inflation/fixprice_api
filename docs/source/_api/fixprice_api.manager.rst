@@ -36,4 +36,3 @@
    .. autosummary::
    
       PWTimeoutError
-   

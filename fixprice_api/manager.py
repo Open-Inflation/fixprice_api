@@ -1,20 +1,18 @@
-from typing import Any, Literal
-from dataclasses import dataclass, field
 from collections import defaultdict
-from human_requests import HumanBrowser, HumanContext, HumanPage
-from human_requests.abstraction import Proxy, FetchResponse, HttpMethod
-from human_requests.network_analyzer.anomaly_sniffer import (
-    HeaderAnomalySniffer,
-    WaitHeader,
-    WaitSource,
-)
-from camoufox import AsyncCamoufox, DefaultAddons
+from dataclasses import dataclass, field
+from typing import Any, Literal
 
-from human_requests import ApiParent, api_child_field
-from .endpoints.catalog import ClassCatalog
-from .endpoints.geolocation import ClassGeolocation
+from camoufox import AsyncCamoufox, DefaultAddons
+from human_requests import (ApiParent, HumanBrowser, HumanContext, HumanPage,
+                            api_child_field)
+from human_requests.abstraction import FetchResponse, HttpMethod, Proxy
+from human_requests.network_analyzer.anomaly_sniffer import (
+    HeaderAnomalySniffer, WaitHeader, WaitSource)
+
 from .endpoints.advertising import ClassAdvertising
+from .endpoints.catalog import ClassCatalog
 from .endpoints.general import ClassGeneral
+from .endpoints.geolocation import ClassGeolocation
 
 
 @dataclass
@@ -76,7 +74,7 @@ class FixPriceAPI(ApiParent):
             **self.browser_opts,
             block_images=True,
             i_know_what_im_doing=True,
-            exclude_addons=[DefaultAddons.UBO]
+            exclude_addons=[DefaultAddons.UBO],
         ).start()
 
         self.session = HumanBrowser.replace(br)
@@ -103,7 +101,9 @@ class FixPriceAPI(ApiParent):
         )
 
         if self.test_mode:
-            btn = self.page.locator("div.selected-city > div.buttons > button.button.normal").first
+            btn = self.page.locator(
+                "div.selected-city > div.buttons > button.button.normal"
+            ).first
             await btn.wait_for(state="visible", timeout=self.timeout_ms)
             await btn.click(timeout=self.timeout_ms)
 

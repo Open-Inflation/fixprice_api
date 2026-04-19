@@ -3,15 +3,15 @@
 from __future__ import annotations
 
 import json
-from types import MethodType
-
-from playwright.async_api import Response as PWResponse
 from dataclasses import dataclass
-from typing import Optional, TYPE_CHECKING, overload
-from .. import abstraction
-from human_requests import autotest
+from types import MethodType
+from typing import TYPE_CHECKING, Optional, overload
+
+from human_requests import ApiChild, ApiParent, api_child_field, autotest
 from human_requests.abstraction import FetchResponse, HttpMethod
-from human_requests import ApiChild, ApiParent, api_child_field
+from playwright.async_api import Response as PWResponse
+
+from .. import abstraction
 
 if TYPE_CHECKING:
     from fixprice_api.manager import FixPriceAPI
@@ -173,7 +173,9 @@ class ProductService(ApiChild["FixPriceAPI"]):
             """)
 
             nuxt_data = (
-                json.loads(raw_json)["data"][0]["categoryData"]["product"]
+                json.loads(raw_json)["useState"]["uniquePseudoAsyncDataStateKey"][
+                    "product"
+                ]
                 if raw_json
                 else None
             )
