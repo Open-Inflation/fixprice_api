@@ -1,8 +1,8 @@
 {
-  "id": 1912108,
-  "title": "Воздушное суфле \"Весенняя серия\", Пухлый Кролик, 150 г",
-  "sku": "1912108",
-  "category": 2004,
+  "id": 5024806,
+  "title": "Поднос, O’Kitchen, 25 см",
+  "sku": "5024806",
+  "category": 2064,
   "isFresh": false,
   "isNew": false,
   "isPromo": false,
@@ -11,9 +11,9 @@
   "isFavorite": false,
   "isCart": false,
   "isQRMark": false,
-  "image": 2423776,
+  "image": 108630874,
   "adult": false,
-  "description": "Воздушное суфле \"Весенняя серия\", Пухлый Кролик, со вкусом пломбира имеет нежную текстуру. Разноцветное, фигурное. Масса нетто: 150 г.",
+  "description": "Поднос, O’Kitchen – это отличный выбор для стильной сервировки. Также можно использовать как декоративный элемент в интерьере. Диаметр: 25 см. Состав: углеродистая сталь, полиэтилен. Эстетика Вашей кухни в коллекции «Минимализм&Уют»!",
   "video": null,
   "videoLink": null,
   "forbidden": false,
@@ -22,72 +22,103 @@
   "specialPrice": null,
   "images": [
     {
-      "id": 2423776,
-      "title": null,
-      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108_1.jpg"
-    },
-    {
-      "id": 2423777,
-      "title": null,
-      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/1912108.jpg"
+      "id": 108630874,
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3b/3b4eca4fa055669b05b6f8a85c209682.jpg",
+      "title": null
     }
   ],
   "properties": [
     {
       "id": 12,
       "alias": "prodCountry",
-      "value": "Россия",
+      "value": "Китай (КНР)",
       "title": "Страна производства"
-    },
-    {
-      "id": 13,
-      "alias": "manufacturer",
-      "value": "ООО \"ТД \"Алтей\"",
-      "title": "Производитель"
     }
   ],
-  "extraDescriptions": [
+  "resources": [
     {
-      "id": 0,
-      "alias": "nutritionalValue",
-      "value": "Пищевая ценность на 100г. Продукта: белки 0г.; жиры 0г.; углеводы 0г. Энергетическая ценность: 0 ккал.",
-      "title": "Пищевая ценность"
-    },
-    {
-      "id": 1,
-      "alias": "composition",
-      "value": "Сахар, патока крахмальная,желатин пищевой,крахмал кукурузный,ароматизатор пломбир, красители синий блестящий, желтый хинолиновый, понсо 4R.",
-      "title": "Состав"
-    },
-    {
-      "id": 2,
-      "alias": "manufacturerAddress",
-      "value": "623733, Свердловская область, Режевской район, село Останино, ул. Центральная, д.10",
-      "title": "Адрес производителя"
-    },
-    {
-      "id": 3,
-      "alias": "nutritionalValueSeparated",
-      "value": {
-        "description": "Пищевая ценность на 100г",
-        "energyValue": "",
-        "protein": "",
-        "fats": "",
-        "carbohydrates": ""
-      },
-      "title": "Пищевая ценность с разбивкой по элементам"
+      "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3b/3b4eca4fa055669b05b6f8a85c209682.jpg",
+      "videoType": null,
+      "link": null
     }
   ],
   "variants": [
     {
-      "id": 65185,
-      "image": null,
+      "id": 124489,
+      "title": "4610391803157",
+      "width": 250,
+      "height": 50,
+      "length": 250,
+      "weight": 240,
+      "barcode": "4610391803157",
+      "resources": [
+        {
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5d/5ddb28697fc9885025c756b99ec07693.JPG",
+          "videoType": null,
+          "link": null
+        },
+        {
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/64/64917cc6fb753ffc271f3b24f20e881d.JPG",
+          "videoType": null,
+          "link": null
+        },
+        {
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/32/32f4ec38dd442a56f6603e5517830ec2.jpg",
+          "videoType": null,
+          "link": null
+        }
+      ],
+      "count": 5,
+      "price": "279.00",
+      "dimensions": {
+        "units": {
+          "length": "мм",
+          "height": "мм",
+          "width": "мм",
+          "weight": "г"
+        },
+        "width": 250,
+        "height": 50,
+        "weight": 240,
+        "length": 250,
+        "isPackage": true
+      },
+      "image": 86152461,
+      "images": [
+        {
+          "id": 86152461,
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/5d/5ddb28697fc9885025c756b99ec07693.JPG",
+          "title": null
+        },
+        {
+          "id": 86152462,
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/64/64917cc6fb753ffc271f3b24f20e881d.JPG",
+          "title": null
+        },
+        {
+          "id": 86152463,
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/32/32f4ec38dd442a56f6603e5517830ec2.jpg",
+          "title": null
+        }
+      ],
+      "fixPrice": "279.00",
+      "unitPrice": ""
+    },
+    {
+      "id": 124323,
       "title": "",
-      "width": 60,
-      "height": 140,
-      "length": 270,
-      "weight": 152,
-      "barcode": "1912108",
+      "width": 250,
+      "height": 50,
+      "length": 250,
+      "weight": 240,
+      "barcode": "5024806",
+      "resources": [
+        {
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3b/3b4eca4fa055669b05b6f8a85c209682.jpg",
+          "videoType": null,
+          "link": null
+        }
+      ],
       "properties": [
         {
           "id": 100,
@@ -96,66 +127,44 @@
           "title": "Вариант"
         }
       ],
-      "count": 6,
-      "price": "59.00",
+      "count": 7,
+      "price": "279.00",
       "dimensions": {
-        "width": 60,
-        "height": 140,
-        "weight": 152,
-        "length": 270,
-        "isPackage": true
+        "units": {
+          "length": "мм",
+          "height": "мм",
+          "width": "мм",
+          "weight": "г"
+        },
+        "width": 250,
+        "height": 50,
+        "weight": 240,
+        "length": 250,
+        "isPackage": false
       },
-      "fixPrice": "59.00",
-      "unitPrice": ""
-    },
-    {
-      "id": 65184,
-      "image": 1688072,
-      "title": "",
-      "width": 60,
-      "height": 140,
+      "image": 108630874,
       "images": [
         {
-          "id": 1688072,
-          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/pim/images/_default_upload_bucket/25b9c9d882e1461afeaafafc89eab494_1.jpg",
+          "id": 108630874,
+          "src": "https://img.fix-price.com/insecure/rs:fit:800:800/plain/bit/_marketplace/images/origin/3b/3b4eca4fa055669b05b6f8a85c209682.jpg",
           "title": null
         }
       ],
-      "length": 270,
-      "weight": 152,
-      "barcode": "4650139150280",
-      "properties": [
-        {
-          "id": 9,
-          "alias": "variant",
-          "value": "Пломбир",
-          "title": "Вариант"
-        }
-      ],
-      "count": 8,
-      "price": "59.00",
-      "dimensions": {
-        "width": 60,
-        "height": 140,
-        "weight": 152,
-        "length": 270,
-        "isPackage": true
-      },
-      "fixPrice": "59.00",
+      "fixPrice": "279.00",
       "unitPrice": ""
     }
   ],
   "unitPrice": "",
-  "url": "produkty-i-napitki/p-1912108-vozdushnoe-sufle-vesennyaya-seriya-puhlyy-krolik-150-g",
+  "url": "dlya-doma/p-5024806-podnos-itchen-25-sm",
   "brand": {
-    "id": 373,
-    "src": "",
-    "url": null,
+    "id": 20510,
+    "src": "https://img.fix-price.com/_marketplace/brand/095ad3087e200594bc632ee9cf03ca4c.png",
+    "url": "https://o-kitchen.ru/",
     "alias": "",
-    "login": null,
-    "title": "Пухлый Кролик",
-    "updated_at": null,
-    "isSTM": false,
+    "login": "tshashmurina",
+    "title": "O'Kitchen",
+    "updated_at": "2024-12-19 10:52:10",
+    "isSTM": true,
     "isFavorite": false
   },
   "informers": [
@@ -164,6 +173,7 @@
     }
   ],
   "bonusCommunicationEnable": false,
+  "badges": [],
   "_headers": {
     "x-language": "ru",
     "x-city": "3",
@@ -174,12 +184,12 @@
     "content-type": "application/json; charset=UTF-8",
     "access-control-allow-origin": "*",
     "access-control-allow-methods": "GET, POST, PUT, DELETE, HEAD, OPTIONS",
-    "access-control-allow-headers": "X-Client-Route, X-Access-Token, Content-Type, X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Delivery-Type, X-Web-Application-Type, X-Open-Id, Cache-Control, Vary, X-Logged",
+    "access-control-allow-headers": "X-Client-Route, X-Access-Token, Content-Type, X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Delivery-Type, X-Web-Application-Type, X-Open-Id, Cache-Control, Vary, X-Logged, X-TESTCASE",
     "access-control-expose-headers": "X-Key, X-Count, Is-Logged, X-Language, X-City, X-Region, X-Country, X-Pfm, X-Mark, X-Web-Application-Type, X-Open-Id, X-Child, Cache-Control, Vary, X-Logged",
     "access-control-allow-credentials": "true",
     "access-control-max-age": "3600",
     "server": "Unit/1.34.2",
-    "date": "Thu, 19 Mar 2026 07:31:18 GMT",
+    "date": "Sun, 26 Apr 2026 05:51:50 GMT",
     "connection": "close",
     "transfer-encoding": "chunked"
   }
