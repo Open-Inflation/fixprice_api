@@ -1,0 +1,22 @@
+name: source-sync
+
+on:
+  workflow_dispatch:
+
+jobs:
+  source-sync:
+    uses: Miskler/engine-reverse-ide/.github/workflows/source-sync.yml@main
+    with:
+      logic_repository: Miskler/engine-reverse-ide
+      logic_ref: main
+      source_repository: ${{ github.repository }}
+      source_ref: source
+      source_msra_path: fixprice.msra
+      target_repository: ${{ github.repository }}
+      target_ref: main
+      generator_python_version: "3.12"
+      generator_requirements_path: "msra_codegen/requirements.txt"
+      commit_user_name: "msra-sync-bot"
+      commit_user_email: "msra-sync-bot@users.noreply.github.com"
+    secrets:
+      repo_token: ${{ secrets.SOURCE_SYNC_TOKEN }}
