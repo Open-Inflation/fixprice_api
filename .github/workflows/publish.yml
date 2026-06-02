@@ -1,6 +1,9 @@
 name: publish
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       target:
@@ -29,7 +32,7 @@ jobs:
       python-version: "3.12"
 
   build-docs:
-    if: ${{ github.event.inputs.target == 'docs' || github.event.inputs.target == 'all' }}
+    if: ${{ github.event_name == 'push' || github.event.inputs.target == 'docs' || github.event.inputs.target == 'all' }}
     name: Build docs
     needs: tests
     runs-on: ubuntu-latest
@@ -57,7 +60,7 @@ jobs:
           path: docs/_build/html
 
   deploy-docs:
-    if: ${{ github.event.inputs.target == 'docs' || github.event.inputs.target == 'all' }}
+    if: ${{ github.event_name == 'push' || github.event.inputs.target == 'docs' || github.event.inputs.target == 'all' }}
     name: Deploy docs to GitHub Pages
     needs: build-docs
     runs-on: ubuntu-latest
@@ -70,7 +73,7 @@ jobs:
         uses: actions/deploy-pages@v4
 
   pypi:
-    if: ${{ github.event.inputs.target == 'package' || github.event.inputs.target == 'all' }}
+    if: ${{ github.event_name == 'push' || github.event.inputs.target == 'package' || github.event.inputs.target == 'all' }}
     name: Build & publish to PyPI (Trusted Publishing)
     needs: tests
     runs-on: ubuntu-latest
