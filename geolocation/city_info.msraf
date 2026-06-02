@@ -1,0 +1,21 @@
+!root("../fixprice.msra")
+
+[GEOLOCATION_CITY_INFO]
+name="city_info"
+method=GET
+group=<GROUPS.Geolocation>
+description="Returns a single city by id."
+
+[GEOLOCATION_CITY_INFO.input.city_id]
+type=integer
+@Required
+match={from=1, to=2147483647}
+description="City id used in the path."
+
+[GEOLOCATION_CITY_INFO.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/location/city/"<INPUT.city_id>
+
+[GEOLOCATION_CITY_INFO.examples.city_info]
+@Test
+@Docs(print="Информация о городе: "<FUNCRESULT.GEOLOCATION_CITY_INFO.city_info.JSON>)
+inputs={"city_id"=<FUNCRESULT.GEOLOCATION_CITIES_LIST.cities.JSON[0]["id"]>}

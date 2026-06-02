@@ -1,0 +1,37 @@
+!root("../../fixprice.msra")
+
+[CATALOG_PRODUCT_BALANCE]
+name="balance"
+method=GET
+group=<GROUPS.Catalog.Products>
+description="Checks store balance for a product in the current city."
+
+[CATALOG_PRODUCT_BALANCE.input.product_id]
+type=integer
+@Required
+match={from=1, to=2147483647}
+
+[CATALOG_PRODUCT_BALANCE.input.in_stock]
+type=boolean
+default=true
+description="When false the request omits the inStock query flag."
+
+[CATALOG_PRODUCT_BALANCE.input.search]
+type=string
+
+[CATALOG_PRODUCT_BALANCE.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/store/balance/"<INPUT.product_id>
+
+[CATALOG_PRODUCT_BALANCE.url.params.canPickup]
+values=[{"value_in_url"="all", "default"=true}]
+
+[CATALOG_PRODUCT_BALANCE.url.params.addressPart]
+from=<INPUT.search>
+
+[CATALOG_PRODUCT_BALANCE.url.params.inStock]
+const="true"
+
+[CATALOG_PRODUCT_BALANCE.examples.balance]
+@Test
+@Docs(print="Первый баланс: "<FUNCRESULT.CATALOG_PRODUCT_BALANCE.balance.JSON[0]>)
+inputs={"product_id"=<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]["id"]>}

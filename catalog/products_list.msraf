@@ -1,0 +1,51 @@
+!root("../fixprice.msra")
+
+[CATALOG_PRODUCTS_LIST]
+name="products_list"
+method=POST
+group=<GROUPS.Catalog>
+description="Fetches products inside a category or subcategory; the JSON body mirrors the request built in products_list()."
+
+[CATALOG_PRODUCTS_LIST.input.category_alias]
+type=string
+@Required
+
+[CATALOG_PRODUCTS_LIST.input.subcategory_alias]
+type=string
+
+[CATALOG_PRODUCTS_LIST.input.page]
+type=integer
+default=1
+match={from=1, to=2147483647}
+
+[CATALOG_PRODUCTS_LIST.input.limit]
+type=integer
+default=24
+match={from=1, to=27}
+description="Page size for the listing; the Python code rejects values outside 1..27."
+
+[CATALOG_PRODUCTS_LIST.input.sort]
+type=string
+default="sold"
+values=["sold", "abc", "min", "max"]
+
+[CATALOG_PRODUCTS_LIST.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/product/in/"<INPUT.category_alias>
+
+[CATALOG_PRODUCTS_LIST.url.params.page]
+from=<INPUT.page>
+
+[CATALOG_PRODUCTS_LIST.url.params.limit]
+from=<INPUT.limit>
+
+[CATALOG_PRODUCTS_LIST.url.params.sort]
+from=<INPUT.sort>
+
+[CATALOG_PRODUCTS_LIST.body]
+type="application/json"
+from={category=<INPUT.category_alias>, brand=[], price=[], isDividedPrice=false, isNew=false, isHit=false, isSpecialPrice=false}
+
+[CATALOG_PRODUCTS_LIST.examples.products_list]
+@Test
+@Docs(print="Первый товар: "<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]>)
+inputs={"category_alias"=<FUNCRESULT.CATALOG_TREE.tree.JSON[@Key(0)]["alias"]>}

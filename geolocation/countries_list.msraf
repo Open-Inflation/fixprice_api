@@ -1,0 +1,26 @@
+!root("../fixprice.msra")
+
+[GEOLOCATION_COUNTRIES_LIST]
+name="countries_list"
+method=GET
+group=<GROUPS.Geolocation>
+
+[GEOLOCATION_COUNTRIES_LIST.input.alias]
+type=string
+match=<DOCUMENT.REGEXES.COUNTRY_ALIAS>
+
+[GEOLOCATION_COUNTRIES_LIST.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/location/country"
+
+[GEOLOCATION_COUNTRIES_LIST.url.params.alias]
+from=<INPUT.alias>
+
+[GEOLOCATION_COUNTRIES_LIST.examples.en]
+@Test
+@Docs(print="Первая страна en: "<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.en.JSON[0]>)
+inputs={"alias"="en"}
+
+[GEOLOCATION_COUNTRIES_LIST.examples.ru]
+@Test
+@Docs(print="Первая страна ru: "<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.ru.JSON[0]>)
+inputs={"alias"="ru"}

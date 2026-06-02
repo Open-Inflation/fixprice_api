@@ -1,0 +1,13 @@
+!root("../fixprice.msra")
+
+[ADVERTISING_HOME_BRANDS_LIST]
+name="home_brands_list"
+method=GET
+group=<GROUPS.Advertising>
+
+[ADVERTISING_HOME_BRANDS_LIST.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/home/brand"
+
+[ADVERTISING_HOME_BRANDS_LIST.examples.home_brands]
+@Test
+@Docs(print="Первая рекламная запись: "<FUNCRESULT.ADVERTISING_HOME_BRANDS_LIST.home_brands.JSON[0]>)

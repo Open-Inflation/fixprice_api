@@ -1,0 +1,114 @@
+[msra]
+version="0.2.4.1"
+
+[app]
+name="FixPriceAPI"
+package_name="fixprice_api"
+package_owner="Open-Inflation"
+logo="./logo.png"
+social={telegram="https://t.me/miskler_dev", discord="https://discord.gg/UnJnGHNbBp"}
+description="Аснинхронный неофициальный API клиент для сайта fix-price.com"
+version="0.2.4.1"
+authors=[
+    {name="Miskler", email="mail@miskler.ru"},
+]
+license="MIT"
+keywords=["fixprice", "api", "browser", "catalog"]
+min_required_python="3.10"
+timeout_ms=35000
+browser=camoufox
+abstractions=["./catalog_sort.py"]
+@Humanize
+@BlockImages
+@DisallowHeadless
+
+# Warmup mirrors FixPriceAPI._warmup():
+# MAIN_SITE_URL or ORIGIN -> sniffer for X-Key -> optional test_mode clicks -> body > pre.
+# Camoufox is started with @Humanize, @BlockImages, exclude_addons=[UBO], and i_know_what_im_doing=True.
+[app.warmup]
+@SniffHeaders
+warmup="./warmup.py:pipeline"
+on_error_screenshot_path="screenshot.png"
+
+[app.variables.city_id]
+@Nullable
+@ReadOnly
+types=[{"type"=integer, "match"={from=1, to=2147483647}}]
+description="Current city id used by catalog and balance requests."
+from=<UNSTANDARD_HEADERS.REQUEST.x-city>
+
+[app.variables.language]
+@Nullable
+types=[{"type"=string, "match"=<DOCUMENT.REGEXES.LANGUAGE_TAG>}]
+from=<UNSTANDARD_HEADERS.REQUEST.x-language>
+
+[app.variables.token]
+@Nullable
+types=[{"type"=string}]
+description="Access token captured by the warmup sniffer."
+from=<UNSTANDARD_HEADERS.REQUEST.x-key>
+
+[app.variables.delivery_type]
+@Nullable
+types=[{"type"=string, "match"=["store", "pickup", "courier"]}]
+from=<UNSTANDARD_HEADERS.REQUEST.x-delivery-type>
+
+[app.variables.store_id]
+@Nullable
+types=[{"type"=string, "match"=<DOCUMENT.REGEXES.STORE_ID>}]
+from=<UNSTANDARD_HEADERS.REQUEST.x-pfm>
+
+[app.variables.client_route]
+@Nullable
+types=[{"type"=string}]
+from=<UNSTANDARD_HEADERS.REQUEST.x-client-route>
+
+[app.prefixes]
+MAIN_SITE_URL="https://fix-price.com/catalog"
+MAIN_SITE_ORIGIN="https://fix-price.com/"
+CATALOG_URL="https://api.fix-price.com/buyer"
+
+[app.regexes.COUNTRY_ALIAS]
+regex="^[A-Za-z]{2}$"
+raise="Alias страны должен состоять ровно из двух латинских букв"
+
+[app.regexes.LANGUAGE_TAG]
+regex="^[a-z]{2}(?:-[A-Z]{2})?$"
+description="Языковой тег в формате xx или xx-YY, где xx - код языка из двух строчных букв, а YY - код страны из двух заглавных букв."
+
+[app.regexes.STORE_ID]
+regex="^[A-Za-z]\\d{3}$"
+
+[app.groups.Catalog]
+description="Группа функций для работы с каталогом товаров."
+
+[app.groups.Catalog.Products]
+description="Функции для получения информации о товарах, их наличии и балансе."
+
+[app.groups.Geolocation]
+description="Группа функций для работы с геолокацией, получения информации о странах, регионах и городах."
+
+[app.groups.Advertising]
+description="Группа функций для получения информации о рекламных акциях и брендах на главной странице."
+
+[app.groups.General]
+description="Разные функции, не вошедшие в другие группы."
+
+[app.defaults.func.headers]
+referrer=<DOCUMENT.PREFIXES.MAIN_SITE_ORIGIN>
+cors_mode=cors
+credentials=same-origin
+headers={Accept="application/json, text/plain, */*"}#+<UNSTANDARD_HEADERS.REQUEST>
+
+[app.func]
+!include("catalog/tree.msraf")
+!include("catalog/products_list.msraf")
+!include("catalog/products/balance.msraf")
+!include("catalog/products/info.msraf")
+!include("geolocation/countries_list.msraf")
+!include("geolocation/regions_list.msraf")
+!include("geolocation/cities_list.msraf")
+!include("geolocation/city_info.msraf")
+!include("geolocation/search.msraf")
+!include("advertising/home_brands_list.msraf")
+!include("general/download_image.msraf")

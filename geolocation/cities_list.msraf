@@ -1,0 +1,22 @@
+!root("../fixprice.msra")
+
+[GEOLOCATION_CITIES_LIST]
+name="cities_list"
+method=GET
+group=<GROUPS.Geolocation>
+
+[GEOLOCATION_CITIES_LIST.input.country_id]
+type=integer
+@Required
+match={from=1, to=2147483647}
+
+[GEOLOCATION_CITIES_LIST.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/location/city"
+
+[GEOLOCATION_CITIES_LIST.url.params.countryId]
+from=<INPUT.country_id>
+
+[GEOLOCATION_CITIES_LIST.examples.cities]
+@Test
+@Docs(print="Первый город: "<FUNCRESULT.GEOLOCATION_CITIES_LIST.cities.JSON[0]>)
+inputs={"country_id"=<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.en.JSON[1]["id"]>}

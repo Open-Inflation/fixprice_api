@@ -1,0 +1,13 @@
+!root("../fixprice.msra")
+
+[CATALOG_TREE]
+name="tree"
+method=GET
+group=<GROUPS.Catalog>
+
+[CATALOG_TREE.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/category"
+
+[CATALOG_TREE.examples.tree]
+@Test
+@Docs(print="Первая категория: "<FUNCRESULT.CATALOG_TREE.tree.JSON[@Key(0)]["alias"]>)

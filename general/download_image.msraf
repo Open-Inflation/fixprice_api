@@ -1,0 +1,23 @@
+!root("../fixprice.msra")
+
+[GENERAL_DOWNLOAD_IMAGE]
+name="download_image"
+method=GET
+transport=direct
+group=<GROUPS.General>
+description="Direct image download helper; bypasses the browser request pipeline and returns Output with .image()."
+
+[GENERAL_DOWNLOAD_IMAGE.input.url]
+type=string
+@Required
+description="Direct image URL."
+
+[GENERAL_DOWNLOAD_IMAGE.url]
+base=<INPUT.url>
+
+[GENERAL_DOWNLOAD_IMAGE.examples.download_image]
+@Test
+@Docs
+type=image # доступно text и json (по умолчанию)
+description="Загрузка изображения по прямой ссылке."
+inputs={"url"=<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]["images"][0]["src"]>}

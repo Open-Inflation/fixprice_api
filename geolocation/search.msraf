@@ -1,0 +1,50 @@
+!root("../fixprice.msra")
+
+[GEOLOCATION_SHOP_SEARCH]
+name="search"
+method=GET
+group=<GROUPS.Geolocation>
+
+[GEOLOCATION_SHOP_SEARCH.input.country_id]
+type=integer
+match={from=1, to=2147483647}
+
+[GEOLOCATION_SHOP_SEARCH.input.region_id]
+type=integer
+match={from=1, to=2147483647}
+
+[GEOLOCATION_SHOP_SEARCH.input.city_id]
+type=integer
+match={from=1, to=2147483647}
+
+[GEOLOCATION_SHOP_SEARCH.input.search]
+type=string
+
+[GEOLOCATION_SHOP_SEARCH.url]
+base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/store"
+
+[GEOLOCATION_SHOP_SEARCH.url.params.searchType]
+const="metro"
+
+[GEOLOCATION_SHOP_SEARCH.url.params.canPickup]
+const="all"
+
+[GEOLOCATION_SHOP_SEARCH.url.params.showTemporarilyClosed]
+const="all"
+
+[GEOLOCATION_SHOP_SEARCH.url.params.countryId]
+from=<INPUT.country_id>
+
+[GEOLOCATION_SHOP_SEARCH.url.params.regionId]
+from=<INPUT.region_id>
+
+[GEOLOCATION_SHOP_SEARCH.url.params.cityId]
+from=<INPUT.city_id>
+
+[GEOLOCATION_SHOP_SEARCH.url.params.addressPart]
+from=<INPUT.search>
+
+[GEOLOCATION_SHOP_SEARCH.examples.search]
+@Test
+@Docs(print="Первый магазин: "<FUNCRESULT.GEOLOCATION_SHOP_SEARCH.search.JSON[0]>)
+inputs={"country_id"=<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.en.JSON[0]["id"]>, "city_id"=<FUNCRESULT.GEOLOCATION_CITIES_LIST.cities.JSON[0]["id"]>}

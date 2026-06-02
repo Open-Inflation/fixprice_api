@@ -1,0 +1,55 @@
+!root("../../fixprice.msra")
+
+[CATALOG_PRODUCT_INFO]
+name="info"
+transport=goto
+group=<GROUPS.Catalog.Products>
+description="Loads the product page, extracts window.__NUXT__, and overrides resp.json to return the product payload."
+
+[CATALOG_PRODUCT_INFO.overload.fullurl]
+[CATALOG_PRODUCT_INFO.overload.structured]
+
+# Если одновременно в корне и в перегрузках указано @Required - синтаксическая ошибка, должна либо в корне, либо в перегрузках
+[CATALOG_PRODUCT_INFO.input.url]
+type=string
+description="Relative catalog URL appended after /catalog/."
+[CATALOG_PRODUCT_INFO.input.url.overload.fullurl] # здесь не указана перегрузка structured, значит там она не разрешена
+@Required
+
+[CATALOG_PRODUCT_INFO.input.category]
+type=string
+description="Category slug for the structured overload."
+[CATALOG_PRODUCT_INFO.input.category.overload.structured]
+@Required
+
+[CATALOG_PRODUCT_INFO.input.product_id]
+type=integer
+match={from=1, to=2147483647}
+description="Product id for the structured overload."
+[CATALOG_PRODUCT_INFO.input.product_id.overload.structured]
+@Required
+
+[CATALOG_PRODUCT_INFO.input.slug]
+type=string
+description="Slug for the structured overload."
+[CATALOG_PRODUCT_INFO.input.slug.overload.structured]
+@Required
+
+# обычный [CATALOG_PRODUCT_INFO.url] при массивном перечислении не допускается (синтаксическая ошибка)
+
+[[CATALOG_PRODUCT_INFO.url]]
+base=<DOCUMENT.PREFIXES.MAIN_SITE_ORIGIN>"/catalog/"<INPUT.url>
+priority=0 # дефолт
+[[CATALOG_PRODUCT_INFO.url]]
+base=<DOCUMENT.PREFIXES.MAIN_SITE_ORIGIN>"/catalog/"<INPUT.category>"/p-"<INPUT.product_id>"-"<INPUT.slug>
+priority=0 # дефолт, приоритет ниже, но имеет уникальные INPUT-кандидаты, то есть если INPUT.url не передан, а его кандидаты - да, сработает
+
+[CATALOG_PRODUCT_INFO.extractor]
+@RenderHtml
+script="extractors/catalog-product-info.js"
+goto_pipeline="./goto_pipeline.py:pipeline"
+
+[CATALOG_PRODUCT_INFO.examples.info]
+@Test
+@Docs(print="Информация о товаре: "<FUNCRESULT.CATALOG_PRODUCT_INFO.info.JSON>)
+inputs={"url"=<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]["url"]>}
