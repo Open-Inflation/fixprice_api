@@ -5,7 +5,7 @@ on:
 
 jobs:
   source-sync:
-    uses: Miskler/engine-reverse-ide/.github/workflows/source-sync.yml@main
+    uses: Open-Inflation/engine-reverse-ide/.github/workflows/source-sync.yml@main
     with:
       logic_repository: Miskler/engine-reverse-ide
       logic_ref: main
