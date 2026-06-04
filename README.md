@@ -80,37 +80,6 @@ if __name__ == "__main__":
 
 ```
 
-## Автотесты API (pytest + snapshots)
-
-В проекте используется автотест-фреймворк из `human_requests`:
-
-- endpoint-методы в бизнес-коде помечаются `@autotest`;
-- pytest-плагин сам находит эти методы и запускает их;
-- JSON-ответы проверяются через `pytest-jsonschema-snapshot` (`schemashot`);
-- параметры вызова и пост-обработка результата регистрируются в `tests/api_test.py` через:
-  - `@autotest_params`
-  - `@autotest_hook`
-  - `@autotest_depends_on`
-
-Минимальная конфигурация уже включена в `pyproject.toml`:
-
-```ini
-[tool.pytest.ini_options]
-anyio_mode = "auto"
-autotest_start_class = "fixprice_api.FixPriceAPI"
-```
-
-Запуск тестов:
-
-```bash
-pytest
-```
-
-Важно:
-
-- используется `pytest-anyio` (не `pytest-asyncio`);
-- ручные тесты остаются только для кейсов, которые не относятся к JSON-схемам endpoint-методов (например, `download_image`).
-
 Для более подробной информации смотрите референсы [документации](https://open-inflation.github.io/fixprice_api/quick_start).
 
 <div align="center">

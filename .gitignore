@@ -1,0 +1,25 @@
+# Python bytecode
+__pycache__/
+*.py[cod]
+*.pyd
+# Virtual environments
+.venv/
+venv/
+env/
+# Test, lint, and coverage caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+coverage.svg
+htmlcov/
+# Build artifacts
+build/
+dist/
+*.egg-info/
+# Generated project noise
+merged.msra
+error.log
+screenshot.png
+docs/_build/
