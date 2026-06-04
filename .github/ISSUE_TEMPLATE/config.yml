@@ -1,0 +1,12 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: "📖  Read the docs"
+    url: "https://open-inflation.github.io/fixprice_api/quick_start.html"
+    about: "Start here for “how-to” questions."
+  - name: "💬  Discord server (Discussions)"
+    url: "https://discord.gg/UnJnGHNbBp"
+    about: "General Q&A and community support."
+  - name: "💬  Telegram channel (Discussions)"
+    url: "https://t.me/miskler_dev"
+    about: "General Q&A and community support."

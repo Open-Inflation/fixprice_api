@@ -1,4 +1,5 @@
 <div align="center">
+
 # FixPriceAPI
 
 ![Tests last run (ISO)](https://img.shields.io/badge/dynamic/json?label=Tests%20last%20run&query=%24.workflow_runs%5B0%5D.updated_at&url=https%3A%2F%2Fapi.github.com%2Frepos%2FOpen-Inflation%2Ffixprice_api%2Factions%2Fworkflows%2Ftests.yml%2Fruns%3Fper_page%3D1%26status%3Dcompleted&logo=githubactions&cacheSeconds=300)
@@ -23,7 +24,7 @@
 
 <div align="center">
 
-# Usage
+## Usage
 
 </div>
 
