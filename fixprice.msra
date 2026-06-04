@@ -22,6 +22,9 @@ abstractions=["./catalog_sort.py"]
 @BlockImages
 @DisallowHeadless
 
+[app.sync]
+preserved_target_paths=["tests/__snapshots__"]
+
 # Warmup mirrors FixPriceAPI._warmup():
 # MAIN_SITE_URL or ORIGIN -> sniffer for X-Key -> optional test_mode clicks -> body > pre.
 # Camoufox is started with @Humanize, @BlockImages, exclude_addons=[UBO], and i_know_what_im_doing=True.
