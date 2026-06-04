@@ -22,6 +22,9 @@ abstractions=["./catalog_sort.py"]
 @BlockImages
 @DisallowHeadless
 
+[app.issue_templates]
+assignee="miskler"
+
 [app.sync]
 preserved_target_paths=["tests/__snapshots__"]
 ignored_generated_patterns=["**/__pycache__", "**/*.pyc"]
