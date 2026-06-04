@@ -109,15 +109,6 @@ jobs:
                   child.unlink()
 
           copy_tree(generated, target)
-
-          for relative_path in preserve_paths:
-              source_path = preserved_root / relative_path
-              destination_path = target / relative_path
-              if source_path.is_dir():
-                  shutil.copytree(source_path, destination_path, dirs_exist_ok=True)
-              else:
-                  destination_path.parent.mkdir(parents=True, exist_ok=True)
-                  shutil.copy2(source_path, destination_path)
           PY
 
       - name: Install target project dependencies
