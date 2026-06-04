@@ -1,38 +1,20 @@
-﻿fixprice\_api.manager
-=====================
+fixprice_api.manager
+====================
+
+.. currentmodule:: fixprice_api.manager
 
 .. automodule:: fixprice_api.manager
 
-   
-   .. rubric:: Functions
+.. rubric:: Classes
 
-   .. autosummary::
-   
-      dataclass
-      field
-   
-   .. rubric:: Classes
+.. autoclass:: FixPriceAPI
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-   .. autosummary::
-   
-      Any
-      AsyncCamoufox
-      ClassAdvertising
-      ClassCatalog
-      ClassGeneral
-      ClassGeolocation
-      FetchResponse
-      FixPriceAPI
-      HeaderAnomalySniffer
-      HumanBrowser
-      HumanContext
-      HumanPage
-      Proxy
-      WaitHeader
-      defaultdict
-   
-   .. rubric:: Exceptions
+.. autoclass:: Warmup
+   :members:
+   :undoc-members:
+   :show-inheritance:
 
-   .. autosummary::
-   
-      PWTimeoutError
+

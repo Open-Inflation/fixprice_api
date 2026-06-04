@@ -1,16 +1,17 @@
-﻿fixprice\_api.endpoints.general
-===============================
+fixprice_api.endpoints.general
+==============================
+
+Разные функции, не вошедшие в другие группы.
+
+.. currentmodule:: fixprice_api.endpoints.general
 
 .. automodule:: fixprice_api.endpoints.general
 
-   
-   .. rubric:: Classes
+.. rubric:: Classes
 
-   .. autosummary::
-   
-      BytesIO
-      ClassGeneral
-      ExponentialRetry
-      Proxy
-      RetryClient
-   
+.. autoclass:: ClassGeneral
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+

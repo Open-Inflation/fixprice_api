@@ -1,41 +1,29 @@
-"""Общий (не класифицируемый) функционал"""
+from __future__ import annotations
 
-from io import BytesIO
 from typing import TYPE_CHECKING
 
-from aiohttp_retry import ExponentialRetry, RetryClient
-from human_requests import ApiChild
-from human_requests.abstraction import Proxy
+from .. import abstraction
 
 if TYPE_CHECKING:
-    from fixprice_api.manager import FixPriceAPI
+    from ..manager import FixPriceAPI
 
 
-class ClassGeneral(ApiChild["FixPriceAPI"]):
-    """Общие методы API Перекрёстка.
+class ClassGeneral:
+    """Разные функции, не вошедшие в другие группы."""
 
-    Включает методы для работы с изображениями, формой обратной связи,
-    получения информации о пользователе и других общих функций.
-    """
+    def __init__(self, parent: FixPriceAPI):
+        self._parent = parent
 
-    async def download_image(
-        self, url: str, retry_attempts: int = 3, timeout: float = 10
-    ) -> BytesIO:
-        """Скачать изображение по URL."""
-        retry_options = ExponentialRetry(
-            attempts=retry_attempts, start_timeout=3.0, max_timeout=timeout
-        )
+    async def download_image(self, url: str) -> abstraction.Output:
+        """Direct image download helper; bypasses the browser request pipeline and returns Output with .image()."""
+        if url is None:
+            raise ValueError("`url` is required")
+        if not isinstance(url, str):
+            raise TypeError("`url` must be str")
 
-        px = (
-            self._parent.proxy
-            if isinstance(self._parent.proxy, Proxy)
-            else Proxy(self._parent.proxy)
-        )
-        async with RetryClient(retry_options=retry_options) as retry_client:
-            async with retry_client.get(
-                url, raise_for_status=True, proxy=px.as_str()
-            ) as resp:
-                body = await resp.read()
-                file = BytesIO(body)
-                file.name = url.split("/")[-1]
-        return file
+        if url is not None:
+            request_url = url
+        else:
+            raise TypeError("download_image() call is ambiguous; URL cannot be collected")
+
+        return await self._parent._direct_request(request_url)

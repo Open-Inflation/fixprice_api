@@ -1,23 +1,30 @@
-"""Реклама"""
+from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from human_requests import ApiChild, autotest
-from human_requests.abstraction import FetchResponse, HttpMethod
+from human_requests import autotest
+from human_requests.abstraction import HttpMethod
+
+from .. import abstraction
 
 if TYPE_CHECKING:
-    from fixprice_api.manager import FixPriceAPI
+    from ..manager import FixPriceAPI
 
 
-class ClassAdvertising(ApiChild["FixPriceAPI"]):
-    """Методы для работы с рекламными материалами Перекрёстка.
+class ClassAdvertising:
+    """Группа функций для получения информации о рекламных акциях и брендах на главной странице."""
 
-    Включает получение баннеров, слайдеров, буклетов и другого рекламного контента.
-    """
+    def __init__(self, parent: FixPriceAPI):
+        self._parent = parent
 
     @autotest
-    async def home_brands_list(self) -> FetchResponse:
-        """Возвращает список брендов логотипы которых должны отображаться на главной. Является рекламой."""
+    async def home_brands_list(self) -> abstraction.Output:
+
+        request_url = str(self._parent._CATALOG_URL) + "/v1/home/brand"
+
+        json_body = None
         return await self._parent._request(
-            HttpMethod.GET, f"{self._parent.CATALOG_URL}/v1/home/brand"
+            HttpMethod.GET,
+            url=request_url,
+            json_body=json_body,
         )

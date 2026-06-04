@@ -11,7 +11,7 @@ on:
         required: true
         default: "all"
         type: choice
-        options: [docs, package, all]
+        options: ["docs", "package", "all"]
 
 permissions:
   contents: write

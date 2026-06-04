@@ -23,7 +23,7 @@ concurrency:
 
 jobs:
   tests:
-    runs-on: [self-hosted]  # или просто "scrapper" если это label
+    runs-on: ["self-hosted"]
 
     steps:
       - name: Check out repository
@@ -38,13 +38,13 @@ jobs:
         run: |
           python -m venv venv
           venv/bin/python -m pip install -U pip
-          venv/bin/python -m pip install -r requirements.txt
+          venv/bin/python -m pip install -r requirements-dev.txt
 
       - name: Run tests (venv)
         run: |
           set -o pipefail
           venv/bin/python -m pytest --jsss-ci-cd --save-original --tb=short 2>&1 | tee error.log
-        
+
       - name: report playwright failure
         if: failure()
         uses: Miskler/human-requests-bot@v11

@@ -1,9 +1,8 @@
 API Reference
 =============
 
-.. autosummary::
-   :recursive:
-   :toctree: _api
+.. toctree::
+   :maxdepth: 1
 
-   fixprice_api.endpoints
-   fixprice_api.manager
+   _api/fixprice_api.endpoints
+   _api/fixprice_api.manager

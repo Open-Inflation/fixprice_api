@@ -1,5 +1,5 @@
-fixprice_api documentation
-==========================
+FixPriceAPI documentation
+=========================
 
 .. toctree::
    :maxdepth: 4
@@ -11,5 +11,4 @@ fixprice_api documentation
    :maxdepth: 4
    :caption: References
 
-   fixprice_api
    api

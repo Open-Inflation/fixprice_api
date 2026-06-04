@@ -1,0 +1,7 @@
+-r requirements.txt
+-r docs/requirements.txt
+pytest
+pytest-anyio
+pytest-jsonschema-snapshot
+ruff
+mypy

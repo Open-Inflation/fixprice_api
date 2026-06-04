@@ -5,14 +5,19 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "fixprice_api"
 dynamic = ["version"]
-description = "A Python API client for FixPrice catalog"
+description = "Аснинхронный неофициальный API клиент для сайта fix-price.com"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
 authors = [
-    { name = "Miskler" }
+    { name = "Miskler", email = "mail@miskler.ru" }
 ]
-keywords = ["api", "fixprice", "store", "catalog"]
+keywords = [
+    "fixprice",
+    "api",
+    "browser",
+    "catalog"
+]
 classifiers = [
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3.10",
@@ -25,38 +30,42 @@ classifiers = [
     "Intended Audience :: Information Technology",
     "Topic :: Software Development :: Libraries :: Python Modules",
     "Topic :: Internet",
-    "Topic :: Utilities",
+    "Topic :: Utilities"
 ]
 dependencies = [
     "camoufox[geoip]",
     "human_requests",
+    "Pillow",
+    "rich",
     "aiohttp",
-    "aiohttp-retry"
+    "aiohttp-retry",
+    "pydantic"
+]
+[tool.mypy]
+ignore_missing_imports = true
+[tool.ruff]
+line-length = 200
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+    "SIM"
+]
+ignore = [
+    "RUF001",
+    "RUF002",
+    "RUF003"
 ]
 
-[project.optional-dependencies]
-tests = [
-    "pytest",
-    "pytest-anyio",
-    "pytest-jsonschema-snapshot",
-    "jsoncrack-for-sphinx",
-]
-dev = [
-    "pytest",
-    "pytest-anyio",
-    "pytest-jsonschema-snapshot",
-    "jsoncrack-for-sphinx",
-    "pillow",
-    "black",
-    "flake8",
-    "mypy",
-    "isort",
-]
+[tool.setuptools]
+include-package-data = true
 
-[project.urls]
-Homepage = "https://github.com/Open-Inflation/fixprice_api"
-Repository = "https://github.com/Open-Inflation/fixprice_api"
-Documentation = "https://open-inflation.github.io/fixprice_api/quick_start"
+[tool.setuptools.package-data]
+fixprice_api = ["extractors/*.js", "extractors/**/*.js"]
 
 [tool.setuptools.dynamic]
 version = { attr = "fixprice_api.__version__" }

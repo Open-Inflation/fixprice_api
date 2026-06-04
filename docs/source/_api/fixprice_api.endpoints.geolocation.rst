@@ -1,14 +1,17 @@
-﻿fixprice\_api.endpoints.geolocation
-===================================
+fixprice_api.endpoints.geolocation
+==================================
+
+Группа функций для работы с геолокацией, получения информации о странах, регионах и городах.
+
+.. currentmodule:: fixprice_api.endpoints.geolocation
 
 .. automodule:: fixprice_api.endpoints.geolocation
 
-   
-   .. rubric:: Classes
+.. rubric:: Classes
 
-   .. autosummary::
-   
-      ClassGeolocation
-      FetchResponse
-      ShopService
-   
+.. autoclass:: ClassGeolocation
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+

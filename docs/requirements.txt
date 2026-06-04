@@ -1,5 +1,3 @@
 sphinx
-sphinx-autoapi
-jsoncrack-for-sphinx
 furo
-sphinx_toolbox
+jsoncrack-for-sphinx

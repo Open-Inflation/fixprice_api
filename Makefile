@@ -4,7 +4,7 @@ install:
 	pip install .
 
 install-dev:
-	pip install -e .[dev]
+	pip install -r requirements-dev.txt
 
 test:
 	pytest --cov=fixprice_api --cov-report=xml --cov-report=html --cov-report=term-missing
@@ -13,14 +13,14 @@ test-quick:
 	pytest --tb=short
 
 lint:
-	python -m black --check fixprice_api tests
+	python -m ruff check fixprice_api tests example.py docs/source/conf.py
 
 type-check:
 	python -m mypy fixprice_api
 
 format:
-	black fixprice_api/ tests/
-	isort fixprice_api/ tests/
+	python -m ruff check --select I --fix fixprice_api tests example.py docs/source/conf.py
+	python -m ruff format fixprice_api tests example.py docs/source/conf.py
 
 clean:
 	rm -rf build/ dist/ *.egg-info/
