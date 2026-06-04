@@ -41,9 +41,12 @@ jobs:
           venv/bin/python -m pip install -r requirements-dev.txt
 
       - name: Run tests (venv)
+        env:
+          MSRA_RUN_COMMANDS: |
+            set -o pipefail
+            venv/bin/python -m pytest --jsss-ci-cd --save-original --tb=short 2>&1 | tee error.log
         run: |
-          set -o pipefail
-          venv/bin/python -m pytest --jsss-ci-cd --save-original --tb=short 2>&1 | tee error.log
+          xvfb-run -a bash -e -lc "$MSRA_RUN_COMMANDS"
 
       - name: report playwright failure
         if: failure()
