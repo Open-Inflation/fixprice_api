@@ -1,0 +1,134 @@
+{
+  "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "items": {
+    "type": "object",
+    "required": [
+      "alias",
+      "city",
+      "currency",
+      "id",
+      "language",
+      "title"
+    ],
+    "properties": {
+      "alias": {
+        "type": "string",
+        "enum": [
+          "LV",
+          "RU",
+          "GE",
+          "KG",
+          "UZ",
+          "BY",
+          "MN",
+          "AE",
+          "RS",
+          "KZ"
+        ]
+      },
+      "city": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "latitude",
+              "longitude",
+              "prefix",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "latitude": {
+                "type": "number"
+              },
+              "longitude": {
+                "type": "number"
+              },
+              "prefix": {
+                "type": "string",
+                "enum": [
+                  "г",
+                  "city"
+                ]
+              },
+              "title": {
+                "type": "string",
+                "j2sEnumRejected": true
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "currency": {
+        "type": "object",
+        "required": [
+          "symbol",
+          "symbolFirst",
+          "title"
+        ],
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "enum": [
+              "€",
+              "₽",
+              "₾",
+              "с",
+              "So'm",
+              "руб",
+              "₮",
+              "AED",
+              "DIN",
+              "₸"
+            ]
+          },
+          "symbolFirst": {
+            "type": "boolean"
+          },
+          "title": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      },
+      "id": {
+        "type": "integer"
+      },
+      "language": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "alias"
+            ],
+            "properties": {
+              "alias": {
+                "type": "string",
+                "enum": [
+                  "lv",
+                  "ru",
+                  "en-AE",
+                  "sr"
+                ]
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "title": {
+        "type": "string",
+        "j2sEnumRejected": true
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "type": "object",
+  "required": [
+    "x-city",
+    "x-client-route",
+    "x-key",
+    "x-language",
+    "x-logged"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "x-city": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
+    "x-client-route": {
+      "anyOf": [
+        {
+          "type": "null"
+        },
+        {
+          "type": "string",
+          "j2sEnumRejected": true
+        }
+      ]
+    },
+    "x-key": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
+    "x-language": {
+      "type": "string",
+      "enum": [
+        "ru"
+      ]
+    },
+    "x-logged": {
+      "type": "string",
+      "j2sEnumRejected": true
+    }
+  }
+}

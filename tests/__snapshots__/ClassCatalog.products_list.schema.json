@@ -1,0 +1,213 @@
+{
+  "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "items": {
+    "type": "object",
+    "required": [
+      "active",
+      "adult",
+      "brand",
+      "category",
+      "forbidden",
+      "id",
+      "image",
+      "images",
+      "inStock",
+      "isFresh",
+      "isHit",
+      "isNew",
+      "isPromo",
+      "isQRMark",
+      "isSeason",
+      "maxPrice",
+      "minPrice",
+      "price",
+      "sku",
+      "specialPrice",
+      "title",
+      "unit",
+      "unitPrice",
+      "url",
+      "variantCount",
+      "variantId"
+    ],
+    "properties": {
+      "active": {
+        "type": "boolean"
+      },
+      "adult": {
+        "type": "boolean"
+      },
+      "badges": {
+        "type": "array",
+        "items": {}
+      },
+      "brand": {
+        "anyOf": [
+          {
+            "type": "object",
+            "required": [
+              "id",
+              "title"
+            ],
+            "properties": {
+              "id": {
+                "type": "integer"
+              },
+              "title": {
+                "type": "string",
+                "j2sEnumRejected": true
+              }
+            }
+          },
+          {
+            "type": "null"
+          }
+        ]
+      },
+      "category": {
+        "type": "object",
+        "required": [
+          "id",
+          "parentCategory",
+          "title"
+        ],
+        "properties": {
+          "id": {
+            "type": "integer"
+          },
+          "parentCategory": {
+            "type": "null"
+          },
+          "title": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      },
+      "forbidden": {
+        "type": "boolean"
+      },
+      "id": {
+        "type": "integer"
+      },
+      "image": {
+        "type": "integer"
+      },
+      "images": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "src",
+            "title"
+          ],
+          "properties": {
+            "id": {
+              "type": "integer"
+            },
+            "src": {
+              "type": "string",
+              "format": "uri"
+            },
+            "title": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      "inStock": {
+        "type": "integer"
+      },
+      "isFresh": {
+        "type": "boolean"
+      },
+      "isHit": {
+        "type": "boolean"
+      },
+      "isNew": {
+        "type": "boolean"
+      },
+      "isPromo": {
+        "type": "boolean"
+      },
+      "isQRMark": {
+        "type": "boolean"
+      },
+      "isSeason": {
+        "type": "boolean"
+      },
+      "maxPrice": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "minPrice": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "price": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "resources": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "required": [
+            "link",
+            "src",
+            "videoType"
+          ],
+          "properties": {
+            "link": {
+              "type": "null"
+            },
+            "src": {
+              "type": "string",
+              "format": "uri"
+            },
+            "videoType": {
+              "type": "null"
+            }
+          }
+        }
+      },
+      "sku": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "specialPrice": {
+        "type": "null"
+      },
+      "title": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "unit": {
+        "type": "null"
+      },
+      "unitPrice": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "url": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "variantCount": {
+        "type": "integer"
+      },
+      "variantId": {
+        "anyOf": [
+          {
+            "type": "null"
+          },
+          {
+            "type": "integer"
+          }
+        ]
+      }
+    }
+  }
+}

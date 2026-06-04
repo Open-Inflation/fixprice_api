@@ -1,0 +1,101 @@
+{
+  "type": "array",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "items": {
+    "type": "object",
+    "required": [
+      "addressId",
+      "countryId",
+      "fias",
+      "fiasid",
+      "id",
+      "kladr",
+      "latitude",
+      "longitude",
+      "name",
+      "prefix",
+      "regionTitle",
+      "title"
+    ],
+    "properties": {
+      "addressId": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "countryId": {
+        "type": "integer"
+      },
+      "fias": {
+        "type": "string",
+        "anyOf": [
+          {
+            "type": "string",
+            "j2sEnumRejected": true
+          },
+          {
+            "type": "string",
+            "format": "uuid"
+          }
+        ]
+      },
+      "fiasid": {
+        "type": "string",
+        "anyOf": [
+          {
+            "type": "string",
+            "j2sEnumRejected": true
+          },
+          {
+            "type": "string",
+            "format": "uuid"
+          }
+        ]
+      },
+      "id": {
+        "type": "integer"
+      },
+      "kladr": {
+        "type": "null"
+      },
+      "latitude": {
+        "type": "number"
+      },
+      "longitude": {
+        "type": "number"
+      },
+      "name": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "prefix": {
+        "type": "string",
+        "enum": [
+          "г",
+          "д",
+          "пгт",
+          "гп",
+          "рп",
+          "ст-ца",
+          "п",
+          "с",
+          "г.о.г",
+          "с/п",
+          "дп",
+          "мкр",
+          "аул",
+          "сл",
+          "х",
+          "п/ст"
+        ]
+      },
+      "regionTitle": {
+        "type": "string",
+        "j2sEnumRejected": true
+      },
+      "title": {
+        "type": "string",
+        "j2sEnumRejected": true
+      }
+    }
+  }
+}

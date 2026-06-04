@@ -89,18 +89,6 @@ jobs:
                       destination_path.parent.mkdir(parents=True, exist_ok=True)
                       shutil.copy2(item, destination_path)
 
-          def remove_ignored(root: Path) -> None:
-              ignored_paths = sorted(
-                  [path for path in root.rglob("*") if is_ignored(path.relative_to(root))],
-                  key=lambda path: len(path.parts),
-                  reverse=True,
-              )
-              for path in ignored_paths:
-                  if path.is_dir():
-                      shutil.rmtree(path)
-                  else:
-                      path.unlink()
-
           for relative_path in preserve_paths:
               source_path = target / relative_path
               if not source_path.exists():
@@ -130,9 +118,6 @@ jobs:
               else:
                   destination_path.parent.mkdir(parents=True, exist_ok=True)
                   shutil.copy2(source_path, destination_path)
-
-          remove_ignored(target)
-          shutil.rmtree(preserved_root, ignore_errors=True)
           PY
 
       - name: Install target project dependencies
@@ -145,6 +130,47 @@ jobs:
         working-directory: logic
         run: |
           python -m msra_codegen validate ../target
+
+      - name: Restore preserved artifacts and remove generated noise
+        run: |
+          python - <<'PY'
+          from fnmatch import fnmatch
+          from pathlib import Path
+          import shutil
+
+          target = Path("target")
+          preserved_root = Path("preserved")
+          preserve_paths = ["tests/__snapshots__"]
+          ignored_patterns = ["**/__pycache__", "**/*.pyc"]
+
+          def is_ignored(relative_path: Path) -> bool:
+              relative_text = relative_path.as_posix()
+              return any(fnmatch(relative_text, pattern) for pattern in ignored_patterns)
+
+          def remove_ignored(root: Path) -> None:
+              ignored_paths = sorted(
+                  [path for path in root.rglob("*") if is_ignored(path.relative_to(root))],
+                  key=lambda path: len(path.parts),
+                  reverse=True,
+              )
+              for path in ignored_paths:
+                  if path.is_dir():
+                      shutil.rmtree(path)
+                  else:
+                      path.unlink()
+
+          for relative_path in preserve_paths:
+              source_path = preserved_root / relative_path
+              destination_path = target / relative_path
+              if source_path.is_dir():
+                  shutil.copytree(source_path, destination_path, dirs_exist_ok=True)
+              else:
+                  destination_path.parent.mkdir(parents=True, exist_ok=True)
+                  shutil.copy2(source_path, destination_path)
+
+          remove_ignored(target)
+          shutil.rmtree(preserved_root, ignore_errors=True)
+          PY
 
       - name: Commit and push
         working-directory: target

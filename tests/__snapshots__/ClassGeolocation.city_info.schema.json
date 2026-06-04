@@ -1,0 +1,60 @@
+{
+  "type": "object",
+  "required": [
+    "addressId",
+    "countryId",
+    "fias",
+    "fiasid",
+    "id",
+    "kladr",
+    "latitude",
+    "longitude",
+    "name",
+    "prefix",
+    "title"
+  ],
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "properties": {
+    "addressId": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
+    "countryId": {
+      "type": "integer"
+    },
+    "fias": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "fiasid": {
+      "type": "string",
+      "format": "uuid"
+    },
+    "id": {
+      "type": "integer"
+    },
+    "kladr": {
+      "type": "null"
+    },
+    "latitude": {
+      "type": "number"
+    },
+    "longitude": {
+      "type": "number"
+    },
+    "name": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
+    "prefix": {
+      "type": "string",
+      "enum": [
+        "г"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "j2sEnumRejected": true
+    }
+  }
+}
