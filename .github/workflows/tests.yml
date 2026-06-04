@@ -40,6 +40,11 @@ jobs:
           venv/bin/python -m pip install -U pip
           venv/bin/python -m pip install -r requirements-dev.txt
 
+      - name: Install Xvfb
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb xauth
+
       - name: Run tests (venv)
         env:
           MSRA_RUN_COMMANDS: |
