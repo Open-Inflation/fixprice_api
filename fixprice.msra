@@ -24,6 +24,7 @@ abstractions=["./catalog_sort.py"]
 
 [app.sync]
 preserved_target_paths=["tests/__snapshots__"]
+ignored_generated_patterns=["**/__pycache__", "**/*.pyc"]
 
 # Warmup mirrors FixPriceAPI._warmup():
 # MAIN_SITE_URL or ORIGIN -> sniffer for X-Key -> optional test_mode clicks -> body > pre.
