@@ -1,0 +1,4 @@
+generated/
+.generated/
+.ruff_cache/
+__pycache__/
