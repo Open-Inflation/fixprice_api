@@ -72,7 +72,7 @@ from=<UNSTANDARD_HEADERS.REQUEST.x-client-route>
 
 [app.prefixes]
 MAIN_SITE_URL="https://fix-price.com/catalog"
-MAIN_SITE_ORIGIN="https://fix-price.com/"
+MAIN_SITE_ORIGIN="https://fix-price.com"
 CATALOG_URL="https://api.fix-price.com/buyer"
 
 [app.regexes.COUNTRY_ALIAS]
@@ -105,7 +105,7 @@ description="Разные функции, не вошедшие в другие 
 referrer=<DOCUMENT.PREFIXES.MAIN_SITE_ORIGIN>
 cors_mode=cors
 credentials=same-origin
-headers={Accept="application/json, text/plain, */*"}#+<UNSTANDARD_HEADERS.REQUEST>
+headers={Accept="application/json, text/plain, */*", "x-city"=<VARIABLES.city_id>}#+<UNSTANDARD_HEADERS.REQUEST>
 
 [app.func]
 !include("catalog/tree.msraf")
