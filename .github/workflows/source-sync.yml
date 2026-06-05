@@ -18,7 +18,7 @@ jobs:
       - name: Check out generator repository
         uses: actions/checkout@v4
         with:
-          repository: "Miskler/engine-reverse-ide"
+          repository: "Open-Inflation/engine-reverse-ide"
           ref: "main"
           path: logic
           token: ${{ secrets.SOURCE_SYNC_TOKEN }}

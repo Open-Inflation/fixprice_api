@@ -21,6 +21,11 @@ async def pipeline(warmup: Warmup):
         ],
         timeout_ms=warmup.timeout_ms,
     )
+
+    await warmup.page.wait_for_load_state("networkidle")
+    await warmup.page.evaluate("""
+        window.scrollTo(0, document.scrollingElement.scrollHeight)
+    """)
     # await warmup.page.wait_for_selector(
     #     selector="body > pre",
     #     timeout=warmup.timeout_ms,
