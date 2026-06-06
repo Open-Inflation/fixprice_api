@@ -33,5 +33,5 @@ const="true"
 
 [CATALOG_PRODUCT_BALANCE.examples.balance]
 @Test
-@Docs(print="Первый баланс: "<FUNCRESULT.CATALOG_PRODUCT_BALANCE.balance.JSON[0]>)
+@Docs(print="Первый баланс: "<FUNCRESULT.CATALOG_PRODUCT_BALANCE.balance.JSON[0]["address"]>"; "<FUNCRESULT.CATALOG_PRODUCT_BALANCE.balance.JSON[0]["count"]>" шт")
 inputs={"product_id"=<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]["id"]>}

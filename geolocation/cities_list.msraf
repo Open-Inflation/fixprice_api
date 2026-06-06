@@ -18,5 +18,5 @@ from=<INPUT.country_id>
 
 [GEOLOCATION_CITIES_LIST.examples.cities]
 @Test
-@Docs(print="Первый город: "<FUNCRESULT.GEOLOCATION_CITIES_LIST.cities.JSON[0]>)
-inputs={"country_id"=<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.en.JSON[1]["id"]>}
+@Docs(print="Первый город: "<FUNCRESULT.GEOLOCATION_CITIES_LIST.cities.JSON[0]["name"]>)
+inputs={"country_id"=<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.first_country.JSON[1]["id"]>}

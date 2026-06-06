@@ -51,5 +51,5 @@ goto_pipeline="./goto_pipeline.py:pipeline"
 
 [CATALOG_PRODUCT_INFO.examples.info]
 @Test
-@Docs(print="Информация о товаре: "<FUNCRESULT.CATALOG_PRODUCT_INFO.info.JSON>)
+@Docs(print="Информация о товаре: "<FUNCRESULT.CATALOG_PRODUCT_INFO.info.JSON["title"]>)
 inputs={"url"=<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]["url"]>}

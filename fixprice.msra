@@ -105,7 +105,12 @@ description="Разные функции, не вошедшие в другие 
 referrer=<DOCUMENT.PREFIXES.MAIN_SITE_ORIGIN>
 cors_mode=cors
 credentials=same-origin
-headers={Accept="application/json, text/plain, */*", "x-city"=<VARIABLES.city_id>}#+<UNSTANDARD_HEADERS.REQUEST>
+headers={
+    Accept="application/json, text/plain, */*",
+    "x-city"=<VARIABLES.city_id>,
+    "X-Key"=<VARIABLES.token>,
+    "x-language"=<VARIABLES.language>
+}#+<UNSTANDARD_HEADERS.REQUEST>
 
 [app.func]
 !include("catalog/tree.msraf")

@@ -10,4 +10,4 @@ base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/home/brand"
 
 [ADVERTISING_HOME_BRANDS_LIST.examples.home_brands]
 @Test
-@Docs(print="Первая рекламная запись: "<FUNCRESULT.ADVERTISING_HOME_BRANDS_LIST.home_brands.JSON[0]>)
+@Docs(print="Первая рекламная запись: "<FUNCRESULT.ADVERTISING_HOME_BRANDS_LIST.home_brands.JSON[0]["title"]>" "<FUNCRESULT.ADVERTISING_HOME_BRANDS_LIST.home_brands.JSON[0]["updatedAt"]>)

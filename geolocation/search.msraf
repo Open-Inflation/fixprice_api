@@ -46,5 +46,5 @@ from=<INPUT.search>
 
 [GEOLOCATION_SHOP_SEARCH.examples.search]
 @Test
-@Docs(print="Первый магазин: "<FUNCRESULT.GEOLOCATION_SHOP_SEARCH.search.JSON[0]>)
-inputs={"country_id"=<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.en.JSON[0]["id"]>, "city_id"=<FUNCRESULT.GEOLOCATION_CITIES_LIST.cities.JSON[0]["id"]>}
+@Docs(print="Первый магазин: "<FUNCRESULT.GEOLOCATION_SHOP_SEARCH.search.JSON[0]["address"]>)
+inputs={"country_id"=<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.first_country.JSON[0]["id"]>, "city_id"=<FUNCRESULT.GEOLOCATION_CITIES_LIST.cities.JSON[0]["id"]>}

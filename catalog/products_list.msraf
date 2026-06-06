@@ -47,5 +47,5 @@ from={category=<INPUT.category_alias>, brand=[], price=[], isDividedPrice=false,
 
 [CATALOG_PRODUCTS_LIST.examples.products_list]
 @Test
-@Docs(print="Первый товар: "<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]>)
+@Docs(print="Первый товар: "<FUNCRESULT.CATALOG_PRODUCTS_LIST.products_list.JSON[0]["title"]>)
 inputs={"category_alias"=<FUNCRESULT.CATALOG_TREE.tree.JSON[@Key(0)]["alias"]>}

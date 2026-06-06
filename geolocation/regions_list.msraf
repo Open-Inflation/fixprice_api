@@ -17,4 +17,4 @@ from=<INPUT.country_id>
 
 [GEOLOCATION_REGIONS_LIST.examples.regions]
 @Test
-@Docs(print="Первый регион: "<FUNCRESULT.GEOLOCATION_REGIONS_LIST.regions.JSON[0]>)
+@Docs(print="Первый регион: "<FUNCRESULT.GEOLOCATION_REGIONS_LIST.regions.JSON[0]["title"]>)

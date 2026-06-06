@@ -15,12 +15,7 @@ base=<DOCUMENT.PREFIXES.CATALOG_URL>"/v1/location/country"
 [GEOLOCATION_COUNTRIES_LIST.url.params.alias]
 from=<INPUT.alias>
 
-[GEOLOCATION_COUNTRIES_LIST.examples.en]
+[GEOLOCATION_COUNTRIES_LIST.examples.first_country]
 @Test
-@Docs(print="Первая страна en: "<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.en.JSON[0]>)
-inputs={"alias"="en"}
-
-[GEOLOCATION_COUNTRIES_LIST.examples.ru]
-@Test
-@Docs(print="Первая страна ru: "<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.ru.JSON[0]>)
-inputs={"alias"="ru"}
+@Docs(print="Первая страна: "<FUNCRESULT.GEOLOCATION_COUNTRIES_LIST.first_country.JSON[0]["title"]>)
+inputs={}
