@@ -32,7 +32,7 @@ class FixPriceAPI:
     """Extra keyword arguments forwarded to AsyncCamoufox during browser startup."""
 
     _MAIN_SITE_URL: ClassVar[str] = "https://fix-price.com/catalog"
-    _MAIN_SITE_ORIGIN: ClassVar[str] = "https://fix-price.com/"
+    _MAIN_SITE_ORIGIN: ClassVar[str] = "https://fix-price.com"
     _CATALOG_URL: ClassVar[str] = "https://api.fix-price.com/buyer"
 
     Catalog: ClassCatalog = field(init=False)
@@ -277,7 +277,7 @@ class FixPriceAPI:
         referrer: str | None = None,
         headers: dict[str, Any] | None = None,
     ) -> abstraction.Output:
-        request_headers = headers if headers is not None else {"Accept": "application/json, text/plain, */*"}
+        request_headers = headers if headers is not None else {"Accept": "application/json, text/plain, */*", "x-city": str(self.city_id), "X-Key": str(self.token), "x-language": str(self.language)}
         fetch_kwargs: dict[str, Any] = {
             "url": url,
             "method": method,

@@ -48,8 +48,8 @@ class ClassGeolocation:
             raise ValueError("`city_id` is required")
         if not isinstance(city_id, int) or isinstance(city_id, bool):
             raise TypeError("`city_id` must be int")
-        if float(city_id) < 1 or float(city_id) > 2147483647:
-            raise ValueError("`city_id` must be between 1 and 2147483647")
+        if float(city_id) < 1:
+            raise ValueError("`city_id` must be greater than or equal to 1")
 
         if city_id is not None:
             request_url = str(self._parent._CATALOG_URL) + "/v1/location/city/" + str(city_id)

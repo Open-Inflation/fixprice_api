@@ -76,9 +76,9 @@ def _params_catalog__products_info_json(ctx: AutotestCallContext) -> dict[str, o
 @autotest_params(target=ClassGeolocation.countries_list)
 def _params_geolocation_countries_list_json(ctx: AutotestCallContext) -> dict[str, object]:
     try:
-        return {"alias": "en"}
+        return {}
     except Exception as exc:
-        pytest.fail(f"[app.func.GEOLOCATION_COUNTRIES_LIST.examples.en] could not derive test parameters: {exc}")
+        pytest.fail(f"[app.func.GEOLOCATION_COUNTRIES_LIST.examples.first_country] could not derive test parameters: {exc}")
 
 
 @autotest_params(target=ClassGeolocation.regions_list)
