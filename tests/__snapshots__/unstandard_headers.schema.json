@@ -9,6 +9,16 @@
   ],
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "properties": {
+    "content-encoding": {
+      "type": "string",
+      "enum": [
+        "gzip"
+      ]
+    },
+    "traceparent": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
     "x-city": {
       "type": "string",
       "j2sEnumRejected": true
@@ -20,7 +30,9 @@
         },
         {
           "type": "string",
-          "j2sEnumRejected": true
+          "enum": [
+            "/catalog"
+          ]
         }
       ]
     },
@@ -35,6 +47,24 @@
       ]
     },
     "x-logged": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
+    "x-sigma-ip": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
+    "x-sigma-platform": {
+      "type": "string",
+      "enum": [
+        "web"
+      ]
+    },
+    "x-sigma-ua": {
+      "type": "string",
+      "j2sEnumRejected": true
+    },
+    "x-sigma-user-id": {
       "type": "string",
       "j2sEnumRejected": true
     }

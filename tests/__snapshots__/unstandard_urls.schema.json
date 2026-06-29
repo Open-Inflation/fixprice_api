@@ -12,7 +12,19 @@
     "https://api.fix-price.com/buyer/v1/banner/suitable?type=1&path=https:%2F%2Ffix-price.com%2Fcatalog": {
       "$ref": "#/$defs/Object1"
     },
+    "https://api.fix-price.com/buyer/v1/banner/suitable?type=1&path=https:%2F%2Ffix-price.com%2Fcatalog&utm_referrer=https%3a%2f%2ffix-price.com%2f": {
+      "$ref": "#/$defs/Object1"
+    },
+    "https://api.fix-price.com/buyer/v1/category/menu": {
+      "$ref": "#/$defs/Object1"
+    },
+    "https://api.fix-price.com/buyer/v1/category/menu?utm_referrer=https%3a%2f%2ffix-price.com%2f": {
+      "$ref": "#/$defs/Object1"
+    },
     "https://api.fix-price.com/buyer/v1/config/ecom.product.special.price.date.show": {
+      "$ref": "#/$defs/Object1"
+    },
+    "https://api.fix-price.com/buyer/v1/config/ecom.product.special.price.date.show?utm_referrer=https%3a%2f%2ffix-price.com%2f": {
       "$ref": "#/$defs/Object1"
     },
     "https://api.fix-price.com/buyer/v1/cookie-config": {
@@ -23,6 +35,122 @@
     },
     "https://api.fix-price.com/buyer/v2/geo/ip?utm_referrer=https%3a%2f%2ffix-price.com%2f": {
       "$ref": "#/$defs/Object1"
+    },
+    "https://fix-price.com/api/sigma/experiment/feature?experiment=cartprod_he5RUJQS&param=cart_prod": {
+      "$ref": "#/$defs/Object2"
+    },
+    "https://fix-price.com/api/sigma/experiment/feature?experiment=chatbot_RAJUTXCv&param=chat_bot": {
+      "$ref": "#/$defs/Object2"
+    },
+    "https://fix-price.com/api/sigma/experiments": {
+      "$ref": "#/$defs/Object2"
+    },
+    "https://fix-price.com/img/Header/card.svg": {
+      "type": "object",
+      "required": [
+        "traceparent"
+      ],
+      "properties": {
+        "traceparent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      }
+    },
+    "https://fix-price.com/img/Header/icons/search.svg": {
+      "type": "object",
+      "required": [
+        "traceparent"
+      ],
+      "properties": {
+        "traceparent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      }
+    },
+    "https://fix-price.com/img/Header/logo.svg": {
+      "type": "object",
+      "required": [
+        "traceparent"
+      ],
+      "properties": {
+        "traceparent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      }
+    },
+    "https://fix-price.com/img/common/cart.svg": {
+      "type": "object",
+      "required": [
+        "traceparent"
+      ],
+      "properties": {
+        "traceparent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      }
+    },
+    "https://fix-price.com/img/common/chevron.svg": {
+      "type": "object",
+      "required": [
+        "traceparent"
+      ],
+      "properties": {
+        "traceparent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      }
+    },
+    "https://fix-price.com/img/common/logout.svg": {
+      "type": "object",
+      "required": [
+        "traceparent"
+      ],
+      "properties": {
+        "traceparent": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      }
+    },
+    "https://rm.fix-price.com/intake/v2/rum/events": {
+      "type": "object",
+      "required": [
+        "content-encoding"
+      ],
+      "properties": {
+        "content-encoding": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "gzip"
+            ]
+          }
+        }
+      }
     }
   },
   "$defs": {
@@ -74,6 +202,60 @@
           }
         },
         "x-logged": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        }
+      }
+    },
+    "Object2": {
+      "type": "object",
+      "required": [
+        "x-sigma-ip",
+        "x-sigma-platform",
+        "x-sigma-ua",
+        "x-sigma-user-id"
+      ],
+      "minProperties": 1,
+      "properties": {
+        "traceparent": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        },
+        "x-sigma-ip": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        },
+        "x-sigma-platform": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "enum": [
+              "web"
+            ]
+          }
+        },
+        "x-sigma-ua": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "j2sEnumRejected": true
+          }
+        },
+        "x-sigma-user-id": {
           "type": "array",
           "minItems": 1,
           "items": {

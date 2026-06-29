@@ -1,7 +1,13 @@
 {
   "x-language": "ru",
   "x-city": "3",
-  "x-key": "SSt4ajZQMk53bWVvQ2xJaFZscW9RUT09OjpTRG9LS1kwRnl5SUFOcTFvdnp0QU5nPT0=:6dbd12ab645a3b1d9abdc5014b0deca2",
+  "x-key": "UnY0S1pOK09NY0sraTNyYUlRaFJZdz09OjpBVkRLZlVMcWF1aS8wZEppZVlTUjdBPT0=:877694bb30bad8cdaf6a905f6bb6055e",
   "x-logged": "",
-  "x-client-route": "/catalog/kollektsiya-minimalizm-uyut"
+  "x-client-route": "/catalog",
+  "x-sigma-user-id": "UnY0S1pOK09NY0sraTNyYUlRaFJZdz09OjpBVkRLZlVMcWF1aS8wZEppZVlTUjdBPT0=:877694bb30bad8cdaf6a905f6bb6055e",
+  "x-sigma-platform": "web",
+  "x-sigma-ua": "",
+  "x-sigma-ip": "",
+  "traceparent": "00-a91ec628c02c6fa18efb75e048492dd3-a9a5a350baaac605-00",
+  "content-encoding": "gzip"
 }
